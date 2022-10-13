@@ -21,6 +21,10 @@ import NextLink from 'next/link'
 import * as React from 'react'
 import { NavBarContainer } from './styles'
 
+import { Text } from '@chakra-ui/react'
+
+
+
 export default function NavigationBar() {
     const isDesktop = useBreakpointValue({ base: false, lg: true })
     return (
@@ -60,3 +64,7 @@ export default function NavigationBar() {
         </NavBarContainer>
     )
 }
+
+
+
+
