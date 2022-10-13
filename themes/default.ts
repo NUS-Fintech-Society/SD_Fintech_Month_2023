@@ -1,5 +1,5 @@
 
-const colors = {
+export const defaultColors = {
     primary1: '#001158',
     secondary1: '#546EF3',
     tertiary1: '#B9C3FF',
@@ -10,7 +10,3 @@ const colors = {
 /*const font = {
     default: 'inter'
 }*/
-
-export default {
-    colors
-}

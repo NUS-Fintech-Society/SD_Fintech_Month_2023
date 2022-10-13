@@ -1,13 +1,8 @@
 import { ChevronDownIcon } from '@chakra-ui/icons'
 import {
-    Box,
     Button,
-    ButtonGroup,
     Center,
-    Container,
-    Flex,
     HStack,
-    IconButton,
     Image,
     Link,
     Menu,
@@ -15,11 +10,11 @@ import {
     MenuItem,
     MenuList,
     useBreakpointValue,
-    useColorModeValue,
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
-import * as React from 'react'
-import { NavBarContainer } from './styles'
+import React from 'react'
+import { HackathonButton, NavBarContainer } from './styles'
+import SocialMediaIcons from '../SocialMediaIcons'
 
 export default function NavigationBar() {
     const isDesktop = useBreakpointValue({ base: false, lg: true })
@@ -27,16 +22,19 @@ export default function NavigationBar() {
         <NavBarContainer>
             <Center h='100%' pl='50' pr='50'>
                 <HStack justify='space-between' w='100%' h='100%'>
-                    <NextLink href='/' passHref>
-                        <Link>
-                            <Image src='/FintechSocietyLogo.png' w='150px'></Image>
-                        </Link>
-                    </NextLink>
+                    <HStack spacing='20'>
+                        <NextLink href='/' passHref>
+                            <Link>
+                                <Image src='/FintechSocietyLogo.png' w='150px' minWidth='150px'></Image>
+                            </Link>
+                        </NextLink>
+                        <SocialMediaIcons />
+                    </HStack>
                     <HStack spacing='20'>
                         <HStack spacing='10'>
-                            <Button variant='link'>Home</Button>
+                            <Button variant='link' colorScheme='black'>Home</Button>
                             <Menu>
-                                <MenuButton as={Button} rightIcon={<ChevronDownIcon />} variant='link'>
+                                <MenuButton as={Button} colorScheme='black' rightIcon={<ChevronDownIcon />} variant='link'>
                                     Programme
                                 </MenuButton>
                                 <MenuList>
@@ -44,16 +42,16 @@ export default function NavigationBar() {
                                 </MenuList>
                             </Menu>
                             <Menu>
-                                <MenuButton as={Button} rightIcon={<ChevronDownIcon />} variant='link'>
+                                <MenuButton as={Button} colorScheme='black' rightIcon={<ChevronDownIcon />} variant='link'>
                                     About Us
                                 </MenuButton>
                                 <MenuList>
                                     <MenuItem>Download</MenuItem>
                                 </MenuList>
                             </Menu>
-                            <Button variant='link'>Sponsors</Button>
+                            <Button variant='link' colorScheme='black'>Sponsors</Button>
                         </HStack>
-                        <Button>Hackathon</Button>
+                        <HackathonButton colorScheme='brand'>Fintech Hackathon</HackathonButton>
                     </HStack>
                 </HStack>
             </Center>
