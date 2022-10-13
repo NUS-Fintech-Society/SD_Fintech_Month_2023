@@ -10,18 +10,18 @@ export default function SocialMediaIcons(props: Props) {
     const iconColor = props.color ?? 'black'
 
     return (
-        <HStack spacing='10'>
+        <HStack spacing='10' color={iconColor}>
             <a href='https://fintechsociety.comp.nus.edu.sg' target="_blank">
-                <FaGlobe color={iconColor} />
+                <FaGlobe />
             </a>
             <a href='https://www.linkedin.com/company/nus-fintech-society/' target="_blank">
-                <FaLinkedinIn color={iconColor} />
+                <FaLinkedinIn />
             </a>
             <a href='https://www.instagram.com/nusfintech/' target="_blank">
-                <FaInstagram color={iconColor} />
+                <FaInstagram />
             </a>
             <a href='https://www.facebook.com/NUSfintech/' target="_blank">
-                <FaFacebookF color={iconColor} />
+                <FaFacebookF />
             </a>
         </HStack>
     )
