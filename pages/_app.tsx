@@ -2,16 +2,23 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import NavigationBar from '../components/NavigationBar'
-import { defaultColors } from '../themes/default'
+import { defaultColors, defaultFont } from '../themes/default'
 import Footer from '../components/Footer'
 import Head from 'next/head'
 
 function MyApp({ Component, pageProps }: AppProps) {
 
   const theme = extendTheme({
+    fonts: {
+      heading: `'${defaultFont}', sans-serif`,
+      body: `'${defaultFont}', sans-serif`,
+    },
     colors: {
       brand: {
-        500: defaultColors.primary1
+        500: defaultColors.primary1,
+        primary: defaultColors.primary1,
+        secondary: defaultColors.secondary1,
+        tertiary: defaultColors.tertiary1
       }
     }
   })

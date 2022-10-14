@@ -6,7 +6,4 @@ export const defaultColors = {
     neutral1: '#919094'
 }
 
-// TODO: Add 'inter' font
-/*const font = {
-    default: 'inter'
-}*/
+export const defaultFont = 'Inter'

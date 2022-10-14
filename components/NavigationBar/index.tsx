@@ -13,15 +13,15 @@ import {
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import React from 'react'
-import { HackathonButton, NavBarContainer } from './styles'
+import { CenterContainer, HackathonButton, HStackContainer, NavBarContainer } from './styles'
 import SocialMediaIcons from '../SocialMediaIcons'
 
 export default function NavigationBar() {
     const isDesktop = useBreakpointValue({ base: false, lg: true })
     return (
         <NavBarContainer>
-            <Center h='100%' pl='50' pr='50'>
-                <HStack justify='space-between' w='100%' h='100%'>
+            <CenterContainer>
+                <HStackContainer>
                     <HStack spacing='20'>
                         <NextLink href='/' passHref>
                             <Link>
@@ -38,23 +38,27 @@ export default function NavigationBar() {
                                     Programme
                                 </MenuButton>
                                 <MenuList>
-                                    <MenuItem>Download</MenuItem>
+                                    <MenuItem>Week Overflow</MenuItem>
+                                    <MenuItem>Agenda</MenuItem>
+                                    <MenuItem>Speakers</MenuItem>
+                                    <MenuItem>Workshops</MenuItem>
                                 </MenuList>
                             </Menu>
                             <Menu>
                                 <MenuButton as={Button} colorScheme='black' rightIcon={<ChevronDownIcon />} variant='link'>
-                                    About Us
+                                    About
                                 </MenuButton>
                                 <MenuList>
-                                    <MenuItem>Download</MenuItem>
+                                    <MenuItem>About Us</MenuItem>
+                                    <MenuItem>Contact Us</MenuItem>
                                 </MenuList>
                             </Menu>
                             <Button variant='link' colorScheme='black'>Sponsors</Button>
                         </HStack>
                         <HackathonButton colorScheme='brand'>Fintech Hackathon</HackathonButton>
                     </HStack>
-                </HStack>
-            </Center>
+                </HStackContainer>
+            </CenterContainer>
         </NavBarContainer>
     )
 }

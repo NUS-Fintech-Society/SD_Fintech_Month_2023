@@ -5,7 +5,7 @@ export const FooterContainer = chakra(Box, {
         display: 'flex',
         width: '100%',
         height: '60px',
-        background: 'brand.500',
+        background: 'brand.primary',
         alignContent: 'center',
         justifyContent: 'flex-end',
         paddingRight: '10'
