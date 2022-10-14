@@ -109,6 +109,7 @@
 }
 
 .timer {
+  display: inline-block;
   box-shadow: 0px 10px 10px 2px lightgray;
   margin-left: 8rem;
   margin-right: 8rem;
