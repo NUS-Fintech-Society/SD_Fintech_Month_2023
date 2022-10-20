@@ -6,10 +6,11 @@ import {
     Heading,
     Image
 } from '@chakra-ui/react'
+import { AboutContainer } from './styles'
 
 const About = () => {
   return (
-    <Flex w = '100%' h = '100%' direction = 'column' align ='center' justify={'center'} paddingTop = {{base: '10%', md : '2.5%'}}>
+    <AboutContainer>
         {/* header */}
         <Flex w = '100%' h = '15%' align = 'center' justify={'center'} padding = '5%'>
             <Heading fontSize = {{base : 'xl', md : '2xl'}}>ABOUT FINTECH MONTH</Heading>
@@ -37,7 +38,7 @@ const About = () => {
                 </Flex>
             </Flex>
         </Flex>
-    </Flex>
+    </AboutContainer>
 
   )
 }
