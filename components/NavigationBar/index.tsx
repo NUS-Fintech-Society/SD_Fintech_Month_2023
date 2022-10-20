@@ -16,6 +16,10 @@ import React from 'react'
 import { CenterContainer, HackathonButton, HStackContainer, NavBarContainer } from './styles'
 import SocialMediaIcons from '../SocialMediaIcons'
 
+import { Text } from '@chakra-ui/react'
+
+
+
 export default function NavigationBar() {
     const isDesktop = useBreakpointValue({ base: false, lg: true })
     return (
@@ -62,3 +66,7 @@ export default function NavigationBar() {
         </NavBarContainer>
     )
 }
+
+
+
+
