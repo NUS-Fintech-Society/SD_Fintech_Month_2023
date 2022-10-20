@@ -11,7 +11,7 @@ export default function ImportantDates() {
         return dates.map((date) => {
             return (
                 <ListItem key={date.id}>
-                    <ListRow>
+                    <ListRow spacing='0'>
                         <RowDate>
                             {`${date.date}:`}
                         </RowDate>

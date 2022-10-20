@@ -20,7 +20,7 @@ export const Title = chakra(Box, {
         paddingBottom: "15px",
         fontWeight: "bold",
         fontSize: "2xl",
-        color: "#001158",
+        color: 'brand.primary'
     }
 })
 
@@ -34,7 +34,7 @@ export const StyledUnorderedList = chakra(UnorderedList, {
 
 export const ListRow = chakra(HStack, {
     baseStyle: {
-        paddingBottom: "10px"
+        paddingBottom: "10px",
     }
 })
 
@@ -44,8 +44,8 @@ export const RowDate = chakra(Text, {
         textDecorationThickness: "1.5px",
         textUnderlineOffset: '3px',
         fontWeight: "bold",
-        color: "#001158",
-        borderColor: "#001158",
+        color: "brand.primary",
+        borderColor: "brand.primary",
     }
 })
 
