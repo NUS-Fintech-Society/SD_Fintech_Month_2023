@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "../../styles/Home.module.css";
 import { chakra } from "@chakra-ui/react";
-import { Label, Timer, TimerInner, TimerSegment, TimerText } from "./styles";
+import { Label, Timer, TimerInner, TimerSegment, TimerText, TimerDivider } from "./styles";
 
 export const CountdownTimer = () => {
   const [days, setDays] = useState(0);
@@ -42,21 +42,21 @@ export const CountdownTimer = () => {
           <Label>Days</Label>
         </TimerSegment>
 
-        <TimerText>:</TimerText>
+        <TimerDivider>:</TimerDivider>
 
         <TimerSegment>
           <TimerText>{hours}</TimerText>
           <Label>Hours</Label>
         </TimerSegment>
 
-        <TimerText>:</TimerText>
+        <TimerDivider>:</TimerDivider>
 
         <TimerSegment>
           <TimerText>{minutes}</TimerText>
           <Label>Minutes</Label>
         </TimerSegment>
 
-        <TimerText>:</TimerText>
+        <TimerDivider>:</TimerDivider>
 
         <TimerSegment>
           <TimerText>{seconds}</TimerText>
