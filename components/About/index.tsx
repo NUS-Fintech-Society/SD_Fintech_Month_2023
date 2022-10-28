@@ -1,4 +1,3 @@
-import {Text} from '@chakra-ui/react'
 import { AboutContainer, AboutHeading, HeadingContainer, ContentContainer, LeftContentContainer, FlushTop, Centralised, DescriptionBox, RightContentContainer, TopImage, MiddleImage, BottomImage } from './styles'
 
 const About = () => {
@@ -29,7 +28,6 @@ const About = () => {
             </RightContentContainer>
         </ContentContainer>
     </AboutContainer>
-
   )
 }
 
