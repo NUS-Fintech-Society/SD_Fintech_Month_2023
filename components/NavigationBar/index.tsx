@@ -57,7 +57,7 @@ export default function NavigationBar() {
                                     <MenuItem>Contact Us</MenuItem>
                                 </MenuList>
                             </Menu>
-                            <Button variant='link' colorScheme='black'>Sponsors</Button>
+                            <Button variant='link' colorScheme='black' >Sponsors</Button>
                         </HStack>
                         <HackathonButton colorScheme='brand'>Fintech Hackathon</HackathonButton>
                     </HStack>

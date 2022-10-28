@@ -1,17 +1,15 @@
 import type { NextPage } from 'next'
+import SponsorComponent from '../components/Sponsor'
 
-
-
-const Home: NextPage = () => {
+const Sponsors: NextPage = () => {
   return (
     <div  >
       <div style={{ paddingTop: "100px" }}>
-        
+        <SponsorComponent/>
         
       </div>
     </div>
   )
 }
 
-export default Home
-//ADD BACK IMPORTANT DATES LATER 
+export default Sponsors
