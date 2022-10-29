@@ -17,6 +17,23 @@ export const CenterContainer = chakra(Center, {
   },
 });
 
+export const MobileNavBarContainer = chakra(Box, {
+  baseStyle: {
+    position: 'fixed',
+    width: '100%',
+    height: '70px',
+    background: 'white',
+  },
+});
+
+export const MobileCenterContainer = chakra(Center, {
+  baseStyle: {
+    h: '100%',
+    pl: '20px',
+    pr: '20px',
+  },
+});
+
 export const HStackContainer = chakra(HStack, {
   baseStyle: {
     justifyContent: 'space-between',
