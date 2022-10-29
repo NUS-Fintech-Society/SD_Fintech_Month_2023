@@ -1,5 +1,5 @@
 export type ImportantDate = {
-    id: number
-    date: string
-    description: string
-}
+  id: number;
+  date: string;
+  description: string;
+};

@@ -1,17 +1,15 @@
-import type { NextPage } from 'next'
-
-
+import type { NextPage } from 'next';
+import ImportantDates from '../components/ImportantDates';
+import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
   return (
-    <div  >
-      <div style={{ paddingTop: "100px" }}>
-        
-        
+    <div className={styles.container}>
+      <div style={{ paddingTop: '100px' }}>
+        <ImportantDates />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
-//ADD BACK IMPORTANT DATES LATER 
+export default Home;
