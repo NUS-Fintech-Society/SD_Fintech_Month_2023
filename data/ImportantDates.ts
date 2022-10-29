@@ -1,4 +1,4 @@
-import { ImportantDate } from '../types/Dates';
+import { ImportantDate } from '../types/Date';
 
 export const importantDates: ImportantDate[] = [
   {
