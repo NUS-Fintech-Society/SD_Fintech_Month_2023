@@ -1,4 +1,4 @@
-import { ChevronDownIcon } from "@chakra-ui/icons";
+import { ChevronDownIcon } from '@chakra-ui/icons';
 import {
   Button,
   Center,
@@ -10,18 +10,18 @@ import {
   MenuItem,
   MenuList,
   useBreakpointValue,
-} from "@chakra-ui/react";
-import NextLink from "next/link";
-import React from "react";
+} from '@chakra-ui/react';
+import NextLink from 'next/link';
+import React from 'react';
 import {
   CenterContainer,
   HackathonButton,
   HStackContainer,
   NavBarContainer,
-} from "./styles";
-import SocialMediaIcons from "../SocialMediaIcons";
+} from './styles';
+import SocialMediaIcons from '../SocialMediaIcons';
 
-import { Text } from "@chakra-ui/react";
+import { Text } from '@chakra-ui/react';
 
 export default function NavigationBar() {
   const isDesktop = useBreakpointValue({ base: false, lg: true });

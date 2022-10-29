@@ -1,18 +1,18 @@
-import { HStack } from "@chakra-ui/react";
-import React from "react";
+import { HStack } from '@chakra-ui/react';
+import React from 'react';
 import {
   FaFacebookF,
   FaGlobe,
   FaInstagram,
   FaLinkedinIn,
-} from "react-icons/fa";
+} from 'react-icons/fa';
 
 type Props = {
   color?: string;
 };
 
 export default function SocialMediaIcons(props: Props) {
-  const iconColor = props.color ?? "black";
+  const iconColor = props.color ?? 'black';
 
   return (
     <HStack spacing="10" color={iconColor}>

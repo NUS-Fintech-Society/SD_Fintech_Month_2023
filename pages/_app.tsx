@@ -1,10 +1,10 @@
-import "../styles/globals.css";
-import type { AppProps } from "next/app";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
-import NavigationBar from "../components/NavigationBar";
-import { defaultColors, defaultFont } from "../themes/default";
-import Footer from "../components/Footer";
-import Head from "next/head";
+import '../styles/globals.css';
+import type { AppProps } from 'next/app';
+import { ChakraProvider, extendTheme } from '@chakra-ui/react';
+import NavigationBar from '../components/NavigationBar';
+import { defaultColors, defaultFont } from '../themes/default';
+import Footer from '../components/Footer';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const theme = extendTheme({

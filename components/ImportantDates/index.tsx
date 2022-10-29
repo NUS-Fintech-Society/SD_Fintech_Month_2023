@@ -1,7 +1,7 @@
-import React from "react";
-import { ListItem } from "@chakra-ui/react";
-import { ImportantDate } from "../../types/Dates";
-import { importantDates } from "../../data/ImportantDates";
+import React from 'react';
+import { ListItem } from '@chakra-ui/react';
+import { ImportantDate } from '../../types/Dates';
+import { importantDates } from '../../data/ImportantDates';
 import {
   ListRow,
   RowDate,
@@ -9,7 +9,7 @@ import {
   StyledUnorderedList,
   Title,
   Wrapper,
-} from "./styles";
+} from './styles';
 
 export default function ImportantDates() {
   const dates: ImportantDate[] = importantDates;
