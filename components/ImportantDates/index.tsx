@@ -1,6 +1,6 @@
 import React from 'react';
 import { ListItem } from '@chakra-ui/react';
-import { ImportantDate } from '../../types/Dates';
+import { ImportantDate } from '../../types/Date';
 import { importantDates } from '../../data/ImportantDates';
 import {
   ListRow,

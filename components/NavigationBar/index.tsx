@@ -20,17 +20,25 @@ import {
   NavBarContainer,
 } from './styles';
 import SocialMediaIcons from '../SocialMediaIcons';
-
-import { Text } from '@chakra-ui/react';
+import { useRouter } from 'next/router';
+import { Routes } from '../../constants/Routes';
 
 export default function NavigationBar() {
+  const router = useRouter();
   const isDesktop = useBreakpointValue({ base: false, lg: true });
+
+  function navigate(path: Routes) {
+    return () => {
+      router.push(path);
+    };
+  }
+
   return (
     <NavBarContainer>
       <CenterContainer>
         <HStackContainer>
           <HStack spacing="20">
-            <NextLink href="/" passHref>
+            <NextLink href={Routes.HOME} passHref>
               <Link>
                 <Image
                   src="/FintechSocietyLogo.png"
@@ -44,7 +52,11 @@ export default function NavigationBar() {
           </HStack>
           <HStack spacing="20">
             <HStack spacing="10">
-              <Button variant="link" colorScheme="black">
+              <Button
+                variant="link"
+                colorScheme="black"
+                onClick={navigate(Routes.HOME)}
+              >
                 Home
               </Button>
               <Menu>
@@ -57,10 +69,12 @@ export default function NavigationBar() {
                   Programme
                 </MenuButton>
                 <MenuList>
-                  <MenuItem>Week Overflow</MenuItem>
-                  <MenuItem>Agenda</MenuItem>
-                  <MenuItem>Speakers</MenuItem>
-                  <MenuItem>Workshops</MenuItem>
+                  <MenuItem onClick={navigate(Routes.HOME)}>
+                    Week Overflow
+                  </MenuItem>
+                  <MenuItem onClick={navigate(Routes.HOME)}>Agenda</MenuItem>
+                  <MenuItem onClick={navigate(Routes.HOME)}>Speakers</MenuItem>
+                  <MenuItem onClick={navigate(Routes.HOME)}>Workshops</MenuItem>
                 </MenuList>
               </Menu>
               <Menu>
@@ -73,15 +87,24 @@ export default function NavigationBar() {
                   About
                 </MenuButton>
                 <MenuList>
-                  <MenuItem>About Us</MenuItem>
-                  <MenuItem>Contact Us</MenuItem>
+                  <MenuItem onClick={navigate(Routes.HOME)}>About Us</MenuItem>
+                  <MenuItem onClick={navigate(Routes.HOME)}>
+                    Contact Us
+                  </MenuItem>
                 </MenuList>
               </Menu>
-              <Button variant="link" colorScheme="black">
+              <Button
+                variant="link"
+                colorScheme="black"
+                onClick={navigate(Routes.SPONSORS)}
+              >
                 Sponsors
               </Button>
             </HStack>
-            <HackathonButton colorScheme="brand">
+            <HackathonButton
+              colorScheme="brand"
+              onClick={navigate(Routes.HOME)}
+            >
               Fintech Hackathon
             </HackathonButton>
           </HStack>
