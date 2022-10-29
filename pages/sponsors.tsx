@@ -1,12 +1,12 @@
-import type { NextPage } from 'next'
-import SponsorComponent from '../components/Sponsor'
+import type { NextPage } from 'next';
+import SponsorComponent from '../components/Sponsor';
 
 const Sponsors: NextPage = () => {
   return (
-    <div style={{ paddingTop: "100px" }}>
-      <SponsorComponent/>
+    <div style={{ paddingTop: '100px' }}>
+      <SponsorComponent />
     </div>
-  )
-}
+  );
+};
 
-export default Sponsors
+export default Sponsors;

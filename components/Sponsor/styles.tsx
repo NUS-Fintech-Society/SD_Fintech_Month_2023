@@ -1,4 +1,4 @@
-import { Box, chakra } from '@chakra-ui/react';
+import { Box, chakra, HStack } from '@chakra-ui/react';
 
 export const SponsorWrapper = chakra(Box, {
   baseStyle: {
@@ -8,6 +8,14 @@ export const SponsorWrapper = chakra(Box, {
     bgImage: "url('/Background/sponsor-background.png')",
     bgSize: 'cover',
     bgPosition: 'center',
+  },
+});
+
+export const RowContainer = chakra(HStack, {
+  baseStyle: {
+    h: '75px',
+    justifyContent: 'center',
+    paddingBottom: '100px',
   },
 });
 

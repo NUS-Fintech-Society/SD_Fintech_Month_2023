@@ -1,7 +1,7 @@
-import { HStack } from '@chakra-ui/react';
+import { HStack, Image } from '@chakra-ui/react';
 import React from 'react';
-import { Image } from '@chakra-ui/react';
-import { HeaderContainer, SponsorWrapper } from './styles';
+
+import { HeaderContainer, RowContainer, SponsorWrapper } from './styles';
 import { Organisation } from '../../types/Organisation';
 import { Organisers, Sponsors } from '../../data/Organisations';
 
@@ -15,25 +15,34 @@ export default function Sponsor() {
       result.push(organisations.slice(i, i + rowLength));
     }
 
-    return result.map((row) => organisationRow(row));
+    return result.map((row, index) => organisationRow(row, index));
   }
 
-  function organisationRow(organisations: Organisation[]) {
+  function organisationRow(organisations: Organisation[], index: number) {
     const row = organisations.map((organisation) =>
       organisationItem(organisation),
     );
 
     return (
-      <HStack spacing="110" h="75px" justifyContent="center">
+      <RowContainer spacing="110" key={index}>
         {row}
-      </HStack>
+      </RowContainer>
     );
   }
 
   function organisationItem(organisation: Organisation) {
     return (
-      <a href={organisation.url} target="_blank" rel="noreferrer">
-        <Image src={organisation.logoSrc} h={organisation.logoSize} />
+      <a
+        href={organisation.url}
+        target="_blank"
+        rel="noreferrer"
+        key={organisation.name}
+      >
+        <Image
+          src={organisation.logoSrc}
+          alt={organisation.name}
+          h={organisation.logoSize}
+        />
       </a>
     );
   }
