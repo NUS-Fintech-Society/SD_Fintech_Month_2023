@@ -9,7 +9,7 @@
 
 1. Clone the repository with `git clone git@github.com:NUS-Fintech-Society/SD_Fintech_Month_2023.git`
 2. Install the dependencies with `npm install`.
-3. Install husky for git hooks with `npx install husky`.
+3. Install husky for git hooks with `npx husky install`.
 
 ## Running the Project
 
