@@ -3,11 +3,8 @@ import SponsorComponent from '../components/Sponsor'
 
 const Sponsors: NextPage = () => {
   return (
-    <div  >
-      <div style={{ paddingTop: "100px" }}>
-        <SponsorComponent/>
-        
-      </div>
+    <div style={{ paddingTop: "100px" }}>
+      <SponsorComponent/>
     </div>
   )
 }
