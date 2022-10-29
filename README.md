@@ -3,7 +3,7 @@
 ## Tech Stack
 
 - [Next.js](https://nextjs.org/)
-- [Husky] (https://typicode.github.io/husky/)
+- [Husky](https://typicode.github.io/husky/)
 
 ## Setting Up the Project
 
