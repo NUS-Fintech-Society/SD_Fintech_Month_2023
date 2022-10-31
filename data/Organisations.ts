@@ -4,7 +4,7 @@ export const Sponsors: Organisation[] = [
   {
     name: 'Bybit',
     logoSrc: '/Sponsor/bybit-logo-trans.png',
-    logoSize: '60px',
+    logoSize: '50px',
     url: 'https://www.bybit.com/en-US/',
   },
   {
@@ -31,7 +31,7 @@ export const Organisers: Organisation[] = [
   {
     name: 'NUS FinTech Lab',
     logoSrc: '/Sponsor/nus_ftl_logo.png',
-    logoSize: '100px',
+    logoSize: '90px',
     url: 'https://fintechlab.nus.edu.sg/',
   },
 ];
