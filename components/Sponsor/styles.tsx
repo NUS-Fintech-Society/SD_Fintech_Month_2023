@@ -25,7 +25,13 @@ export const HeaderContainer = chakra(Box, {
     fontWeight: 'bold',
     fontSize: '30px',
     justifyContent: 'center',
-    paddingTop: '50px',
-    paddingBottom: '50px',
+    paddingTop: '10px',
+    paddingBottom: '70px',
+  },
+  sizes: {
+    lg: {
+      paddingTop: '100px',
+      paddingBottom: '100px',
+    },
   },
 });

@@ -1,4 +1,4 @@
-import { HStack, Image } from '@chakra-ui/react';
+import { HStack, Image, useBreakpointValue } from '@chakra-ui/react';
 import React from 'react';
 
 import { HeaderContainer, RowContainer, SponsorWrapper } from './styles';
@@ -6,6 +6,8 @@ import { Organisation } from '../../types/Organisation';
 import { Organisers, Sponsors } from '../../data/Organisations';
 
 export default function Sponsor() {
+  const rowSize = useBreakpointValue({ base: 1, md: 2, lg: 3 });
+
   function organisationSection(
     organisations: Organisation[],
     rowLength: number,
@@ -50,10 +52,10 @@ export default function Sponsor() {
   return (
     <SponsorWrapper>
       <HeaderContainer>SPONSORS</HeaderContainer>
-      {organisationSection(Sponsors, 3)}
+      {organisationSection(Sponsors, rowSize || 3)}
 
       <HeaderContainer>ORGANISERS</HeaderContainer>
-      {organisationSection(Organisers, 3)}
+      {organisationSection(Organisers, rowSize || 3)}
     </SponsorWrapper>
   );
 }
