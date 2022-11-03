@@ -5,17 +5,17 @@ const WorkShop = () => {
         <WorkshopContainer>
             <HeadingContainer><WorkshopHeading>WORKSHOPS</WorkshopHeading></HeadingContainer>
             <WeekContainer>
-                <WeekLabel colorScheme = "brand">Week 1</WeekLabel>
-                <Row>
+                <WeekLabel colorScheme = "brand" >Week 1</WeekLabel>
+                <Row justify = 'center'>
                     <LeftContent>
-                        <WorkshopImageContainer>
+                        <WorkshopImageContainer justify = 'space-evenly'>
                             <WorkshopImage src = 'gibbresh.png' fallbackSrc = 'https://via.placeholder.com/150'/>
                             <WorkshopImageLabel>01/01/23</WorkshopImageLabel>
                         </WorkshopImageContainer>
                         <WorkshopSpeaker>
                             <SpeakerLabel>Speaker : </SpeakerLabel>
                             <SpeakerImage src = 'gibbresh.png' fallbackSrc = 'https://via.placeholder.com/150'/>
-                            <SpeakerLabel>Elon Musk </SpeakerLabel>
+                            <SpeakerLabel>Elon Musk</SpeakerLabel>
                         </WorkshopSpeaker>
                     </LeftContent>
                     <RightContent>
@@ -25,9 +25,7 @@ const WorkShop = () => {
                             <RegisterButton>Register</RegisterButton>
                         </WorkshopButtonContainer>
                     </RightContent>
-                </Row>
-                
-                
+                </Row>  
             </WeekContainer>
         </WorkshopContainer>
     )

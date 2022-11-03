@@ -44,7 +44,7 @@ export const WeekLabel = chakra(Flex, {
         fontSize : '2xl',
         fontWeight : 'bold',
         alignItems :  'center',
-        px : '3%'
+        px : '8%'
     }
 })
 
