@@ -2,12 +2,12 @@ import {Flex, Box, Heading, Image, chakra} from '@chakra-ui/react'
 
 export const AboutContainer = chakra(Flex, {
     baseStyle : {
-        w : '100%',
-        h : '100vh',
+        minH : '100vh',
+        width : '100',
         flexDirection : 'column',
         align : 'center',
         justifyContent : 'center',
-        paddingTop : {base : '15%', md : '5%'}
+        paddingTop : {base :'20%',md : '50px'}
     }, 
 })
 
@@ -18,7 +18,7 @@ export const HeadingContainer = chakra(Flex, {
         align : 'center',
         justifyContent : 'center',
         padding : '5%',
-        paddingBottom : '7%',
+        paddingBottom : '4%',
     }
 })
 
@@ -32,25 +32,41 @@ export const ContentContainer = chakra(Flex, {
     baseStyle : {
         w : '100%',
         h : '85%',
-        direction : {base : 'column-reverse', md :'row'},
+        flexDirection : {base : 'column-reverse', md :'row'},
         align : 'center',
+        paddingTop : {base: '0',md : '7%', xl : '20px'},
+        paddingLeft : {base : '0', md : '8%'},
     }
 })
 
 export const LeftContentContainer = chakra(Flex, {
     baseStyle : {
-        w : {base:'80%', md:'65%'},
+        w : {base:'100%', md:'65%'},
         h : '100%',
+        justifyContent: 'center',
         direction : 'column',
         align : 'center',
+        paddingBottom : {base : '10%', md : '0'}
     }
 })
 
-export const FlushTop = chakra(Flex, {
+export const FlushTopLeft = chakra(Flex, {
+    baseStyle : {
+        w : {base : '80%', md : '100%'},
+        height : '50%', 
+        align : 'center', 
+        justifyContent : 'center',
+    }
+})
+
+export const FlushTopRight = chakra(Flex, {
     baseStyle : {
         height : '50%', 
         align : 'center', 
         justifyContent : 'center',
+        paddingLeft : {base : '0', md : '50%', lg : '30%', xl : '5%'},
+        paddingBottom : {base :'20%' ,xl : '10%'},
+        paddingTop : {base : '20%', md : '0'}
     }
 })
 
@@ -58,6 +74,7 @@ export const Centralised = chakra(Flex, {
     baseStyle : {
         justifyContent : 'center',
         align : 'center',
+        width : '100%'
     }
 })
 
@@ -67,7 +84,8 @@ export const DescriptionBox = chakra(Box, {
         display : 'flex-column',
         borderWidth : '1px',
         borderRadius : '20',
-        padding : '20px 10px',
+        justifyContent : 'center',
+        padding : {base : '15px', md :'20px 15px'},
         boxShadow : '0px 2px 1px grey',
         backdropFilter :'blur(6px)',
         color : '#001158'
@@ -81,7 +99,7 @@ export const RightContentContainer = chakra(Flex, {
         justify : {base :'center', md : 'start'}, 
         w : {base:'80%', md:'30%'}, 
         h : {base:'50%',md:'100%'}, 
-        padding : {base : '20% 0', md :'0'},
+        paddingLeft : {base : '0', md : '15%'},
     }
 })
 
@@ -89,11 +107,10 @@ export const TopImage = chakra(Image, {
     baseStyle : { 
         position : 'relative', 
         zIndex : '2', 
-        left : '1rem',
-        right : {base :'13rem', md :'13rem'}, 
-        bottom : {base : '7rem',md : '0rem'},
+        right : {base :'-6rem', md :'1rem'}, 
+        bottom : {base : '4rem',md : '2rem'},
         borderRadius : '5px',
-        height : '6rem',
+        height : {base :'6rem' ,sm : '8rem'},
         width : '10rem',
     }
 })
@@ -102,11 +119,11 @@ export const MiddleImage = chakra(Image, {
     baseStyle : { 
         position : 'relative', 
         zIndex : '1', 
-        left : {base :'2rem', md :'-4rem'},
-        bottom : {base :'1rem', md :'-3rem'},
+        left : {base :'2rem', md :'-6rem'},
+        bottom : {base :'1rem', md :'-1rem'},
         borderRadius : '5px',
-        height : '12rem',
-        width : '15rem',
+        height : {base : '10rem' ,sm : '12rem'},
+        width : {base :'13rem' ,sm : '15rem'},
     }
 })
 
@@ -114,11 +131,11 @@ export const BottomImage = chakra(Image, {
     baseStyle : { 
         position : 'relative', 
         zIndex : '2', 
-        left : {base :'13rem', md :'-25rem'},
-        top : {base : '2rem',md : '9rem'},
+        left : {base :'-11rem',sm :'-14rem' ,md :'-22rem'},
+        top : {base : '4rem',sm :'6rem' ,md : '8rem'},
         borderRadius : '5px',
-        height : '9rem',
-        width : '11rem',
+        height : {base : '7rem' ,sm : '9rem'},
+        width : {base :'9rem' ,sm : '11rem'},
     }
 })
 
