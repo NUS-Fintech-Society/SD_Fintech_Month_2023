@@ -1,7 +1,14 @@
 import React, { useEffect, useState } from "react";
 import styles from "../../styles/Home.module.css";
 import { chakra } from "@chakra-ui/react";
-import { Label, Timer, TimerInner, TimerSegment, TimerText, TimerDivider } from "./styles";
+import {
+  Label,
+  Timer,
+  TimerInner,
+  TimerSegment,
+  TimerText,
+  TimerDivider,
+} from "./styles";
 
 export const CountdownTimer = () => {
   const [days, setDays] = useState(0);

@@ -6,6 +6,7 @@ export const Title = chakra(Box, {
     fontWeight: "bold",
     fontSize: "5xl",
     color: "brand.primary",
+    textAlign:"center"
   },
 });
 
@@ -20,7 +21,7 @@ export const ThemeButton = chakra(Button, {
 export const WorkshopButton = chakra(Button, {
   baseStyle: {
     width: "140px",
-    height: "35px",
+    height: "40px",
     borderRadius: "12px",
   },
 });

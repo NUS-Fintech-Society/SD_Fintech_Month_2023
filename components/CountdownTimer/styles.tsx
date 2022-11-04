@@ -10,9 +10,10 @@ export const Timer = chakra("div", {
     backdropFilter: "blur(3px)",
     borderRadius: "40px",
     zIndex: 1,
-    padding: "5rem",
-    height: "200px",
-    width: "540px",
+    marginTop: { base: "60px", md: "0px" },
+    padding: { base: "3rem", md: "5rem" },
+    height: { base: "80px", md: "200px" },
+    width: { base: "340px", md: "540px" },
   },
 });
 
@@ -27,16 +28,16 @@ export const TimerInner = chakra("div", {
 
 export const TimerText = chakra("span", {
   baseStyle: {
-    fontSize: "4rem",
+    fontSize: { base: "2rem", md: "4rem" },
     color: "#142778",
   },
 });
 
 export const TimerDivider = chakra("span", {
   baseStyle: {
-    fontSize: "4rem",
+    fontSize: { base: "2rem", md: "4rem" },
     color: "#142778",
-    mx:"20px"
+    mx: { base: "5px", md: "20px" },
   },
 });
 

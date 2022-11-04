@@ -5,7 +5,8 @@ export const NavBarContainer = chakra(Box, {
         position: "fixed",
         width: '100%',
         height: '100px',
-        background: 'white'
+        background: 'white',
+        zIndex:"1"
     }
 })
 
