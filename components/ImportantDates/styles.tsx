@@ -1,4 +1,4 @@
-import { Box, chakra, HStack, UnorderedList, Text } from "@chakra-ui/react";
+import { Box, chakra, HStack, UnorderedList, Text } from '@chakra-ui/react';
 
 export const Wrapper = chakra(Box, {
   baseStyle: {
