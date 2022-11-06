@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import styles from "../../styles/Home.module.css";
-import { chakra } from "@chakra-ui/react";
+import React, { useEffect, useState } from 'react';
+import styles from '../../styles/Home.module.css';
+import { chakra } from '@chakra-ui/react';
 import {
   Label,
   Timer,
@@ -8,7 +8,7 @@ import {
   TimerSegment,
   TimerText,
   TimerDivider,
-} from "./styles";
+} from './styles';
 
 export const CountdownTimer = () => {
   const [days, setDays] = useState(0);
@@ -18,7 +18,7 @@ export const CountdownTimer = () => {
   const [eventOpen, setEventOpen] = useState(false);
 
   useEffect(() => {
-    const target = new Date("12/31/2022 23:59:59");
+    const target = new Date('12/31/2022 23:59:59');
 
     const interval = setInterval(() => {
       const now = new Date();

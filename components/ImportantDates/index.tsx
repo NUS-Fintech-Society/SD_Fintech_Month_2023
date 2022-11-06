@@ -9,7 +9,7 @@ import {
   StyledUnorderedList,
   Title,
   Wrapper,
-} from "./styles";
+} from './styles';
 
 export default function ImportantDates() {
   const dates: ImportantDate[] = importantDates;

@@ -1,8 +1,8 @@
-import { Box, Flex } from "@chakra-ui/react";
-import type { NextPage } from "next";
-import CountdownTimer from "../components/CountdownTimer/CountdownTimer";
-import ImportantDates from "../components/ImportantDates";
-import { ThemeButton, Title, WorkshopButton } from "./styles";
+import { Box, Flex } from '@chakra-ui/react';
+import type { NextPage } from 'next';
+import CountdownTimer from '../components/CountdownTimer/CountdownTimer';
+import ImportantDates from '../components/ImportantDates';
+import { ThemeButton, Title, WorkshopButton } from './styles';
 
 const Home: NextPage = () => {
   const importantDatesSection = (
@@ -36,17 +36,17 @@ const Home: NextPage = () => {
         alignItems="center"
         justifyContent="center"
         style={{
-          width: "100vw",
-          height: "100vh",
-          paddingLeft: "80px",
-          paddingRight: "80px",
+          width: '100vw',
+          height: '100vh',
+          paddingLeft: '80px',
+          paddingRight: '80px',
           backgroundImage: `url("/WaterEffect.png")`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
         }}
       >
         <Flex
-          direction={{ base: "column", md: "row" }}
+          direction={{ base: 'column', md: 'row' }}
           justifyContent="space-around"
           mt="30px"
         >
@@ -54,7 +54,7 @@ const Home: NextPage = () => {
             direction="column"
             alignItems="center"
             justifyContent="space-between"
-            mr={{base:"0px", md:"80px"}}
+            mr={{ base: '0px', md: '80px' }}
           >
             <Flex direction="column" alignItems="center">
               <Title>NUS FINTECH MONTH</Title>
@@ -69,7 +69,10 @@ const Home: NextPage = () => {
             <CountdownTimer />
           </Flex>
 
-          <Box display={{ base: "none", md: "block" }} ml={{base:"0px", md:"80px"}}>
+          <Box
+            display={{ base: 'none', md: 'block' }}
+            ml={{ base: '0px', md: '80px' }}
+          >
             {importantDatesSection}
           </Box>
         </Flex>
@@ -79,15 +82,15 @@ const Home: NextPage = () => {
         alignItems="center"
         justifyContent="center"
         style={{
-          height: "100vh",
-          paddingLeft: "80px",
-          paddingRight: "80px",
+          height: '100vh',
+          paddingLeft: '80px',
+          paddingRight: '80px',
           backgroundImage: `url("/LinesEffect.png")`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
         }}
       >
-        <Box display={{ base: "block", md: "none" }}>
+        <Box display={{ base: 'block', md: 'none' }}>
           {importantDatesSection}
         </Box>
       </Box>
