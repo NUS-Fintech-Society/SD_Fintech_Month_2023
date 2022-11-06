@@ -32,10 +32,12 @@ const Home: NextPage = () => {
   return (
     <Box>
       <Box
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
         style={{
           width: "100vw",
           height: "100vh",
-          paddingTop: "100px",
           paddingLeft: "80px",
           paddingRight: "80px",
           backgroundImage: `url("/WaterEffect.png")`,
@@ -52,6 +54,7 @@ const Home: NextPage = () => {
             direction="column"
             alignItems="center"
             justifyContent="space-between"
+            mr="80px"
           >
             <Flex direction="column" alignItems="center">
               <Title>NUS FINTECH MONTH</Title>
@@ -66,7 +69,7 @@ const Home: NextPage = () => {
             <CountdownTimer />
           </Flex>
 
-          <Box display={{ base: "none", md: "block" }}>
+          <Box display={{ base: "none", md: "block" }} ml="80px">
             {importantDatesSection}
           </Box>
         </Flex>
@@ -84,7 +87,7 @@ const Home: NextPage = () => {
           backgroundSize: "cover",
         }}
       >
-        <Box display={{ base: "block", md: "none" }} top="50%" left={"50%"}>
+        <Box display={{ base: "block", md: "none" }}>
           {importantDatesSection}
         </Box>
       </Box>
