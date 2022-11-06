@@ -24,6 +24,7 @@ export const MobileNavBarContainer = chakra(Box, {
     width: '100%',
     height: '70px',
     background: 'white',
+    zIndex: 10,
   },
 });
 
