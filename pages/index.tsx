@@ -1,42 +1,97 @@
-import { Button, Input } from '@chakra-ui/react';
-import type { NextPage } from 'next';
-import { ChangeEvent, useState } from 'react';
-import ImportantDates from '../components/ImportantDates';
-import styles from '../styles/Home.module.css';
-import { writeToSheet } from '../utils/GoogleSheetsUtil';
+import { Box, Flex } from "@chakra-ui/react";
+import type { NextPage } from "next";
+import CountdownTimer from "../components/CountdownTimer/CountdownTimer";
+import ImportantDates from "../components/ImportantDates";
+import { ThemeButton, Title, WorkshopButton } from "./styles";
 
 const Home: NextPage = () => {
-  const [email, setEmail] = useState<string>('');
-
-  function setEmailValue(e: ChangeEvent<HTMLInputElement>) {
-    setEmail(e.target.value);
-  }
-
-  function submitEmail() {
-    const data = { email };
-
-    fetch('/api/sheets', {
-      method: 'POST',
-      body: JSON.stringify(data),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-  }
+  const importantDatesSection = (
+    <Flex direction="column" alignItems="center">
+      <ImportantDates />
+      <Flex px="5" justifyContent="space-between" mt="40px">
+        <WorkshopButton
+          colorScheme="brand"
+          fontWeight="light"
+          fontSize="lg"
+          mr="30px"
+        >
+          Hackathon
+        </WorkshopButton>
+        <WorkshopButton
+          colorScheme="brand"
+          fontWeight="light"
+          fontSize="lg"
+          ml="30px"
+        >
+          Workshops
+        </WorkshopButton>
+      </Flex>
+    </Flex>
+  );
 
   return (
-    <div className={styles.container}>
-      <div style={{ paddingTop: '100px' }}>
-        <Input
-          placeholder="Basic usage"
-          value={email}
-          onChange={setEmailValue}
-        />
-        <Button colorScheme="blue" onClick={submitEmail}>
-          Submit
-        </Button>
-      </div>
-    </div>
+    <Box>
+      <Box
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        style={{
+          width: "100vw",
+          height: "100vh",
+          paddingLeft: "80px",
+          paddingRight: "80px",
+          backgroundImage: `url("/WaterEffect.png")`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
+      >
+        <Flex
+          direction={{ base: "column", md: "row" }}
+          justifyContent="space-around"
+          mt="30px"
+        >
+          <Flex
+            direction="column"
+            alignItems="center"
+            justifyContent="space-between"
+            mr={{base:"0px", md:"80px"}}
+          >
+            <Flex direction="column" alignItems="center">
+              <Title>NUS FINTECH MONTH</Title>
+              <ThemeButton
+                colorScheme="brand"
+                fontWeight="light"
+                fontSize="2xl"
+              >
+                2023 Theme
+              </ThemeButton>
+            </Flex>
+            <CountdownTimer />
+          </Flex>
+
+          <Box display={{ base: "none", md: "block" }} ml={{base:"0px", md:"80px"}}>
+            {importantDatesSection}
+          </Box>
+        </Flex>
+      </Box>
+      <Box
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        style={{
+          height: "100vh",
+          paddingLeft: "80px",
+          paddingRight: "80px",
+          backgroundImage: `url("/LinesEffect.png")`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
+      >
+        <Box display={{ base: "block", md: "none" }}>
+          {importantDatesSection}
+        </Box>
+      </Box>
+    </Box>
   );
 };
 

@@ -9,7 +9,7 @@ import {
   StyledUnorderedList,
   Title,
   Wrapper,
-} from './styles';
+} from "./styles";
 
 export default function ImportantDates() {
   const dates: ImportantDate[] = importantDates;
@@ -20,7 +20,7 @@ export default function ImportantDates() {
         <ListItem key={date.id}>
           <ListRow spacing="0">
             <RowDate>{`${date.date}:`}</RowDate>
-            <RowDesc>{date.description}</RowDesc>
+            <RowDesc>&nbsp;{`${date.description}`}</RowDesc>
           </ListRow>
         </ListItem>
       );

@@ -12,8 +12,8 @@ import {
 } from '@chakra-ui/react';
 import {
   HStackContainer,
-  MobileCenterContainer,
   MobileNavBarContainer,
+  MobileCenterContainer,
 } from './styles';
 import { Routes } from '../../constants/Routes.enum';
 import { HamburgerIcon } from '@chakra-ui/icons';
