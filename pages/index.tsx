@@ -54,7 +54,7 @@ const Home: NextPage = () => {
             direction="column"
             alignItems="center"
             justifyContent="space-between"
-            mr="80px"
+            mr={{base:"0px", md:"80px"}}
           >
             <Flex direction="column" alignItems="center">
               <Title>NUS FINTECH MONTH</Title>
@@ -69,7 +69,7 @@ const Home: NextPage = () => {
             <CountdownTimer />
           </Flex>
 
-          <Box display={{ base: "none", md: "block" }} ml="80px">
+          <Box display={{ base: "none", md: "block" }} ml={{base:"0px", md:"80px"}}>
             {importantDatesSection}
           </Box>
         </Flex>
