@@ -2,11 +2,12 @@ import { Box, chakra, HStack, UnorderedList, Text } from '@chakra-ui/react';
 
 export const Wrapper = chakra(Box, {
   baseStyle: {
-    bg: 'white',
-    w: '400px',
-    h: '400px',
+    bgColor: 'rgba(255, 255, 255, 0.5)',
+    w: '380px',
+    h: '350px',
     p: '20px',
     borderRadius: '2xl',
+    backdropFilter: 'blur(3px)',
     borderTopRadius: '0',
     boxShadow: 'xl',
   },
