@@ -59,6 +59,28 @@ export const QueriesAndUpdatesText = chakra(Text, {
   },
 });
 
+export const SuccessText = chakra(Text, {
+  baseStyle: {
+    fontWeight: 'medium',
+    fontSize: 'lg', //["2xs", "2xs", "lg"] for responsive
+    pl: '1',
+    pt: '0',
+    py: '10px',
+    color: 'green',
+  },
+});
+
+export const FailedText = chakra(Text, {
+  baseStyle: {
+    fontWeight: 'medium',
+    fontSize: 'lg', //["2xs", "2xs", "lg"] for responsive
+    pl: '1',
+    pt: '0',
+    py: '10px',
+    color: 'red',
+  },
+});
+
 export const EmailLink = chakra(Link, {
   baseStyle: {
     fontWeight: 'normal',
