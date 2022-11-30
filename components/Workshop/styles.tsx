@@ -28,23 +28,37 @@ export const WorkshopHeading = chakra(Heading, {
     },
 })
 
-export const WeekContainer = chakra(Flex, {
+export const EventContainer = chakra(Flex, {
     baseStyle : {
-        w : '100%',
-        h : '100vh',
+        h : '100%',
+        w : '70%',
         flexDirection : 'column',
-        px : '5%',
+        alignItems : 'center',
+        jusitfy : 'center',
     }
 })
 
-export const WeekLabel = chakra(Flex, {
+export const Event = chakra(Flex, {
+    baseStyle : {
+        w : '100%',
+        h : '100%',
+        flexDirection : 'column',
+        px : '0%',
+        py : '1%',
+        border : '1px',
+        borderRadius : '20',
+        boxShadow : '0px 2px 1px grey',
+    }
+})
+
+export const DateLabel = chakra(Flex, {
     baseStyle : {
         w : '100%',
         h : '5%',
-        fontSize : '2xl',
-        fontWeight : 'bold',
+        fontSize : 'lg',
         alignItems :  'center',
-        px : '8%'
+        color : '#001158',
+        py : '1%',
     }
 })
 
@@ -54,53 +68,14 @@ export const Row = chakra(Flex,{
         w : '100%',
         alignItems: 'center',
         justify: 'apart',
-        paddingBottom : '1%'
     }
 })
 
 //Left of Row
-export const LeftContent = chakra(Flex,{
-    baseStyle : {
-        w : '40%',
-        h : '100%',
-        justifyContent : 'space-evenly',
-    }
-})
-
-export const WorkshopImageContainer = chakra(Flex,{
-    baseStyle : {
-        h : '100%',
-        w : '65%',
-        flexDirection : 'column',
-        alignItems : 'center',
-    }
-})
-
-export const WorkshopImage = chakra(Image,{
-    baseStyle : {
-        h : '90%',
-        w : '100%',
-        borderRadius : '8%',
-    }
-})
-
-export const WorkshopImageLabel = chakra(Text,{
-    baseStyle : {
-        h : '10%',
-        w : '100%',
-        fontSize : 'lg',
-        color : '#001158',
-        textAlign : 'center',
-    }
-})
-
 export const WorkshopSpeaker = chakra(Flex,{
     baseStyle : {
-        h : '90%',
+        h : '70%',
         w : '20%',
-        borderWidth : '1px',
-        borderColor : '#001158',
-        borderRadius :'8%',
         flexDirection : 'column',
         alignItems : 'center',
         justifyContent : 'space-evenly'
@@ -110,7 +85,8 @@ export const WorkshopSpeaker = chakra(Flex,{
 export const SpeakerImage = chakra(Image, {
     baseStyle : {
         borderRadius : 'full',
-        h : '55%', 
+        h : '35%', 
+        w : '35%'
     }
 })
 
@@ -121,40 +97,71 @@ export const SpeakerLabel = chakra(Text, {
     }
 })
 
+//Center of Row 
+export const CenterContent = chakra(Flex,{
+    baseStyle : {
+        w : '60%',
+        h : '100%',
+        alignItems : 'center',
+        flexDirection : 'column',
+        paddingLeft : '1%',
+    }
+})
+
+export const WorkshopTitle = chakra(Flex, {
+    baseStyle : {
+        fontSize : 'lg',
+        color : '#001158',
+        paddingBottom : '2%',
+    }
+})
+
+export const WorkshopDescription = chakra(Text,{
+    baseStyle: {
+        h : '90%',
+        fontSize : 'sm',
+    }
+})
 
 //Right of Row 
 export const RightContent = chakra(Flex,{
     baseStyle : {
-        w : '50%',
+        w : '20%',
+        flexDirection : 'column',
+        alignItems : 'start',
         h : '100%',
-        justifyContent : 'start',
-        paddingLeft : '1%',
-    }
-})
-export const WorkshopDescription = chakra(Text,{
-    baseStyle: {
-        h : '90%',
-        w : '70%',
-        fontSize : 'sm',
-        color : '#001158',
+        px : '2%',
+        // paddingLeft : '1%',
     }
 })
 
-export const WorkshopButtonContainer = chakra(Flex,{
-    baseStyle: {
-        h : '90%',
-        w : '30%',
+export const WorkshopDetails = chakra(Flex,{
+    baseStyle : {
+        w : '100%',
         flexDirection : 'column',
-        justifyContent : 'end',    
-        alignItems : 'center', 
+        color : '#001158',
+        fontSize : 'sm',
+        h : '60%',
+        paddingBottom : '10%',
+        // justifyContent : 'start',
+        // paddingLeft : '1%', 
+    }
+})
+
+export const DetailLabel = chakra(Flex,{
+    baseStyle : {
+        fontWeight : 'bold',
+        // h : '100%',
+        // justifyContent : 'start',
+        // paddingLeft : '1%',
     }
 })
 
 export const RegisterButton = chakra(Button, {
     baseStyle: {
-        width: '85%',
-        height: '25%',
-        borderRadius: '15px',
+        width: '75%',
+        height: '3rem',
+        borderRadius: '10',
         color : 'white',
         backgroundColor :'#001158',
         fontWeight : 'normal'
