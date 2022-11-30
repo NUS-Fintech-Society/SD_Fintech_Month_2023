@@ -16,7 +16,7 @@ import {
 
 const About = () => {
   return (
-    <AboutContainer minHeight="100vh">
+    <AboutContainer>
       <HeadingContainer>
         <AboutHeading colorScheme="brand">ABOUT FINTECH MONTH</AboutHeading>
       </HeadingContainer>
