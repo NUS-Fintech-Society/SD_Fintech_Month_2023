@@ -20,7 +20,7 @@ export default function ImportantDates() {
         <ListItem key={date.id}>
           <ListRow spacing="0">
             <RowDate>{`${date.date}:`}</RowDate>
-            <RowDesc>{date.description}</RowDesc>
+            <RowDesc>&nbsp;{`${date.description}`}</RowDesc>
           </ListRow>
         </ListItem>
       );
