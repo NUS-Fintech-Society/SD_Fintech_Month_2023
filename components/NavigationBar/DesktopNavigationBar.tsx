@@ -59,9 +59,9 @@ export default function DesktopNavigationBar(props: Props) {
                 </MenuButton>
                 <MenuList>
                   <MenuItem onClick={navigate(Routes.HOME)}>
-                    Week Overflow
+                    Week Overview
                   </MenuItem>
-                  <MenuItem onClick={navigate(Routes.HOME)}>Agenda</MenuItem>
+                  <MenuItem onClick={navigate(Routes.HOME)}>Mentors</MenuItem>
                   <MenuItem onClick={navigate(Routes.HOME)}>Speakers</MenuItem>
                   <MenuItem onClick={navigate(Routes.HOME)}>Workshops</MenuItem>
                 </MenuList>
@@ -76,9 +76,7 @@ export default function DesktopNavigationBar(props: Props) {
                   About
                 </MenuButton>
                 <MenuList>
-                  <MenuItem onClick={navigate(Routes.ABOUT_US)}>
-                    About Us
-                  </MenuItem>
+                  <MenuItem onClick={navigate(Routes.HOME)}>About Us</MenuItem>
                   <MenuItem onClick={navigate(Routes.HOME)}>
                     Contact Us
                   </MenuItem>
@@ -87,9 +85,9 @@ export default function DesktopNavigationBar(props: Props) {
               <Button
                 variant="link"
                 colorScheme="black"
-                onClick={navigate(Routes.SPONSORS)}
+                onClick={navigate(Routes.PARTNERS)}
               >
-                Sponsors
+                Partners
               </Button>
               <Button
                 variant="link"
