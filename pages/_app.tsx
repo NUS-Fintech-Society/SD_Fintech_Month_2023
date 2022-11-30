@@ -5,10 +5,11 @@ import NavigationBar from '../components/NavigationBar';
 import { defaultColors, defaultFont } from '../themes/default';
 import Footer from '../components/Footer';
 import Head from 'next/head';
-import About from '../components/AboutUs';
-import ImportantDates from '../components/ImportantDates';
+import { accordionTheme } from '../styles/Accordion';
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const t = defaultColors.tertiary1;
+
   const theme = extendTheme({
     fonts: {
       heading: `'${defaultFont}', sans-serif`,
@@ -16,11 +17,15 @@ function MyApp({ Component, pageProps }: AppProps) {
     },
     colors: {
       brand: {
-        500: defaultColors.primary1,
-        primary: defaultColors.primary1,
-        secondary: defaultColors.secondary1,
-        tertiary: defaultColors.tertiary1,
+        500: defaultColors.primary1.hexCode,
+        primary: defaultColors.primary1.hexCode,
+        secondary: defaultColors.secondary1.hexCode,
+        tertiary: t.hexCode,
       },
+    },
+    components: { Accordion: accordionTheme },
+    shadows: {
+      tertiary: `0 6px 9px -3px rgba(${t.r}, ${t.g}, ${t.b}, 0.6), 0 4px 6px -2px rgba(${t.r}, ${t.g}, ${t.b}, 0.1)`,
     },
   });
 

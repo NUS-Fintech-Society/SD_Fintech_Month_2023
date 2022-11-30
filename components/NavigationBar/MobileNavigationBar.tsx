@@ -12,8 +12,8 @@ import {
 } from '@chakra-ui/react';
 import {
   HStackContainer,
-  MobileCenterContainer,
   MobileNavBarContainer,
+  MobileCenterContainer,
 } from './styles';
 import { Routes } from '../../constants/Routes.enum';
 import { HamburgerIcon } from '@chakra-ui/icons';
@@ -58,6 +58,10 @@ export default function MobileNavigationBar(props: Props) {
               <MenuItem onClick={navigate(Routes.HOME)}>Contact Us</MenuItem>
               <MenuDivider />
               <MenuItem onClick={navigate(Routes.SPONSORS)}>Sponsors</MenuItem>
+              <MenuDivider />
+              <MenuItem onClick={navigate(Routes.FAQ)}>FAQ</MenuItem>
+              <MenuDivider />
+              <MenuItem onClick={navigate(Routes.HOME)}>Resources</MenuItem>
             </MenuList>
           </Menu>
         </HStackContainer>
