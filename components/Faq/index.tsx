@@ -59,7 +59,9 @@ export default function FaqComponent() {
               <AccordionIcon />
             </AccordionButton>
           </h2>
-          <AccordionPanel pb={4}>{qns.answer}</AccordionPanel>
+          <AccordionPanel pb={4} whiteSpace={'pre-line'}>
+            {qns.answer}
+          </AccordionPanel>
         </AccordionItem>
       );
     });
