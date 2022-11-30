@@ -1,6 +1,6 @@
-import { Text, Flex, Link, Box, theme } from "@chakra-ui/react";
-import { Input, Button, HStack } from "@chakra-ui/react";
-import React from "react";
+import { Text, Flex, Link, Box, theme } from '@chakra-ui/react';
+import { Input, Button, HStack } from '@chakra-ui/react';
+import React from 'react';
 import {
   PageContainer,
   ContentContainer,
@@ -12,30 +12,23 @@ import {
   EmailInput,
   ConnectButton,
   ConnectButtonText,
-} from "./styles";
+} from './styles';
 
 export default function ContactUs() {
   return (
     <PageContainer>
       <ContentContainer>
-        <ContactUsText
-          fontWeight="bold"
-          fontSize={["lg", "lg", "5xl"]}
-          padding="1"
-          pb="0"
-        >
-          CONTACT US
+        <ContactUsText fontWeight="bold" padding="1" pb="0">
+          FOLLOW US
         </ContactUsText>
         <Box>
-          <QueriesAndUpdatesText>EVENT QUERIES AND POTENTIAL PARTNERSHIPS</QueriesAndUpdatesText>
-          <EmailLink>
-            nusfintech.ops@gmail.com
-          </EmailLink>
+          <QueriesAndUpdatesText>
+            EVENT QUERIES AND POTENTIAL PARTNERSHIPS
+          </QueriesAndUpdatesText>
+          <EmailLink>nusfintech.ops@gmail.com</EmailLink>
         </Box>
         <InputAndButtonBox>
-          <QueriesAndUpdatesText>
-            TO RECEIVE UPDATES
-          </QueriesAndUpdatesText>
+          <QueriesAndUpdatesText>TO RECEIVE UPDATES</QueriesAndUpdatesText>
           <InputAndButtonHStack>
             <EmailInput placeholder="email" />
             <ConnectButton>
