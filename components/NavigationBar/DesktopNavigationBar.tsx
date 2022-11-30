@@ -58,12 +58,12 @@ export default function DesktopNavigationBar(props: Props) {
                   Programme
                 </MenuButton>
                 <MenuList>
-                  <MenuItem onClick={navigate(Routes.HOME)}>
+                  <MenuItem onClick={navigate(Routes.WIP)}>
                     Week Overview
                   </MenuItem>
-                  <MenuItem onClick={navigate(Routes.HOME)}>Mentors</MenuItem>
-                  <MenuItem onClick={navigate(Routes.HOME)}>Speakers</MenuItem>
-                  <MenuItem onClick={navigate(Routes.HOME)}>Workshops</MenuItem>
+                  <MenuItem onClick={navigate(Routes.WIP)}>Mentors</MenuItem>
+                  <MenuItem onClick={navigate(Routes.WIP)}>Speakers</MenuItem>
+                  <MenuItem onClick={navigate(Routes.WIP)}>Workshops</MenuItem>
                 </MenuList>
               </Menu>
               <Menu>
@@ -76,10 +76,10 @@ export default function DesktopNavigationBar(props: Props) {
                   About
                 </MenuButton>
                 <MenuList>
-                  <MenuItem onClick={navigate(Routes.HOME)}>About Us</MenuItem>
-                  <MenuItem onClick={navigate(Routes.HOME)}>
-                    Contact Us
+                  <MenuItem onClick={navigate(Routes.ABOUT_US)}>
+                    About Us
                   </MenuItem>
+                  <MenuItem onClick={navigate(Routes.WIP)}>Contact Us</MenuItem>
                 </MenuList>
               </Menu>
               <Button
@@ -99,15 +99,12 @@ export default function DesktopNavigationBar(props: Props) {
               <Button
                 variant="link"
                 colorScheme="black"
-                onClick={navigate(Routes.HOME)}
+                onClick={navigate(Routes.WIP)}
               >
                 Resources
               </Button>
             </HStack>
-            <HackathonButton
-              colorScheme="brand"
-              onClick={navigate(Routes.HOME)}
-            >
+            <HackathonButton colorScheme="brand" onClick={navigate(Routes.WIP)}>
               Fintech Hackathon
             </HackathonButton>
           </HStack>

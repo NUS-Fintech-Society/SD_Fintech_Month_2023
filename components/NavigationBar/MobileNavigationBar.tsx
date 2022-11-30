@@ -49,19 +49,19 @@ export default function MobileNavigationBar(props: Props) {
             <MenuList>
               <MenuItem onClick={navigate(Routes.HOME)}>Home</MenuItem>
               <MenuDivider />
-              <MenuItem onClick={navigate(Routes.HOME)}>Week Overview</MenuItem>
-              <MenuItem onClick={navigate(Routes.HOME)}>Mentors</MenuItem>
-              <MenuItem onClick={navigate(Routes.HOME)}>Speakers</MenuItem>
-              <MenuItem onClick={navigate(Routes.HOME)}>Workshops</MenuItem>
+              <MenuItem onClick={navigate(Routes.WIP)}>Week Overview</MenuItem>
+              <MenuItem onClick={navigate(Routes.WIP)}>Mentors</MenuItem>
+              <MenuItem onClick={navigate(Routes.WIP)}>Speakers</MenuItem>
+              <MenuItem onClick={navigate(Routes.WIP)}>Workshops</MenuItem>
               <MenuDivider />
-              <MenuItem onClick={navigate(Routes.HOME)}>About Us</MenuItem>
-              <MenuItem onClick={navigate(Routes.HOME)}>Contact Us</MenuItem>
+              <MenuItem onClick={navigate(Routes.ABOUT_US)}>About Us</MenuItem>
+              <MenuItem onClick={navigate(Routes.WIP)}>Contact Us</MenuItem>
               <MenuDivider />
               <MenuItem onClick={navigate(Routes.PARTNERS)}>Partners</MenuItem>
               <MenuDivider />
               <MenuItem onClick={navigate(Routes.FAQ)}>FAQ</MenuItem>
               <MenuDivider />
-              <MenuItem onClick={navigate(Routes.HOME)}>Resources</MenuItem>
+              <MenuItem onClick={navigate(Routes.WIP)}>Resources</MenuItem>
             </MenuList>
           </Menu>
         </HStackContainer>

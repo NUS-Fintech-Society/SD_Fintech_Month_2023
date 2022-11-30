@@ -1,6 +1,5 @@
 import { Box, chakra } from '@chakra-ui/react';
 
-
 export const Title = chakra(Box, {
   baseStyle: {
     display: 'flex',
@@ -14,13 +13,12 @@ export const Title = chakra(Box, {
 });
 
 export const ProgressWrapper = chakra(Box, {
-    baseStyle: {
-      width: '100vw',
-      minHeight: 'calc(100vh - 160px)',
-      justifyContent: 'center',
-      bgImage: "url('/Background/sponsor-background.png')",
+  baseStyle: {
+    width: '100vw',
+    minHeight: 'calc(100vh - 160px)',
+    justifyContent: 'center',
+    bgImage: "url('/Background/sponsor-background.png')",
     bgSize: 'cover',
-    bgPosition: 'center'
-      
-    },
-  });
+    bgPosition: 'center',
+  },
+});
