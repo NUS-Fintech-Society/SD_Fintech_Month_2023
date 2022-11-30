@@ -27,7 +27,7 @@ type Props = {
 
 export default function DesktopNavigationBar(props: Props) {
   const { navigate } = props;
-  const isSmallScreen = useBreakpointValue({ base: true, xl: false });
+  const isSmallScreen = useBreakpointValue({ base: true, '2xl': false });
 
   return (
     <NavBarContainer>
@@ -48,13 +48,6 @@ export default function DesktopNavigationBar(props: Props) {
           </HStack>
           <HStack spacing="20">
             <HStack spacing="10">
-              <Button
-                variant="link"
-                colorScheme="black"
-                onClick={navigate(Routes.HOME)}
-              >
-                Home
-              </Button>
               <Menu>
                 <MenuButton
                   as={Button}
@@ -71,7 +64,6 @@ export default function DesktopNavigationBar(props: Props) {
                   <MenuItem onClick={navigate(Routes.HOME)}>Agenda</MenuItem>
                   <MenuItem onClick={navigate(Routes.HOME)}>Speakers</MenuItem>
                   <MenuItem onClick={navigate(Routes.HOME)}>Workshops</MenuItem>
-                  <MenuItem onClick={navigate(Routes.FAQ)}>FAQ</MenuItem>
                 </MenuList>
               </Menu>
               <Menu>
@@ -96,6 +88,20 @@ export default function DesktopNavigationBar(props: Props) {
                 onClick={navigate(Routes.SPONSORS)}
               >
                 Sponsors
+              </Button>
+              <Button
+                variant="link"
+                colorScheme="black"
+                onClick={navigate(Routes.FAQ)}
+              >
+                FAQ
+              </Button>
+              <Button
+                variant="link"
+                colorScheme="black"
+                onClick={navigate(Routes.HOME)}
+              >
+                Resources
               </Button>
             </HStack>
             <HackathonButton
