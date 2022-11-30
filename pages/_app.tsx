@@ -5,7 +5,6 @@ import NavigationBar from '../components/NavigationBar';
 import { defaultColors, defaultFont } from '../themes/default';
 import Footer from '../components/Footer';
 import Head from 'next/head';
-import Progress from '../components/Progress';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const theme = extendTheme({
