@@ -3,7 +3,7 @@ import React from 'react';
 
 import { HeaderContainer, RowContainer, SponsorWrapper } from './styles';
 import { Organisation } from '../../types/Organisation';
-import { Gold, Organisers, Platinum, Silver } from '../../data/Organisations';
+import { Community, Gold, Media, Organisers, Platinum, Silver } from '../../data/Organisations';
 
 export default function Sponsor() {
   const rowSize = useBreakpointValue({ base: 1, md: 2, lg: 4 });
@@ -51,6 +51,7 @@ export default function Sponsor() {
 
   return (
     <SponsorWrapper>
+    <HeaderContainer>SPONSORS</HeaderContainer>
       <HeaderContainer>PLATINUM</HeaderContainer>
       {organisationSection(Platinum, rowSize || 1)}
 
@@ -59,6 +60,12 @@ export default function Sponsor() {
 
       <HeaderContainer>SILVER</HeaderContainer>
       {organisationSection(Silver, rowSize || 4)}
+
+      <HeaderContainer>COMMUNITY PARTNERS</HeaderContainer>
+      {organisationSection(Community, rowSize || 1)}
+
+      <HeaderContainer>MEDIA PARTNERS</HeaderContainer>
+      {organisationSection(Media, rowSize || 2)}
 
       <HeaderContainer>ORGANISERS</HeaderContainer>
       {organisationSection(Organisers, rowSize || 3)}
