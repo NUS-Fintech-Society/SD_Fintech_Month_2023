@@ -28,6 +28,7 @@ export const Wrapper = chakra(Box, {
     p: '30px',
     borderRadius: '3xl',
     boxShadow: '2xl',
+    bgColor: 'rgba(255, 255, 255, 0.5)',
   },
 });
 
