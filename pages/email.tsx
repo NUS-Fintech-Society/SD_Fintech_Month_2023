@@ -1,5 +1,7 @@
+import { Button, Input } from '@chakra-ui/react';
 import type { NextPage } from 'next';
-import IndexMain from '../components/IndexMain/IndexMain';
+import { ChangeEvent, useState } from 'react';
+import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
   const [email, setEmail] = useState<string>('');

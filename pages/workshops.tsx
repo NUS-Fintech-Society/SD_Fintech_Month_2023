@@ -1,12 +1,8 @@
-import type { NextPage } from 'next'
-import React from 'react';
-import Workshop from '../components/Workshop';
-import About from '../components/About';
+import {renderAllDesktopWorkshops, renderAllMobileWorkshops} from '../components/Workshop'
+import { useBreakpointValue } from '@chakra-ui/react';
 
-const Workshops: NextPage = () => {
-    return (
-        <Workshop/>
-    );
-};
-
-export default Workshops
+export default function Workshop() {
+    const isDesktop = useBreakpointValue({ base: false, md: true });
+  
+    return isDesktop ? renderAllDesktopWorkshops() : renderAllMobileWorkshops() ;
+}

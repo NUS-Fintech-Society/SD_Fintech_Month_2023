@@ -71,6 +71,7 @@ export default function DesktopNavigationBar(props: Props) {
                   <MenuItem onClick={navigate(Routes.HOME)}>Agenda</MenuItem>
                   <MenuItem onClick={navigate(Routes.HOME)}>Speakers</MenuItem>
                   <MenuItem onClick={navigate(Routes.HOME)}>Workshops</MenuItem>
+                  <MenuItem onClick={navigate(Routes.FAQ)}>FAQ</MenuItem>
                 </MenuList>
               </Menu>
               <Menu>
