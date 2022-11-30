@@ -79,13 +79,13 @@ export const Media: Organisation[] = [
   {
     name: 'Chain Debrief',
     logoSrc: '/Sponsor/chain_debrief_logo.png',
-    logoSize: '100px',
+    logoSize: '80px',
     url: 'https://chaindebrief.com/',
   },
   {
     name: 'Web3meets',
     logoSrc: '/Sponsor/web3meets_logo.jpeg',
-    logoSize: '100px',
+    logoSize: '80px',
     url: 'https://t.me/web3meets',
   }
 ];
