@@ -6,10 +6,9 @@ export const TimelinePageContainer = chakra(Flex, {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    margin: 'auto',
     backgroundImage: `url("/TimelineBackground.png")`,
     backgroundPosition: 'center',
-    backgroundSize: 'cover',
+    backgroundSize: '90%',
   },
 });
 
@@ -29,6 +28,6 @@ export const TimelineImage = chakra(Image, {
   baseStyle: {
     height: 'auto',
     width: 'auto',
-    padding: { base: '50px', md: '150px' },
+    padding: { base: '50px', md: '130px' },
   },
 });

@@ -1,38 +1,43 @@
-import {
-  Text,
-  Flex,
-  Link,
-  Box,
-  chakra,
-  Input,
-  Button,
-  HStack,
-} from '@chakra-ui/react';
+import { Text, Flex, Link, Box, chakra, Input, Button } from '@chakra-ui/react';
 
 export const PageContainer = chakra(Flex, {
   baseStyle: {
     width: '100vw',
-    height: '100vh',
+    height: 'calc(80vh - 100px)',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundImage: `url("/Lines.png")`,
+    backgroundPosition: 'center',
+    backgroundSize: '80%',
   },
 });
 
 export const ContentContainer = chakra(Flex, {
   baseStyle: {
     width: '60vw', //["80vw", "60vw", "60vw"]
-    height: '50vh', //["44", "50vh", "50vh"]
+    height: '25vh', //["44", "50vh", "50vh"]
     flexDirection: 'column',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     alignItems: 'flex-start',
-    bg: 'rgba(197,202,233,0.8)',
+    bg: 'brand.tertiary',
     borderRadius: '2xl',
-    pt: '8',
+    pt: '5',
     pl: '8',
     pr: '8',
-    pb: '12',
+    pb: '5',
     boxShadow: '0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.3)',
+  },
+});
+
+export const RowContainer = chakra(Flex, {
+  baseStyle: {
+    width: '100%',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignContent: 'center',
+    alignItems: 'center',
+    px: '25px',
   },
 });
 
@@ -50,6 +55,7 @@ export const QueriesAndUpdatesText = chakra(Text, {
     fontSize: 'lg', //["2xs", "2xs", "lg"] for responsive
     pl: '1',
     pt: '0',
+    py: '10px',
   },
 });
 
@@ -68,12 +74,6 @@ export const EmailLink = chakra(Link, {
 export const InputAndButtonBox = chakra(Box, {
   baseStyle: {
     width: 'auto', //["full", "auto", "auto"] for responsiveness
-  },
-});
-
-export const InputAndButtonHStack = chakra(HStack, {
-  baseStyle: {
-    mb: '8', //["2", "8"] for responsiveness
   },
 });
 
@@ -99,7 +99,7 @@ export const ConnectButton = chakra(Button, {
 export const ConnectButtonText = chakra(Text, {
   baseStyle: {
     fontWeight: 'light',
-    fontSize: 'lg', //["xs", "xs", "lg"] for responsive
+    fontSize: 's', //["xs", "xs", "lg"] for responsive
     color: 'white',
     padding: '2', //["0", "0", "2"] for responsive
   },

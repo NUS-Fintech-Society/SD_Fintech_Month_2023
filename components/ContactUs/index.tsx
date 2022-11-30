@@ -8,34 +8,36 @@ import {
   QueriesAndUpdatesText,
   EmailLink,
   InputAndButtonBox,
-  InputAndButtonHStack,
   EmailInput,
   ConnectButton,
   ConnectButtonText,
+  RowContainer,
 } from './styles';
 
 export default function ContactUs() {
   return (
     <PageContainer>
       <ContentContainer>
-        <ContactUsText fontWeight="bold" padding="1" pb="0">
-          FOLLOW US
-        </ContactUsText>
-        <Box>
-          <QueriesAndUpdatesText>
-            EVENT QUERIES AND POTENTIAL PARTNERSHIPS
-          </QueriesAndUpdatesText>
-          <EmailLink>nusfintech.ops@gmail.com</EmailLink>
-        </Box>
-        <InputAndButtonBox>
-          <QueriesAndUpdatesText>TO RECEIVE UPDATES</QueriesAndUpdatesText>
-          <InputAndButtonHStack>
-            <EmailInput placeholder="email" />
-            <ConnectButton>
-              <ConnectButtonText>connect</ConnectButtonText>
-            </ConnectButton>
-          </InputAndButtonHStack>
-        </InputAndButtonBox>
+        <RowContainer>
+          <Box>
+            <ContactUsText fontWeight="bold" padding="1" pb="0">
+              FOLLOW US
+            </ContactUsText>
+            <QueriesAndUpdatesText>
+              Event queries and potential partnerships
+            </QueriesAndUpdatesText>
+            <EmailLink>nusfintech.ops@gmail.com</EmailLink>
+          </Box>
+          <InputAndButtonBox>
+            <QueriesAndUpdatesText>To receive updates</QueriesAndUpdatesText>
+            <HStack>
+              <EmailInput placeholder="email" />
+              <ConnectButton>
+                <ConnectButtonText>connect</ConnectButtonText>
+              </ConnectButton>
+            </HStack>
+          </InputAndButtonBox>
+        </RowContainer>
       </ContentContainer>
     </PageContainer>
   );
