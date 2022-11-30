@@ -5,6 +5,8 @@ import NavigationBar from '../components/NavigationBar';
 import { defaultColors, defaultFont } from '../themes/default';
 import Footer from '../components/Footer';
 import Head from 'next/head';
+import About from '../components/AboutUs';
+import ImportantDates from '../components/ImportantDates';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const theme = extendTheme({
@@ -31,7 +33,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <NavigationBar />
       <Component {...pageProps} />
-
       <Footer />
     </ChakraProvider>
   );
