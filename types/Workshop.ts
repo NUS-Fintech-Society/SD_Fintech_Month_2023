@@ -10,4 +10,5 @@ export type Workshop = {
     speaker : string;
     venue : string;  
     link : string;
+    position : string;
 }

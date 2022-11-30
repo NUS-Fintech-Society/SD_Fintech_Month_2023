@@ -10,7 +10,8 @@ export const Workshops : Workshop[] = [
         organisation : 'PayerMax',
         speaker : 'Lee Yi Liang',
         venue : 'COM3 - MPSH1 - 01-26',
-        link :  'https://docs.google.com/forms/d/e/1FAIpQLScZ3TzpvuB9wSSX2IhnzbZ8RwiZ12ssiDsx0S4tnu3lQL02BA/viewform?usp=sf_link'
+        link :  'https://docs.google.com/forms/d/e/1FAIpQLScZ3TzpvuB9wSSX2IhnzbZ8RwiZ12ssiDsx0S4tnu3lQL02BA/viewform?usp=sf_link',
+        position : 'Director',
     },
     {   
         id : 2,
@@ -21,8 +22,8 @@ export const Workshops : Workshop[] = [
         organisation : 'Pyth',
         speaker : 'Daniel Chew',
         venue : 'VIRTUAL',
-        link :  'https://docs.google.com/forms/d/e/1FAIpQLScZ3TzpvuB9wSSX2IhnzbZ8RwiZ12ssiDsx0S4tnu3lQL02BA/viewform?usp=sf_link'
-
+        link :  'https://docs.google.com/forms/d/e/1FAIpQLScZ3TzpvuB9wSSX2IhnzbZ8RwiZ12ssiDsx0S4tnu3lQL02BA/viewform?usp=sf_link',
+        position : 'Software Engineer',
     },
     {
         id : 3,
@@ -33,8 +34,8 @@ export const Workshops : Workshop[] = [
         organisation : 'Visa',
         speaker : 'Nischint Sanghavi',
         venue : 'COM3 - MPSH1 - 01-26',
-        link :  'https://docs.google.com/forms/d/e/1FAIpQLScZ3TzpvuB9wSSX2IhnzbZ8RwiZ12ssiDsx0S4tnu3lQL02BA/viewform?usp=sf_link'
-
+        link :  'https://docs.google.com/forms/d/e/1FAIpQLScZ3TzpvuB9wSSX2IhnzbZ8RwiZ12ssiDsx0S4tnu3lQL02BA/viewform?usp=sf_link',
+        position : 'Regional Crypto Lead, APAC',
     },
     {
         id : 4,
@@ -45,8 +46,8 @@ export const Workshops : Workshop[] = [
         organisation : 'SettleMint',
         speaker : 'Johnny Kok',
         venue : 'COM3 - MPSH1 - 01-26',
-        link :  'https://docs.google.com/forms/d/e/1FAIpQLScZ3TzpvuB9wSSX2IhnzbZ8RwiZ12ssiDsx0S4tnu3lQL02BA/viewform?usp=sf_link'
-
+        link :  'https://docs.google.com/forms/d/e/1FAIpQLScZ3TzpvuB9wSSX2IhnzbZ8RwiZ12ssiDsx0S4tnu3lQL02BA/viewform?usp=sf_link',
+        position : 'VP Commerical, APAC',
     },
     {
         id : 5,
@@ -57,8 +58,8 @@ export const Workshops : Workshop[] = [
         organisation : 'Lynx Analytics',
         speaker : 'Gabor Balazs Benedek',
         venue : 'COM3 - MPSH1 - 01-26',
-        link :  'https://docs.google.com/forms/d/e/1FAIpQLScZ3TzpvuB9wSSX2IhnzbZ8RwiZ12ssiDsx0S4tnu3lQL02BA/viewform?usp=sf_link'
-
+        link :  'https://docs.google.com/forms/d/e/1FAIpQLScZ3TzpvuB9wSSX2IhnzbZ8RwiZ12ssiDsx0S4tnu3lQL02BA/viewform?usp=sf_link',
+        position : 'Co-founder',
     },
     {
         id : 6,
@@ -69,8 +70,8 @@ export const Workshops : Workshop[] = [
         organisation : 'Nansen',
         speaker : 'Lim Xin Yi',
         venue : 'COM3 - MPSH1 - 01-26',
-        link :  'https://docs.google.com/forms/d/e/1FAIpQLScZ3TzpvuB9wSSX2IhnzbZ8RwiZ12ssiDsx0S4tnu3lQL02BA/viewform?usp=sf_link'
-
+        link :  'https://docs.google.com/forms/d/e/1FAIpQLScZ3TzpvuB9wSSX2IhnzbZ8RwiZ12ssiDsx0S4tnu3lQL02BA/viewform?usp=sf_link',
+        position : 'Research Analyst',
     },
     {
         id : 7,
@@ -81,8 +82,8 @@ export const Workshops : Workshop[] = [
         organisation : 'CertiK',
         speaker : 'Shan',
         venue : 'VIRTUAL',
-        link :  'https://docs.google.com/forms/d/e/1FAIpQLScZ3TzpvuB9wSSX2IhnzbZ8RwiZ12ssiDsx0S4tnu3lQL02BA/viewform?usp=sf_link'
-
+        link :  'https://docs.google.com/forms/d/e/1FAIpQLScZ3TzpvuB9wSSX2IhnzbZ8RwiZ12ssiDsx0S4tnu3lQL02BA/viewform?usp=sf_link',
+        position : 'Senior Data Scientist',
     },
 
     

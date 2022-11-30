@@ -37,17 +37,18 @@ export const EventContainer = chakra(Flex, {
         alignItems : 'center',
         jusitfy : 'center',
         paddingBottom : '2%',
+        padding : {base : '5%', md : 0}
     }
 })
 
 export const Event = chakra(Flex, {
     baseStyle : {
-        w : {base : '80%', md : '100%'},
+        w : {base : '90%', md : '100%'},
         h : '100%',
         flexDirection : 'column',
         my : {base : '3%', md : '0'},
-        px : '0%',
-        py : '1%',
+        padding : {base : '3%', md : '1%'},
+        py : {base : '5%', md : '3%'},
         borderRadius : '20',
         boxShadow : '5px 5px 4px rgba(149, 157, 165, 0.2), -5px 5px 4px rgba(149, 157, 165, 0.2), 5px -2px 4px rgba(149, 157, 165, 0.2)',
     }
@@ -57,12 +58,12 @@ export const DateLabel = chakra(Flex, {
     baseStyle : {
         w : {base : '80%', md : '100%'},
         h : '5%',
-        fontWeight : {base : 'bold', md : 'normal'},
         fontSize : {base : 'md', md : 'lg'},
         alignItems :  'center',
         textAlign : 'center',
         color : '#001158',
         py : {md : '1%'},
+        fontWeight : 'bold',
     }
 })
 
@@ -73,6 +74,16 @@ export const Row = chakra(Flex,{
         alignItems: 'center',
         justify: 'apart',
         py : {base : '3%', md : '0'}
+    }
+})
+
+export const MobileTop = chakra(Flex,{
+    baseStyle : {
+        h : '60%',
+        w : '100%',
+        px : '5%',
+        flexDirection : 'column',
+        alignItems : 'center',
     }
 })
 
@@ -90,19 +101,20 @@ export const MobileBottom = chakra(Flex,{
 //Left of Row
 export const WorkshopSpeaker = chakra(Flex,{
     baseStyle : {
-        h : '70%',
-        w : {base : '50%',md : '20%'},
+        h : '40%',
+        w : {base : '60%',md : '20%'},
+        px : '3%',
         flexDirection : 'column',
         alignItems : 'center',
-        justifyContent : 'space-evenly'
+        justify: {base : 'space-evenly', md : 'none'},
     }
 })
 
 export const SpeakerImage = chakra(Image, {
     baseStyle : {
         borderRadius : 'full',
-        h : '35%', 
-        w : '35%'
+        w : {base : '50%' , md :'70%'}, 
+        py : {base : '2%'},
     }
 })
 
@@ -110,6 +122,8 @@ export const SpeakerLabel = chakra(Text, {
     baseStyle : {
         fontSize : 'sm',
         color : '#001158',
+        textAlign : 'center',
+        py : {base : '1%', md : '2%'},
     }
 })
 
@@ -120,7 +134,7 @@ export const CenterContent = chakra(Flex,{
         h : '100%',
         alignItems : 'center',
         flexDirection : 'column',
-        paddingLeft : '1%',
+        px : {base : 0, md : "2%"},
     }
 })
 
@@ -141,6 +155,9 @@ export const WorkshopDescription = chakra(Text,{
     baseStyle: {
         h : '90%',
         fontSize : 'sm',
+        py : {base : '8%', md : '0'},
+        textAlign : 'justify',
+        textJustify: 'inter-word',
     }
 })
 
@@ -158,8 +175,9 @@ export const RightContent = chakra(Flex,{
 
 export const WorkshopDetails = chakra(Flex,{
     baseStyle : {
-        w : {base : '46%',md : '100%'},
-        flexDirection : 'column',
+        w : {base : '90%',md : '100%'},
+        flexDirection : {base : 'row', md : 'column'},
+        justifyContent : {base : 'space-between', md : 'none'},
         color : '#001158',
         fontSize : 'sm',
         h : '60%',
@@ -169,6 +187,15 @@ export const WorkshopDetails = chakra(Flex,{
         // paddingLeft : '1%', 
     }
 })
+
+export const DetailContainer = chakra(Flex,{
+    baseStyle : {
+        flexDirection : 'column',
+        justify : 'start',
+    }
+})
+
+
 
 export const DetailLabel = chakra(Flex,{
     baseStyle : {
