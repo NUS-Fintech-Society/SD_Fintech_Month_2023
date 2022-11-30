@@ -65,3 +65,27 @@ export const Organisers: Organisation[] = [
     url: 'https://fintechlab.nus.edu.sg/',
   },
 ];
+
+export const Community: Organisation[] = [
+  {
+    name: 'Singapore Fintech Association',
+    logoSrc: '/Sponsor/sfa_logo.png',
+    logoSize: '60px',
+    url: 'https://singaporefintech.org/',
+  }
+];
+
+export const Media: Organisation[] = [
+  {
+    name: 'Chain Debrief',
+    logoSrc: '/Sponsor/chain_debrief_logo.png',
+    logoSize: '100px',
+    url: 'https://chaindebrief.com/',
+  },
+  {
+    name: 'Web3meets',
+    logoSrc: '/Sponsor/web3meets_logo.jpeg',
+    logoSize: '100px',
+    url: 'https://t.me/web3meets',
+  }
+];
