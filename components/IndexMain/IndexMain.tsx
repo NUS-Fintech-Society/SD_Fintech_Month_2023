@@ -3,7 +3,13 @@ import CountdownTimer from '../CountdownTimer/CountdownTimer';
 import ImportantDates from '../ImportantDates';
 import { ThemeButton, Title, WorkshopButton } from './styles';
 
-export default function IndexMain() {
+type Props = {
+  scrollToThemePage: Function;
+};
+
+export default function IndexMain(props: Props) {
+  const { scrollToThemePage } = props;
+
   const importantDatesSection = (
     <Flex direction="column" alignItems="center">
       <ImportantDates />
@@ -61,6 +67,7 @@ export default function IndexMain() {
                 colorScheme="brand"
                 fontWeight="light"
                 fontSize="2xl"
+                onClick={scrollToThemePage}
               >
                 2023 Theme
               </ThemeButton>
@@ -76,21 +83,23 @@ export default function IndexMain() {
           </Box>
         </Flex>
       </Box>
-      <Box
-        display="flex"
-        alignItems="center"
-        justifyContent="center"
-        style={{
-          height: '100vh',
-          paddingLeft: '80px',
-          paddingRight: '80px',
-          backgroundImage: `url("/LinesEffect.png")`,
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
-        }}
-      >
-        <Box display={{ base: 'block', md: 'none' }}>
-          {importantDatesSection}
+      <Box display={{ base: 'block', md: 'none' }}>
+        <Box
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          style={{
+            height: '100vh',
+            paddingLeft: '80px',
+            paddingRight: '80px',
+            backgroundImage: `url("/LinesEffect.png")`,
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+          }}
+        >
+          <Box display={{ base: 'block', md: 'none' }}>
+            {importantDatesSection}
+          </Box>
         </Box>
       </Box>
     </Box>

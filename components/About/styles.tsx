@@ -2,12 +2,15 @@ import { Flex, Box, Heading, Image, chakra } from '@chakra-ui/react';
 
 export const AboutContainer = chakra(Flex, {
   baseStyle: {
-    minH: '100vh',
+    minH: 'calc(100vh - 100px)',
     width: '100',
     flexDirection: 'column',
     align: 'center',
     justifyContent: 'center',
     paddingTop: { base: '20%', md: '50px' },
+    backgroundImage: `url("/LinesEffect.png")`,
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
   },
 });
 
@@ -82,12 +85,12 @@ export const DescriptionBox = chakra(Box, {
   baseStyle: {
     w: '90%',
     display: 'flex-column',
-    borderWidth: '1px',
+    boxShadow: 'xl',
     borderRadius: '20',
     justifyContent: 'center',
     padding: { base: '15px', md: '20px 15px' },
-    boxShadow: '0px 2px 1px grey',
-    backdropFilter: 'blur(6px)',
+    bgColor: 'rgba(255, 255, 255, 0.5)',
+    backdropFilter: 'blur(3px)',
     color: '#001158',
   },
 });
