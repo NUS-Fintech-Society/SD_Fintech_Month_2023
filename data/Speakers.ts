@@ -1,0 +1,121 @@
+import { Speaker } from '../types/Speaker';
+
+export const SpeakersInfoArray: Speaker[] = [
+  {
+    name: 'Lee Yi Liang',
+    date: '17 Jan',
+    time: '8 pm - 9.30pm',
+    image:
+      'https://media.vanityfair.com/photos/5c82940e52ce6720b360804c/master/pass/elon-musk-security-clearance.jpg',
+    title: 'Board Director & Regional Head of Compliance',
+    organisation: 'PayerMax',
+  },
+  {
+    name: 'Johnny Kok',
+    date: '17 Jan',
+    time: '8 pm - 9.30pm',
+    image:
+      'https://images.moneycontrol.com/static-mcnews/2021/05/vitalik-Buterin-ethereum.jpg?impolicy=website&width=1600&height=900',
+    title: 'VP Commercial, APAC',
+    organisation: 'SettleMint',
+  },
+  {
+    name: 'Lim Xin Yi',
+    date: '17 Jan',
+    time: '8 pm - 9.30pm',
+    image: 'https://i.insider.com/6345b69bd2050f0011d3d246?width=700',
+    title: 'Research Analyst',
+    organisation: 'Nansen',
+  },
+  {
+    name: 'Daniel Chew',
+    date: '17 Jan',
+    time: '8 pm - 9.30pm',
+    image: 'https://i.insider.com/6345b69bd2050f0011d3d246?width=700',
+    title: 'Software Engineer',
+    organisation: 'Pyth',
+  },
+  {
+    name: 'Huang Donghao',
+    date: '17 Jan',
+    time: '8 pm - 9.30pm',
+    image:
+      'https://images.moneycontrol.com/static-mcnews/2021/05/vitalik-Buterin-ethereum.jpg?impolicy=website&width=1600&height=900',
+    title: 'Vice President, R&D',
+    organisation: 'Mastercard',
+  },
+  {
+    name: 'Gabor Balazs Benedek',
+    date: '17 Jan',
+    time: '8 pm - 9.30pm',
+    image: 'https://i.insider.com/6345b69bd2050f0011d3d246?width=700',
+    title: 'Co-founder & Chief Innovation Officer',
+    organisation: 'Lynx Analytics',
+  },
+  {
+    name: 'Nischint Sanghavi',
+    date: '17 Jan',
+    time: '8 pm - 9.30pm',
+    image: 'https://i.insider.com/6345b69bd2050f0011d3d246?width=700',
+    title: 'Co-founder & Chief Innovation Officer',
+    organisation: 'Visa',
+  },
+  {
+    name: 'Krishna Parthasarathy',
+    date: '17 Jan',
+    time: '8 pm - 9.30pm',
+    image:
+      'https://images.moneycontrol.com/static-mcnews/2021/05/vitalik-Buterin-ethereum.jpg?impolicy=website&width=1600&height=900',
+    title: 'Senior Data Scientist',
+    organisation: 'Airwallex',
+  },
+  {
+    name: 'Calvin Chu',
+    date: '17 Jan',
+    time: '8 pm - 9.30pm',
+    image: 'https://i.insider.com/6345b69bd2050f0011d3d246?width=700',
+    title: 'Core BUIDLer',
+    organisation: 'Impossible Finance',
+  },
+  {
+    name: 'Shivani Mukherjee',
+    date: '17 Jan',
+    time: '8 pm - 9.30pm',
+    image: 'https://i.insider.com/6345b69bd2050f0011d3d246?width=700',
+    title: 'Senior Partnerships Leader APAC',
+    organisation: 'Thought Machine',
+  },
+  {
+    name: 'Osman Faiz',
+    date: '17 Jan',
+    time: '8 pm - 9.30pm',
+    image:
+      'https://images.moneycontrol.com/static-mcnews/2021/05/vitalik-Buterin-ethereum.jpg?impolicy=website&width=1600&height=900',
+    title: 'COO / Ex-COO of SC',
+    organisation: 'AMTD Group',
+  },
+  {
+    name: 'Yeou Jie Goh',
+    date: '17 Jan',
+    time: '8 pm - 9.30pm',
+    image: 'https://i.insider.com/6345b69bd2050f0011d3d246?width=700',
+    title: 'Head of Portfolio Growth',
+    organisation: 'Defiance Capital',
+  },
+  {
+    name: 'Akshay Bajaj',
+    date: '17 Jan',
+    time: '8 pm - 9.30pm',
+    image: 'https://i.insider.com/6345b69bd2050f0011d3d246?width=700',
+    title: 'CEO',
+    organisation: 'SIG',
+  },
+  {
+    name: 'Ziheng Li',
+    date: '17 Jan',
+    time: '8 pm - 9.30pm',
+    image: 'https://i.insider.com/6345b69bd2050f0011d3d246?width=700',
+    title: 'Investor',
+    organisation: 'Saison Capital',
+  },
+];
