@@ -1,6 +1,7 @@
 import { Box, Flex } from '@chakra-ui/react';
 import CountdownTimer from '../CountdownTimer/CountdownTimer';
 import ImportantDates from '../ImportantDates';
+import LeaderBoard from '../LeaderBoard';
 import { ThemeButton, Title, WorkshopButton } from './styles';
 
 type Props = {
@@ -9,6 +10,7 @@ type Props = {
 
 export default function IndexMain(props: Props) {
   const { scrollToThemePage } = props;
+
 
   const importantDatesSection = (
     <Flex direction="column" alignItems="center">
@@ -38,6 +40,7 @@ export default function IndexMain(props: Props) {
     <Box>
       <Box
         display="flex"
+        zIndex={"1"}
         alignItems="center"
         justifyContent="center"
         style={{
@@ -100,6 +103,7 @@ export default function IndexMain(props: Props) {
           </Box>
         </Box>
       </Box>
+      <LeaderBoard/>
     </Box>
   );
 }
