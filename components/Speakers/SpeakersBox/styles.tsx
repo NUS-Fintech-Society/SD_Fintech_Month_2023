@@ -46,7 +46,7 @@ export const SpeakerImage = chakra(Image, {
     width: '250px',
     height: '250px',
     objectFit: 'cover',
-    borderRadius: '100%',
+    borderRadius: '400px',
     mb: '5',
   },
 });
