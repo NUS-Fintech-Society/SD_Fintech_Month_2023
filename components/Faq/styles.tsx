@@ -32,7 +32,7 @@ export const ContentWrapper = chakra(Box, {
 
 export const Content = chakra(Box, {
   baseStyle: {
-    w: '1500px',
+    w: '1000px',
   },
 });
 
