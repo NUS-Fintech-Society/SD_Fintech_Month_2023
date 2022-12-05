@@ -3,7 +3,7 @@ import { Box, chakra, HStack, UnorderedList, Text } from '@chakra-ui/react';
 export const Wrapper = chakra(Box, {
   baseStyle: {
     bgColor: 'rgba(255, 255, 255, 0.5)',
-    w: '380px',
+    w: {base: '350px', md:'380px'},
     h: '350px',
     p: '20px',
     borderRadius: '2xl',
