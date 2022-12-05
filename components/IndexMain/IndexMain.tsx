@@ -50,16 +50,12 @@ export default function IndexMain(props: Props) {
           backgroundSize: 'cover',
         }}
       >
-        <Flex
-          direction={{ base: 'column', md: 'row' }}
-          justifyContent="space-around"
-          mt="30px"
-        >
+        <Flex direction="row" justifyContent="space-around" mt="30px">
           <Flex
             direction="column"
             alignItems="center"
             justifyContent="space-between"
-            mr={{ base: '0px', md: '80px' }}
+            mr={{ base: '0px', lg: '80px' }}
           >
             <Flex direction="column" alignItems="center">
               <Title>NUS FINTECH MONTH</Title>
@@ -68,6 +64,7 @@ export default function IndexMain(props: Props) {
                 fontWeight="light"
                 fontSize="2xl"
                 onClick={scrollToThemePage}
+                mb={{ base: '0px', md: '80px' }}
               >
                 2023 Theme
               </ThemeButton>
@@ -76,19 +73,20 @@ export default function IndexMain(props: Props) {
           </Flex>
 
           <Box
-            display={{ base: 'none', md: 'block' }}
+            display={{ base: 'none', lg: 'block' }}
             ml={{ base: '0px', md: '80px' }}
           >
             {importantDatesSection}
           </Box>
         </Flex>
       </Box>
-      <Box display={{ base: 'block', md: 'none' }}>
+      <Box display={{ base: 'block', lg: 'none' }}>
         <Box
           display="flex"
           alignItems="center"
           justifyContent="center"
           style={{
+            width: '100vw',
             height: '100vh',
             paddingLeft: '80px',
             paddingRight: '80px',
@@ -97,7 +95,7 @@ export default function IndexMain(props: Props) {
             backgroundSize: 'cover',
           }}
         >
-          <Box display={{ base: 'block', md: 'none' }}>
+          <Box display={{ base: 'block', lg: 'none' }}>
             {importantDatesSection}
           </Box>
         </Box>

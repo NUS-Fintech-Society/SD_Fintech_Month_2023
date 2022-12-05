@@ -5,4 +5,5 @@ export enum Routes {
   ABOUT_US = '/aboutUs',
   WIP = '/wip',
   MENTORS = '/mentors',
+  SPEAKERS = '/speakers',
 }
