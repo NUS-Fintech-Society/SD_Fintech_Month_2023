@@ -7,7 +7,6 @@ import { useRouter } from 'next/router';
 
 type Props = {
   scrollToThemePage: Function;
-  navigate: Function;
 };
 
 export default function IndexMain(props: Props) {

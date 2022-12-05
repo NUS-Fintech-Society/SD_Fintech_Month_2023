@@ -49,7 +49,9 @@ export default function HackathonPrizes() {
         boxShadow={`0px 6px 6px 1px ${prize.color}`}
       >
         <MainPrizeName color={prize.color}>{prize.name}</MainPrizeName>
-        <MainPrizeAmount color={prize.color}>{prize.reward}</MainPrizeAmount>
+        <MainPrizeAmount color={prize.color}>
+          {formatter.format(prize.reward)}
+        </MainPrizeAmount>
       </MainPrizeWrapper>
     );
   }
@@ -58,10 +60,17 @@ export default function HackathonPrizes() {
     return (
       <OtherPrizeWrapper>
         <OtherPrizeName>{prize.name}</OtherPrizeName>
-        <OtherPrizeAmount>{prize.reward}</OtherPrizeAmount>
+        <OtherPrizeAmount>{formatter.format(prize.reward)}</OtherPrizeAmount>
       </OtherPrizeWrapper>
     );
   }
+
+  var formatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+  });
 
   return (
     <PrizesPage>
