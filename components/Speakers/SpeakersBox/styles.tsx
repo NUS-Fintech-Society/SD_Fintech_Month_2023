@@ -42,11 +42,12 @@ export const SpeakerImage = chakra(Image, {
     fontSize: 'lg', //["2xs", "2xs", "lg"] for responsive
     pl: '1',
     pt: '0',
-    // boxSize: "250",
-    width: '250px',
-    height: '250px',
+    w: '200px',
+    minWidth: '200px',
+    h: '200px',
+    minHeight: '200px',
     objectFit: 'cover',
-    borderRadius: '400px',
+    borderRadius: '50%',
     mb: '5',
   },
 });
@@ -83,7 +84,7 @@ export const DetailsText = chakra(Text, {
   baseStyle: {
     textAlign: 'center',
     fontWeight: 'light',
-    fontSize: ['md', 'md', 'md'],
+    fontSize: ['sm', 'md', 'md'],
     color: 'brand.primary',
     // padding: ['0', '0', '0'],
   },
@@ -91,12 +92,13 @@ export const DetailsText = chakra(Text, {
 
 export const DetailsBox = chakra(Box, {
   baseStyle: {
-    pl: '5',
-    pr: '5',
+    pl: '10',
+    pr: '10',
+    pt: '2',
+    pb: '2',
     background: '#DFE1F9',
     border: '1px solid #B9C3FF',
     borderRadius: '10px',
-    padding: '2',
   },
 });
 

@@ -62,7 +62,9 @@ export default function DesktopNavigationBar(props: Props) {
                     Week Overview
                   </MenuItem>
                   <MenuItem onClick={navigate(Routes.WIP)}>Mentors</MenuItem>
-                  <MenuItem onClick={navigate(Routes.WIP)}>Speakers</MenuItem>
+                  <MenuItem onClick={navigate(Routes.SPEAKERS)}>
+                    Speakers
+                  </MenuItem>
                   <MenuItem onClick={navigate(Routes.WIP)}>Workshops</MenuItem>
                 </MenuList>
               </Menu>
