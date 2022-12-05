@@ -9,7 +9,7 @@ export async function writeToSheet(value: string) {
 
   const result = await sheets_v4.spreadsheets.values.append({
     spreadsheetId: process.env.GOOGLE_SHEETS_SHEET_ID,
-    range: 'Sheet1',
+    range: process.env.GOOGLE_SHEETS_SHEET_NAME,
     auth: authToken,
     valueInputOption: 'USER_ENTERED',
     requestBody: {
