@@ -1,9 +1,9 @@
 import { Box, Flex } from '@chakra-ui/react';
 import CountdownTimer from '../CountdownTimer/CountdownTimer';
 import ImportantDates from '../ImportantDates';
-import { ThemeButton, Title, WorkshopButton } from './styles';
-
+import { ThemeButton, Title, WorkshopButton} from './styles';
 export default function IndexMain() {
+
   const importantDatesSection = (
     <Flex direction="column" alignItems="center">
       <ImportantDates />
@@ -32,6 +32,7 @@ export default function IndexMain() {
     <Box>
       <Box
         display="flex"
+        zIndex={"1"}
         alignItems="center"
         justifyContent="center"
         style={{
