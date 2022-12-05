@@ -18,6 +18,7 @@ const custom = definePartsStyle((props) => {
       borderRightColor: 'white',
       boxShadow: 'md',
       borderRadius: '10',
+      bgColor: 'white',
       /*_hover: {
         border: "2px",
         borderTopColor: "brand.tertiary",
@@ -34,6 +35,8 @@ const custom = definePartsStyle((props) => {
       color: 'brand.primary',
       fontWeight: 'bold',
       fontSize: '18px',
+      pt: '20px',
+      pb: '20px',
       _hover: {
         bg: 'rgba(0, 0, 0, 0)',
       },
