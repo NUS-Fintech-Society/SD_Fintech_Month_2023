@@ -55,7 +55,9 @@ export default function MobileNavigationBar(props: Props) {
               <MenuItem onClick={navigate(Routes.WIP)}>Workshops</MenuItem>
               <MenuDivider />
               <MenuItem onClick={navigate(Routes.ABOUT_US)}>About Us</MenuItem>
-              <MenuItem onClick={navigate(Routes.WIP)}>Contact Us</MenuItem>
+              <MenuItem onClick={navigate(Routes.CONTACT_US)}>
+                Contact Us
+              </MenuItem>
               <MenuDivider />
               <MenuItem onClick={navigate(Routes.PARTNERS)}>Partners</MenuItem>
               <MenuDivider />
