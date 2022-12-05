@@ -47,6 +47,7 @@ export const Event = chakra(Flex, {
         h : '100%',
         flexDirection : 'column',
         my : {base : '3%', md : '0'},
+        marginBottom : {base : '3%', md : '2%'},
         padding : {base : '3%', md : '1%'},
         py : {base : '5%', md : '3%'},
         borderRadius : '20',
@@ -73,7 +74,7 @@ export const Row = chakra(Flex,{
         w : '100%',
         alignItems: 'center',
         justify: 'apart',
-        py : {base : '3%', md : '0'}
+        py : {base : '3%', md : '0'},
     }
 })
 
@@ -123,7 +124,7 @@ export const SpeakerLabel = chakra(Text, {
         fontSize : 'sm',
         color : '#001158',
         textAlign : 'center',
-        py : {base : '1%', md : '2%'},
+        py : {base : '1%', md : '0%'},
     }
 })
 
