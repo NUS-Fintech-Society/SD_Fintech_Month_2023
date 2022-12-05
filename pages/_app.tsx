@@ -38,7 +38,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <NavigationBar />
       <Component {...pageProps} />
-
       <Footer />
     </ChakraProvider>
   );

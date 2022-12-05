@@ -6,7 +6,7 @@ import DesktopNavigationBar from './DesktopNavigationBar';
 import MobileNavigationBar from './MobileNavigationBar';
 
 export default function NavigationBar() {
-  const isDesktop = useBreakpointValue({ base: false, lg: true });
+  const isDesktop = useBreakpointValue({ base: false, md: true });
   const router = useRouter();
 
   function navigate(path: Routes) {
