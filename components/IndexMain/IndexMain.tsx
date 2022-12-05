@@ -1,7 +1,7 @@
 import { Box, Flex } from '@chakra-ui/react';
 import CountdownTimer from '../CountdownTimer/CountdownTimer';
 import ImportantDates from '../ImportantDates';
-
+import LeaderBoard from '../LeaderBoard';
 import { ThemeButton, Title, WorkshopButton } from './styles';
 
 type Props = {
@@ -103,6 +103,7 @@ export default function IndexMain(props: Props) {
           </Box>
         </Box>
       </Box>
+      <LeaderBoard/>
     </Box>
   );
 }
