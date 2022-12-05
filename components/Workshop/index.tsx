@@ -5,10 +5,11 @@ import { Workshop } from '../../types/Workshop';
 function getSingleDesktopWorkshopSpeaker(workshop: Workshop){
     return (
         <WorkshopSpeaker>
-            <SpeakerLabel>{workshop.organisation}</SpeakerLabel>
+            
             <SpeakerImage src = 'gibbresh.png' fallbackSrc = 'https://via.placeholder.com/150'/>
-            <SpeakerLabel>{workshop.speaker}</SpeakerLabel>
+            <SpeakerLabel fontWeight = {'bold'}>{workshop.speaker}</SpeakerLabel>
             <SpeakerLabel>{workshop.position}</SpeakerLabel>
+            <SpeakerLabel fontWeight = {'bold'}>{workshop.organisation}</SpeakerLabel>
         </WorkshopSpeaker>
     )
 }
@@ -62,7 +63,7 @@ function getSingleDesktopWorkshopComponent(workshop: Workshop) {
                     <Row justify = 'center'>
                         {getSingleDesktopWorkshopSpeaker(workshop)}
                         <CenterContent>
-                            <WorkshopTitle>{workshop.name}</WorkshopTitle>
+                            <WorkshopTitle fontWeight={"bold"}>{workshop.name}</WorkshopTitle>
                             <WorkshopDescription>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a suscipit nunc. Phasellus at lectus aliquam, consequat leo quis, cursus enim. Duis eu turpis in dolor luctus sagittis. Curabitur vulputate a turpis porttitor fringilla. Fusce at pretium leo, ac feugiat.Duis eu turpis in dolor luctus sagittis. 
                             </WorkshopDescription>
                         </CenterContent>
