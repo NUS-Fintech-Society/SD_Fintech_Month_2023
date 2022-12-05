@@ -7,6 +7,7 @@ export const SpeakersInfoArray: Speaker[] = [
     time: '8 pm - 9.30pm',
     image:
       'https://media.vanityfair.com/photos/5c82940e52ce6720b360804c/master/pass/elon-musk-security-clearance.jpg',
+    location: 'COM B1-101',
     title: 'Board Director & Regional Head of Compliance',
     organisation: 'PayerMax',
     description:
@@ -18,6 +19,7 @@ export const SpeakersInfoArray: Speaker[] = [
     time: '8 pm - 9.30pm',
     image:
       'https://images.moneycontrol.com/static-mcnews/2021/05/vitalik-Buterin-ethereum.jpg?impolicy=website&width=1600&height=900',
+    location: 'COM B1-101',
     title: 'VP Commercial, APAC',
     organisation: 'SettleMint',
     description:
@@ -28,6 +30,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '17 Jan',
     time: '8 pm - 9.30pm',
     image: 'https://i.insider.com/6345b69bd2050f0011d3d246?width=700',
+    location: 'COM B1-101',
     title: 'Research Analyst',
     organisation: 'Nansen',
     description:
@@ -38,6 +41,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '17 Jan',
     time: '8 pm - 9.30pm',
     image: 'https://i.insider.com/6345b69bd2050f0011d3d246?width=700',
+    location: 'COM B1-101',
     title: 'Software Engineer',
     organisation: 'Pyth',
     description:
@@ -49,6 +53,7 @@ export const SpeakersInfoArray: Speaker[] = [
     time: '8 pm - 9.30pm',
     image:
       'https://images.moneycontrol.com/static-mcnews/2021/05/vitalik-Buterin-ethereum.jpg?impolicy=website&width=1600&height=900',
+    location: 'COM B1-101',
     title: 'Vice President, R&D',
     organisation: 'Mastercard',
     description:
@@ -59,6 +64,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '17 Jan',
     time: '8 pm - 9.30pm',
     image: 'https://i.insider.com/6345b69bd2050f0011d3d246?width=700',
+    location: 'COM B1-101',
     title: 'Co-founder & Chief Innovation Officer',
     organisation: 'Lynx Analytics',
     description:
@@ -69,6 +75,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '17 Jan',
     time: '8 pm - 9.30pm',
     image: 'https://i.insider.com/6345b69bd2050f0011d3d246?width=700',
+    location: 'COM B1-101',
     title: 'Co-founder & Chief Innovation Officer',
     organisation: 'Visa',
     description:
@@ -80,6 +87,7 @@ export const SpeakersInfoArray: Speaker[] = [
     time: '8 pm - 9.30pm',
     image:
       'https://images.moneycontrol.com/static-mcnews/2021/05/vitalik-Buterin-ethereum.jpg?impolicy=website&width=1600&height=900',
+    location: 'COM B1-101',
     title: 'Senior Data Scientist',
     organisation: 'Airwallex',
     description:
@@ -90,6 +98,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '17 Jan',
     time: '8 pm - 9.30pm',
     image: 'https://i.insider.com/6345b69bd2050f0011d3d246?width=700',
+    location: 'COM B1-101',
     title: 'Core BUIDLer',
     organisation: 'Impossible Finance',
     description:
@@ -100,6 +109,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '17 Jan',
     time: '8 pm - 9.30pm',
     image: 'https://i.insider.com/6345b69bd2050f0011d3d246?width=700',
+    location: 'COM B1-101',
     title: 'Senior Partnerships Leader APAC',
     organisation: 'Thought Machine',
     description:
@@ -111,6 +121,7 @@ export const SpeakersInfoArray: Speaker[] = [
     time: '8 pm - 9.30pm',
     image:
       'https://images.moneycontrol.com/static-mcnews/2021/05/vitalik-Buterin-ethereum.jpg?impolicy=website&width=1600&height=900',
+    location: 'COM B1-101',
     title: 'COO / Ex-COO of SC',
     organisation: 'AMTD Group',
     description:
@@ -121,6 +132,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '17 Jan',
     time: '8 pm - 9.30pm',
     image: 'https://i.insider.com/6345b69bd2050f0011d3d246?width=700',
+    location: 'COM B1-101',
     title: 'Head of Portfolio Growth',
     organisation: 'Defiance Capital',
     description:
@@ -131,6 +143,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '17 Jan',
     time: '8 pm - 9.30pm',
     image: 'https://i.insider.com/6345b69bd2050f0011d3d246?width=700',
+    location: 'COM B1-101',
     title: 'CEO',
     organisation: 'SIG',
     description:
@@ -141,6 +154,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '17 Jan',
     time: '8 pm - 9.30pm',
     image: 'https://i.insider.com/6345b69bd2050f0011d3d246?width=700',
+    location: 'COM B1-101',
     title: 'Investor',
     organisation: 'Saison Capital',
     description:

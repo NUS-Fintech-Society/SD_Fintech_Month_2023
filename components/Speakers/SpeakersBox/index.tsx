@@ -24,8 +24,9 @@ export default function SpeakerBox({ speakerInfo }: any) {
       <OrgText>{speakerInfo.organisation}</OrgText>
       <DetailsFlex>
         <DetailsBox>
+          <DetailsText fontWeight="bold">{speakerInfo.date}</DetailsText>
           <DetailsText>
-            {speakerInfo.date}, {speakerInfo.time}
+            {speakerInfo.location} | {speakerInfo.time}
           </DetailsText>
         </DetailsBox>
         {/* <DetailsBox>

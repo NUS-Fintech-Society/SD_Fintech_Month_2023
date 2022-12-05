@@ -75,15 +75,17 @@ export const DetailsFlex = chakra(Flex, {
     flexDirection: 'row',
     justifyContent: 'space-around',
     mb: '0', //["2", "8"] for responsiveness
+    // padding: '2',
   },
 });
 
 export const DetailsText = chakra(Text, {
   baseStyle: {
+    textAlign: 'center',
     fontWeight: 'light',
-    fontSize: ['md', 'md', 'lg'],
+    fontSize: ['md', 'md', 'md'],
     color: 'brand.primary',
-    padding: ['1', '2', '2'],
+    // padding: ['0', '0', '0'],
   },
 });
 
@@ -94,6 +96,7 @@ export const DetailsBox = chakra(Box, {
     background: '#DFE1F9',
     border: '1px solid #B9C3FF',
     borderRadius: '10px',
+    padding: '2',
   },
 });
 
