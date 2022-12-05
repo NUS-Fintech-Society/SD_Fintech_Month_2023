@@ -70,7 +70,9 @@ export default function ContactUs() {
             <EmailLink>nusfintech.ops@gmail.com</EmailLink>
           </Box>
           <InputAndButtonBox>
-            <QueriesAndUpdatesText>To receive updates</QueriesAndUpdatesText>
+            <QueriesAndUpdatesText>
+              <b>To receive updates</b>
+            </QueriesAndUpdatesText>
             <HStack>
               <EmailInput
                 placeholder="Enter your email here..."
