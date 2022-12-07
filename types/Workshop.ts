@@ -12,4 +12,5 @@ export type Workshop = {
   link: string;
   position: string;
   image: string;
+  description: string;
 };

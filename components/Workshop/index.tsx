@@ -89,13 +89,7 @@ function getSingleDesktopWorkshopComponent(workshop: Workshop) {
           {getSingleDesktopWorkshopSpeaker(workshop)}
           <CenterContent>
             <WorkshopTitle fontWeight={'bold'}>{workshop.name}</WorkshopTitle>
-            <WorkshopDescription>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              a suscipit nunc. Phasellus at lectus aliquam, consequat leo quis,
-              cursus enim. Duis eu turpis in dolor luctus sagittis. Curabitur
-              vulputate a turpis porttitor fringilla. Fusce at pretium leo, ac
-              feugiat.Duis eu turpis in dolor luctus sagittis.
-            </WorkshopDescription>
+            <WorkshopDescription>{workshop.description}</WorkshopDescription>
           </CenterContent>
           <RightContent>
             {getSingleDesktopWorkshopDetails(workshop)}
@@ -120,13 +114,7 @@ function getSingleMobileWorkshopComponent(workshop: Workshop) {
           {getSingleMobileWorkshopDetails(workshop)}
         </MobileTop>
         <MobileBottom>
-          <WorkshopDescription>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a
-            suscipit nunc. Phasellus at lectus aliquam, consequat leo quis,
-            cursus enim. Duis eu turpis in dolor luctus sagittis. Curabitur
-            vulputate a turpis porttitor fringilla. Fusce at pretium leo, ac
-            feugiat.Duis eu turpis in dolor luctus sagittis.
-          </WorkshopDescription>
+          <WorkshopDescription>{workshop.description}</WorkshopDescription>
           <RegisterButton>
             <a href={workshop.link}>Register</a>
           </RegisterButton>
