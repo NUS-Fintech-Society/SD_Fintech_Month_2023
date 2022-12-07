@@ -20,7 +20,10 @@ export const MainBox = chakra(Flex, {
     padding: '5',
     align: 'center',
     transition: '0.3s',
-    _hover: { bg: '#F5F5F5' },
+    _hover: {
+      bg: '#F5F5F5',
+      cursor: 'pointer',
+    },
     backdropFilter: 'blur(3px)',
   },
 });
