@@ -1,4 +1,5 @@
 export type WeekEvent = {
+    id : number,
     date : string;
     time? : string;
     venue? : string;
@@ -14,6 +15,7 @@ export type Week = {
 }
 
 export type SpeakerInfo ={
+    id : number,
     organisation : string;
     speaker : string;
     position : string;

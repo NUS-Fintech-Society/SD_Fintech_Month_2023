@@ -30,7 +30,7 @@ import { ALL } from 'dns';
 
 function generateSpeaker(info : SpeakerInfo){
     return (
-         <SpeakerContainer>
+         <SpeakerContainer key = {info.id}>
              <SpeakerImage src = 'gibbresh.png' fallbackSrc = 'https://via.placeholder.com/150'></SpeakerImage>
              <SpeakerDetails>
              <SpeakerLabel fontWeight={"bold"}>{info.speaker}</SpeakerLabel>
@@ -43,7 +43,7 @@ function generateSpeaker(info : SpeakerInfo){
 
 function generateWorkshop(event : WeekEvent){
     return (
-        <Event>
+        <Event key = {event.id}>
                 <DateAndLocation>
                     <DateAndTime>
                         <BoldText>{event.date}</BoldText>
@@ -58,7 +58,7 @@ function generateWorkshop(event : WeekEvent){
                     <EventLabel>{event.label}</EventLabel>
                     {event.label == 'Panel Discussion' ? <AllSpeakers>
                     {event.speakerInfo ? event.speakerInfo.map((info) => generateSpeaker(info)) : <div></div>}
-                    </AllSpeakers> : generateSpeaker(event.speakerInfo)}
+                    </AllSpeakers> : event.speakerInfo ? generateSpeaker(event.speakerInfo[0]) : <div></div>}
                 </WorkshopBox>
         </Event>
     )
@@ -66,7 +66,7 @@ function generateWorkshop(event : WeekEvent){
 
 function generateNonWorkshop(event : WeekEvent){
     return (
-        <Event>
+        <Event key = {event.id}>
                 <DateAndLocation>
                     <DateAndTime>
                         <BoldText>{event.date}</BoldText>
@@ -88,7 +88,7 @@ export default function WeekOverview(){
         <WeekOverviewContainer>
             <HeadingContainer>WEEK OVERVIEW</HeadingContainer>
             <ButtonPanel>
-               {Weeks.map(week => <WeekButton onClick = {() => setWeekNumber(week.id)}><Text>{week.label}</Text><Text>{week.date}</Text></WeekButton>)} 
+               {Weeks.map(week => <WeekButton onClick = {() => setWeekNumber(week.id)} key = {week.id}><Text>{week.label}</Text><Text>{week.date}</Text></WeekButton>)} 
             </ButtonPanel>
             <SingleWeekContainer>
                 <WeekHeader>{Weeks[weekNumber].label}</WeekHeader>
