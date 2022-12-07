@@ -121,7 +121,6 @@ export const Workshops: Workshop[] = [
     description:
       'Graduated from NUS, Peking University and Tsinghua University, Mr. Donghao Huang has more than 24 years’ professional experiences in software engineering and R&D. Over the past 11+ years, as the founding head of Singapore R&D team, Mr. Huang has been leading the team to drive payment innovations from ideas through concept development and rapid prototyping to MVP and commercialization in various emerging technology domains, such as Connected Cars, Internet of Things, AR/VR, 5G and Blockchain. Currently he is leading the global R&D initiatives in Web3 and Metaverse.',
   },
-
   {
     id: 5,
     day: 'Friday',
@@ -141,6 +140,7 @@ export const Workshops: Workshop[] = [
     id: 6,
     day: 'Tuesday',
     date: 'Tuesday, 17 Jan',
+
     time: '8.00pm - 9.00pm',
     name: 'Day in the Life of a Research Analyst',
     organisation: 'Nansen',

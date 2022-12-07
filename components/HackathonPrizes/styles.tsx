@@ -104,9 +104,8 @@ export const MainPrizeSection = chakra(Box, {
 });
 
 export const OtherPrizeSection = chakra(Box, {
-    baseStyle: {
-      alignItems: 'center',
-      mb: '60px',
-    },
-  });
-  
+  baseStyle: {
+    alignItems: 'center',
+    mb: '60px',
+  },
+});
