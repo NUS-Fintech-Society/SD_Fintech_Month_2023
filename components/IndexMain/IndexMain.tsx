@@ -19,7 +19,6 @@ export default function IndexMain(props: Props) {
     router.push('/fintechHackathon');
   };
 
-
   const importantDatesSection = (
     <Flex direction="column" alignItems="center">
       <ImportantDates />
@@ -49,7 +48,7 @@ export default function IndexMain(props: Props) {
     <Box>
       <Box
         display="flex"
-        zIndex={"1"}
+        zIndex={'1'}
         alignItems="center"
         justifyContent="center"
         style={{
@@ -112,7 +111,7 @@ export default function IndexMain(props: Props) {
           </Box>
         </Box>
       </Box>
-      <LeaderBoard/>
+      <LeaderBoard />
     </Box>
   );
 }

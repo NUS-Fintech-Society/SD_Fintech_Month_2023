@@ -59,8 +59,7 @@ const About = () => {
         </RightContentContainer>
       </ContentContainer>
     </AboutContainer>
-  )
-}
+  );
+};
 
-export default About
-
+export default About;
