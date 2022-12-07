@@ -1,4 +1,5 @@
 import { Text, Flex, Link, Box, chakra, Input, Button } from '@chakra-ui/react';
+import TimelineBackground from '../../public/TimelineBackground.png';
 
 export const PageContainer = chakra(Flex, {
   baseStyle: {
@@ -7,7 +8,6 @@ export const PageContainer = chakra(Flex, {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundImage: `url("/Lines.png")`,
     backgroundPosition: 'center',
     backgroundSize: '80%',
   },
