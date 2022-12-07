@@ -11,4 +11,6 @@ export type Workshop = {
   venue: string;
   link: string;
   position: string;
+  image: string;
+  description: string;
 };
