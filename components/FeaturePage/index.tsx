@@ -8,9 +8,21 @@ import {
   FeatureSubHeading,
   PlusSymbol,
   FeatureContainer,
+  FAQSection,
+  FAQButton,
 } from './styles';
 
+import { IoIosArrowForward } from 'react-icons/io';
+import { useRouter } from 'next/router';
+
 const FeaturePage = () => {
+  const router = useRouter();
+
+  const handleClick = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    router.push('/faq');
+  };
+
   function Feature(title: String, description: String, showPlus: boolean) {
     return (
       <FeatureCard>
@@ -43,6 +55,11 @@ const FeaturePage = () => {
           {Feature('10', 'Sponsors', true)}
         </SimpleGrid>
       </FeatureContainer>
+      <FAQSection>
+        <FAQButton colorScheme="brand" onClick={handleClick}>
+          Frequently Answered Questions <IoIosArrowForward size={25} />
+        </FAQButton>
+      </FAQSection>
     </MorePageContainer>
   );
 };

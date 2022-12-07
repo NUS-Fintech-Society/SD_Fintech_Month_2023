@@ -1,4 +1,5 @@
 import { Flex, Box, Heading, Image, chakra } from '@chakra-ui/react';
+import MosaicEffect from '../../public/MosaicEffect.png';
 
 export const ThemePageContainer = chakra(Flex, {
   baseStyle: {
@@ -8,7 +9,7 @@ export const ThemePageContainer = chakra(Flex, {
     justifyContent: 'center',
     alignItems: 'center',
     margin: 'auto',
-    backgroundImage: `url("/MosaicEffect.png")`,
+    backgroundImage: `url(${MosaicEffect.src})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
   },

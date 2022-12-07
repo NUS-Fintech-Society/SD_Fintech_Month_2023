@@ -1,18 +1,15 @@
-import {
-  Text,
-  Box,
-  chakra,
-  Flex,
-  Heading,
-} from '@chakra-ui/react';
+import { Text, Box, chakra, Flex, Heading, Button } from '@chakra-ui/react';
+
+import BubbleBackground from '../../public/BubbleBackground.png';
 
 export const MorePageContainer = chakra(Flex, {
   baseStyle: {
     width: '100%',
+    height: '100vh',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundImage: `url("/TimelineBackground.png")`,
+    backgroundImage: `url(${BubbleBackground.src})`,
     backgroundPosition: 'center',
     backgroundSize: '90%',
   },
@@ -47,13 +44,15 @@ export const FeatureCard = chakra(Box, {
     w: '180px',
     h: '160px',
     p: '15px',
-    bgColor: 'white',
-    border: '1.5px solid rgba(0, 0, 0, 0.2)',
+    color: 'white',
+    bgColor: 'rgba(84, 110, 243, 0.7)',
+    borderRadius: 'xl',
     borderStyle: 'solid',
     _hover: {
-      bgColor: 'brand.tertiary',
-      border: '0px',
+      bgColor: 'white',
+      border: '1.5px solid rgba(0, 0, 0, 0.2)',
       transform: 'scale(1.05)',
+      color: 'black',
     },
     transition: '0.3s',
   },
@@ -77,5 +76,22 @@ export const FeatureSubHeading = chakra(Text, {
   baseStyle: {
     fontSize: { base: 'xl', md: '2xl' },
     fontWeight: 'bold',
+  },
+});
+
+export const FAQButton = chakra(Button, {
+  baseStyle: {
+    height: '55px',
+    borderRadius: '10px',
+    fontSize: 'sm',
+  },
+});
+
+export const FAQSection = chakra(Box, {
+  baseStyle: {
+    width: '100%',
+    display: 'flex',
+    direction: 'row',
+    justifyContent: 'center',
   },
 });

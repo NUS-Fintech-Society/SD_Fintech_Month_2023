@@ -1,11 +1,13 @@
 import { Box, chakra, HStack } from '@chakra-ui/react';
 
+import SecondaryBackground from '../../public/SecondaryBackground.png';
+
 export const SponsorWrapper = chakra(Box, {
   baseStyle: {
     width: '100vw',
     minHeight: 'calc(100vh - 160px)',
     justifyContent: 'center',
-    bgImage: "url('/Background/sponsor-background.png')",
+    bgImage: `url(${SecondaryBackground.src})`,
     bgSize: 'cover',
     bgPosition: 'center',
   },

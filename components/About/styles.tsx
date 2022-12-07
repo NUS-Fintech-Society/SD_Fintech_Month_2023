@@ -1,4 +1,5 @@
 import { Flex, Box, Heading, Image, chakra } from '@chakra-ui/react';
+import BubbleEffect2 from '../../public/BubbleEffect2.png';
 
 export const AboutContainer = chakra(Flex, {
   baseStyle: {
@@ -8,7 +9,7 @@ export const AboutContainer = chakra(Flex, {
     align: 'center',
     justifyContent: 'center',
     paddingTop: { base: '20%', md: '50px' },
-    backgroundImage: `url("/LinesEffect.png")`,
+    backgroundImage: `url(${BubbleEffect2.src})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
   },
