@@ -5,6 +5,9 @@ export const FaqWrapper = chakra(Box, {
     width: '100vw',
     minHeight: { base: 'calc(100vh - 130px)', md: 'calc(100vh - 160px)' },
     justifyContent: 'center',
+    bgImage: "url('/Background/sponsor-background.png')",
+    bgSize: 'cover',
+    bgPosition: 'center',
   },
 });
 
@@ -29,7 +32,7 @@ export const ContentWrapper = chakra(Box, {
 
 export const Content = chakra(Box, {
   baseStyle: {
-    w: '1500px',
+    w: '1000px',
   },
 });
 

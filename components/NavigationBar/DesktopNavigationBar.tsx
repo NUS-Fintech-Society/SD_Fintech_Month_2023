@@ -27,7 +27,7 @@ type Props = {
 
 export default function DesktopNavigationBar(props: Props) {
   const { navigate } = props;
-  const isSmallScreen = useBreakpointValue({ base: true, xl: false });
+  const isSmallScreen = useBreakpointValue({ base: true, '2xl': false });
 
   return (
     <NavBarContainer>
@@ -48,13 +48,6 @@ export default function DesktopNavigationBar(props: Props) {
           </HStack>
           <HStack spacing="20">
             <HStack spacing="10">
-              <Button
-                variant="link"
-                colorScheme="black"
-                onClick={navigate(Routes.HOME)}
-              >
-                Home
-              </Button>
               <Menu>
                 <MenuButton
                   as={Button}
@@ -65,13 +58,18 @@ export default function DesktopNavigationBar(props: Props) {
                   Programme
                 </MenuButton>
                 <MenuList>
-                  <MenuItem onClick={navigate(Routes.HOME)}>
-                    Week Overflow
+                  <MenuItem onClick={navigate(Routes.WIP)}>
+                    Week Overview
                   </MenuItem>
-                  <MenuItem onClick={navigate(Routes.HOME)}>Agenda</MenuItem>
-                  <MenuItem onClick={navigate(Routes.HOME)}>Speakers</MenuItem>
-                  <MenuItem onClick={navigate(Routes.HOME)}>Workshops</MenuItem>
-                  <MenuItem onClick={navigate(Routes.FAQ)}>FAQ</MenuItem>
+                  <MenuItem onClick={navigate(Routes.MENTORS)}>
+                    Mentors
+                  </MenuItem>
+                  <MenuItem onClick={navigate(Routes.SPEAKERS)}>
+                    Speakers
+                  </MenuItem>
+                  <MenuItem onClick={navigate(Routes.WORKSHOPS)}>
+                    Workshops
+                  </MenuItem>
                 </MenuList>
               </Menu>
               <Menu>
@@ -84,7 +82,9 @@ export default function DesktopNavigationBar(props: Props) {
                   About
                 </MenuButton>
                 <MenuList>
-                  <MenuItem onClick={navigate(Routes.HOME)}>About Us</MenuItem>
+                  <MenuItem onClick={navigate(Routes.ABOUT_US)}>
+                    About Us
+                  </MenuItem>
                   <MenuItem onClick={navigate(Routes.HOME)}>
                     Contact Us
                   </MenuItem>
@@ -93,14 +93,28 @@ export default function DesktopNavigationBar(props: Props) {
               <Button
                 variant="link"
                 colorScheme="black"
-                onClick={navigate(Routes.SPONSORS)}
+                onClick={navigate(Routes.PARTNERS)}
               >
-                Sponsors
+                Partners
+              </Button>
+              <Button
+                variant="link"
+                colorScheme="black"
+                onClick={navigate(Routes.FAQ)}
+              >
+                FAQ
+              </Button>
+              <Button
+                variant="link"
+                colorScheme="black"
+                onClick={navigate(Routes.WIP)}
+              >
+                Resources
               </Button>
             </HStack>
             <HackathonButton
               colorScheme="brand"
-              onClick={navigate(Routes.HOME)}
+              onClick={navigate(Routes.FINTECH_HACKATHON)}
             >
               Fintech Hackathon
             </HackathonButton>

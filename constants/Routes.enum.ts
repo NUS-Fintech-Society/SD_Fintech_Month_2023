@@ -1,5 +1,11 @@
 export enum Routes {
-  HOME = '/',
-  SPONSORS = '/sponsors',
   FAQ = '/faq',
+  HOME = '/',
+  PARTNERS = '/partners',
+  ABOUT_US = '/aboutUs',
+  WIP = '/wip',
+  FINTECH_HACKATHON = '/fintechHackathon',
+  MENTORS = '/mentors',
+  SPEAKERS = '/speakers',
+  WORKSHOPS = '/workshops'
 }
