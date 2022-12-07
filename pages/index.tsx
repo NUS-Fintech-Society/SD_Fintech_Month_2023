@@ -4,7 +4,7 @@ import About from '../components/About';
 import IndexMain from '../components/IndexMain/IndexMain';
 import Theme from '../components/Theme';
 import { useRef } from 'react';
-import Timeline from '../components/Timeline';
+import HomeTimeline from '../components/HomeTimeline';
 import ContactUs from '../components/ContactUs';
 
 const Home: NextPage = () => {
@@ -24,7 +24,7 @@ const Home: NextPage = () => {
       <About />
       <Theme />
       <div ref={themePageRef} />
-      <Timeline />
+      <HomeTimeline />
       <ContactUs />
     </VStack>
   );

@@ -1,7 +1,10 @@
 import { Box, Flex } from '@chakra-ui/react';
+import { Routes } from '../../constants/Routes.enum';
 import CountdownTimer from '../CountdownTimer/CountdownTimer';
 import ImportantDates from '../ImportantDates';
+import LeaderBoard from '../LeaderBoard';
 import { ThemeButton, Title, WorkshopButton } from './styles';
+import { useRouter } from 'next/router';
 
 type Props = {
   scrollToThemePage: Function;
@@ -9,6 +12,12 @@ type Props = {
 
 export default function IndexMain(props: Props) {
   const { scrollToThemePage } = props;
+  const router = useRouter();
+
+  const handleClick = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    router.push('/fintechHackathon');
+  };
 
   const importantDatesSection = (
     <Flex direction="column" alignItems="center">
@@ -19,6 +28,7 @@ export default function IndexMain(props: Props) {
           fontWeight="light"
           fontSize="lg"
           mr="30px"
+          onClick={handleClick}
         >
           Hackathon
         </WorkshopButton>
@@ -38,6 +48,7 @@ export default function IndexMain(props: Props) {
     <Box>
       <Box
         display="flex"
+        zIndex={'1'}
         alignItems="center"
         justifyContent="center"
         style={{
@@ -100,6 +111,7 @@ export default function IndexMain(props: Props) {
           </Box>
         </Box>
       </Box>
+      <LeaderBoard />
     </Box>
   );
 }

@@ -1,21 +1,20 @@
+import React from 'react';
 import {
   HeadingContainer,
   TimelineHeading,
   TimelineImage,
-  TimelinePageContainer,
+  TimelineSection,
 } from './styles';
 
-const Timeline = () => {
+export default function HackathonTimeline() {
   return (
-    <TimelinePageContainer>
+    <TimelineSection>
       <HeadingContainer>
         <TimelineHeading colorScheme="brand">
-          TIMELINE OF EVENTS
+          HACKATHON TIMELINE
         </TimelineHeading>
       </HeadingContainer>
-      <TimelineImage src="Timeline.png" />
-    </TimelinePageContainer>
+      <TimelineImage src="HackathonTimeline.png" />
+    </TimelineSection>
   );
-};
-
-export default Timeline;
+}
