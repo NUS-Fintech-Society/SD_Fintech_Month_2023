@@ -1,6 +1,5 @@
 export type Prizes = {
-    name: string;
-    reward: number;
-    color:string;
-  };
-  
+  name: string;
+  reward: number;
+  color: string;
+};
