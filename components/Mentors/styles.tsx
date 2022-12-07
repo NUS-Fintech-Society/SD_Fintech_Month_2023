@@ -1,17 +1,4 @@
-import {
-  Text,
-  Flex,
-  Link,
-  Box,
-  chakra,
-  Input,
-  Button,
-  HStack,
-  Image,
-  Modal,
-  ModalContent,
-  ModalOverlay,
-} from '@chakra-ui/react';
+import { Flex, chakra } from '@chakra-ui/react';
 
 export const Container = chakra(Flex, {
   baseStyle: {
@@ -22,12 +9,15 @@ export const Container = chakra(Flex, {
     justifyContent: 'center',
     flexWrap: 'wrap',
     alignItems: 'center',
+    backgroundImage: `url("/Background/workshop-background.png")`,
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
   },
 });
 
 export const MentorsFlex = chakra(Flex, {
   baseStyle: {
-    width: '100vw',
+    width: '70vw',
     height: 'auto',
     flexDirection: 'row',
     justifyContent: 'center',
