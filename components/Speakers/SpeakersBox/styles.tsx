@@ -12,25 +12,23 @@ import {
 
 export const MainBox = chakra(Flex, {
   baseStyle: {
-    width: ['320px', '380px', '380px'],
-    height: ['470px', '550px', '550px'],
+    width: ['300px', '320px', '320px'],
+    height: ['470px', '470px', '470px'],
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     padding: '5',
-    // mb: ['8', '8', '8'],
-    // ml: ['0', '0', '0'],
-    // mr: ['0', '0', '0'],
     align: 'center',
     transition: '0.3s',
     _hover: { bg: '#F5F5F5' },
+    backdropFilter: 'blur(3px)',
   },
 });
 
 export const SpeakerName = chakra(Text, {
   baseStyle: {
     fontWeight: 'bold',
-    fontSize: ['2xl', '2xl', '3xl'], //["lg", "lg", "5xl"] for responsive
+    fontSize: ['2xl', '2xl', '2xl'], //["lg", "lg", "5xl"] for responsive
     color: 'brand.primary',
     padding: '1',
   },
@@ -84,7 +82,7 @@ export const DetailsText = chakra(Text, {
   baseStyle: {
     textAlign: 'center',
     fontWeight: 'light',
-    fontSize: ['sm', 'md', 'md'],
+    fontSize: ['sm', 'sm', 'sm'],
     color: 'brand.primary',
     // padding: ['0', '0', '0'],
   },
@@ -92,8 +90,8 @@ export const DetailsText = chakra(Text, {
 
 export const DetailsBox = chakra(Box, {
   baseStyle: {
-    pl: '10',
-    pr: '10',
+    pl: '5',
+    pr: '5',
     pt: '2',
     pb: '2',
     background: '#DFE1F9',
@@ -107,8 +105,8 @@ export const TitleText = chakra(Text, {
     color: 'brand.primary',
     textAlign: 'center',
     align: 'center',
-    fontSize: 'lg',
-    mb: '2',
+    fontSize: 'sm',
+    mb: '1',
   },
 });
 
@@ -116,7 +114,7 @@ export const OrgText = chakra(Text, {
   baseStyle: {
     color: 'brand.primary',
     align: 'center',
-    fontSize: 'lg',
+    fontSize: 'md',
     fontWeight: 'bold',
     mb: '5',
   },
