@@ -107,7 +107,7 @@ export const WorkshopSpeaker = chakra(Flex,{
         px : '3%',
         flexDirection : 'column',
         alignItems : 'center',
-        justify: {base : 'space-evenly', md : 'none'},
+        justify: 'none',
     }
 })
 
