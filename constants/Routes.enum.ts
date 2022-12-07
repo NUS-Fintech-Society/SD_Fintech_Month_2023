@@ -4,8 +4,9 @@ export enum Routes {
   PARTNERS = '/partners',
   ABOUT_US = '/aboutUs',
   WIP = '/wip',
+  CONTACT_US = '/contactUs',
   FINTECH_HACKATHON = '/fintechHackathon',
   MENTORS = '/mentors',
   SPEAKERS = '/speakers',
-  WORKSHOPS = '/workshops'
+  WORKSHOPS = '/workshops',
 }
