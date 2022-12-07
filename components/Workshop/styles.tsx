@@ -111,18 +111,6 @@ export const MobileBottom = chakra(Flex, {
 });
 
 //Left of Row
-<<<<<<< HEAD
-export const WorkshopSpeaker = chakra(Flex,{
-    baseStyle : {
-        h : '40%',
-        w : {base : '60%',md : '20%'},
-        px : '3%',
-        flexDirection : 'column',
-        alignItems : 'center',
-        justify: 'none',
-    }
-})
-=======
 export const WorkshopSpeaker = chakra(Flex, {
   baseStyle: {
     h: '40%',
@@ -133,7 +121,6 @@ export const WorkshopSpeaker = chakra(Flex, {
     justify: { base: 'space-evenly', md: 'none' },
   },
 });
->>>>>>> develop
 
 export const SpeakerImage = chakra(Image, {
   baseStyle: {
