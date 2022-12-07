@@ -17,6 +17,9 @@ export const WorkshopContainer = chakra(Flex, {
     alignItems: 'center',
     // justify : '',
     py: { base: '15%', md: '5%' },
+    backgroundImage: `url("/Background/workshop-background.png")`,
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
   },
 });
 
@@ -57,6 +60,7 @@ export const Event = chakra(Flex, {
     marginBottom: { base: '3%', md: '2%' },
     padding: { base: '3%', md: '1%' },
     py: { base: '5%', md: '3%' },
+    bg: 'white',
     borderRadius: '20',
     boxShadow:
       '5px 5px 4px rgba(149, 157, 165, 0.2), -5px 5px 4px rgba(149, 157, 165, 0.2), 5px -2px 4px rgba(149, 157, 165, 0.2)',
