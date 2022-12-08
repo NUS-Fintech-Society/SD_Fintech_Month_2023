@@ -26,6 +26,7 @@ export const FeatureContainer = chakra(Box, {
     my: '30px',
     mt: '30px',
     mb: '100px',
+    px: '20px',
   },
 });
 
@@ -41,8 +42,8 @@ export const FeatureCard = chakra(Box, {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    w: '180px',
-    h: '160px',
+    w: { base: '130px', sm: '180px' },
+    h: { base: '120px', sm: '160px' },
     p: '15px',
     color: 'white',
     bgColor: 'rgba(84, 110, 243, 0.7)',
