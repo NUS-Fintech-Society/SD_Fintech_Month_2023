@@ -1,5 +1,6 @@
 import { Box, Flex } from '@chakra-ui/react';
-import { Routes } from '../../constants/Routes.enum';
+import WaterEffect from '../../public/WaterEffect.png';
+import LinesEffect from '../../public/LinesEffect.png';
 import CountdownTimer from '../CountdownTimer/CountdownTimer';
 import ImportantDates from '../ImportantDates';
 import LeaderBoard from '../LeaderBoard';
@@ -19,14 +20,13 @@ export default function IndexMain(props: Props) {
     router.push('/fintechHackathon');
   };
 
-
   const importantDatesSection = (
     <Flex direction="column" alignItems="center">
       <ImportantDates />
       <Flex px="5" justifyContent="space-between" mt="40px">
         <WorkshopButton
           colorScheme="brand"
-          fontWeight="light"
+          fontWeight="bold"
           fontSize="lg"
           mr="30px"
           onClick={handleClick}
@@ -35,7 +35,7 @@ export default function IndexMain(props: Props) {
         </WorkshopButton>
         <WorkshopButton
           colorScheme="brand"
-          fontWeight="light"
+          fontWeight="bold"
           fontSize="lg"
           ml="30px"
         >
@@ -47,17 +47,26 @@ export default function IndexMain(props: Props) {
 
   return (
     <Box>
+      {/* <Image
+        width="100vw"
+        height="100vh"
+        src="/WaterEffect.png"
+        alt="background image"
+        objectFit="cover"
+        objectPosition="center"
+      />
+       */}
       <Box
         display="flex"
-        zIndex={"1"}
+        zIndex={'1'}
         alignItems="center"
         justifyContent="center"
+        backgroundImage="url('/WaterEffect.png')"
         style={{
           width: '100vw',
           height: '100vh',
           paddingLeft: '80px',
           paddingRight: '80px',
-          backgroundImage: `url("/WaterEffect.png")`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
         }}
@@ -73,7 +82,7 @@ export default function IndexMain(props: Props) {
               <Title>NUS FINTECH MONTH</Title>
               <ThemeButton
                 colorScheme="brand"
-                fontWeight="light"
+                fontWeight="bold"
                 fontSize="2xl"
                 onClick={scrollToThemePage}
                 mb={{ base: '0px', md: '80px' }}
@@ -102,7 +111,7 @@ export default function IndexMain(props: Props) {
             height: '100vh',
             paddingLeft: '80px',
             paddingRight: '80px',
-            backgroundImage: `url("/LinesEffect.png")`,
+            backgroundImage: `url(${LinesEffect.src})`,
             backgroundPosition: 'center',
             backgroundSize: 'cover',
           }}
@@ -112,7 +121,7 @@ export default function IndexMain(props: Props) {
           </Box>
         </Box>
       </Box>
-      <LeaderBoard/>
+      <LeaderBoard />
     </Box>
   );
 }

@@ -14,6 +14,7 @@ import {
   HStackContainer,
   MobileNavBarContainer,
   MobileCenterContainer,
+  MobileHackathonButton,
 } from './styles';
 import { Routes } from '../../constants/Routes.enum';
 import { HamburgerIcon } from '@chakra-ui/icons';
@@ -52,16 +53,26 @@ export default function MobileNavigationBar(props: Props) {
               <MenuItem onClick={navigate(Routes.WIP)}>Week Overview</MenuItem>
               <MenuItem onClick={navigate(Routes.MENTORS)}>Mentors</MenuItem>
               <MenuItem onClick={navigate(Routes.SPEAKERS)}>Speakers</MenuItem>
-              <MenuItem onClick={navigate(Routes.WORKSHOPS)}>Workshops</MenuItem>
+              <MenuItem onClick={navigate(Routes.WORKSHOPS)}>
+                Workshops
+              </MenuItem>
               <MenuDivider />
               <MenuItem onClick={navigate(Routes.ABOUT_US)}>About Us</MenuItem>
-              <MenuItem onClick={navigate(Routes.WIP)}>Contact Us</MenuItem>
+              <MenuItem onClick={navigate(Routes.CONTACT_US)}>
+                Contact Us
+              </MenuItem>
               <MenuDivider />
               <MenuItem onClick={navigate(Routes.PARTNERS)}>Partners</MenuItem>
               <MenuDivider />
               <MenuItem onClick={navigate(Routes.FAQ)}>FAQ</MenuItem>
               <MenuDivider />
               <MenuItem onClick={navigate(Routes.WIP)}>Resources</MenuItem>
+              <MenuDivider />
+              <MobileHackathonButton
+                onClick={navigate(Routes.FINTECH_HACKATHON)}
+              >
+                Fintech Hackathon
+              </MobileHackathonButton>
             </MenuList>
           </Menu>
         </HStackContainer>

@@ -22,12 +22,15 @@ export const Container = chakra(Flex, {
     justifyContent: 'center',
     flexWrap: 'wrap',
     alignItems: 'center',
+    backgroundImage: `url("/Background/workshop-background.png")`,
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
   },
 });
 
 export const SpeakersFlex = chakra(Flex, {
   baseStyle: {
-    width: '100vw',
+    width: '70vw',
     height: 'auto',
     flexDirection: 'row',
     justifyContent: 'center',

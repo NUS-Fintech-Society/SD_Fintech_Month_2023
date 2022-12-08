@@ -1,4 +1,5 @@
-import { Flex, Box, Heading, Image, chakra } from '@chakra-ui/react';
+import { Text, Flex, Box, Heading, Image, chakra } from '@chakra-ui/react';
+import MosaicEffect from '../../public/MosaicEffect.png';
 
 export const ThemePageContainer = chakra(Flex, {
   baseStyle: {
@@ -8,7 +9,7 @@ export const ThemePageContainer = chakra(Flex, {
     justifyContent: 'center',
     alignItems: 'center',
     margin: 'auto',
-    backgroundImage: `url("/MosaicEffect.png")`,
+    backgroundImage: `url(${MosaicEffect.src})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
   },
@@ -29,17 +30,35 @@ export const ThemeHeading = chakra(Heading, {
 
 export const TextBox = chakra(Box, {
   baseStyle: {
-    fontSize: { base: 'xl', md: '4xl' },
+    display: 'flex',
+    boxShadow: 'xl',
+    flexDirection: 'column',
+    borderRadius: '20',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: { base: '340px', sm: '340px', md: '36vh' },
+    width: { base: '300px', sm: '300px', md: '60%' },
+    px: { sm: '30px', md: '60px' },
+    bgColor: 'rgba(255, 255, 255, 0.95)',
+  },
+});
+
+export const SubHeading = chakra(Box, {
+  baseStyle: {
+    fontSize: { base: 'xs', md: 'xs', lg: 'md' },
+    color: 'brand.primary',
+    m: '20px',
+    textAlign: 'center',
+    fontWeight: 'bold',
+  },
+});
+
+export const MainHeading = chakra(Box, {
+  baseStyle: {
+    fontSize: { base: 'xl', md: '2xl', lg: '3xl' },
     color: 'brand.primary',
     textAlign: 'center',
     fontWeight: 'bold',
-    display: 'flex-column',
-    boxShadow: 'xl',
-    borderRadius: '20',
-    justifyContent: 'center',
-
-    padding: { base: '40px 80px', md: '100px 170px' },
-    bgColor: 'rgba(255, 255, 255, 0.95)',
   },
 });
 
