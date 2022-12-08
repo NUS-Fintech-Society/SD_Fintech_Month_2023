@@ -15,9 +15,14 @@ export default function IndexMain(props: Props) {
   const { scrollToThemePage } = props;
   const router = useRouter();
 
-  const handleClick = (e: { preventDefault: () => void }) => {
+  const handleHackathonClick = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     router.push('/fintechHackathon');
+  };
+
+  const handleWorkshipClick = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    router.push('/workshops');
   };
 
   const importantDatesSection = (
@@ -29,7 +34,7 @@ export default function IndexMain(props: Props) {
           fontWeight="bold"
           fontSize="lg"
           mr="30px"
-          onClick={handleClick}
+          onClick={handleHackathonClick}
         >
           Hackathon
         </WorkshopButton>
@@ -38,6 +43,7 @@ export default function IndexMain(props: Props) {
           fontWeight="bold"
           fontSize="lg"
           ml="30px"
+          onClick={handleWorkshipClick}
         >
           Workshops
         </WorkshopButton>
