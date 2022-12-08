@@ -10,6 +10,7 @@ export const PageContainer = chakra(Flex, {
     alignItems: 'center',
     backgroundPosition: 'center',
     backgroundSize: '80%',
+    position: 'relative',
   },
 });
 
