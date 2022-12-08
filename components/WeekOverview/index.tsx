@@ -1,4 +1,11 @@
-import {Text} from '@chakra-ui/react'
+import {
+    Text,
+    Flex,
+    Accordion,
+    AccordionItem,
+    AccordionButton,
+    AccordionPanel,
+    AccordionIcon,} from '@chakra-ui/react'
 import { WeekEvents, Weeks } from '../../data/WeekEvents';
 import { WeekEvent, Week, SpeakerInfo} from '../../types/WeekEvent';
 import { useState} from 'react';
@@ -25,8 +32,9 @@ import {
     SpeakerLabel,
     SpeakerContainer,
     AllSpeakers,
+    ExpandWorkshopButton,
+    WorkshopAccordion,
 } from "./styles"
-import { ALL } from 'dns';
 
 function generateSpeaker(info : SpeakerInfo){
     return (
@@ -41,7 +49,7 @@ function generateSpeaker(info : SpeakerInfo){
     )
 }
 
-function generateWorkshop(event : WeekEvent){
+function generateDesktopWorkshop(event : WeekEvent){
     return (
         <Event key = {event.id}>
                 <DateAndLocation>
@@ -58,16 +66,55 @@ function generateWorkshop(event : WeekEvent){
                     <EventLabel>{event.label}</EventLabel>
                     {event.label == 'Panel Discussion' ? <AllSpeakers>
                     {event.speakerInfo ? event.speakerInfo.map((info) => generateSpeaker(info)) : <div></div>}
-                    </AllSpeakers> : event.speakerInfo ? generateSpeaker(event.speakerInfo[0]) : <div></div>}
+                    </AllSpeakers> : event.speakerInfo ?  generateSpeaker(event.speakerInfo[0]) : <div></div>}
                 </WorkshopBox>
         </Event>
     )
 }
 
-function generateNonWorkshop(event : WeekEvent){
+function generateMobileWorkshop(event : WeekEvent){
     return (
         <Event key = {event.id}>
-                <DateAndLocation>
+            <Flex  marginBottom = {'-7%'}>
+            <DateAndLocation>
+                    <DateAndTime>
+                        <BoldText>{event.date}</BoldText>
+                        <Time>{event.time}</Time>
+                    </DateAndTime>
+                    <LocationTag>
+                        {event.venue}
+                    </LocationTag>
+                </DateAndLocation>
+                <WorkshopBox>
+                    <EventTitle>{event.title}</EventTitle>
+                </WorkshopBox>
+            </Flex>
+            <Flex px ={"5%"}>
+            <WorkshopAccordion width = {"100%"} allowMultiple>
+                        <AccordionItem >
+                            <ExpandWorkshopButton>
+                                <AccordionIcon color = {'white'}></AccordionIcon>
+                            </ExpandWorkshopButton>
+                            <AccordionPanel>
+                            <EventLabel height={"10%"} py = {"2%"} my = {"2%"}>{event.label}</EventLabel>
+                            {event.label == 'Panel Discussion' ? <AllSpeakers>
+                    {event.speakerInfo ? event.speakerInfo.map((info) => generateSpeaker(info)) : <div></div>}
+                    </AllSpeakers> : event.speakerInfo ?  generateSpeaker(event.speakerInfo[0]) : <div></div>}
+                        </AccordionPanel>
+                        </AccordionItem>
+            </WorkshopAccordion>
+            </Flex>
+            
+        </Event>
+    )
+}
+
+
+
+function generateDesktopNonWorkshop(event : WeekEvent){
+    return (
+        <Event key = {event.id}>
+            <DateAndLocation>
                     <DateAndTime>
                         <BoldText>{event.date}</BoldText>
                         <Time>{event.time}</Time>
@@ -81,9 +128,28 @@ function generateNonWorkshop(event : WeekEvent){
     )
 }
 
+function generateMobileNonWorkshop(event : WeekEvent){
+    return (
+        <Event key = {event.id}>
+            <Flex>
+            <DateAndLocation>
+                    <DateAndTime>
+                        <BoldText>{event.date}</BoldText>
+                        <Time>{event.time}</Time>
+                    </DateAndTime>
+                </DateAndLocation>
+                <NonWorkshopBox>
+                    <EventTitle>{event.title}</EventTitle>
+                    <EventLabel>{event.label}</EventLabel>
+                </NonWorkshopBox>
+            </Flex> 
+        </Event>
+    )
+}
 
-export default function WeekOverview(){
-    const [weekNumber, setWeekNumber] = useState(0);
+
+function DesktopWeekOverview(){
+    const [WeekNumber, setWeekNumber] = useState(0);
     return (
         <WeekOverviewContainer>
             <HeadingContainer>WEEK OVERVIEW</HeadingContainer>
@@ -91,9 +157,27 @@ export default function WeekOverview(){
                {Weeks.map(week => <WeekButton onClick = {() => setWeekNumber(week.id)} key = {week.id}><Text>{week.label}</Text><Text>{week.date}</Text></WeekButton>)} 
             </ButtonPanel>
             <SingleWeekContainer>
-                <WeekHeader>{Weeks[weekNumber].label}</WeekHeader>
-                {WeekEvents[weekNumber].map(event => event.label == "Workshop" || event.label  == "Panel Discussion" ? generateWorkshop(event) : generateNonWorkshop(event))}
+                <WeekHeader>{Weeks[WeekNumber].label}</WeekHeader>
+                {WeekEvents[WeekNumber].map(event => event.label == "Workshop" || event.label  == "Panel Discussion" ? generateDesktopWorkshop(event) : generateDesktopNonWorkshop(event))}
             </SingleWeekContainer>
         </WeekOverviewContainer>
     )
 }
+
+function MobileWeekOverview(){
+    const [weekNumber, setWeekNumber] = useState(0);
+    return (
+        <WeekOverviewContainer>
+            <HeadingContainer>WEEK OVERVIEW</HeadingContainer>
+            <ButtonPanel>
+               {Weeks.map(week => <WeekButton onClick = {() => setWeekNumber(week.id)} key = {week.id}><Text>{week.id}</Text></WeekButton>)} 
+            </ButtonPanel>
+            <SingleWeekContainer>
+                <WeekHeader>{Weeks[weekNumber].label}</WeekHeader>
+                {WeekEvents[weekNumber].map(event => event.label == "Workshop" || event.label  == "Panel Discussion" ? generateMobileWorkshop(event) : generateMobileNonWorkshop(event))}
+            </SingleWeekContainer>
+        </WeekOverviewContainer>
+    )
+}
+
+export {DesktopWeekOverview, MobileWeekOverview};

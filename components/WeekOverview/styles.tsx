@@ -1,4 +1,4 @@
-import {Flex,Image,Text, Button, Box,chakra} from '@chakra-ui/react';
+import {Flex,Image,Text, Button,chakra, AccordionButton, Accordion} from '@chakra-ui/react';
 
 export const WeekOverviewContainer = chakra(Flex,{
     baseStyle : {
@@ -7,7 +7,11 @@ export const WeekOverviewContainer = chakra(Flex,{
         minH : '100vh',
         flexDirection : 'column',
         alignItems : 'center',
-        py : {base : '15%', md : '5%'}
+        py : {base : '15%', md : '5%'},
+        backgroundImage: `url("/Background/weekoverview-background.png")`,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        bgRepeat : 'repeat',
     },
 })
 
@@ -18,7 +22,7 @@ export const HeadingContainer = chakra(Flex, {
         align : 'center',
         justifyContent : 'center',
         paddingTop : '5%',
-        fontSize : {base : 'xl', md : '4xl'},
+        fontSize : {base : '2xl', md : '4xl'},
         fontWeight : 'bold',
     }
 })
@@ -29,16 +33,19 @@ export const ButtonPanel = chakra(Flex,{
         minH : '20%',
         px : '25%',
         py : '3%', 
+        justifyContent : 'center',
     }
 })
 
 export const WeekButton = chakra(Button,{
     baseStyle: {
-      width: '200px',
+      width: {base : '4rem', md : '8rem'},
+      minWidth : {base : '0', md : '120px'},
       display : 'flex',
       flexDirection : 'column',
-      py : '30px',
-      borderRadius: '20px',
+      py : {base : '1.5rem',md : '2rem'},
+      justifyContent : 'center',
+      borderRadius: {base : 'full', md : '20px'},
       backgroundColor : '#dbd5eb',
       fontWeight : 'normal',
       fontSize : 'sm',
@@ -60,7 +67,7 @@ export const SingleWeekContainer = chakra(Flex, {
         flexDirection : 'column',
         alignContent : 'center',
         justifyContent : 'space-evenly',
-        px : '15%',
+        px : { base : '7.5%' ,md :'15%'},
     }
 })
 
@@ -68,15 +75,17 @@ export const WeekHeader = chakra(Flex,{
     baseStyle :{
         alignContent : 'center',
         color : '#001158',
-        fontSize : '2xl',
+        fontSize : {base : 'xl', md : '2xl'},
         fontWeight : 'bold',
     }
 })
 
 export const Event = chakra(Flex,{
     baseStyle : {
+        flexDirection : {base : 'column', md : 'row'},
         justifyContent : 'space-apart',
-        minH : '12rem',
+        backgroundColor : "white",
+        minH : {base : '0' , md : '12rem'},
         py : '3%',
         px : '2%',
         w : '100%',
@@ -93,7 +102,7 @@ export const BoldText = chakra(Flex, {
         color : '#001158',
         fontWeight : 'bold',
         // paddingRight : '2%',
-        fontSize : 'md',
+        fontSize : {base : 'sm', md : 'md'},
     }
 })
 
@@ -108,13 +117,13 @@ export const EventLabel = chakra(Flex,{
     baseStyle : {
         backgroundColor : '#001158',
         color : 'white',
-        alignContent : 'center',
+        textAlign : 'center',
         justifyContent : 'center',
         width : '100%',
-        py : '1%',
+        py : {base : '10%' ,md : '1.5%'},
         fontWeight : 'bold',
         borderRadius : '5px',
-        fontSize : 'sm',
+        fontSize : {base : 'xs', md : 'sm'},
     }
 })
 
@@ -124,12 +133,13 @@ export const LocationTag = chakra(Flex,{
         color : 'white',
         alignContent : 'center',
         justifyContent : 'center',
-        width : '60%',
+        width : {base : '50%', md : '60%'},
         fontWeight : 'bold',
         py : '3%',
+        marginTop : {base : '5%', md : '0'},
         px : '5%',
         borderRadius : '5px',
-        fontSize : 'sm',
+        fontSize : {base : 'xs', md : 'sm'},
     }
 })
 
@@ -137,7 +147,7 @@ export const LocationTag = chakra(Flex,{
 export const DateAndLocation = chakra(Flex, {
     baseStyle : {
         flexDirection : 'column',
-        w : '20%',
+        w : {base : '50%', xl :'20%'},
         alignItems : 'center',
         alignContent : 'center',
     }
@@ -148,16 +158,17 @@ export const DateAndTime = chakra(Flex, {
         w : '100%',
         alignItems : 'center',
         textAlign : 'center',
-        paddingBottom : '10px',
-        justifyContent : 'space-evenly',
-        px : '5%',
+        paddingBottom : {base : '0', md :'10px'},
+        justifyContent : 'center',
+        px : {base : '0', md : '5%'},
     }
 })
 
 export const Time = chakra(Flex, {
     baseStyle : {
         color : '#001158',
-        fontSize : 'sm',
+        fontSize : {base : 'xs', md : 'sm'},
+        px : '3%',
     }
 })
 
@@ -165,7 +176,7 @@ export const Time = chakra(Flex, {
 export const EventTitle = chakra(Flex,{
     baseStyle : {
         color : '#001158',
-        fontSize : 'xl',
+        fontSize : {base : 'sm' , md : 'xl'},
         paddingBottom : '15px',
         fontWeight : 'bold',
     }
@@ -174,7 +185,7 @@ export const EventTitle = chakra(Flex,{
 //descriptionBox 
 export const NonWorkshopBox = chakra(Flex,{
     baseStyle:{
-        width : '75%',
+        width : {base : '50%', md : '75%'},
         paddingBottom : '2%',
         flexDirection : 'column',
         px : '7.5%',
@@ -184,21 +195,22 @@ export const NonWorkshopBox = chakra(Flex,{
 
 export const WorkshopBox = chakra(Flex,{
     baseStyle:{
-        width : '75%',
-        flexDirection : 'column',
+        width : {base : '50%', md : '75%'},
+        flexDirection : {base : 'column', md :'column'},
         px : '7.5%',
         justifyContent : 'space-apart',
-        minH : '300px',
+        minH : '150px',
+        alignItems : {base : 'center', md : 'start'}
     }
 })
 
 //Workshop Speaker 
 export const SpeakerContainer = chakra(Flex,{
     baseStyle : {
-        height : '50%',
-        width : '50%',
+        maxHeight : '50%',
+        minWidth : '50%',
         paddingTop : '20px',
-        alignContent : 'center',
+        alignItems : 'center',
         // justifyContent : 'center',
     }
 })
@@ -232,6 +244,30 @@ export const SpeakerLabel = chakra(Text, {
 export const AllSpeakers = chakra(Flex, {
     baseStyle : {
         w : '100%',
+        overflow : 'none',
         flexWrap : 'wrap',
+    }
+})
+
+export const WorkshopAccordion = chakra(Accordion, {
+    baseStyle : {
+        borderColor : "white", 
+    }
+})
+
+export const ExpandWorkshopButton = chakra(AccordionButton, {
+    baseStyle : {
+        width : '2rem',
+        height : '2rem',
+        py : '2%',
+        justifyContent : 'center',
+        alignItems : 'center',
+        borderRadius : 'full',
+        backgroundColor : '#dbd5eb',
+        color : '#001158',
+        _hover : {
+            backgroundColor :'#001158',
+            color : 'white',
+        },
     }
 })
