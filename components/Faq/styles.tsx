@@ -1,11 +1,12 @@
 import { Box, chakra, Tab } from '@chakra-ui/react';
+import SecondaryBackground from '../../public/SecondaryBackground.png';
 
 export const FaqWrapper = chakra(Box, {
   baseStyle: {
     width: '100vw',
     minHeight: { base: 'calc(100vh - 130px)', md: 'calc(100vh - 160px)' },
     justifyContent: 'center',
-    bgImage: "url('/Background/sponsor-background.png')",
+    bgImage: `url(${SecondaryBackground.src})`,
     bgSize: 'cover',
     bgPosition: 'center',
   },
