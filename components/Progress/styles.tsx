@@ -1,23 +1,23 @@
-import { Box, chakra } from '@chakra-ui/react';
+import { Flex, Text, chakra } from '@chakra-ui/react';
 
-export const Title = chakra(Box, {
+export const Title = chakra(Text, {
   baseStyle: {
-    display: 'flex',
-    justifyContent: 'center',
-    paddingTop: '15px',
-    paddingBottom: '15px',
     fontWeight: 'bold',
-    fontSize: '5xl',
+    fontSize: { base: '3xl', sm: '3xl', lg: '4xl' },
     color: 'brand.primary',
+    textAlign: 'center',
   },
 });
 
-export const ProgressWrapper = chakra(Box, {
+export const WIPContainer = chakra(Flex, {
   baseStyle: {
     width: '100vw',
-    minHeight: 'calc(100vh - 160px)',
+    height: 'calc(100vh - 60px)',
     justifyContent: 'center',
-    bgImage: "url('/Background/sponsor-background.png')",
+    alignItems: 'center',
+    bgImage: "url('/Background/workshop-background.png')",
+    pl: '20px',
+    pr: '20px',
     bgSize: 'cover',
     bgPosition: 'center',
   },
