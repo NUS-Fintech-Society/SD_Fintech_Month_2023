@@ -28,13 +28,13 @@ const About = () => {
                 NUS FinTech month is a series of workshops and panel discussions
                 designed to give university and polytechnic students an insight
                 into the world of Fintech. The theme for this year will revolve
-                around Fintech Microservices. There will be workshops ranging
+                around Fintech as a Service. There will be workshops ranging
                 from beginner levels to more advanced levels allowing everyone,
                 no matter their background, to participate in this. The
-                workshops will be held in the NUS Fintech Lab room as well as
-                broadcast online. There will also be a hackathon where a
-                real-world problem will be tackled using Fintech demonstrating
-                the usefulness of this technology in a real-world context.
+                workshops will be held in person as well as broadcast online.
+                There will also be a hackathon where a real-world problem will
+                be tackled using Fintech demonstrating the usefulness of this
+                technology in a real-world context.
               </DescriptionBox>
             </Centralised>
           </FlushTopLeft>
