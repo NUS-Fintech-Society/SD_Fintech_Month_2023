@@ -24,7 +24,8 @@ export default function SpeakerContainer(props: Props) {
 
   return (
     <>
-      <Box onClick={onOpen}>
+    {speaker.description 
+      ? <Box onClick={onOpen}>
         <SpeakerBox speakerInfo={speaker}></SpeakerBox>
         <SpeakerModal isOpen={isOpen} onClose={onClose} isCentered>
           <ModalOverlay />
@@ -34,7 +35,19 @@ export default function SpeakerContainer(props: Props) {
             <ModalBody>{speaker.description}</ModalBody>
           </SpeakerModalContent>
         </SpeakerModal>
-      </Box>
+      </Box> 
+      : <Box>
+        <SpeakerBox speakerInfo={speaker}></SpeakerBox>
+        <SpeakerModal isOpen={isOpen} onClose={onClose} isCentered>
+          <ModalOverlay />
+          <SpeakerModalContent>
+            <ModalHeader textAlign="center">{speaker.name}</ModalHeader>
+            <ModalCloseButton />
+            <ModalBody>{speaker.description}</ModalBody>
+          </SpeakerModalContent>
+        </SpeakerModal>
+      </Box>}
+      
     </>
   );
 }

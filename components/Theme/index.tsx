@@ -16,7 +16,7 @@ const Theme = () => {
       </HeadingContainer>
       <Centralised>
         <TextBox>
-          <MainHeading>Fintech Microservices</MainHeading>
+          <MainHeading>Fintech as a Service</MainHeading>
           <SubHeading>
             The theme for NUS Fintech Month 2023 will be &quot;Fintech As A
             Service&quot; and for the purpose of the hackathon, we define

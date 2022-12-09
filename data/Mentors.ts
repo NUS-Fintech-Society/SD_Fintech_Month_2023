@@ -50,15 +50,6 @@ export const MentorsInfoArray: Mentor[] = [
       'Harsh is an IIT Bombay graduate Data Scientist with 2 years of hands-on experience designing, building and managing the complex production lifecycle of end-to-end machine learning pipelines.',
   },
   {
-    name: 'Sophia Cui',
-    image: '/Mentors/SOPHIACUI.png',
-    title: 'Product Lead - Connectivity',
-    organisation: 'Talos',
-    description:
-      '9 years of experience in Fintech as a technical leader including Investing banks, Hedge funds and crypto tech company.',
-  },
-
-  {
     name: 'Hassan Ahmed',
     image: '/Mentors/HASSAN.png',
     title: 'Regional Director, Southeast Asia',
@@ -89,5 +80,27 @@ export const MentorsInfoArray: Mentor[] = [
     organisation: 'Cylynx',
     description:
       "Timothy is the CEO of Cylynx, a crypto regtech startup recognised as Regulation's Asia \"One to Watch\" and were recently winners of the Monetary Authority of Singapore's Global Veritas Challenge for responsible AI. He has worked closely with ecosystem partners from exchanges, financial institutions and regulators to solve AML/CFT problems in the virtual asset space. He has more than 8 years of experience in applied data analytics across different industries and subject domains. In his previous role as a data science consultant, he delivered end to end data projects with clients such as Celcom, Telkomsel, Levi's, and Swire Properties, spanning fraud detection and consumer analytics use cases.",
+  },
+  {
+    name: 'Marton Antal Szel',
+    image: '/Mentors/MARTON.png',
+    title: 'Director of Data Science',
+    organisation: 'Lynx Analytics',
+    description:
+    'A data scientist for 12 years with a strong interest in graphs. Working mainly on retail, finance, and telco projects. Currently getting more and more involved in biotech-related data science work. Likes literature, hiking, and badminton'
+  },
+  {
+    name: 'Sean Lim',
+    image: '/Mentors/SEAN.png',
+    title: 'Operational Excellence Manager',
+    organisation: 'Mastercard',
+    description:'Sean is a Risk Management and Governance professional with extensive experience in Operational Excellence, Risk Management, Product Governance, Process Design, and Business Transformation. Sean provides advisory and oversight on the full spectrum of areas supporting Product-led Businesses, including Operations, Implementation, Technology, Security, Go-To-Market, Solution Design, Legal, Finance, Program Management and Vendor Management. I am a Chartered Accountant (CA) under the Institute of Singapore Chartered Accountants (ISCA) and an Institute of Operational Risk™ certified Operational Risk Manager.'
+  },
+  {
+    name: 'Nikita Kozlov',
+    image: '/Mentors/NIKITA.png',
+    title: 'Backend Lead',
+    organisation: '1inch',
+    description:'ex-Binance, cofounder of several tech startups, currently backend lead at 1inch. '
   },
 ];
