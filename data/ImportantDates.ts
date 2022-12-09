@@ -3,32 +3,32 @@ import { ImportantDate } from '../types/Date';
 export const importantDates: ImportantDate[] = [
   {
     id: 1,
-    date: '12 DEC',
-    description: 'Registration Opens',
+    date: '12 DEC 2022',
+    description: 'Workshops & Hackathon Registration Open',
   },
   {
     id: 2,
-    date: '30 DEC',
-    description: 'Registration Closes',
+    date: '30 DEC 2022',
+    description: 'Hackathon Registration Close'
   },
   {
     id: 3,
-    date: '6 JAN',
-    description: 'Opening Address',
+    date: '6 JAN 2023',
+    description: 'Opening Ceremony',
   },
   {
     id: 4,
-    date: '9 - 13 JAN',
-    description: 'Industry Workshops',
+    date: '6 JAN 2023',
+    description: 'Hackathon Commencement'
   },
   {
     id: 5,
-    date: '14 JAN',
-    description: 'Hackathon Commencement',
+    date: '9 JAN 2023 - 20 JAN 2023',
+    description: 'Industry Workshops',
   },
   {
-    id: 6,
-    date: '27 JAN',
-    description: 'Closing Ceremony',
+    id: 7,
+    date: '27 JAN 2023',
+    description: 'Finalist Demo Day',
   },
 ];
