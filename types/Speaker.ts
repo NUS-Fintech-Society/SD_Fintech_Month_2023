@@ -6,5 +6,5 @@ export type Speaker = {
   location: string;
   title: string;
   organisation: string;
-  description: string;
+  description?: string;
 };
