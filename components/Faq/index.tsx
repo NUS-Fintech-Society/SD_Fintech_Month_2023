@@ -1,17 +1,11 @@
 import {
-  Accordion,
-  AccordionButton,
-  AccordionIcon,
-  AccordionItem,
-  AccordionPanel,
-  Box,
-  Tab,
   TabList,
   TabPanel,
   TabPanels,
   Tabs,
   useBreakpointValue,
 } from '@chakra-ui/react';
+import { Collapse } from 'antd'
 import React from 'react';
 import { Faqs } from '../../data/FrequentlyAskedQuestions';
 import { Faq } from '../../types/Faq';
@@ -20,6 +14,7 @@ import {
   ContentWrapper,
   FaqWrapper,
   Header,
+  StyledPanel,
   StyledTab,
 } from './styles';
 
@@ -50,27 +45,17 @@ export default function FaqComponent() {
   const content = faqs.map((tab, index) => {
     const accordions = tab.data.map((qns, index) => {
       return (
-        <AccordionItem my="20px" key={index}>
-          <h2>
-            <AccordionButton>
-              <Box flex="1" textAlign="left">
-                {qns.question}
-              </Box>
-              <AccordionIcon />
-            </AccordionButton>
-          </h2>
-          <AccordionPanel pb={4} whiteSpace={'pre-line'}>
-            {qns.answer}
-          </AccordionPanel>
-        </AccordionItem>
+        <StyledPanel header={qns.question} key={index}>
+          <p dangerouslySetInnerHTML={{__html: qns.answer}}></p>
+        </StyledPanel>
       );
     });
 
     return (
       <TabPanel key={index} mt="-5">
-        <Accordion variant="custom" defaultIndex={[]}>
+        <Collapse bordered={false}>
           {accordions}
-        </Accordion>
+        </Collapse>
       </TabPanel>
     );
   });

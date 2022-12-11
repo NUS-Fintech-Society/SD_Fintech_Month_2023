@@ -23,10 +23,11 @@ import { Routes } from '../../constants/Routes.enum';
 
 type Props = {
   navigate: Function;
+  hackathon: Function;
 };
 
 export default function DesktopNavigationBar(props: Props) {
-  const { navigate } = props;
+  const { navigate, hackathon } = props;
   const isSmallScreen = useBreakpointValue({ base: true, '2xl': false });
 
   return (
@@ -114,7 +115,7 @@ export default function DesktopNavigationBar(props: Props) {
             </HStack>
             <HackathonButton
               colorScheme="brand"
-              onClick={navigate(Routes.FINTECH_HACKATHON)}
+              onClick={hackathon}
             >
               Fintech Hackathon
             </HackathonButton>

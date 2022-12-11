@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react';
 import React from 'react';
 import { Speaker } from '../../../types/Speaker';
+import { isEmptyString } from '../../../utils/CommonUtil';
 import SpeakerBox from '../SpeakersBox';
 import { SpeakerModal, SpeakerModalContent } from './styles';
 
@@ -22,12 +23,14 @@ export default function SpeakerContainer(props: Props) {
   const isDesktop = useBreakpointValue({ base: false, lg: true });
   const { isOpen, onOpen, onClose } = useDisclosure();
 
+  const isModalOpen = isOpen && !isEmptyString(speaker.description)
+
   return (
     <>
     {speaker.description 
       ? <Box onClick={onOpen}>
         <SpeakerBox speakerInfo={speaker}></SpeakerBox>
-        <SpeakerModal isOpen={isOpen} onClose={onClose} isCentered>
+        <SpeakerModal isOpen={isModalOpen} onClose={onClose} isCentered>
           <ModalOverlay />
           <SpeakerModalContent>
             <ModalHeader textAlign="center">{speaker.name}</ModalHeader>
@@ -38,7 +41,7 @@ export default function SpeakerContainer(props: Props) {
       </Box> 
       : <Box>
         <SpeakerBox speakerInfo={speaker}></SpeakerBox>
-        <SpeakerModal isOpen={isOpen} onClose={onClose} isCentered>
+        <SpeakerModal isOpen={isModalOpen} onClose={onClose} isCentered>
           <ModalOverlay />
           <SpeakerModalContent>
             <ModalHeader textAlign="center">{speaker.name}</ModalHeader>

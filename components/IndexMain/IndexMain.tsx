@@ -17,7 +17,8 @@ export default function IndexMain(props: Props) {
 
   const handleHackathonClick = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    router.push('/fintechHackathon');
+    window.open('https://forms.gle/woaewfoX4pW9nJMZA')
+    //router.push('/fintechHackathon');
   };
 
   const handleWorkshipClick = (e: { preventDefault: () => void }) => {
