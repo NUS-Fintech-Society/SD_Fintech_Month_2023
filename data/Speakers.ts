@@ -105,7 +105,7 @@ export const SpeakersInfoArray: Speaker[] = [
     title: 'Investor',
     organisation: 'SIG',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum nibh eget nisi volutpat, ac aliquam urna suscipit. Proin eu lacus laoreet, laoreet justo eu, bibendum nisl.',
+      '',
   },
   {
     name: 'Ziheng Li',
