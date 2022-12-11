@@ -21,10 +21,11 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 
 type Props = {
   navigate: Function;
+  hackathon: Function;
 };
 
 export default function MobileNavigationBar(props: Props) {
-  const { navigate } = props;
+  const { navigate, hackathon } = props;
 
   return (
     <MobileNavBarContainer>
@@ -69,7 +70,7 @@ export default function MobileNavigationBar(props: Props) {
               <MenuItem onClick={navigate(Routes.WIP)}>Resources</MenuItem>
               <MenuDivider />
               <MobileHackathonButton
-                onClick={navigate(Routes.FINTECH_HACKATHON)}
+                onClick={hackathon}
               >
                 Fintech Hackathon
               </MobileHackathonButton>
