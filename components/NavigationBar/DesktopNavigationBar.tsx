@@ -105,16 +105,9 @@ export default function DesktopNavigationBar(props: Props) {
               >
                 FAQ
               </Button>
-              <Button
-                variant="link"
-                colorScheme="black"
-                onClick={navigate(Routes.WIP)}
-              >
-                Resources
-              </Button>
             </HStack>
             <HackathonButton colorScheme="brand" onClick={hackathon}>
-              Fintech Hackathon
+              Hackathon Signup
             </HackathonButton>
           </HStack>
         </HStackContainer>
