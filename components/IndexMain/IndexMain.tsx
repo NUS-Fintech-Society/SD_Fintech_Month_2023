@@ -17,7 +17,7 @@ export default function IndexMain(props: Props) {
 
   const handleHackathonClick = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    window.open('https://forms.gle/woaewfoX4pW9nJMZA')
+    window.open('https://forms.gle/woaewfoX4pW9nJMZA');
     //router.push('/fintechHackathon');
   };
 
@@ -86,7 +86,7 @@ export default function IndexMain(props: Props) {
             mr={{ base: '0px', lg: '80px' }}
           >
             <Flex direction="column" alignItems="center">
-              <Title>NUS FINTECH MONTH</Title>
+              <Title>NUS FINTECH MONTH 2023</Title>
               <ThemeButton
                 colorScheme="brand"
                 fontWeight="bold"
@@ -94,7 +94,7 @@ export default function IndexMain(props: Props) {
                 onClick={scrollToThemePage}
                 mb={{ base: '0px', md: '80px' }}
               >
-                2023 Theme
+                Theme : Fintech-as-a-service
               </ThemeButton>
             </Flex>
             <CountdownTimer />

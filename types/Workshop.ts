@@ -9,7 +9,7 @@ export type Workshop = {
   organisation: string;
   speaker: string;
   venue: string;
-  link: string;
+  link?: string;
   position: string;
   image: string;
   description: string;
