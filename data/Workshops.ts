@@ -62,7 +62,7 @@ export const Workshops: Workshop[] = [
       'Calvin Chu is a core builder at Impossible Finance, a multichain decentralized incubator, launchpad, and swap. He previously worked on research and diligence for Binance Launchpad and built up the Binance Staking product to support 30 different blockchains.',
   },
   {
-    id: 5,
+    id: 6,
     day: 'Tuesday',
     date: 'Tuesday, 10 Jan',
     time: '6.00pm - 7.30pm',
@@ -77,7 +77,7 @@ export const Workshops: Workshop[] = [
       'Full-stack engineer, develops and maintains all website-related projects, database, backend API server, monitoring and many others. Previously cloud architect @ AWS.',
   },
   {
-    id: 6,
+    id: 7,
     day: 'Wednesday',
     date: 'Wednesday, 11 Jan',
     time: '6.00pm - 6.45pm',
@@ -92,7 +92,7 @@ export const Workshops: Workshop[] = [
       'Nischint is the Regional Lead for Crypto in Asia Pacific, responsible for overseeing Visa’s crypto business in AP including creating and growing new revenue streams through emerging crypto products and GTM efforts. Nischint and his team serve as the subject matter experts supporting client facing teams on digital currency/web 3.0 engagements with key stakeholders. Nischint brings over 19 years of experience in financial services. Nischint holds an MBA from Boston University School of Management and is also a Chartered Accountant.',
   },
   {
-    id: 7,
+    id: 8,
     day: 'Thursday',
     date: 'Thursday, 12 Jan',
     time: '6.00pm - 6.45pm',
@@ -107,7 +107,7 @@ export const Workshops: Workshop[] = [
       'Graduated from NUS, Peking University and Tsinghua University, Mr. Donghao Huang has more than 24 years’ professional experiences in software engineering and R&D. Over the past 11+ years, as the founding head of Singapore R&D team, Mr. Huang has been leading the team to drive payment innovations from ideas through concept development and rapid prototyping to MVP and commercialization in various emerging technology domains, such as Connected Cars, Internet of Things, AR/VR, 5G and Blockchain. Currently he is leading the global R&D initiatives in Web3 and Metaverse.',
   },
   {
-    id: 8,
+    id: 9,
     day: 'Friday',
     date: 'Friday, 13 Jan',
     time: '5.30pm - 7.30pm',
@@ -122,7 +122,7 @@ export const Workshops: Workshop[] = [
       'Gabor is responsible for defining the methodological roadmap of Lynx’s predictive analytics consulting and product development departments. He leads the internal data science team and supports the business development. Gabor has been the co-founder of several other AI start-ups in Healthcare, Finance, Crypto, Telecom and Space Industries, contributing with creative application of state-of-the-art data science models. He received his PhD in 2003, worked as an Associate Professor at Budapest Corvinus University, author of one book and many scientific papers.',
   },
   {
-    id: 9,
+    id: 10,
     day: 'Tuesday',
     date: 'Tuesday, 17 Jan',
     time: '7.30pm - 8.15pm',
@@ -137,7 +137,7 @@ export const Workshops: Workshop[] = [
       'Xin Yi is a research analyst in the Alpha team and is interested in emerging technologies. She mainly enjoys trading NFTs and exploring new chains/protocols. She graduated from NUS, majoring in Communications and had experience in marketing prior to joining Nansen',
   },
   {
-    id: 10,
+    id: 11,
     day: 'Wednesday',
     date: 'Wednesday, 18 Jan',
     time: '6.00 - 7.00pm',
@@ -152,7 +152,7 @@ export const Workshops: Workshop[] = [
       'Pamela is Head of Sales, APAC at Talos and responsible for driving sales growth and managing sales operations in this region. Prior to joining Talos, Pamela was Head of Partnerships, APAC at LMAX Group where her focus was to lead business growth with institutional clients in the FX and digital assets space. Outside of work, she is passionate about women empowerment and has served on the committees of YWLC (Singapore) and WIFA ASIFMA (Hong Kong). Currently, she is volunteering with the women in blockchain committee under Blockchain Association of Singapore. She started her career with Credit Suisse as an analyst in the equities sales trading division.',
   },
   {
-    id: 11,
+    id: 5,
     day: 'Wednesday',
     date: '',
     time: '7.30pm - 9.00pm',
