@@ -96,7 +96,7 @@ export const Workshops: Workshop[] = [
     day: 'Wednesday',
     date: 'Wednesday, 11 Jan',
     time: '6.00pm - 6.45pm',
-    name: 'Crypto and Digital Currencies 101',
+    name: 'Digital Currencies 101',
     organisation: 'Visa',
     speaker: 'Nischint Sanghavi',
     venue: 'TBC',
