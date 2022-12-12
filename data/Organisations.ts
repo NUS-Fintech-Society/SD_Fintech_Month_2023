@@ -37,12 +37,6 @@ export const Silver: Organisation[] = [
     logoSize: '90px',
     url: 'https://www.thoughtmachine.net/',
   },
-  {
-    name: 'Talos',
-    logoSrc: '/Sponsor/talos-logo.png',
-    logoSize: '35px',
-    url: 'https://talos.com/',
-  },
 ];
 
 export const Organisers: Organisation[] = [
