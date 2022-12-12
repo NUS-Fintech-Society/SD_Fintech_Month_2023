@@ -12,7 +12,7 @@ export const Title = chakra(Box, {
 
 export const ThemeButton = chakra(Button, {
   baseStyle: {
-    width: '200px',
+    // width: '200px',
     height: '50px',
     borderRadius: '20px',
   },

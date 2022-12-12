@@ -3,8 +3,8 @@ import { Speaker } from '../types/Speaker';
 export const SpeakersInfoArray: Speaker[] = [
   {
     name: 'Johnny Kok',
-    date: '17 Jan',
-    time: '8 pm - 9.30pm',
+    date: '18 Jan',
+    time: '7.30 pm - 9pm',
     image: '/Speakers/JOHNNYKOK.png',
     location: 'COM B1-101',
     title: 'VP Commercial, APAC',
@@ -14,8 +14,8 @@ export const SpeakersInfoArray: Speaker[] = [
   },
   {
     name: 'Huang Donghao',
-    date: '17 Jan',
-    time: '8 pm - 9.30pm',
+    date: '12 Jan',
+    time: '6pm - 6.45pm',
     image: '/Speakers/HUANGDONGHAO.png',
     location: 'COM B1-101',
     title: 'Vice President, R&D',
@@ -25,8 +25,8 @@ export const SpeakersInfoArray: Speaker[] = [
   },
   {
     name: 'Gabor Balazs Benedek',
-    date: '17 Jan',
-    time: '8 pm - 9.30pm',
+    date: '13 Jan',
+    time: '5.30pm -7.30pm',
     image: '/Speakers/GABOR.png',
     location: 'COM B1-101',
     title: 'Co-founder & Chief Innovation Officer',
@@ -36,8 +36,8 @@ export const SpeakersInfoArray: Speaker[] = [
   },
   {
     name: 'Nischint Sanghavi',
-    date: '17 Jan',
-    time: '8 pm - 9.30pm',
+    date: '11 Jan',
+    time: '6pm - 6.45pm',
     image: '/Speakers/NISCHINT.png',
     location: 'COM B1-101',
     title: 'Co-founder & Chief Innovation Officer',
@@ -47,8 +47,8 @@ export const SpeakersInfoArray: Speaker[] = [
   },
   {
     name: 'Krishna Parthasarathy',
-    date: '17 Jan',
-    time: '8 pm - 9.30pm',
+    date: '12 Jan',
+    time: '7.30pm - 8.15pm',
     image: '/Speakers/KRISHNA.png',
     location: 'COM B1-101',
     title: 'Senior Data Scientist',
@@ -58,8 +58,8 @@ export const SpeakersInfoArray: Speaker[] = [
   },
   {
     name: 'Calvin Chu',
-    date: '17 Jan',
-    time: '8 pm - 9.30pm',
+    date: '9 Jan',
+    time: '7.30pm - 8.30pm',
     image: '/Speakers/CALVINCHU.png',
     location: 'COM B1-101',
     title: 'Core BUIDLer',
@@ -75,7 +75,7 @@ export const SpeakersInfoArray: Speaker[] = [
     location: 'COM B1-101',
     title: 'Senior Partnerships Leader APAC',
     organisation: 'Thought Machine',
-    },
+  },
   {
     name: 'Osman Faiz',
     date: '17 Jan',
@@ -87,8 +87,8 @@ export const SpeakersInfoArray: Speaker[] = [
   },
   {
     name: 'Yeou Jie Goh',
-    date: '17 Jan',
-    time: '8 pm - 9.30pm',
+    date: '6 Jan',
+    time: '11am',
     image: '/Speakers/YEOUJIEGOH.png',
     location: 'COM B1-101',
     title: 'Head of Portfolio Growth',
@@ -98,28 +98,29 @@ export const SpeakersInfoArray: Speaker[] = [
   },
   {
     name: 'Akshay Bajaj',
-    date: '17 Jan',
-    time: '8 pm - 9.30pm',
+    date: '6 Jan',
+    time: '11am',
     image: '/Speakers/AKSHAYBAJAJ.png',
     location: 'COM B1-101',
     title: 'Investor',
     organisation: 'SIG',
-    description:
-      '',
+    description: '',
   },
   {
     name: 'Ziheng Li',
-    date: '17 Jan',
-    time: '8 pm - 9.30pm',
+    date: '6 Jan',
+    time: '11am',
     image: '/Speakers/ZIHENGLI.png',
     location: 'COM B1-101',
     title: 'Investor',
     organisation: 'Saison Capital',
-    description: 'Ziheng is an investor at Saison Capital, primarily looking at early-stage fintech, insurtech and marketplace startups across Southeast Asia and India.'  },
+    description:
+      'Ziheng is an investor at Saison Capital, primarily looking at early-stage fintech, insurtech and marketplace startups across Southeast Asia and India.',
+  },
   {
     name: 'Lee Yi Liang',
-    date: '17 Jan',
-    time: '8 pm - 9.30pm',
+    date: '9 Jan',
+    time: '6pm - 7pm',
     image: '/Speakers/LEEYILIANG.png',
     location: 'COM B1-101',
     title: 'Board Director & Regional Head of Compliance',
@@ -130,7 +131,7 @@ export const SpeakersInfoArray: Speaker[] = [
   {
     name: 'Lim Xin Yi',
     date: '17 Jan',
-    time: '8 pm - 9.30pm',
+    time: ' 7.30pm - 8.15pm',
     image: '/Speakers/LIMXINYI.png',
     location: 'COM B1-101',
     title: 'Research Analyst',
@@ -140,8 +141,8 @@ export const SpeakersInfoArray: Speaker[] = [
   },
   {
     name: 'Daniel Chew',
-    date: '17 Jan',
-    time: '8 pm - 9.30pm',
+    date: '10 Jan',
+    time: '6pm - 6.45pm',
     image: '/Speakers/DANIELCHEW.png',
     location: 'COM B1-101',
     title: 'Software Engineer',
@@ -151,23 +152,24 @@ export const SpeakersInfoArray: Speaker[] = [
   },
   {
     name: 'Pamela Lee',
-    date: '17 Jan',
-    time: '8 pm - 9.30pm',
+    date: '18 Jan',
+    time: '6pm - 7pm',
     image: '/Speakers/PAMELA.png',
     location: 'COM B1-101',
     title: 'Head of Sales, APAC',
     organisation: 'Pyth',
     description:
-   'Pamela is Head of Sales, APAC at Talos and responsible for driving sales growth and managing sales operations in this region. Prior to joining Talos, Pamela was Head of Partnerships, APAC at LMAX Group where her focus was to lead business growth with institutional clients in the FX and digital assets space. Outside of work, she is passionate about women empowerment and has served on the committees of YWLC (Singapore) and WIFA ASIFMA (Hong Kong). Currently, she is volunteering with the women in blockchain committee under Blockchain Association of Singapore. She started her career with Credit Suisse as an analyst in the equities sales trading division.'
+      'Pamela is Head of Sales, APAC at Talos and responsible for driving sales growth and managing sales operations in this region. Prior to joining Talos, Pamela was Head of Partnerships, APAC at LMAX Group where her focus was to lead business growth with institutional clients in the FX and digital assets space. Outside of work, she is passionate about women empowerment and has served on the committees of YWLC (Singapore) and WIFA ASIFMA (Hong Kong). Currently, she is volunteering with the women in blockchain committee under Blockchain Association of Singapore. She started her career with Credit Suisse as an analyst in the equities sales trading division.',
   },
   {
     name: 'Elton Tay',
-    date: '17 Jan',
-    time: '8 pm - 9.30pm',
+    date: '18 Jan',
+    time: '7.30pm - 9pm',
     image: '/Speakers/ELTONTAY.png',
     location: 'COM B1-101',
     title: 'Blockchain Solutions Architect, APAC',
     organisation: 'SettleMint',
-    description:' NUS Business Analytics graduate with 2 years of blockchain development experience. Current domain : Cardano, Ethereum and Hyperledger Besu' 
-   },
+    description:
+      ' NUS Business Analytics graduate with 2 years of blockchain development experience. Current domain : Cardano, Ethereum and Hyperledger Besu',
+  },
 ];
