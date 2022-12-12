@@ -59,7 +59,7 @@ export default function DesktopNavigationBar(props: Props) {
                   Programme
                 </MenuButton>
                 <MenuList>
-                  <MenuItem onClick={navigate(Routes.WIP)}>
+                  <MenuItem onClick={navigate(Routes.WEEKOVERVIEW)}>
                     Week Overview
                   </MenuItem>
                   <MenuItem onClick={navigate(Routes.MENTORS)}>
@@ -113,10 +113,7 @@ export default function DesktopNavigationBar(props: Props) {
                 Resources
               </Button>
             </HStack>
-            <HackathonButton
-              colorScheme="brand"
-              onClick={hackathon}
-            >
+            <HackathonButton colorScheme="brand" onClick={hackathon}>
               Fintech Hackathon
             </HackathonButton>
           </HStack>
