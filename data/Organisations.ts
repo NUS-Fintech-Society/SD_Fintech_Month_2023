@@ -61,6 +61,12 @@ export const Community: Organisation[] = [
     logoSize: '60px',
     url: 'https://singaporefintech.org/',
   },
+  {
+    name: 'Blockchain Founders Fund',
+    logoSrc: '/Sponsor/bff_logo.png',
+    logoSize: '90px',
+    url: 'https://blockchainff.com/',
+  },
 ];
 
 export const Media: Organisation[] = [
