@@ -26,13 +26,13 @@ export const WeekEvents: WeekEvent[][] = [
   [
     {
       id: 0,
-      date: '12 Dec - 30 Dec',
+      date: '12 Dec',
       title: 'Fintech Month Hackathon Registration',
       label: 'Fintech Month Hackathon',
     },
     {
       id: 1,
-      date: '12 Dec - 30 Dec',
+      date: '12 Dec',
       title: 'Workshop Registration',
       label: 'Fintech Month Hackathon',
     },
