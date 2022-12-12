@@ -75,9 +75,7 @@ export const SpeakersInfoArray: Speaker[] = [
     location: 'COM B1-101',
     title: 'Senior Partnerships Leader APAC',
     organisation: 'Thought Machine',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum nibh eget nisi volutpat, ac aliquam urna suscipit. Proin eu lacus laoreet, laoreet justo eu, bibendum nisl.',
-  },
+    },
   {
     name: 'Osman Faiz',
     date: '17 Jan',
@@ -86,8 +84,6 @@ export const SpeakersInfoArray: Speaker[] = [
     location: 'COM B1-101',
     title: 'COO / Ex-COO of SC',
     organisation: 'AMTD Group',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum nibh eget nisi volutpat, ac aliquam urna suscipit. Proin eu lacus laoreet, laoreet justo eu, bibendum nisl.',
   },
   {
     name: 'Yeou Jie Goh',
@@ -106,10 +102,10 @@ export const SpeakersInfoArray: Speaker[] = [
     time: '8 pm - 9.30pm',
     image: '/Speakers/AKSHAYBAJAJ.png',
     location: 'COM B1-101',
-    title: 'CEO',
+    title: 'Investor',
     organisation: 'SIG',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum nibh eget nisi volutpat, ac aliquam urna suscipit. Proin eu lacus laoreet, laoreet justo eu, bibendum nisl.',
+      '',
   },
   {
     name: 'Ziheng Li',
@@ -119,9 +115,7 @@ export const SpeakersInfoArray: Speaker[] = [
     location: 'COM B1-101',
     title: 'Investor',
     organisation: 'Saison Capital',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum nibh eget nisi volutpat, ac aliquam urna suscipit. Proin eu lacus laoreet, laoreet justo eu, bibendum nisl.',
-  },
+    description: 'Ziheng is an investor at Saison Capital, primarily looking at early-stage fintech, insurtech and marketplace startups across Southeast Asia and India.'  },
   {
     name: 'Lee Yi Liang',
     date: '17 Jan',
@@ -155,4 +149,25 @@ export const SpeakersInfoArray: Speaker[] = [
     description:
       'Full-stack engineer, develops and maintains all website-related projects, database, backend API server, monitoring and many others. Previously cloud architect @ AWS.',
   },
+  {
+    name: 'Pamela Lee',
+    date: '17 Jan',
+    time: '8 pm - 9.30pm',
+    image: '/Speakers/PAMELA.png',
+    location: 'COM B1-101',
+    title: 'Head of Sales, APAC',
+    organisation: 'Pyth',
+    description:
+   'Pamela is Head of Sales, APAC at Talos and responsible for driving sales growth and managing sales operations in this region. Prior to joining Talos, Pamela was Head of Partnerships, APAC at LMAX Group where her focus was to lead business growth with institutional clients in the FX and digital assets space. Outside of work, she is passionate about women empowerment and has served on the committees of YWLC (Singapore) and WIFA ASIFMA (Hong Kong). Currently, she is volunteering with the women in blockchain committee under Blockchain Association of Singapore. She started her career with Credit Suisse as an analyst in the equities sales trading division.'
+  },
+  {
+    name: 'Elton Tay',
+    date: '17 Jan',
+    time: '8 pm - 9.30pm',
+    image: '/Speakers/ELTONTAY.png',
+    location: 'COM B1-101',
+    title: 'Blockchain Solutions Architect, APAC',
+    organisation: 'SettleMint',
+    description:' NUS Business Analytics graduate with 2 years of blockchain development experience. Current domain : Cardano, Ethereum and Hyperledger Besu' 
+   },
 ];

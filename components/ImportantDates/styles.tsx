@@ -3,9 +3,9 @@ import { Box, chakra, HStack, UnorderedList, Text } from '@chakra-ui/react';
 export const Wrapper = chakra(Box, {
   baseStyle: {
     bgColor: 'rgba(255, 255, 255, 0.5)',
-    w: {base: '350px', md:'380px'},
+    w: { base: '400px', sm: '400px', md: '500px' },
     h: '350px',
-    p: '20px',
+    p: '10px',
     borderRadius: '2xl',
     backdropFilter: 'blur(3px)',
     borderTopRadius: '0',
@@ -36,6 +36,7 @@ export const StyledUnorderedList = chakra(UnorderedList, {
 export const ListRow = chakra(HStack, {
   baseStyle: {
     paddingBottom: '10px',
+    fontSize: { base: 'sm', lg: 'md' },
   },
 });
 
@@ -47,6 +48,7 @@ export const RowDate = chakra(Text, {
     fontWeight: 'bold',
     color: 'brand.primary',
     borderColor: 'brand.primary',
+    fontSize: { base: 'sm', lg: 'md' },
   },
 });
 

@@ -15,9 +15,15 @@ export default function IndexMain(props: Props) {
   const { scrollToThemePage } = props;
   const router = useRouter();
 
-  const handleClick = (e: { preventDefault: () => void }) => {
+  const handleHackathonClick = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    router.push('/fintechHackathon');
+    window.open('https://forms.gle/woaewfoX4pW9nJMZA')
+    //router.push('/fintechHackathon');
+  };
+
+  const handleWorkshipClick = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    router.push('/workshops');
   };
 
   const importantDatesSection = (
@@ -26,18 +32,19 @@ export default function IndexMain(props: Props) {
       <Flex px="5" justifyContent="space-between" mt="40px">
         <WorkshopButton
           colorScheme="brand"
-          fontWeight="light"
+          fontWeight="bold"
           fontSize="lg"
           mr="30px"
-          onClick={handleClick}
+          onClick={handleHackathonClick}
         >
           Hackathon
         </WorkshopButton>
         <WorkshopButton
           colorScheme="brand"
-          fontWeight="light"
+          fontWeight="bold"
           fontSize="lg"
           ml="30px"
+          onClick={handleWorkshipClick}
         >
           Workshops
         </WorkshopButton>
@@ -82,7 +89,7 @@ export default function IndexMain(props: Props) {
               <Title>NUS FINTECH MONTH</Title>
               <ThemeButton
                 colorScheme="brand"
-                fontWeight="light"
+                fontWeight="bold"
                 fontSize="2xl"
                 onClick={scrollToThemePage}
                 mb={{ base: '0px', md: '80px' }}

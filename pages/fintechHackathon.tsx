@@ -5,14 +5,18 @@ import HackathonAnnoucementComponent from '../components/HackathonAnnouncement';
 import HackathonPrizesComponent from '../components/HackathonPrizes';
 
 import HackathonTimelineComponent from '../components/HackathonTimeline';
+import HackathonWip from '../components/HackathonWip';
 
 const FintechHackathon: NextPage = () => {
   return (
-    <VStack>
-      <HackathonAnnoucementComponent />;
-      <HackathonTimelineComponent />
-      <HackathonPrizesComponent />
-    </VStack>
+    // TODO: Restore when Fintech page is ready
+    // <VStack>
+    //   <HackathonAnnoucementComponent />;
+    //   <HackathonTimelineComponent />
+    //   <HackathonPrizesComponent />
+    // </VStack>
+
+    <HackathonWip />
   );
 };
 

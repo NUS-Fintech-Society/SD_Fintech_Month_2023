@@ -46,12 +46,12 @@ const FeaturePage = () => {
       </HeadingContainer>
 
       <FeatureContainer>
-        <SimpleGrid columns={[0, 2, 2, 3]} spacing={10}>
+        <SimpleGrid columns={[2, 2, 2, 3]} spacing={10}>
           {Feature('300', 'Hackers', true)}
           {Feature('$25,000', 'in Prizes', false)}
           {Feature('128', 'Hours', true)}
-          {Feature('25', 'Mentors', false)}
-          {Feature('25', 'Speakers', false)}
+          {Feature('10', 'Mentors', true)}
+          {Feature('10', 'Speakers', true)}
           {Feature('10', 'Sponsors', true)}
         </SimpleGrid>
       </FeatureContainer>

@@ -6,12 +6,15 @@ export default async function handler(
   res: NextApiResponse,
 ) {
   try {
-    console.log('Sheets Controller');
+    console.log('Email Controller');
 
     switch (req.method) {
       case 'POST':
         const email: string = req.body.email;
-        const response = await writeToSheet(email);
+        const response = await writeToSheet(
+          email,
+          process.env.GOOGLE_SHEETS_MAILING_LIST_SHEET_NAME,
+        );
         res.status(200).json({ data: response.data });
         break;
       default:

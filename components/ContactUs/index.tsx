@@ -29,7 +29,7 @@ export default function ContactUs() {
   async function submitEmail() {
     const data = { email };
 
-    const res = await fetch('/api/sheets', {
+    const res = await fetch('/api/email', {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
