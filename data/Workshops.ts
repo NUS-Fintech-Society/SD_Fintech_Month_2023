@@ -10,7 +10,7 @@ export const Workshops: Workshop[] = [
     organisation: 'Defiance Capital',
     speaker: 'Yeou Jie Goh',
     venue: 'TBC',
-    link: 'https://docs.google.com/forms/d/e/1FAIpQLScZ3TzpvuB9wSSX2IhnzbZ8RwiZ12ssiDsx0S4tnu3lQL02BA/viewform?usp=sf_link',
+    // link: 'https://docs.google.com/forms/d/e/1FAIpQLScZ3TzpvuB9wSSX2IhnzbZ8RwiZ12ssiDsx0S4tnu3lQL02BA/viewform?usp=sf_link',
     position: 'Head of Portfolio Growth',
     image: '/Workshops/DEFIANCECAPITAL.png',
     description:
@@ -25,7 +25,7 @@ export const Workshops: Workshop[] = [
     organisation: 'Saison Capital',
     speaker: 'Ziheng Li',
     venue: 'TBC',
-    link: 'https://docs.google.com/forms/d/e/1FAIpQLScZ3TzpvuB9wSSX2IhnzbZ8RwiZ12ssiDsx0S4tnu3lQL02BA/viewform?usp=sf_link',
+    // link: 'https://docs.google.com/forms/d/e/1FAIpQLScZ3TzpvuB9wSSX2IhnzbZ8RwiZ12ssiDsx0S4tnu3lQL02BA/viewform?usp=sf_link',
     position: 'Investor',
     image: '/Workshops/SAISONCAPITAL.png',
     description:
@@ -160,7 +160,7 @@ export const Workshops: Workshop[] = [
     organisation: 'Talos',
     speaker: 'Pamela Lee',
     venue: 'TBC',
-    link: 'https://docs.google.com/forms/d/e/1FAIpQLScZ3TzpvuB9wSSX2IhnzbZ8RwiZ12ssiDsx0S4tnu3lQL02BA/viewform?usp=sf_link',
+    // link: 'https://docs.google.com/forms/d/e/1FAIpQLScZ3TzpvuB9wSSX2IhnzbZ8RwiZ12ssiDsx0S4tnu3lQL02BA/viewform?usp=sf_link',
     position: 'Head of Sales, APAC',
     image: '/Workshops/TALOS.png',
     description:

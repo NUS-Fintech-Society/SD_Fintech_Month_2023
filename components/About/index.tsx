@@ -32,9 +32,10 @@ const About = () => {
                 from beginner levels to more advanced levels allowing everyone,
                 no matter their background, to participate in this. The
                 workshops will be held in person as well as broadcast online.
-                There will also be a hackathon where a real-world problem will
-                be tackled using Fintech demonstrating the usefulness of this
-                technology in a real-world context.
+                The workshops will be held in person and broadcasted online. A
+                hackathon will also be held where participants will be able to
+                tackle current challenges faced in the world of financial
+                technology.
               </DescriptionBox>
             </Centralised>
           </FlushTopLeft>
