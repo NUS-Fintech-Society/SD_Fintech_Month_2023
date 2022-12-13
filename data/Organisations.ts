@@ -7,6 +7,13 @@ export const Platinum: Organisation[] = [
     logoSize: '120px',
     url: 'https://www.panda-bank.com/',
   },
+
+  {
+    name: 'AWS',
+    logoSrc: '/Sponsor/aws_logo.png',
+    logoSize: '120px',
+    url: 'https://aws.amazon.com/',
+  },
 ];
 
 export const Gold: Organisation[] = [
