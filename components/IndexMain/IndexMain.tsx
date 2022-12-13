@@ -25,7 +25,7 @@ function ImportantDatesSection() {
 
   return (
     <div className="flex flex-col items-center justify-center space-y-6 w-full h-full">
-      <div className="flex flex-col p-8 rounded-2xl shadow-xl bg-[#ffffffB3] w-full">
+      <div className="flex flex-col p-6 rounded-2xl shadow-xl bg-[#ffffffB3] w-full">
         <Title fontSize={{ base: '2xl' }}>IMPORTANT DATES</Title>
         <UnorderedList className="px-2">
           {importantDates.map((date) => {
@@ -39,11 +39,11 @@ function ImportantDatesSection() {
         </UnorderedList>
       </div>
 
-      <div className="justify-center items-center w-full flex space-x-16">
+      <div className="justify-around items-center w-full flex">
         <Button
           colorScheme="brand"
           fontWeight="bold"
-          fontSize="lg"
+          fontSize={{ base: 'md', lg: 'lg' }}
           onClick={handleHackathonClick}
         >
           Hackathon
@@ -51,7 +51,7 @@ function ImportantDatesSection() {
         <Button
           colorScheme="brand"
           fontWeight="bold"
-          fontSize="lg"
+          fontSize={{ base: 'md', lg: 'lg' }}
           onClick={handleWorkshipClick}
         >
           Workshops
@@ -65,15 +65,15 @@ export default function IndexMain(props: Props) {
   const { scrollToThemePage } = props;
 
   return (
-    <div className="h-screen">
+    <div>
       <Img
         src="WaterEffect.png"
         className="h-screen -z-10 absolute object-cover"
         placeholder=""
       />
 
-      <div className="lg:grid lg:grid-cols-3 flex mt-40 mx-16">
-        <div className="lg:col-span-2 flex flex-col items-center justify-center w-full h-full ">
+      <div className="lg:grid lg:grid-cols-3 flex lg:mt-10 lg:mx-16  h-screen">
+        <div className="lg:col-span-2 flex flex-col items-center justify-center w-full h-full space-y-6">
           <Title className="">NUS FINTECH MONTH 2023</Title>
           <Button
             onClick={scrollToThemePage}
@@ -87,7 +87,7 @@ export default function IndexMain(props: Props) {
           </Button>
           <CountdownTimer />
         </div>
-        <div className="hidden lg:flex col-span-1">
+        <div className="hidden lg:flex lg:col-span-1">
           <ImportantDatesSection />
         </div>
       </div>
@@ -95,10 +95,11 @@ export default function IndexMain(props: Props) {
       <div className="lg:hidden flex">
         <Img
           src="LinesEffect.png"
+          objectFit="cover"
           className="h-screen -z-10 absolute object-cover"
           placeholder=""
         />
-        <div className="flex items-center justify-center w-screen h-screen px-10">
+        <div className="w-screen h-screen px-8">
           <ImportantDatesSection />
         </div>
       </div>
