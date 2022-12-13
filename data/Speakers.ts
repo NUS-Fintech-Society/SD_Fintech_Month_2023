@@ -113,7 +113,7 @@ export const SpeakersInfoArray: Speaker[] = [
     name: 'Tobias Bauer',
     date: '6 Jan',
     time: '11am',
-    image: 'public\Speakers\TOBIAS.png',
+    image: '/Speakers/TOBIAS.png',
     location: 'TBC',
     title: 'Partner',
     organisation: 'Blockchain Founders Fund',
