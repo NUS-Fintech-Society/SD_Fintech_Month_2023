@@ -6,7 +6,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '18 Jan',
     time: '7.30 pm - 9pm',
     image: '/Speakers/JOHNNYKOK.png',
-    location: 'COM B1-101',
+    location: 'TBC',
     title: 'VP Commercial, APAC',
     organisation: 'SettleMint',
     description:
@@ -17,7 +17,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '12 Jan',
     time: '6pm - 6.45pm',
     image: '/Speakers/HUANGDONGHAO.png',
-    location: 'COM B1-101',
+    location: 'TBC',
     title: 'Vice President, R&D',
     organisation: 'Mastercard',
     description:
@@ -28,7 +28,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '13 Jan',
     time: '5.30pm -7.30pm',
     image: '/Speakers/GABOR.png',
-    location: 'COM B1-101',
+    location: 'TBC',
     title: 'Co-founder & Chief Innovation Officer',
     organisation: 'Lynx Analytics',
     description:
@@ -39,7 +39,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '11 Jan',
     time: '6pm - 6.45pm',
     image: '/Speakers/NISCHINT.png',
-    location: 'COM B1-101',
+    location: 'TBC',
     title: 'Regional Crypto Lead, Asia Pacific',
     organisation: 'Visa',
     description:
@@ -50,7 +50,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '12 Jan',
     time: '7.30pm - 8.15pm',
     image: '/Speakers/KRISHNA.png',
-    location: 'COM B1-101',
+    location: 'TBC',
     title: 'Senior Data Scientist',
     organisation: 'Airwallex',
     description:
@@ -61,7 +61,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '9 Jan',
     time: '7.30pm - 8.30pm',
     image: '/Speakers/CALVINCHU.png',
-    location: 'COM B1-101',
+    location: 'TBC',
     title: 'Core BUIDLer',
     organisation: 'Impossible Finance',
     description:
@@ -72,25 +72,16 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '17 Jan',
     time: '8 pm - 9.30pm',
     image: '/Speakers/SHIVANI.png',
-    location: 'COM B1-101',
+    location: 'TBC',
     title: 'Senior Partnerships Leader APAC',
     organisation: 'Thought Machine',
-  },
-  {
-    name: 'Osman Faiz',
-    date: '17 Jan',
-    time: '8 pm - 9.30pm',
-    image: '/Speakers/OSMAN.png',
-    location: 'COM B1-101',
-    title: 'COO / Ex-COO of SC',
-    organisation: 'AMTD Group',
   },
   {
     name: 'Yeou Jie Goh',
     date: '6 Jan',
     time: '11am',
     image: '/Speakers/YEOUJIEGOH.png',
-    location: 'COM B1-101',
+    location: 'TBC',
     title: 'Head of Portfolio Growth',
     organisation: 'Defiance Capital',
     description:
@@ -101,7 +92,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '6 Jan',
     time: '11am',
     image: '/Speakers/AKSHAYBAJAJ.png',
-    location: 'COM B1-101',
+    location: 'TBC',
     title: 'Investor',
     organisation: 'SIG',
     description: '',
@@ -111,7 +102,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '6 Jan',
     time: '11am',
     image: '/Speakers/ZIHENGLI.png',
-    location: 'COM B1-101',
+    location: 'TBC',
     title: 'Investor',
     organisation: 'Saison Capital',
     description:
@@ -123,7 +114,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '6 Jan',
     time: '11am',
     image: 'public\Speakers\TOBIAS.png',
-    location: 'COM B1-101',
+    location: 'TBC',
     title: 'Partner',
     organisation: 'Blockchain Founders Fund',
     description:
@@ -135,7 +126,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '9 Jan',
     time: '6pm - 7pm',
     image: '/Speakers/LEEYILIANG.png',
-    location: 'COM B1-101',
+    location: 'TBC',
     title: 'Board Director & Regional Head of Compliance',
     organisation: 'PayerMax',
     description:
@@ -146,7 +137,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '17 Jan',
     time: ' 7.30pm - 8.15pm',
     image: '/Speakers/LIMXINYI.png',
-    location: 'COM B1-101',
+    location: 'TBC',
     title: 'Research Analyst',
     organisation: 'Nansen',
     description:
@@ -157,7 +148,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '10 Jan',
     time: '6pm - 6.45pm',
     image: '/Speakers/DANIELCHEW.png',
-    location: 'COM B1-101',
+    location: 'TBC',
     title: 'Software Engineer',
     organisation: 'Pyth',
     description:
@@ -168,7 +159,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '18 Jan',
     time: '6pm - 7pm',
     image: '/Speakers/PAMELA.png',
-    location: 'COM B1-101',
+    location: 'TBC',
     title: 'Head of Sales, APAC',
     organisation: 'Pyth',
     description:
@@ -179,7 +170,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '18 Jan',
     time: '7.30pm - 9pm',
     image: '/Speakers/ELTONTAY.png',
-    location: 'COM B1-101',
+    location: 'TBC',
     title: 'Blockchain Solutions Architect, APAC',
     organisation: 'SettleMint',
     description:

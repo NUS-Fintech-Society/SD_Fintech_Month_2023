@@ -41,7 +41,7 @@ export const WeekEvents: WeekEvent[][] = [
     {
       id: 0,
       date: '6 Jan',
-      time: '8:00AM-6:00PM',
+      time: '9:00AM-6:00PM',
       venue: 'COM2-LT19',
       title: 'Opening Address (NUS Fintech Month)',
       label: 'Fintech Month',
