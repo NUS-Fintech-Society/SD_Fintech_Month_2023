@@ -3,7 +3,7 @@ import { Week, WeekEvent } from '../types/WeekEvent';
 export const Weeks: Week[] = [
   {
     id: 0,
-    label: 'gRegistration',
+    label: 'Registration',
   },
   {
     id: 1,
