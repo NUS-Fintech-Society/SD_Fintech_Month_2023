@@ -82,6 +82,7 @@ export const WeekEvents: WeekEvent[][] = [
           speaker: 'Tobias Bauer',
           position: 'Partner',
           imageSrc: '/Speakers/TOBIAS.png',
+          
         },
       ],
     },
