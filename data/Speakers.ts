@@ -40,7 +40,7 @@ export const SpeakersInfoArray: Speaker[] = [
     time: '6pm - 6.45pm',
     image: '/Speakers/NISCHINT.png',
     location: 'COM B1-101',
-    title: 'Co-founder & Chief Innovation Officer',
+    title: 'Regional Crypto Lead, Asia Pacific',
     organisation: 'Visa',
     description:
       'Nischint is the Regional Lead for Crypto in Asia Pacific, responsible for overseeing Visa’s crypto business in AP including creating and growing new revenue streams through emerging crypto products and GTM efforts. Nischint and his team serve as the subject matter experts supporting client facing teams on digital currency/web 3.0 engagements with key stakeholders. Nischint brings over 19 years of experience in financial services. Nischint holds an MBA from Boston University School of Management and is also a Chartered Accountant.',
