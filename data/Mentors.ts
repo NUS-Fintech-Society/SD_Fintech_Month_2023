@@ -103,4 +103,29 @@ export const MentorsInfoArray: Mentor[] = [
     organisation: '1inch',
     description:'ex-Binance, cofounder of several tech startups, currently backend lead at 1inch. '
   },
+
+  {
+    name: 'Naresh Ponnana',
+    image: '/Mentors/NARESH.png',
+    title: 'Director - Global Startup Partnerships',
+    organisation: 'Mastercard',
+    description:"Leads global track of Mastercard Start Path, the company's award winning startup engagement program, to drive partnerships, collaboration and innovation with startups globally"
+  },
+
+  {
+    name: 'Vladimir Georgiev',
+    image: '/Mentors/VLADIMIR.png',
+    title: 'Software Engineer',
+    organisation: 'Thought Machine',
+    description:'Software engineer with experience in building distributed systems and ML R&D. Graduated university in 2019 and joined Thought Machine working in infrastructure mainly. Currently running some side hustles around investment management. '
+  },
+
+  {
+    name: 'Miguel Antunes',
+    image: '/Mentors/MIGUEL.jpeg',
+    title: 'Site Reliability Engineer',
+    organisation: 'Thought Machine',
+    description:"I've been working in cloud systems for the past 6 years, I've specialised recently in the observation of complex distributed systems and automation of Operational toil."
+  },
+
 ];
