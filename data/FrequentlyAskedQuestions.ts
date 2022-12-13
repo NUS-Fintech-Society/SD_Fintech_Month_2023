@@ -192,7 +192,7 @@ export const Faqs: Faq[] = [
     data: hackathonFaq,
   },
   {
-    categoryName: 'Workshops & Symposiums',
+    categoryName: 'Workshops',
     data: workshopsFaq,
   },
   {
