@@ -106,7 +106,7 @@ export const MentorsInfoArray: Mentor[] = [
 
   {
     name: 'Naresh Ponnana',
-    image: '/Mentors/NARESH.jpg',
+    image: '/Mentors/NARESH.png',
     title: 'Director - Global Startup Partnerships',
     organisation: 'Mastercard',
     description:"Leads global track of Mastercard Start Path, the company's award winning startup engagement program, to drive partnerships, collaboration and innovation with startups globally"
