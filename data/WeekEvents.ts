@@ -110,7 +110,7 @@ export const WeekEvents: WeekEvent[][] = [
       title:
         'Navigating the Payments Space in the Digital Age & Careers in Fintech Startups',
       venue: 'TBC',
-      label: 'Panel Discussion',
+      label: 'Workshop',
       speakerInfo: [
         {
           id: 0,
