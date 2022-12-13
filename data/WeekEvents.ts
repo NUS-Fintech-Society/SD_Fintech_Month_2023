@@ -3,7 +3,7 @@ import { Week, WeekEvent } from '../types/WeekEvent';
 export const Weeks: Week[] = [
   {
     id: 0,
-    label: 'Pre-Registration',
+    label: 'Registration',
   },
   {
     id: 1,
@@ -81,6 +81,8 @@ export const WeekEvents: WeekEvent[][] = [
           organisation: 'Blockchain Founders Fund',
           speaker: 'Tobias Bauer',
           position: 'Partner',
+          imageSrc: '/Speakers/TOBIAS.png',
+          
         },
       ],
     },
@@ -149,7 +151,7 @@ export const WeekEvents: WeekEvent[][] = [
           organisation: 'Pyth',
           speaker: 'Daniel Chew',
           position: 'Software Engineer',
-          imageSrc: '/Speakers/DANIELCHU.png',
+          imageSrc: '/Speakers/DANIELCHEW.png',
         },
       ],
     },
@@ -279,6 +281,7 @@ export const WeekEvents: WeekEvent[][] = [
           organisation: 'Certik',
           speaker: 'Shan',
           position: '',
+          imageSrc: '/Speakers/SHAN.png'
         },
       ],
     },
@@ -312,6 +315,7 @@ export const WeekEvents: WeekEvent[][] = [
           organisation: 'Arcane Group',
           speaker: 'Glen Aw',
           position: 'Associate',
+          imageSrc: '/Speakers/GLEN.png',
         },
       ],
     },
