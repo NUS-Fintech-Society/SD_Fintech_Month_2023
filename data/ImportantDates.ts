@@ -4,7 +4,7 @@ export const importantDates: ImportantDate[] = [
   {
     id: 1,
     date: '12 Dec 2022',
-    description: 'Workshops & Hackathon Registration Open',
+    description: 'Workshops & Hackathon Registration',
   },
   {
     id: 3,
