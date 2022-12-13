@@ -2,6 +2,12 @@ import { Organisation } from '../types/Organisation';
 
 export const Platinum: Organisation[] = [
   {
+    name: 'AWS',
+    logoSrc: '/Sponsor/aws_logo.png',
+    logoSize: '60px',
+    url: 'https://aws.amazon.com/',
+  },
+  {
     name: 'Panda Bank',
     logoSrc: '/Sponsor/panda_bank_logo.png',
     logoSize: '120px',
@@ -26,16 +32,16 @@ export const Gold: Organisation[] = [
 
 export const Silver: Organisation[] = [
   {
-    name: 'Visa',
-    logoSrc: '/Sponsor/visa-logo.png',
-    logoSize: '110px',
-    url: 'https://www.visa.com.sg/',
-  },
-  {
     name: 'Thought Machine',
     logoSrc: '/Sponsor/thought_machine_logo.png',
     logoSize: '90px',
     url: 'https://www.thoughtmachine.net/',
+  },
+  {
+    name: 'Visa',
+    logoSrc: '/Sponsor/visa-logo.png',
+    logoSize: '110px',
+    url: 'https://www.visa.com.sg/',
   },
 ];
 
@@ -56,16 +62,16 @@ export const Organisers: Organisation[] = [
 
 export const Community: Organisation[] = [
   {
-    name: 'Singapore Fintech Association',
-    logoSrc: '/Sponsor/sfa_logo.png',
-    logoSize: '60px',
-    url: 'https://singaporefintech.org/',
-  },
-  {
     name: 'Blockchain Founders Fund',
     logoSrc: '/Sponsor/bff_logo.png',
     logoSize: '90px',
     url: 'https://blockchainff.com/',
+  },
+  {
+    name: 'Singapore Fintech Association',
+    logoSrc: '/Sponsor/sfa_logo.png',
+    logoSize: '60px',
+    url: 'https://singaporefintech.org/',
   },
 ];
 
