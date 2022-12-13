@@ -40,7 +40,7 @@ export const SpeakersInfoArray: Speaker[] = [
     time: '6pm - 6.45pm',
     image: '/Speakers/NISCHINT.png',
     location: 'COM B1-101',
-    title: 'Co-founder & Chief Innovation Officer',
+    title: 'Regional Crypto Lead, Asia Pacific',
     organisation: 'Visa',
     description:
       'Nischint is the Regional Lead for Crypto in Asia Pacific, responsible for overseeing Visa’s crypto business in AP including creating and growing new revenue streams through emerging crypto products and GTM efforts. Nischint and his team serve as the subject matter experts supporting client facing teams on digital currency/web 3.0 engagements with key stakeholders. Nischint brings over 19 years of experience in financial services. Nischint holds an MBA from Boston University School of Management and is also a Chartered Accountant.',
@@ -117,6 +117,19 @@ export const SpeakersInfoArray: Speaker[] = [
     description:
       'Ziheng is an investor at Saison Capital, primarily looking at early-stage fintech, insurtech and marketplace startups across Southeast Asia and India.',
   },
+
+  {
+    name: 'Tobias Bauer',
+    date: '6 Jan',
+    time: '11am',
+    image: '/Speakers/TOBIAS.png',
+    location: 'COM B1-101',
+    title: 'Partner',
+    organisation: 'Blockchain Founders Fund',
+    description:
+      'Tobias Bauer 托比亚斯 is a Partner at Blockchain Founders Fund which invests in and venture builds top-tier startups. He is a Startup Mentor for 500 Startups, APX, PlugAndPlay, NUMA New York, Alchemist Accelerator, and a Venture Partner of Republic.',
+  },
+
   {
     name: 'Lee Yi Liang',
     date: '9 Jan',

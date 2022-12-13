@@ -94,7 +94,7 @@ export default function IndexMain(props: Props) {
                 onClick={scrollToThemePage}
                 mb={{ base: '0px', md: '80px' }}
               >
-                Theme : Fintech-as-a-service
+                Fintech-as-a-Service
               </ThemeButton>
             </Flex>
             <CountdownTimer />

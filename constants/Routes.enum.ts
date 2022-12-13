@@ -9,4 +9,5 @@ export enum Routes {
   MENTORS = '/mentors',
   SPEAKERS = '/speakers',
   WORKSHOPS = '/workshops',
+  WEEKOVERVIEW = '/weekOverview',
 }
