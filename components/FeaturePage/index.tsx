@@ -41,7 +41,7 @@ const FeaturePage = () => {
     <MorePageContainer>
       <HeadingContainer>
         <MorePageHeading colorScheme="brand">
-          WE ARE BACK WITH MORE
+          FTM 2023 in Numbers
         </MorePageHeading>
       </HeadingContainer>
 
