@@ -1,11 +1,4 @@
-import {
-  Box,
-  chakra,
-  HStack,
-  UnorderedList,
-  Text,
-  Center,
-} from '@chakra-ui/react';
+import { Box, chakra, Center } from '@chakra-ui/react';
 import SecondaryBackground from '../../public/SecondaryBackground.png';
 
 export const AboutUsContainer = chakra(Center, {

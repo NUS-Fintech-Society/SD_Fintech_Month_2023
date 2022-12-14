@@ -39,6 +39,9 @@ export const RowContainer = chakra(Flex, {
     alignContent: 'center',
     alignItems: { base: 'left', lg: 'center' },
     px: { base: '0px', md: '25px' },
+    paddingBottom: '5.5%',
+    paddingTop:'4%'
+    
   },
 });
 
