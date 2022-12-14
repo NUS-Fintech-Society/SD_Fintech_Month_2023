@@ -24,8 +24,8 @@ function ImportantDatesSection() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center space-y-6 w-full h-full">
-      <div className="flex flex-col p-6 rounded-2xl shadow-xl bg-[#ffffffB3] w-full">
+    <div className="flex flex-col items-center justify-center space-y-6 h-full">
+      <div className="flex flex-col p-6 rounded-2xl shadow-xl bg-[#ffffffB3] ">
         <Title fontSize={{ base: '2xl' }}>IMPORTANT DATES</Title>
         <UnorderedList className="px-2">
           {importantDates.map((date) => {
@@ -65,15 +65,15 @@ export default function IndexMain(props: Props) {
   const { scrollToThemePage } = props;
 
   return (
-    <div>
+    <div className="lg:w-full">
       <Img
         src="WaterEffect.png"
         className="h-screen -z-10 absolute object-cover"
         placeholder=""
       />
 
-      <div className="lg:grid lg:grid-cols-3 flex lg:mt-10 lg:mx-16  h-screen">
-        <div className="lg:col-span-2 flex flex-col items-center justify-center w-full h-full space-y-6">
+      <div className="lg:grid lg:grid-cols-3 flex h-screen">
+        <div className="lg:col-span-2 flex flex-col items-center justify-center h-full space-y-6 w-full">
           <Title className="">NUS FINTECH MONTH 2023</Title>
           <Button
             onClick={scrollToThemePage}
@@ -87,7 +87,7 @@ export default function IndexMain(props: Props) {
           </Button>
           <CountdownTimer />
         </div>
-        <div className="hidden lg:flex lg:col-span-1">
+        <div className="hidden lg:flex lg:col-span-1 lg:h-full">
           <ImportantDatesSection />
         </div>
       </div>
