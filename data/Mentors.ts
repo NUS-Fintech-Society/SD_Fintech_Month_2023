@@ -128,4 +128,12 @@ export const MentorsInfoArray: Mentor[] = [
     description:"I've been working in cloud systems for the past 6 years, I've specialised recently in the observation of complex distributed systems and automation of Operational toil."
   },
 
+  {
+    name: 'Jonas Chen',
+    image: '/Mentors/JONAS.jpg',
+    title: 'Co-founder',
+    organisation: 'Metacamp',
+    description:"Engineer (2.5 years), NPO entrepreneur (12+ years), Startup Accelerator (2 years)."
+  },
+
 ];
