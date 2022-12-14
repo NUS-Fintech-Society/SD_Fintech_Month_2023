@@ -148,7 +148,7 @@ export const SpeakersInfoArray: Speaker[] = [
     name: 'Vinay Palathinkal',
     date: '6 Jan 2023',
     time: '3pm - 4pm',
-    image: '/Speakers/VINAY.png',
+    image: '/Speakers/VINAY.jpeg',
     location: 'TBC',
     title: 'Regional Head, Wise Platform',
     organisation: 'Wise',

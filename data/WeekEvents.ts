@@ -235,14 +235,14 @@ export const WeekEvents: WeekEvent[][] = [
           organisation: 'BitEx',
           speaker: 'Vayne Poh',
           position: 'Co-founder & Chief Innovation Officer',
-          imageSrc: '/Speakers/VAYNE.png',
+          imageSrc: '/Speakers/VAYNE.jpeg',
         },
         {
           id: 1,
           organisation: 'Merkle Science',
           speaker: 'Tom Luo',
           position: 'Director of Sales, APAC and EMEA',
-          imageSrc: '/Speakers/TOM.png',
+          imageSrc: '/Speakers/TOM.jpg',
         },
       ],
     },
@@ -370,7 +370,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '7:30PM - 9PM',
       title: 'Breaking into Web3 and Analyst Work ',
       label: 'Fireside Chat',
-      venue: 'Arcane Office (Shenton Way)',
+      venue: 'Arcane Office ',
       speakerInfo: [
         {
           id: 0,
