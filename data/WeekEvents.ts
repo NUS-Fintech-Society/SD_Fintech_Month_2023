@@ -370,7 +370,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '7:30PM - 9PM',
       title: 'Breaking into Web3 and Analyst Work ',
       label: 'Fireside Chat',
-      venue: 'Arcane Office ',
+      venue: 'Arcane Office',
       speakerInfo: [
         {
           id: 0,
