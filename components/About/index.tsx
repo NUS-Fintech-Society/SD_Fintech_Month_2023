@@ -25,15 +25,17 @@ const About = () => {
           <FlushTopLeft>
             <Centralised align="center">
               <DescriptionBox>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                euismod rus sapien condimentum arcu, maximus porttitor mi diam
-                ut libero.Aliquam dapibus consectetur dolor eu sodalesneque nec
-                accumsan pulvinpurus sapien condimentum arcu, maximus porttitor
-                mi diam ut libero.Aliquam dapibus consectetur dolor eu
-                sodalesrus sapien condimentum arcu, maximus porttitor mi diam ut
-                libero.Aliquam dapibus consectetur dolor eu sodalesrus sapien
-                condimentum arcu, maximus porttitor mi diam ut libero.Aliquam
-                dapibus consectetur dolor eu sodaless
+                NUS FinTech month is a series of workshops and panel discussions
+                designed to give university and polytechnic students an insight
+                into the world of Fintech. The theme for this year will revolve
+                around Fintech as a Service. There will be workshops ranging
+                from beginner levels to more advanced levels allowing everyone,
+                no matter their background, to participate in this. The
+                workshops will be held in person as well as broadcast online.
+                The workshops will be held in person and broadcasted online. A
+                hackathon will also be held where participants will be able to
+                tackle current challenges faced in the world of financial
+                technology.
               </DescriptionBox>
             </Centralised>
           </FlushTopLeft>
@@ -42,18 +44,9 @@ const About = () => {
         <RightContentContainer>
           <FlushTopRight>
             <Centralised>
-              <TopImage
-                src="gibbresh.png"
-                fallbackSrc="https://via.placeholder.com/150"
-              />
-              <MiddleImage
-                src="gibbresh.png"
-                fallbackSrc="https://via.placeholder.com/150"
-              />
-              <BottomImage
-                src="gibbresh.png"
-                fallbackSrc="https://via.placeholder.com/150"
-              />
+              <TopImage src="AboutImage1.png" />
+              <MiddleImage src="AboutImage3.png" />
+              <BottomImage src="AboutImage2.png" />
             </Centralised>
           </FlushTopRight>
         </RightContentContainer>

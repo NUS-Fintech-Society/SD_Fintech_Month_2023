@@ -14,16 +14,18 @@ import {
   HStackContainer,
   MobileNavBarContainer,
   MobileCenterContainer,
+  MobileHackathonButton,
 } from './styles';
 import { Routes } from '../../constants/Routes.enum';
 import { HamburgerIcon } from '@chakra-ui/icons';
 
 type Props = {
   navigate: Function;
+  hackathon: Function;
 };
 
 export default function MobileNavigationBar(props: Props) {
-  const { navigate } = props;
+  const { navigate, hackathon } = props;
 
   return (
     <MobileNavBarContainer>
@@ -49,7 +51,9 @@ export default function MobileNavigationBar(props: Props) {
             <MenuList>
               <MenuItem onClick={navigate(Routes.HOME)}>Home</MenuItem>
               <MenuDivider />
-              <MenuItem onClick={navigate(Routes.WIP)}>Week Overview</MenuItem>
+              <MenuItem onClick={navigate(Routes.WEEKOVERVIEW)}>
+                Week Overview
+              </MenuItem>
               <MenuItem onClick={navigate(Routes.MENTORS)}>Mentors</MenuItem>
               <MenuItem onClick={navigate(Routes.SPEAKERS)}>Speakers</MenuItem>
               <MenuItem onClick={navigate(Routes.WORKSHOPS)}>
@@ -65,7 +69,9 @@ export default function MobileNavigationBar(props: Props) {
               <MenuDivider />
               <MenuItem onClick={navigate(Routes.FAQ)}>FAQ</MenuItem>
               <MenuDivider />
-              <MenuItem onClick={navigate(Routes.WIP)}>Resources</MenuItem>
+              <MobileHackathonButton onClick={hackathon}>
+                Hackathon Signup
+              </MobileHackathonButton>
             </MenuList>
           </Menu>
         </HStackContainer>

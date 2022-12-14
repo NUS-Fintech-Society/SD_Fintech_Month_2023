@@ -18,7 +18,7 @@ export const CountdownTimer = () => {
   const [eventOpen, setEventOpen] = useState(false);
 
   useEffect(() => {
-    const target = new Date('12/12/2022 00:00:00');
+    const target = new Date('6 Jan 2023 00:00:00');
 
     const interval = setInterval(() => {
       const now = new Date();
@@ -42,7 +42,7 @@ export const CountdownTimer = () => {
   }, []);
 
   return (
-    <Timer>
+    <div className="flex items-center justify-center shadow-xl bg-[#ffffff80] rounded-[40px] px-8 py-2 lg:px-16 lg:py-4 backdrop-blur-sm">
       <TimerInner>
         <TimerSegment>
           <TimerText>{days}</TimerText>
@@ -70,7 +70,7 @@ export const CountdownTimer = () => {
           <Label>Seconds</Label>
         </TimerSegment>
       </TimerInner>
-    </Timer>
+    </div>
   );
 };
 

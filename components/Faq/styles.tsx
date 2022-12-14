@@ -1,11 +1,17 @@
 import { Box, chakra, Tab } from '@chakra-ui/react';
+import SecondaryBackground from '../../public/SecondaryBackground.png';
+import styled from 'styled-components';
+import { Collapse }  from 'antd'
+import { defaultColors } from '../../themes/default';
+
+const { Panel } = Collapse
 
 export const FaqWrapper = chakra(Box, {
   baseStyle: {
     width: '100vw',
     minHeight: { base: 'calc(100vh - 130px)', md: 'calc(100vh - 160px)' },
     justifyContent: 'center',
-    bgImage: "url('/Background/sponsor-background.png')",
+    //bgImage: `url(${SecondaryBackground.src})`,
     bgSize: 'cover',
     bgPosition: 'center',
   },
@@ -42,3 +48,23 @@ export const StyledTab = chakra(Tab, {
     pr: { base: '20px', md: '50px' },
   },
 });
+
+export const StyledPanel = styled(Panel)`
+
+  background-color: white !important;
+  color: white !important;
+  border-bottom: 0px !important;
+
+  .ant-collapse-header {
+    font-weight: bold;
+    font-size: 18px;
+    color: ${defaultColors.primary1.hexCode} !important;
+    background-color: white !important;
+    margin: 0px !important;
+  }
+
+  .ant-collapse-content {
+    background-color: white !important;
+    font-size: 16px;
+  }
+`

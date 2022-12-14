@@ -39,9 +39,9 @@ export default function ContactUsPage() {
   }
 
   async function submitAll() {
-    const data = { fullName, company, email, inquiry };
+    const data = { values: [fullName, company, email, inquiry] };
 
-    const res = await fetch('/api/sheets', {
+    const res = await fetch('/api/contact', {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
@@ -51,6 +51,9 @@ export default function ContactUsPage() {
 
     if (res.status === 200) {
       setEmail('');
+      setCompany('');
+      setFullName('');
+      setInquiry('');
       setSubmitSuccessful(true);
     } else {
       setSubmitSuccessful(false);
@@ -63,7 +66,7 @@ export default function ContactUsPage() {
     } else if (submitStatus) {
       return <SuccessText>Success!</SuccessText>;
     } else {
-      return <FailedText>Failed to submit Email!</FailedText>;
+      return <FailedText>Failed to submit details!</FailedText>;
     }
   }
   const submitStatus = submitSuccessful && <div></div>;
@@ -103,9 +106,8 @@ export default function ContactUsPage() {
             <ConnectButton onClick={submitAll}>
               <ConnectButtonText>Send</ConnectButtonText>
             </ConnectButton>
+            {getSubmitStatus()}
           </TextAreaFlex>
-
-          {getSubmitStatus()}
         </InputAndButtonBox>
       </ContentContainer>
     </PageContainer>

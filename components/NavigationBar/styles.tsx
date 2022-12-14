@@ -1,4 +1,11 @@
-import { Box, Button, Center, chakra, HStack } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  Center,
+  chakra,
+  HStack,
+  MenuItem,
+} from '@chakra-ui/react';
 
 export const NavBarContainer = chakra(Box, {
   baseStyle: {
@@ -6,7 +13,7 @@ export const NavBarContainer = chakra(Box, {
     width: '100%',
     height: '100px',
     background: 'white',
-    zIndex: 10,
+    zIndex: 50,
   },
 });
 
@@ -49,5 +56,13 @@ export const HackathonButton = chakra(Button, {
     width: '200px',
     height: '40px',
     borderRadius: '20px',
+  },
+});
+
+export const MobileHackathonButton = chakra(MenuItem, {
+  baseStyle: {
+    bg: 'brand.primary',
+    textColor: 'white',
+    _hover: { bg: 'brand.secondary' },
   },
 });

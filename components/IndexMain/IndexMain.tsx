@@ -1,117 +1,110 @@
-import { Box, Flex } from '@chakra-ui/react';
-import { Routes } from '../../constants/Routes.enum';
-import CountdownTimer from '../CountdownTimer/CountdownTimer';
-import ImportantDates from '../ImportantDates';
-import LeaderBoard from '../LeaderBoard';
-import { ThemeButton, Title, WorkshopButton } from './styles';
+import { Button, Img, ListItem, UnorderedList } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
+import { importantDates } from '../../data/ImportantDates';
+import CountdownTimer from '../CountdownTimer/CountdownTimer';
+import LeaderBoard from '../LeaderBoard';
+import { Title } from './styles';
 
 type Props = {
-  scrollToThemePage: Function;
+  scrollToThemePage: () => void;
 };
+
+function ImportantDatesSection() {
+  const router = useRouter();
+
+  const handleHackathonClick = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    window.open('https://forms.gle/woaewfoX4pW9nJMZA');
+    //router.push('/fintechHackathon');
+  };
+
+  const handleWorkshipClick = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    router.push('/workshops');
+  };
+
+  return (
+    <div className="flex flex-col items-center justify-center space-y-6 h-full">
+      <div className="flex flex-col p-6 rounded-2xl shadow-xl bg-[#ffffffB3] ">
+        <Title fontSize={{ base: '2xl' }}>IMPORTANT DATES</Title>
+        <UnorderedList className="px-2">
+          {importantDates.map((date) => {
+            return (
+              <ListItem key={date.id}>
+                <div className="underline font-bold underline-offset-1 text-[#001158] border-[#001158]">{`${date.date}:`}</div>
+                <div>{` ${date.description}`}</div>
+              </ListItem>
+            );
+          })}
+        </UnorderedList>
+      </div>
+
+      <div className="justify-around items-center w-full flex">
+        <Button
+          colorScheme="brand"
+          fontWeight="bold"
+          fontSize={{ base: 'md', lg: 'lg' }}
+          onClick={handleHackathonClick}
+        >
+          Hackathon
+        </Button>
+        <Button
+          colorScheme="brand"
+          fontWeight="bold"
+          fontSize={{ base: 'md', lg: 'lg' }}
+          onClick={handleWorkshipClick}
+        >
+          Workshops
+        </Button>
+      </div>
+    </div>
+  );
+}
 
 export default function IndexMain(props: Props) {
   const { scrollToThemePage } = props;
-  const router = useRouter();
-
-  const handleClick = (e: { preventDefault: () => void }) => {
-    e.preventDefault();
-    router.push('/fintechHackathon');
-  };
-
-  const importantDatesSection = (
-    <Flex direction="column" alignItems="center">
-      <ImportantDates />
-      <Flex px="5" justifyContent="space-between" mt="40px">
-        <WorkshopButton
-          colorScheme="brand"
-          fontWeight="light"
-          fontSize="lg"
-          mr="30px"
-          onClick={handleClick}
-        >
-          Hackathon
-        </WorkshopButton>
-        <WorkshopButton
-          colorScheme="brand"
-          fontWeight="light"
-          fontSize="lg"
-          ml="30px"
-        >
-          Workshops
-        </WorkshopButton>
-      </Flex>
-    </Flex>
-  );
 
   return (
-    <Box>
-      <Box
-        display="flex"
-        zIndex={'1'}
-        alignItems="center"
-        justifyContent="center"
-        style={{
-          width: '100vw',
-          height: '100vh',
-          paddingLeft: '80px',
-          paddingRight: '80px',
-          backgroundImage: `url("/WaterEffect.png")`,
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
-        }}
-      >
-        <Flex direction="row" justifyContent="space-around" mt="30px">
-          <Flex
-            direction="column"
-            alignItems="center"
-            justifyContent="space-between"
-            mr={{ base: '0px', lg: '80px' }}
-          >
-            <Flex direction="column" alignItems="center">
-              <Title>NUS FINTECH MONTH</Title>
-              <ThemeButton
-                colorScheme="brand"
-                fontWeight="light"
-                fontSize="2xl"
-                onClick={scrollToThemePage}
-                mb={{ base: '0px', md: '80px' }}
-              >
-                2023 Theme
-              </ThemeButton>
-            </Flex>
-            <CountdownTimer />
-          </Flex>
+    <div className="lg:w-full">
+      <Img
+        src="WaterEffect.png"
+        className="h-screen -z-10 absolute object-cover"
+        placeholder=""
+      />
 
-          <Box
-            display={{ base: 'none', lg: 'block' }}
-            ml={{ base: '0px', md: '80px' }}
+      <div className="lg:grid lg:grid-cols-3 flex h-screen">
+        <div className="lg:col-span-2 flex flex-col items-center justify-center h-full space-y-6 w-full">
+          <Title className="">NUS FINTECH MONTH 2023</Title>
+          <Button
+            onClick={scrollToThemePage}
+            colorScheme="brand"
+            fontWeight="bold"
+            fontSize="2xl"
+            rounded="3xl"
+            p="6"
           >
-            {importantDatesSection}
-          </Box>
-        </Flex>
-      </Box>
-      <Box display={{ base: 'block', lg: 'none' }}>
-        <Box
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-          style={{
-            width: '100vw',
-            height: '100vh',
-            paddingLeft: '80px',
-            paddingRight: '80px',
-            backgroundImage: `url("/LinesEffect.png")`,
-            backgroundPosition: 'center',
-            backgroundSize: 'cover',
-          }}
-        >
-          <Box display={{ base: 'block', lg: 'none' }}>
-            {importantDatesSection}
-          </Box>
-        </Box>
-      </Box>
+            Fintech-as-a-Service
+          </Button>
+          <CountdownTimer />
+        </div>
+        <div className="hidden lg:flex lg:col-span-1 lg:h-full">
+          <ImportantDatesSection />
+        </div>
+      </div>
+
+      <div className="lg:hidden flex">
+        <Img
+          src="LinesEffect.png"
+          objectFit="cover"
+          className="h-screen -z-10 absolute object-cover"
+          placeholder=""
+        />
+        <div className="w-screen h-screen px-8">
+          <ImportantDatesSection />
+        </div>
+      </div>
+
       <LeaderBoard />
-    </Box>
+    </div>
   );
 }

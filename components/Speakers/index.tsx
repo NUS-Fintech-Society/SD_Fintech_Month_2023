@@ -4,7 +4,9 @@ import SpeakersContainer from './SpeakersContainer';
 import { SpeakersInfoArray } from '../../data/Speakers';
 
 export default function SpeakersContent() {
-  const dataArray = SpeakersInfoArray.map((speaker, index) => {
+  const dataArray = SpeakersInfoArray.sort((speaker1, speaker2) =>
+    speaker1.name.localeCompare(speaker2.name),
+  ).map((speaker, index) => {
     return <SpeakersContainer key={index} speaker={speaker} />;
   });
 
