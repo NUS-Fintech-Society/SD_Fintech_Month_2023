@@ -57,7 +57,7 @@ const FeaturePage = () => {
       </FeatureContainer>
       <FAQSection>
         <FAQButton colorScheme="brand" onClick={handleClick}>
-          Frequently Answered Questions <IoIosArrowForward size={25} />
+          Frequently Asked Questions <IoIosArrowForward size={25} />
         </FAQButton>
       </FAQSection>
     </MorePageContainer>
