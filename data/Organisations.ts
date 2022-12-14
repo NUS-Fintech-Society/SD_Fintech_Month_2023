@@ -31,7 +31,7 @@ export const Gold: Organisation[] = [
   {
     name: '1inch',
     logoSrc: '/Sponsor/1inch_logo.png',
-    logoSize: '40px',
+    logoSize: '80px',
     url: 'https://app.1inch.io/#/1/unified/swap/ETH/DAI',
   },
 ];
@@ -52,7 +52,7 @@ export const Silver: Organisation[] = [
   {
     name: 'Paypal',
     logoSrc: '/Sponsor/paypal_logo.png',
-    logoSize: '90px',
+    logoSize: '60px',
     url: 'https://www.paypal.com',
   },
 ];
