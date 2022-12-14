@@ -136,7 +136,7 @@ export const SpeakersInfoArray: Speaker[] = [
     name: 'Cynthia Liaw',
     date: '6 Jan 2023',
     time: '3pm - 4pm',
-    image: '/Speakers/CYNTHIA.png',
+    image: '/Speakers/CYNTHIA.jpeg',
     location: 'TBC',
     title: 'CEO',
     organisation: 'Panda Bank',
