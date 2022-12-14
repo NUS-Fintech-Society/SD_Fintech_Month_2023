@@ -54,7 +54,7 @@ export const SpeakersInfoArray: Speaker[] = [
     title: 'Senior Data Scientist',
     organisation: 'Airwallex',
     description:
-      'I have 10+ years of experience in software and data domain. I started my career as a Software Engineer and transitioned over to Data science after Masters from NUS (2015-16). Since then I have applied data solutions to answer business questions in various fields including e-commerce, product, operations and fintech.',
+      'Krishna has 10+ years of experience in software and data domain. He started my career as a Software Engineer and transitioned over to Data science after Masters from NUS (2015-16). Since then he has applied data solutions to answer business questions in various fields including e-commerce, product, operations and fintech.',
   },
   {
     name: 'Calvin Chu',
