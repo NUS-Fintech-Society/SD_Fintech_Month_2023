@@ -93,7 +93,7 @@ export const DescriptionBox = chakra(Box, {
     bgColor: 'rgba(255, 255, 255, 0.5)',
     backdropFilter: 'blur(3px)',
     color: '#001158',
-    textAlign:'center'
+    textAlign: 'justify',
   },
 });
 
