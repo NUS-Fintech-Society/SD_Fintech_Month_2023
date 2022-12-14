@@ -38,8 +38,9 @@ export const TextBox = chakra(Box, {
     justifyContent: 'center',
     height: { base: '340px', sm: '340px', md: '36vh' },
     width: { base: '300px', sm: '300px', md: '60%' },
-    px: { sm: '30px', md: '60px' },
+    px: { sm: '10px', md: '60px' },
     bgColor: 'rgba(255, 255, 255, 0.95)',
+    textAlign: 'justify',
   },
 });
 

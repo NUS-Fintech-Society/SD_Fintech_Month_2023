@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  Box,
-  HStack,
-  ListItem,
-  Stack,
-  StackDivider,
-  VStack,
-} from '@chakra-ui/react';
+import { Stack, StackDivider, VStack } from '@chakra-ui/react';
 import { ImportantDate } from '../../types/Date';
 import { importantDates } from '../../data/ImportantDates';
 import {
@@ -45,7 +38,7 @@ export default function About() {
             </Description>
           </VStack>
 
-          <HStack spacing={10}>
+          <Stack direction={['column', 'column', 'row']} spacing={7}>
             <VStack
               divider={<StackDivider borderColor="transparent" />}
               spacing={0}
@@ -72,7 +65,7 @@ export default function About() {
                 digital transformation projects.{' '}
               </Description>
             </VStack>
-          </HStack>
+          </Stack>
         </VStack>
       </Wrapper>
     </AboutUsContainer>

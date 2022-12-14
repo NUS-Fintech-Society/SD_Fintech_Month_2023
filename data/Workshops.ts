@@ -137,6 +137,22 @@ export const Workshops: Workshop[] = [
       'Gabor is responsible for defining the methodological roadmap of Lynx’s predictive analytics consulting and product development departments. He leads the internal data science team and supports the business development. Gabor has been the co-founder of several other AI start-ups in Healthcare, Finance, Crypto, Telecom and Space Industries, contributing with creative application of state-of-the-art data science models. He received his PhD in 2003, worked as an Associate Professor at Budapest Corvinus University, author of one book and many scientific papers.',
   },
   {
+    id: 12,
+    day: 'Friday',
+    date: 'Friday, 13 Jan',
+    time: '7.30pm - 8.30pm',
+    name: 'Gateway to Web3 and Security',
+    organisation: 'BitEx & Merkle Science',
+    speaker: 'Vayne Poh',
+    venue: 'TBC',
+    link: '',
+    position: 'Trade Desk',
+    image: '/Workshops/BITDATA.png',
+    description:
+      "Vayne first entered the financial markets as a retail forex trader in 2008 and found success where many floundered. Among his skills are the ability to develop trading strategies, charts reading, risk management, and market analysis. In recent years, blockchain technology and cryptocurrency's meteoric rise piqued his interest and drove him headfirst into this burgeoning industry.",
+  },
+
+  {
     id: 10,
     day: 'Tuesday',
     date: 'Tuesday, 17 Jan',
@@ -169,7 +185,7 @@ export const Workshops: Workshop[] = [
   {
     id: 5,
     day: 'Wednesday',
-    date: '',
+    date: 'Wednesday, 18 Jan',
     time: '7.30pm - 9.00pm',
     name: 'Why Enterprise Blockchain Implementations Fail',
     organisation: 'SettleMint',
@@ -180,5 +196,20 @@ export const Workshops: Workshop[] = [
     image: '/Workshops/SETTLEMINT.png',
     description:
       'Johnny is the APAC Commercial VP for SettleMint, the #1 high-performance, low-code platform for rapid blockchain innovation. He is passionate about innovative technologies particularly blockchain & web3 - how it can be integrated into sustainable business models for the benefit of all and ultimately lead the way into the next industrial revolution. He is on a mission to help web2 companies go web3. NUS Business Analytics graduate with 2 years of blockchain development experience. Current domain : Cardano, Ethereum and Hyperledger Besu',
+  },
+  {
+    id: 13,
+    day: 'Thursday',
+    date: 'Thursday, 19 Jan',
+    time: '7.30pm - 9.00pm',
+    name: 'Breaking into Web3 and Analyst Work',
+    organisation: 'Arcane Group',
+    speaker: 'Shan, Stan, Tricia, Josh, Edward',
+    venue: 'Arcane Office',
+    link: '',
+    position: 'Various Positions',
+    image: '/Workshops/ARCANE.jpeg',
+    description:
+      '',
   },
 ];

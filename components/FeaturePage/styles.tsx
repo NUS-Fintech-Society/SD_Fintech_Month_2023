@@ -56,6 +56,7 @@ export const FeatureCard = chakra(Box, {
       color: 'black',
     },
     transition: '0.3s',
+    shadow: 'dark-lg',
   },
 });
 

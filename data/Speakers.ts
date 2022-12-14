@@ -3,7 +3,7 @@ import { Speaker } from '../types/Speaker';
 export const SpeakersInfoArray: Speaker[] = [
   {
     name: 'Johnny Kok',
-    date: '18 Jan',
+    date: '18 Jan 2023',
     time: '7.30 pm - 9pm',
     image: '/Speakers/JOHNNYKOK.png',
     location: 'TBC',
@@ -14,7 +14,7 @@ export const SpeakersInfoArray: Speaker[] = [
   },
   {
     name: 'Huang Donghao',
-    date: '12 Jan',
+    date: '12 Jan 2023',
     time: '6pm - 6.45pm',
     image: '/Speakers/HUANGDONGHAO.png',
     location: 'TBC',
@@ -25,7 +25,7 @@ export const SpeakersInfoArray: Speaker[] = [
   },
   {
     name: 'Gabor Balazs Benedek',
-    date: '13 Jan',
+    date: '13 Jan 2023',
     time: '5.30pm -7.30pm',
     image: '/Speakers/GABOR.png',
     location: 'TBC',
@@ -36,7 +36,7 @@ export const SpeakersInfoArray: Speaker[] = [
   },
   {
     name: 'Nischint Sanghavi',
-    date: '11 Jan',
+    date: '11 Jan 2023',
     time: '6pm - 6.45pm',
     image: '/Speakers/NISCHINT.png',
     location: 'TBC',
@@ -47,7 +47,7 @@ export const SpeakersInfoArray: Speaker[] = [
   },
   {
     name: 'Krishna Parthasarathy',
-    date: '12 Jan',
+    date: '12 Jan 2023',
     time: '7.30pm - 8.15pm',
     image: '/Speakers/KRISHNA.png',
     location: 'TBC',
@@ -58,7 +58,7 @@ export const SpeakersInfoArray: Speaker[] = [
   },
   {
     name: 'Calvin Chu',
-    date: '9 Jan',
+    date: '9 Jan 2023',
     time: '7.30pm - 8.30pm',
     image: '/Speakers/CALVINCHU.png',
     location: 'TBC',
@@ -69,7 +69,7 @@ export const SpeakersInfoArray: Speaker[] = [
   },
   {
     name: 'Shivani Mukherjee',
-    date: '17 Jan',
+    date: '17 Jan 2023',
     time: '8 pm - 9.30pm',
     image: '/Speakers/SHIVANI.png',
     location: 'TBC',
@@ -78,7 +78,7 @@ export const SpeakersInfoArray: Speaker[] = [
   },
   {
     name: 'Yeou Jie Goh',
-    date: '6 Jan',
+    date: '6 Jan 2023',
     time: '11am',
     image: '/Speakers/YEOUJIEGOH.png',
     location: 'TBC',
@@ -89,7 +89,7 @@ export const SpeakersInfoArray: Speaker[] = [
   },
   {
     name: 'Akshay Bajaj',
-    date: '6 Jan',
+    date: '6 Jan 2023',
     time: '11am',
     image: '/Speakers/AKSHAYBAJAJ.png',
     location: 'TBC',
@@ -99,7 +99,7 @@ export const SpeakersInfoArray: Speaker[] = [
   },
   {
     name: 'Ziheng Li',
-    date: '6 Jan',
+    date: '6 Jan 2023',
     time: '11am',
     image: '/Speakers/ZIHENGLI.png',
     location: 'TBC',
@@ -111,7 +111,7 @@ export const SpeakersInfoArray: Speaker[] = [
 
   {
     name: 'Tobias Bauer',
-    date: '6 Jan',
+    date: '6 Jan 2023',
     time: '11am',
     image: '/Speakers/TOBIAS.png',
     location: 'TBC',
@@ -123,7 +123,7 @@ export const SpeakersInfoArray: Speaker[] = [
 
   {
     name: 'Lee Yi Liang',
-    date: '9 Jan',
+    date: '9 Jan 2023',
     time: '6pm - 7pm',
     image: '/Speakers/LEEYILIANG.png',
     location: 'TBC',
@@ -134,7 +134,7 @@ export const SpeakersInfoArray: Speaker[] = [
   },
   {
     name: 'Lim Xin Yi',
-    date: '17 Jan',
+    date: '17 Jan 2023',
     time: ' 7.30pm - 8.15pm',
     image: '/Speakers/LIMXINYI.png',
     location: 'TBC',
@@ -145,7 +145,7 @@ export const SpeakersInfoArray: Speaker[] = [
   },
   {
     name: 'Daniel Chew',
-    date: '10 Jan',
+    date: '10 Jan 2023',
     time: '6pm - 6.45pm',
     image: '/Speakers/DANIELCHEW.png',
     location: 'TBC',
@@ -156,7 +156,7 @@ export const SpeakersInfoArray: Speaker[] = [
   },
   {
     name: 'Pamela Lee',
-    date: '18 Jan',
+    date: '18 Jan 2023',
     time: '6pm - 7pm',
     image: '/Speakers/PAMELA.png',
     location: 'TBC',
@@ -167,7 +167,7 @@ export const SpeakersInfoArray: Speaker[] = [
   },
   {
     name: 'Elton Tay',
-    date: '18 Jan',
+    date: '18 Jan 2023',
     time: '7.30pm - 9pm',
     image: '/Speakers/ELTONTAY.png',
     location: 'TBC',
@@ -175,5 +175,26 @@ export const SpeakersInfoArray: Speaker[] = [
     organisation: 'SettleMint',
     description:
       ' NUS Business Analytics graduate with 2 years of blockchain development experience. Current domain : Cardano, Ethereum and Hyperledger Besu',
+  },
+  {
+    name: 'Vayne Poh',
+    date: '13 Jan 2023',
+    time: '7.30pm - 8.30pm',
+    image: '/Speakers/VAYNE.jpeg',
+    location: 'Virtual',
+    title: 'Trade Desk',
+    organisation: 'BitData Exchange',
+    description:
+      "Vayne first entered the financial markets as a retail forex trader in 2008 and found success where many floundered. Among his skills are the ability to develop trading strategies, charts reading, risk management, and market analysis. In recent years, blockchain technology and cryptocurrency's meteoric rise piqued his interest and drove him headfirst into this burgeoning industry.",
+  },
+  {
+    name: 'Tom Luo',
+    date: '13 Jan 2023',
+    time: '7.30pm - 8.30pm',
+    image: '/Speakers/TOM.jpg',
+    location: 'Virtual',
+    title: 'Director of Sales, APAC and EMEA',
+    organisation: 'Merkle Science',
+    description: '',
   },
 ];

@@ -20,6 +20,9 @@ export default function Sponsor() {
     rowLength: number,
   ) {
     const result = [];
+    organisations.sort((organisation1, organisation2) =>
+      organisation1.name.localeCompare(organisation2.name),
+    );
     for (var i = 0; i < organisations.length; i = i + rowLength) {
       result.push(organisations.slice(i, i + rowLength));
     }

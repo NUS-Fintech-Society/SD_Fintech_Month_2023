@@ -268,23 +268,7 @@ export const WeekEvents: WeekEvent[][] = [
       title: 'Prototyping Submission',
       label: 'Fintech Month Hackathon',
     },
-    {
-      id: 1,
-      date: '19 Jan',
-      time: '12:00PM-1:00PM',
-      title: 'Technical workshop',
-      label: 'Workshop',
-      venue: 'TBC',
-      speakerInfo: [
-        {
-          id: 0,
-          organisation: 'Certik',
-          speaker: 'Shan',
-          position: '',
-          imageSrc: '/Speakers/SHAN.png'
-        },
-      ],
-    },
+    
     {
       id: 2,
       date: '19 Jan',
@@ -308,7 +292,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '7:30PM',
       title: 'Fireside chat - Breaking into Web3 and Analyst Work ',
       label: 'Workshop',
-      venue: 'TBC',
+      venue: 'Arcane Office',
       speakerInfo: [
         {
           id: 0,
