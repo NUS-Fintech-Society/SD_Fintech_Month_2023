@@ -28,6 +28,12 @@ export const Gold: Organisation[] = [
     logoSize: '50px',
     url: 'https://www.bybit.com/en-US/',
   },
+  {
+    name: '1inch',
+    logoSrc: '/Sponsor/1inch_logo.png',
+    logoSize: '40px',
+    url: 'https://app.1inch.io/#/1/unified/swap/ETH/DAI',
+  },
 ];
 
 export const Silver: Organisation[] = [
@@ -42,6 +48,12 @@ export const Silver: Organisation[] = [
     logoSrc: '/Sponsor/visa-logo.png',
     logoSize: '110px',
     url: 'https://www.visa.com.sg/',
+  },
+  {
+    name: 'Paypal',
+    logoSrc: '/Sponsor/paypal_logo.png',
+    logoSize: '90px',
+    url: 'https://www.paypal.com',
   },
 ];
 
