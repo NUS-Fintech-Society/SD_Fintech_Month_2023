@@ -2,36 +2,6 @@ import { Workshop } from '../types/Workshop';
 
 export const Workshops: Workshop[] = [
   {
-    id: 1,
-    day: 'Friday',
-    date: 'Friday, 6 Jan',
-    time: '11.00am',
-    name: 'VC Landscape in Open source & API-First Companies',
-    organisation: 'Defiance Capital',
-    speaker: 'Yeou Jie Goh',
-    venue: 'TBC',
-    // link: 'https://docs.google.com/forms/d/e/1FAIpQLScZ3TzpvuB9wSSX2IhnzbZ8RwiZ12ssiDsx0S4tnu3lQL02BA/viewform?usp=sf_link',
-    position: 'Head of Portfolio Growth',
-    image: '/Workshops/DEFIANCECAPITAL.png',
-    description:
-      "Yeou Jie has been an active crypto investor since his university days in 2017, and was an early investor in various projects such as Binance Coin and Matic. His current role is to manage DeFiance's existing investments, help them grow further and become more successful. Prior to DeFiance, Yeou Jie was a Management Associate in Bank of Singapore, working in various departments from front office to corporate strategy.",
-  },
-  {
-    id: 2,
-    day: 'Friday',
-    date: '',
-    time: '11.00am',
-    name: 'VC Landscape in Open source & API-First Companies',
-    organisation: 'Saison Capital',
-    speaker: 'Ziheng Li',
-    venue: 'TBC',
-    // link: 'https://docs.google.com/forms/d/e/1FAIpQLScZ3TzpvuB9wSSX2IhnzbZ8RwiZ12ssiDsx0S4tnu3lQL02BA/viewform?usp=sf_link',
-    position: 'Investor',
-    image: '/Workshops/SAISONCAPITAL.png',
-    description:
-      'Ziheng is an investor at Saison Capital, primarily looking at early-stage fintech, insurtech and marketplace startups across Southeast Asia and India.',
-  },
-  {
     id: 3,
     day: 'Monday',
     date: 'Monday, 9 Jan',
@@ -54,9 +24,9 @@ export const Workshops: Workshop[] = [
     name: 'All Things Tokens & Launchpads',
     organisation: 'Impossible Finance',
     speaker: 'Calvin Chu',
-    venue: 'TBC',
+    venue: 'Virtual',
     link: 'https://docs.google.com/forms/d/1xaNJ2bEKsZJt5ShVuH4cSUKLAr6Dd2sbMyrbDaidv_o/edit',
-    position: 'BUIDLer',
+    position: 'Core BUIDLer',
     image: '/Workshops/IMPOSSIBLEFINANCE.png',
     description:
       'Calvin Chu is a core builder at Impossible Finance, a multichain decentralized incubator, launchpad, and swap. He previously worked on research and diligence for Binance Launchpad and built up the Binance Staking product to support 30 different blockchains.',
@@ -74,7 +44,7 @@ export const Workshops: Workshop[] = [
     position: 'Software Engineer',
     image: '/Workshops/PYTH.png',
     description:
-      'Full-stack engineer, develops and maintains all website-related projects, database, backend API server, monitoring and many others. Previously cloud architect @ AWS.',
+      'Daniel is a full-stack engineer. He develops and maintains all website-related projects, database, backend API server, monitoring and many others. He previously worked as a cloud architect at AWS.',
   },
   {
     id: 7,
@@ -109,7 +79,7 @@ export const Workshops: Workshop[] = [
   {
     id: 12,
     day: 'Thursday',
-    date: 'Thursday, 12 Jan',
+    date: '',
     time: '7.30pm - 8.15pm',
     name: 'Machine Learning Applications in Fintech',
     organisation: 'Airwallex',
@@ -139,23 +109,56 @@ export const Workshops: Workshop[] = [
   {
     id: 12,
     day: 'Friday',
-    date: 'Friday, 13 Jan',
+    date: '',
     time: '7.30pm - 8.30pm',
     name: 'Gateway to Web3 and Security',
     organisation: 'BitEx & Merkle Science',
-    speaker: 'Vayne Poh',
-    venue: 'TBC',
+    speaker: 'Vayne Poh & Tom Luo',
+    venue: 'Virtual',
     link: '',
-    position: 'Trade Desk',
-    image: '/Workshops/BITDATA.png',
+    position: '',
+    image: '/Workshops/BITMER.png',
     description:
       "Vayne first entered the financial markets as a retail forex trader in 2008 and found success where many floundered. Among his skills are the ability to develop trading strategies, charts reading, risk management, and market analysis. In recent years, blockchain technology and cryptocurrency's meteoric rise piqued his interest and drove him headfirst into this burgeoning industry.",
   },
 
   {
-    id: 10,
+    id: 15,
+    day: 'Monday',
+    date: 'Monday, 16 Jan',
+    time: '6pm - 7pm',
+    name: 'Web3 101',
+    organisation: 'OCBC',
+    speaker: 'Celine Wan',
+    venue: 'TBC',
+    link: '',
+    position: 'Assistant Vice President, Fintech & Ecosystems',
+    image: '/Workshops/OCBC.png',
+    description:
+      "Celine specialises in fintech strategy, partnerships, ecosystems, and digital transformation at OCBC Bank Singapore, and has more than 5 years of experience in fintech regulations, ecosystem enablement, and program management. Previously a scholar then fintech regulator at Bank Negara Malaysia (BNM), Celine played a pioneering role in the region’s fintech development landscape, particularly in areas that are experiencing rapid innovation such as digital banking, embedded financing and payments. An engineer by training (MEng and BA, University of Cambridge), Celine has amassed both engineering and financial service work experiences in Malaysia, Singapore, and the United Kingdom (London and Newcastle).",
+  },
+
+  {
+    id: 15,
     day: 'Tuesday',
     date: 'Tuesday, 17 Jan',
+    time: '6pm - 7pm',
+    name: 'Fintech Partnership - When Superheroes Meet',
+    organisation: 'Mastercard',
+    speaker: 'Ling Li Li',
+    venue: 'TBC',
+    link: '',
+    position: 'Fintech and Enablers Lead',
+    image: '/Workshops/MASTERCARD.png',
+    description:
+      'Li Li leads the Mastercard Global Fintech & Enablers program in Asia Pacific. She connects a network of innovators as she sources the globe for elite fintech, technology players, together with Mastercard and esteemed customers in Asia Pacific to co-create the future of commerce. She also provides guidance to customers to develop their own innovative, startup engagement strategies through her prowess on startup, fintech, investment and technology trends. Prior to this role, Li Li was a quantitative researcher in Standard Chartered and Nielsen looking into product innovation for over ten years. She continues to enjoy discovering the differentiated experiences fintech build to win their consumers. She graduated with a Bachelor of Science from the National University of Singapore, majoring in Statistics and minoring in Mathematics.',
+  },
+
+
+  {
+    id: 10,
+    day: 'Tuesday',
+    date: '',
     time: '7.30pm - 8.15pm',
     name: 'Day in the Life of a Research Analyst',
     organisation: 'Nansen',
@@ -195,16 +198,32 @@ export const Workshops: Workshop[] = [
     position: 'VP Commerical, APAC',
     image: '/Workshops/SETTLEMINT.png',
     description:
-      'Johnny is the APAC Commercial VP for SettleMint, the #1 high-performance, low-code platform for rapid blockchain innovation. He is passionate about innovative technologies particularly blockchain & web3 - how it can be integrated into sustainable business models for the benefit of all and ultimately lead the way into the next industrial revolution. He is on a mission to help web2 companies go web3. NUS Business Analytics graduate with 2 years of blockchain development experience. Current domain : Cardano, Ethereum and Hyperledger Besu',
+      'Johnny is the APAC Commercial VP for SettleMint, the #1 high-performance, low-code platform for rapid blockchain innovation. He is passionate about innovative technologies particularly blockchain & web3 - how it can be integrated into sustainable business models for the benefit of all and ultimately lead the way into the next industrial revolution. He is on a mission to help web2 companies go web3. Elton is a NUS Business Analytics graduate with 2 years of blockchain development experience. His current domain is around Cardano, Ethereum and Hyperledger Besu',
+  },
+
+  {
+    id: 16,
+    day: 'Thursday',
+    date: 'Thursday, 19 Jan',
+    time: '6pm',
+    name: 'Unleashing the Power of Web3 on your App',
+    organisation: 'Coinbase',
+    speaker: 'Hassan Ahmed',
+    venue: 'TBC',
+    link: '',
+    position: 'Head of Southeast Asia',
+    image: '/Workshops/COINBASE.jpeg',
+    description:
+      'Hassan is the head of Southeast Asia at Coinbase. He was previously from SVP Strategy at Gopay/Gojek in Indonesia and CEO of Coins.ph in Philippines. He attained his MBA from Harvard Business School.',
   },
   {
     id: 13,
     day: 'Thursday',
-    date: 'Thursday, 19 Jan',
+    date: '',
     time: '7.30pm - 9.00pm',
     name: 'Breaking into Web3 and Analyst Work',
     organisation: 'Arcane Group',
-    speaker: 'Shan, Stan, Tricia, Josh, Edward',
+    speaker: 'Shan Shan, Stan Low, Tricia Neo, Josh Lam, Edward Tan',
     venue: 'Arcane Office',
     link: '',
     position: 'Various Positions',

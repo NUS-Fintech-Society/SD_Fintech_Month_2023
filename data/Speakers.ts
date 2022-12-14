@@ -210,7 +210,7 @@ export const SpeakersInfoArray: Speaker[] = [
     title: 'Blockchain Solutions Architect, APAC',
     organisation: 'SettleMint',
     description:
-      ' NUS Business Analytics graduate with 2 years of blockchain development experience. Current domain : Cardano, Ethereum and Hyperledger Besu',
+      ' Elton is a NUS Business Analytics graduate with 2 years of blockchain development experience. His current domain is around Cardano, Ethereum and Hyperledger Besu',
   },
   {
     name: 'Vayne Poh',
@@ -332,6 +332,7 @@ export const SpeakersInfoArray: Speaker[] = [
     organisation: 'Delphi',
     description: 'Josh is a Data Engineer at Delphi Digital, working on various proprietary research projects with other analysts. Before entering crypto, Josh was working in data related roles such as trading analytics at GIC and data analytics at Bloomberg.',
   },
+
 
   
   
