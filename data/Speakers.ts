@@ -176,4 +176,25 @@ export const SpeakersInfoArray: Speaker[] = [
     description:
       ' NUS Business Analytics graduate with 2 years of blockchain development experience. Current domain : Cardano, Ethereum and Hyperledger Besu',
   },
+  {
+    name: 'Vayne Poh',
+    date: '13 Jan',
+    time: '7.30pm - 8.30pm',
+    image: '/Speakers/VAYNE.jpeg',
+    location: 'Virtual',
+    title: 'Trade Desk',
+    organisation: 'BitData Exchange',
+    description:"Vayne first entered the financial markets as a retail forex trader in 2008 and found success where many floundered. Among his skills are the ability to develop trading strategies, charts reading, risk management, and market analysis. In recent years, blockchain technology and cryptocurrency's meteoric rise piqued his interest and drove him headfirst into this burgeoning industry.",
+  },
+  {
+    name: 'Tom Luo',
+    date: '13 Jan',
+    time: '7.30pm - 8.30pm',
+    image: '/Speakers/TOM.jpg',
+    location: 'Virtual',
+    title: 'Director of Sales, APAC and EMEA',
+    organisation: 'Merkle Science',
+    description:
+      '',
+  },
 ];
