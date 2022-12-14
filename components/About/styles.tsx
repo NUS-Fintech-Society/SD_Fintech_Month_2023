@@ -136,7 +136,7 @@ export const BottomImage = chakra(Image, {
   baseStyle: {
     position: 'relative',
     zIndex: '2',
-    left: { base: '-11srem', sm: '-15.5rem', md: '-22rem' },
+    left: { base: '-14rem', md: '-24rem' },
     top: { base: '4rem', sm: '6rem', md: '8rem' },
     borderRadius: '5px',
     height: { base: '7rem', sm: '9rem' },
