@@ -147,7 +147,7 @@ export const Workshops: Workshop[] = [
     organisation: 'Mastercard',
     speaker: 'Ling Li Li',
     venue: 'TBC',
-    link: '',
+    link: 'https://docs.google.com/forms/d/1Bde1byqEOH9QLWHMfV6gDB2kBiFvY9A9vI0nJJyjoVE/edit',
     position: 'Fintech and Enablers Lead',
     image: '/Workshops/MASTERCARD.png',
     description:
@@ -179,7 +179,7 @@ export const Workshops: Workshop[] = [
     organisation: 'Talos',
     speaker: 'Pamela Lee',
     venue: 'TBC',
-    // link: 'https://docs.google.com/forms/d/e/1FAIpQLScZ3TzpvuB9wSSX2IhnzbZ8RwiZ12ssiDsx0S4tnu3lQL02BA/viewform?usp=sf_link',
+    link: 'https://docs.google.com/forms/d/1rWJg0onqok_zSm_MoTzfadgID9CbLi4_VOddC5XF7FE/edit',
     position: 'Head of Sales, APAC',
     image: '/Workshops/TALOS.png',
     description:
@@ -210,7 +210,7 @@ export const Workshops: Workshop[] = [
     organisation: 'Coinbase',
     speaker: 'Hassan Ahmed',
     venue: 'TBC',
-    link: '',
+    link: 'https://docs.google.com/forms/d/1GgGB7HqJQ7uWEYgOV97wh1mIAE-s63gpY52VTpZ3gmc/edit',
     position: 'Head of Southeast Asia',
     image: '/Workshops/COINBASE.jpeg',
     description:
@@ -225,7 +225,7 @@ export const Workshops: Workshop[] = [
     organisation: 'Arcane Group',
     speaker: 'Shan Shan, Stan Low, Tricia Neo, Josh Lam, Edward Tan',
     venue: 'Arcane Office',
-    link: '',
+    link: 'https://docs.google.com/forms/d/13z1xvOoFDXnIiMmPcBLf0p0rGyH07kKgXS0xOX6owjk/edit',
     position: 'Various Positions',
     image: '/Workshops/ARCANE.jpeg',
     description:
