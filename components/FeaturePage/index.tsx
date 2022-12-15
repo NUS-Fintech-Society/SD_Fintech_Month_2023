@@ -50,9 +50,9 @@ const FeaturePage = () => {
           {Feature('300', 'Hackers', true)}
           {Feature('$30,000', 'in Prizes', false)}
           {Feature('128', 'Hours', true)}
-          {Feature('10', 'Mentors', true)}
+          {Feature('30', 'Mentors', true)}
           {Feature('10', 'Speakers', true)}
-          {Feature('10', 'Sponsors', true)}
+          {Feature('8', 'Sponsors', true)}
         </SimpleGrid>
       </FeatureContainer>
       <FAQSection>
