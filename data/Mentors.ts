@@ -15,7 +15,7 @@ export const MentorsInfoArray: Mentor[] = [
     title: 'Sales Director',
     organisation: 'Talos',
     description:
-      'Silvia is primarily responsible for driving, managing, and executing Talos’ revenue generation strategies across the region. Before joining Talos, Silvia served as Head of Singapore for Integral Development Corp. where she was responsible for driving new business and managing strategic relationships with the group’s institutional client base in the region. Prior to her time at Integral, she worked for 360 Trading Networks as South East Asia Account Sales Director and held a field sales management position at Standard Chartered Bank. Silvia holds an MBA in Finance from The Hong Kong University of Science and Technology as well as a Bachelor of Computer Engineering degree from the National University of Singapore.',
+      'Silvia is primarily responsible for driving, managing, and executing Talos’s revenue generation strategies across the region. Before joining Talos, Silvia served as Head of Singapore for Integral Development Corp. where she was responsible for driving new business and managing strategic relationships with the group’s institutional client base in the region. Prior to her time at Integral, she worked for 360 Trading Networks as South East Asia Account Sales Director and held a field sales management position at Standard Chartered Bank. Silvia holds an MBA in Finance from The Hong Kong University of Science and Technology as well as a Bachelor of Computer Engineering degree from the National University of Singapore.',
   },
   {
     name: 'Ziheng Li',
@@ -55,7 +55,7 @@ export const MentorsInfoArray: Mentor[] = [
     title: 'Regional Director, Southeast Asia',
     organisation: 'Coinbase',
     description:
-      'Head of Southeast Asia @ Coinbase. Prior SVP Strategy @ Gopay/Gojek in Indonesia and CEO of Coins.ph in Philippines. BizOps @ Venmo. MBA from Harvard Business School.',
+      'Hassan is the head of Southeast Asia at Coinbase. He was previously from SVP Strategy at Gopay/Gojek in Indonesia and CEO of Coins.ph in Philippines. He attained his MBA from Harvard Business School.',
   },
   {
     name: 'Brian Goh',
@@ -71,7 +71,7 @@ export const MentorsInfoArray: Mentor[] = [
     title: 'Senior Software Engineer',
     organisation: 'Coinbase',
     description:
-      'Passionate Software Engineer with more than 5 years hands-on experience working on Fintech products in big tech (Google and Coinbase).',
+      'Jason is a passionate Software Engineer with more than 5 years hands-on experience working on Fintech products in big tech (Google and Coinbase).',
   },
   {
     name: 'Timothy Lin',
@@ -87,7 +87,7 @@ export const MentorsInfoArray: Mentor[] = [
     title: 'Director of Data Science',
     organisation: 'Lynx Analytics',
     description:
-    'A data scientist for 12 years with a strong interest in graphs. Working mainly on retail, finance, and telco projects. Currently getting more and more involved in biotech-related data science work. Likes literature, hiking, and badminton'
+    'Marton is a data scientist for 12 years with a strong interest in graphs. He works mainly on retail, finance, and telco projects. He is currently getting more and more involved in biotech-related data science work. His personal interest revolves around literature, hiking, and badminton'
   },
   {
     name: 'Sean Lim',
@@ -101,7 +101,7 @@ export const MentorsInfoArray: Mentor[] = [
     image: '/Mentors/NIKITA.png',
     title: 'Backend Lead',
     organisation: '1inch',
-    description:'ex-Binance, cofounder of several tech startups, currently backend lead at 1inch. '
+    description:'Nikita previously worked at Binance and was the cofounder of several tech startups. He is currently the backend lead at 1inch. '
   },
 
   {
@@ -109,7 +109,7 @@ export const MentorsInfoArray: Mentor[] = [
     image: '/Mentors/NARESH.png',
     title: 'Director - Global Startup Partnerships',
     organisation: 'Mastercard',
-    description:"Leads global track of Mastercard Start Path, the company's award winning startup engagement program, to drive partnerships, collaboration and innovation with startups globally"
+    description:"Narash leads global track of Mastercard Start Path, the company's award winning startup engagement program, to drive partnerships, collaboration and innovation with startups globally"
   },
 
   {
@@ -117,7 +117,7 @@ export const MentorsInfoArray: Mentor[] = [
     image: '/Mentors/VLADIMIR.png',
     title: 'Software Engineer',
     organisation: 'Thought Machine',
-    description:'Software engineer with experience in building distributed systems and ML R&D. Graduated university in 2019 and joined Thought Machine working in infrastructure mainly. Currently running some side hustles around investment management. '
+    description:'Vladimir is a software engineer with experience in building distributed systems and ML R&D. He graduated from university in 2019 and joined Thought Machine working in infrastructure mainly. He is currently running some side hustles around investment management. '
   },
 
   {
@@ -125,7 +125,7 @@ export const MentorsInfoArray: Mentor[] = [
     image: '/Mentors/MIGUEL.jpeg',
     title: 'Site Reliability Engineer',
     organisation: 'Thought Machine',
-    description:"I've been working in cloud systems for the past 6 years, I've specialised recently in the observation of complex distributed systems and automation of Operational toil."
+    description:"Miguel has been working in cloud systems for the past 6 years. He recently specialised in the observation of complex distributed systems and automation of Operational toil."
   },
 
   {
@@ -133,7 +133,7 @@ export const MentorsInfoArray: Mentor[] = [
     image: '/Mentors/JONAS.jpg',
     title: 'Co-founder',
     organisation: 'Metacamp',
-    description:"Engineer (2.5 years), NPO entrepreneur (12+ years), Startup Accelerator (2 years)."
+    description:"Jonas was an engineer for about 2.5 years, a NPO entrepreneur for around 12+ years and Startup Accelerator around 2 years."
   },
 
 ];
