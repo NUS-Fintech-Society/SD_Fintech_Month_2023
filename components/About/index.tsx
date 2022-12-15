@@ -26,7 +26,7 @@ function About() {
           <Img
             src="AboutImage2.png"
             objectFit="cover"
-            className="col-start-2 col-span-6 z-10 row-span-2 row-start-4 h-full"
+            className="col-start-2 col-span-6 z-10 row-span-2 row-start-4"
           />
         </div>
         <div className="flex shadow-xl rounded-3xl p-4 md:p-6  backdrop-blur-sm bg-[#ffffffcf] my-4 w-3/4 lg:w-2/3 ">
