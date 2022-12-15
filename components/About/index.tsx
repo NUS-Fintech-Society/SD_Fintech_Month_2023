@@ -12,7 +12,7 @@ function About() {
         ABOUT FINTECH MONTH
       </div>
       <div className="flex flex-col lg:flex-row-reverse items-center justify-center relative lg:mx-16">
-        <div className="grid grid-cols-12 grid-rows-[12] w-2/3 lg:w-1/3">
+        <div className="grid grid-cols-12 grid-rows-[12] w-2/3 lg:w-1/2">
           <Img
             src="AboutImage1.png"
             objectFit="cover"
@@ -29,7 +29,7 @@ function About() {
             className="col-start-2 col-span-6 z-10 row-span-2 row-start-4"
           />
         </div>
-        <div className="flex shadow-xl rounded-3xl p-4 md:p-6  backdrop-blur-sm bg-[#ffffffcf] my-4 w-3/4 lg:w-2/3 ">
+        <div className="flex shadow-xl rounded-3xl p-4 md:p-6  backdrop-blur-sm bg-[#ffffffcf] my-4 w-3/4 lg:w-1/2 ">
           <div className="text-[#001158]">
             NUS FinTech month is a series of workshops and panel discussions
             designed to give university and polytechnic students an insight into
