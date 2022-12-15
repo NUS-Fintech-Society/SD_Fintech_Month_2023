@@ -28,12 +28,12 @@ export const Gold: Organisation[] = [
     logoSize: '50px',
     url: 'https://www.bybit.com/en-US/',
   },
-  {
-    name: '1inch',
-    logoSrc: '/Sponsor/1inch_logo.png',
-    logoSize: '80px',
-    url: 'https://app.1inch.io/#/1/unified/swap/ETH/DAI',
-  },
+  // {
+  //   name: '1inch',
+  //   logoSrc: '/Sponsor/1inch_logo.png',
+  //   logoSize: '80px',
+  //   url: 'https://app.1inch.io/#/1/unified/swap/ETH/DAI',
+  // },
 ];
 
 export const Silver: Organisation[] = [
@@ -43,18 +43,18 @@ export const Silver: Organisation[] = [
     logoSize: '90px',
     url: 'https://www.thoughtmachine.net/',
   },
-  {
-    name: 'Visa',
-    logoSrc: '/Sponsor/visa-logo.png',
-    logoSize: '110px',
-    url: 'https://www.visa.com.sg/',
-  },
-  {
-    name: 'Paypal',
-    logoSrc: '/Sponsor/paypal_logo.png',
-    logoSize: '60px',
-    url: 'https://www.paypal.com',
-  },
+  // {
+  //   name: 'Visa',
+  //   logoSrc: '/Sponsor/visa-logo.png',
+  //   logoSize: '110px',
+  //   url: 'https://www.visa.com.sg/',
+  // },
+  // {
+  //   name: 'Paypal',
+  //   logoSrc: '/Sponsor/paypal_logo.png',
+  //   logoSize: '60px',
+  //   url: 'https://www.paypal.com',
+  // },
 ];
 
 export const Organisers: Organisation[] = [
