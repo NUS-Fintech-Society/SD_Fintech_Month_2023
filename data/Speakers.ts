@@ -54,14 +54,14 @@ export const SpeakersInfoArray: Speaker[] = [
     title: 'Senior Data Scientist',
     organisation: 'Airwallex',
     description:
-      'I have 10+ years of experience in software and data domain. I started my career as a Software Engineer and transitioned over to Data science after Masters from NUS (2015-16). Since then I have applied data solutions to answer business questions in various fields including e-commerce, product, operations and fintech.',
+      'Krishna has 10+ years of experience in software and data domain. He started my career as a Software Engineer and transitioned over to Data science after Masters from NUS (2015-16). Since then he has applied data solutions to answer business questions in various fields including e-commerce, product, operations and fintech.',
   },
   {
     name: 'Calvin Chu',
     date: '9 Jan 2023',
     time: '7.30pm - 8.30pm',
     image: '/Speakers/CALVINCHU.png',
-    location: 'TBC',
+    location: 'Virtual',
     title: 'Core BUIDLer',
     organisation: 'Impossible Finance',
     description:
@@ -69,8 +69,8 @@ export const SpeakersInfoArray: Speaker[] = [
   },
   {
     name: 'Shivani Mukherjee',
-    date: '17 Jan 2023',
-    time: '8 pm - 9.30pm',
+    date: '6 Jan 2023',
+    time: '1.30 pm - 2.30pm',
     image: '/Speakers/SHIVANI.png',
     location: 'TBC',
     title: 'Senior Partnerships Leader APAC',
@@ -95,7 +95,7 @@ export const SpeakersInfoArray: Speaker[] = [
     location: 'TBC',
     title: 'Investor',
     organisation: 'SIG',
-    description: '',
+    description: "Akshay has been with SIG since early 2016 as part of the Southeast Asia venture capital team. Akshay leads investments for SIG in the region and has invested in content, e-commerce, SaaS and fintech verticals. For the last 10 years he has been focused on the ASEAN region. He began his career with Manulife Asset Management driving M&A, restructurings, and digital strategy across APAC, with a specific focus on Southeast Asia. Akshay received his BA in economics from Grinnell College in 2012. He is also an active member of the World Economic Forum’s Global Shapers community and was recognized by Forbes Asia in their 30 Under 30 venture capital list in 2019.",
   },
   {
     name: 'Ziheng Li',
@@ -133,6 +133,42 @@ export const SpeakersInfoArray: Speaker[] = [
       "Yi Liang, a former graduate of NUS, is a lawyer by training. He serves as the PayerMax Group's Regional Head of Compliance and sits on the Board of its Singapore HQ concurrently. His expertise includes law, anti-money laundering and counter financing of terrorism, corporate governance, and data privacy.",
   },
   {
+    name: 'Cynthia Liaw',
+    date: '6 Jan 2023',
+    time: '3pm - 4pm',
+    image: '/Speakers/CYNTHIA.jpeg',
+    location: 'TBC',
+    title: 'CEO',
+    organisation: 'Panda Bank',
+    description:
+      "",
+  },
+
+  {
+    name: 'Vinay Palathinkal',
+    date: '6 Jan 2023',
+    time: '3pm - 4pm',
+    image: '/Speakers/VINAY.jpeg',
+    location: 'TBC',
+    title: 'Regional Head, Wise Platform',
+    organisation: 'Wise',
+    description:
+      "",
+  },
+
+  {
+    name: 'Nigel Toe',
+    date: '6 Jan 2023',
+    time: '3pm - 4pm',
+    image: '/Speakers/NIGEL.jfif',
+    location: 'TBC',
+    title: 'Head of Business Development',
+    organisation: 'ADDX',
+    description:
+      "As Head of Business Development, Nigel is responsible for ADDX’s global market expansion strategy and execution. He manages B2B partnerships and marketing for wealth and asset managers, and oversees the company’s B2C client base growth. ",
+  },
+
+  {
     name: 'Lim Xin Yi',
     date: '17 Jan 2023',
     time: ' 7.30pm - 8.15pm',
@@ -148,11 +184,11 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '10 Jan 2023',
     time: '6pm - 6.45pm',
     image: '/Speakers/DANIELCHEW.png',
-    location: 'TBC',
+    location: 'Virtual',
     title: 'Software Engineer',
     organisation: 'Pyth',
     description:
-      'Full-stack engineer, develops and maintains all website-related projects, database, backend API server, monitoring and many others. Previously cloud architect @ AWS.',
+      ' Daniel is a full-stack engineer. He develops and maintains all website-related projects, database, backend API server, monitoring and many others. He previously worked as a cloud architect at AWS.',
   },
   {
     name: 'Pamela Lee',
@@ -174,7 +210,7 @@ export const SpeakersInfoArray: Speaker[] = [
     title: 'Blockchain Solutions Architect, APAC',
     organisation: 'SettleMint',
     description:
-      ' NUS Business Analytics graduate with 2 years of blockchain development experience. Current domain : Cardano, Ethereum and Hyperledger Besu',
+      ' Elton is a NUS Business Analytics graduate with 2 years of blockchain development experience. His current domain is around Cardano, Ethereum and Hyperledger Besu',
   },
   {
     name: 'Vayne Poh',
@@ -197,4 +233,108 @@ export const SpeakersInfoArray: Speaker[] = [
     organisation: 'Merkle Science',
     description: '',
   },
+
+  {
+    name: 'Celine Wan',
+    date: '16 Jan 2023',
+    time: '6pm - 7pm',
+    image: '/Speakers/CELINE.jpeg',
+    location: 'TBC',
+    title: 'Assistant Vice President, Fintech & Ecosystems',
+    organisation: 'OCBC',
+    description: 'Celine specialises in fintech strategy, partnerships, ecosystems, and digital transformation at OCBC Bank Singapore, and has more than 5 years of experience in fintech regulations, ecosystem enablement, and program management. Previously a scholar then fintech regulator at Bank Negara Malaysia (BNM), Celine played a pioneering role in the region’s fintech development landscape, particularly in areas that are experiencing rapid innovation such as digital banking, embedded financing and payments. An engineer by training (MEng and BA, University of Cambridge), Celine has amassed both engineering and financial service work experiences in Malaysia, Singapore, and the United Kingdom (London and Newcastle).',
+  },
+
+  {
+    name: 'Ling Li Li',
+    date: '17 Jan 2023',
+    time: '6pm - 7pm',
+    image: '/Speakers/LILI.jpeg',
+    location: 'TBC',
+    title: 'Fintech and Enablers Lead',
+    organisation: 'Mastercard',
+    description: 'Li Li leads the Mastercard Global Fintech & Enablers program in Asia Pacific. She connects a network of innovators as she sources the globe for elite fintech, technology players, together with Mastercard and esteemed customers in Asia Pacific to co-create the future of commerce. She also provides guidance to customers to develop their own innovative, startup engagement strategies through her prowess on startup, fintech, investment and technology trends. Prior to this role, Li Li was a quantitative researcher in Standard Chartered and Nielsen looking into product innovation for over ten years. She continues to enjoy discovering the differentiated experiences fintech build to win their consumers. She graduated with a Bachelor of Science from the National University of Singapore, majoring in Statistics and minoring in Mathematics.',
+  },
+
+  {
+    name: 'Hassan Ahmed',
+    date: '19 Jan 2023',
+    time: '6pm - 7pm',
+    image: '/Speakers/HASSAN.png',
+    location: 'TBC',
+    title: 'Regional Director, Southeast Asia',
+    organisation: 'Coinbase',
+    description: 'Hassan is the head of Southeast Asia at Coinbase. He was previously from SVP Strategy at Gopay/Gojek in Indonesia and CEO of Coins.ph in Philippines. He attained his MBA from Harvard Business School.',
+  },
+
+  {
+    name: 'Glen Aw',
+    date: '19 Jan 2023',
+    time: '7.30pm',
+    image: '/Speakers/GLEN.png',
+    location: 'Arcane Office (Shenton Way)',
+    title: 'Associate',
+    organisation: 'Arcane Group',
+    description: 'Glen is part of the investments team at Arcane Group, covering DeFi investments amongst others. He started his web3 journey back in DeFi summer 2020, farming on various defi protocols, trading liquid tokens, and doing venture investments as part of an angel syndicate. Before crypto, he was a management consultant at EY.',
+  },
+
+  {
+    name: 'Shui Shan Shan',
+    date: '19 Jan 2023',
+    time: '7.30pm',
+    image: '/Speakers/SHAN.png',
+    location: 'Arcane Office (Shenton Way)',
+    title: 'Business Development Representative',
+    organisation: 'CertiK',
+    description: 'Shan is a BD representative at CertiK, a pioneer in blockchain security. In her current role, she focuses on driving business growth in APAC. She started her journey in crypto at Klatyn, leading project pipeline management for Klaytn’s grant funding program and drove global expansion as part of the BD team. Before going down the crypto rabbit hole, Shan started her career at Apple as part of the International Business Strategy team.',
+  },
+
+  {
+    name: 'Edward Tan',
+    date: '19 Jan 2023',
+    time: '7.30pm',
+    image: '/Speakers/EDWARD.png',
+    location: 'Arcane Office (Shenton Way)',
+    title: 'Investor',
+    organisation: 'Hashed',
+    description: 'Edward (@cptn3mox on Twitter) is an Investor and Researcher at Hashed – the leading South Korean crypto fund with >150 portfolio companies. Edward spends his time speaking with strong founders building new projects and understanding different crypto landscapes within Southeast Asia. He enjoys writing and doing due diligence on a variety of crypto verticals.',
+  },
+
+  {
+    name: 'Stan Low',
+    date: '19 Jan 2023',
+    time: '7.30pm',
+    image: '/Speakers/STAN.png',
+    location: 'Arcane Office (Shenton Way)',
+    title: 'Investment Analyst',
+    organisation: 'QCP Capital',
+    description: 'Stan Low is an Investment Analyst at QCP Capital, a full-suite crypto trading firm and global leader in the options market, as well as an active early-stage investor in crypto and blockchain ecosystems. At QCP Capital, Stan is responsible for sourcing and conducting due diligence for potential investment opportunities, along with staying on top of current and potential future narratives in the space.',
+  },
+
+  {
+    name: 'Tricia Neo',
+    date: '19 Jan 2023',
+    time: '7.30pm',
+    image: '/Speakers/TRICIA.png',
+    location: 'Arcane Office (Shenton Way)',
+    title: 'Account Lead',
+    organisation: 'Tribe',
+    description: 'Tricia is leading Accounts Management at Tribe, a full suite talent and ecosystem growth platform. She works with L1s and tech corporates interested in growing their developer community to create value-adding engagement initiatives to boost their ecosystem.',
+  },
+
+  {
+    name: 'Josh Lam',
+    date: '19 Jan 2023',
+    time: '7.30pm',
+    image: '/Speakers/JOSH.png',
+    location: 'Arcane Office (Shenton Way)',
+    title: 'Data Engineer',
+    organisation: 'Delphi',
+    description: 'Josh is a Data Engineer at Delphi Digital, working on various proprietary research projects with other analysts. Before entering crypto, Josh was working in data related roles such as trading analytics at GIC and data analytics at Bloomberg.',
+  },
+
+
+  
+  
+  
 ];
