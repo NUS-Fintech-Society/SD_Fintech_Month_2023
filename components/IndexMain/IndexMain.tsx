@@ -75,7 +75,6 @@ export default function IndexMain(props: Props) {
         layout="fill"
         className="h-screen w-full -z-10 absolute"
         alt="background image"
-        // placeholder=""
       />
       <div className="lg:grid lg:grid-cols-3 flex h-screen">
         <div className="lg:col-span-2 flex flex-col items-center justify-center h-full space-y-6 w-full">
