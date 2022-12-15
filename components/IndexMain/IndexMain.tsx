@@ -39,7 +39,7 @@ function ImportantDatesSection() {
         </UnorderedList>
       </div>
 
-      <div className="justify-around items-center w-full flex">
+      <div className="justify-center items-center flex space-x-4">
         <Button
           colorScheme="brand"
           fontWeight="bold"
@@ -65,10 +65,10 @@ export default function IndexMain(props: Props) {
   const { scrollToThemePage } = props;
 
   return (
-    <div className="lg:w-full">
+    <div className="lg:w-full relative">
       <Img
         src="WaterEffect.png"
-        className="h-screen -z-10 absolute object-cover"
+        className="h-screen w-full -z-10 absolute object-cover"
         placeholder=""
       />
 
