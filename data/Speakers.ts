@@ -350,7 +350,7 @@ export const SpeakersInfoArray: Speaker[] = [
     location: 'TBC',
     title: 'Senior Software Engineer',
     organisation: 'Coinbase',
-    description: 'Quan Nguyen is a Senior Software Engineer building features for Coinbase's international expansion, and an advocate of Web3 and Blockchain technology.Prior to Coinbase, Quan led the Singapore AlgoDev team at Millennium Capital Management to build the firm's next generation low latency trading platform.',
+    description: "Quan Nguyen is a Senior Software Engineer building features for Coinbase's international expansion, and an advocate of Web3 and Blockchain technology.Prior to Coinbase, Quan led the Singapore AlgoDev team at Millennium Capital Management to build the firm's next generation low latency trading platform.",
   },
   
 ];
