@@ -332,9 +332,25 @@ export const SpeakersInfoArray: Speaker[] = [
     organisation: 'Delphi',
     description: 'Josh is a Data Engineer at Delphi Digital, working on various proprietary research projects with other analysts. Before entering crypto, Josh was working in data related roles such as trading analytics at GIC and data analytics at Bloomberg.',
   },
-
-
-  
-  
+  {
+    name: 'Yuyang Guo',
+    date: '19 Jan 2023',
+    time: '6pm',
+    image: '/Speakers/YUYANG.jpg',
+    location: 'TBC',
+    title: 'Staff Software Engineer',
+    organisation: 'Coinbase',
+    description: 'Yuyang is a Coinbase Staff Software Engineer who is passionate about scaling products and infrastructure internationally, as well as bringing Web3 innovations into solving real world problems.Prior to Coinbase, Yuyang worked at Dropbox leading engineering teams. Her impact spans from creating core products used by hundreds of millions of people, to building next generation petabyte-scale distributed metadata storage systems.',
+  },
+  {
+    name: 'Quan Nguyen',
+    date: '19 Jan 2023',
+    time: '6pm',
+    image: '/Speakers/QUAN.jpg',
+    location: 'TBC',
+    title: 'Senior Software Engineer',
+    organisation: 'Coinbase',
+    description: 'Quan Nguyen is a Senior Software Engineer building features for Coinbase's international expansion, and an advocate of Web3 and Blockchain technology.Prior to Coinbase, Quan led the Singapore AlgoDev team at Millennium Capital Management to build the firm's next generation low latency trading platform.',
+  },
   
 ];

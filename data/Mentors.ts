@@ -135,5 +135,26 @@ export const MentorsInfoArray: Mentor[] = [
     organisation: 'Metacamp',
     description:"Jonas was an engineer for about 2.5 years, a NPO entrepreneur for around 12+ years and Startup Accelerator around 2 years."
   },
+  {
+    name: 'Lee Weilin',
+    image: '/Mentors/WEILIN.jpeg',
+    title: 'Product Manager - Technical',
+    organisation: 'Mastercard',
+    description:"Weilin started her career in business development for a derivatives confirmation and reporting platform, and later transitioned to product management for a global financial regulatory reporting solution. She is focusing on optimizing experience for customers and employees in my current role as a service designer."
+  },
+  {
+    name: 'Gerald Lonlas',
+    image: '/Mentors/GERALD.jpeg',
+    title: 'Engineering Manager',
+    organisation: 'Coinbase',
+    description:"Gerald is a Coinbase Engineering Manager focusing on evolving crypto exchange customer experience, and expanding Web3 capabilities to reach mass adoption.Prior to Coinbase, Gerald led engineering teams at Amazon to build critical and highly scalable payments systems such as the Amazon Wallet."
+  },
+  {
+    name: 'Kay Lu',
+    image: '/Mentors/KAY.jpeg',
+    title: 'Investment Director',
+    organisation: 'Bybit',
+    description:"Kay is a crypto investor in primary and secondary market, project reviewer in CEX, "
+  },
 
 ];

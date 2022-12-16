@@ -349,7 +349,7 @@ export const WeekEvents: WeekEvent[][] = [
     {
       id: 2,
       date: '19 Jan',
-      time: '6:00PM',
+      time: '6:00PM - 7:00PM',
       title: 'Unleashing the Power of Web3 on your App',
       label: 'Workshop',
       venue: 'TBC',
@@ -357,9 +357,16 @@ export const WeekEvents: WeekEvent[][] = [
         {
           id: 0,
           organisation: 'Coinbase',
-          speaker: 'Hassan Ahmed',
-          position: 'Regional Director, Southeast Asia',
-          imageSrc: '/Mentors/HASSAN.png',
+          speaker: 'Yuyang Guo',
+          position: 'Staff Software Engineer',
+          imageSrc: '/Mentors/YUYANG.jpg',
+        },
+        {
+          id: 0,
+          organisation: 'Coinbase',
+          speaker: 'Quan Nguyen',
+          position: 'Senior Software Engineer',
+          imageSrc: '/Mentors/QUAN.jpg',
         },
       ],
     },
