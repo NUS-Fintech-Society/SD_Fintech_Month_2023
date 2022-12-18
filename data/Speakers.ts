@@ -95,7 +95,8 @@ export const SpeakersInfoArray: Speaker[] = [
     location: 'TBC',
     title: 'Investor',
     organisation: 'SIG',
-    description: "Akshay has been with SIG since early 2016 as part of the Southeast Asia venture capital team. Akshay leads investments for SIG in the region and has invested in content, e-commerce, SaaS and fintech verticals. For the last 10 years he has been focused on the ASEAN region. He began his career with Manulife Asset Management driving M&A, restructurings, and digital strategy across APAC, with a specific focus on Southeast Asia. Akshay received his BA in economics from Grinnell College in 2012. He is also an active member of the World Economic Forum’s Global Shapers community and was recognized by Forbes Asia in their 30 Under 30 venture capital list in 2019.",
+    description:
+      'Akshay has been with SIG since early 2016 as part of the Southeast Asia venture capital team. Akshay leads investments for SIG in the region and has invested in content, e-commerce, SaaS and fintech verticals. For the last 10 years he has been focused on the ASEAN region. He began his career with Manulife Asset Management driving M&A, restructurings, and digital strategy across APAC, with a specific focus on Southeast Asia. Akshay received his BA in economics from Grinnell College in 2012. He is also an active member of the World Economic Forum’s Global Shapers community and was recognized by Forbes Asia in their 30 Under 30 venture capital list in 2019.',
   },
   {
     name: 'Ziheng Li',
@@ -113,7 +114,7 @@ export const SpeakersInfoArray: Speaker[] = [
     name: 'Tobias Bauer',
     date: '6 Jan 2023',
     time: '11am',
-    image: '/Speakers/TOBIAS.png',
+    image: '/Speakers/TOBIASBAUER.png',
     location: 'TBC',
     title: 'Partner',
     organisation: 'Blockchain Founders Fund',
@@ -140,8 +141,7 @@ export const SpeakersInfoArray: Speaker[] = [
     location: 'TBC',
     title: 'CEO',
     organisation: 'Panda Bank',
-    description:
-      "",
+    description: '',
   },
 
   {
@@ -152,8 +152,7 @@ export const SpeakersInfoArray: Speaker[] = [
     location: 'TBC',
     title: 'Regional Head, Wise Platform',
     organisation: 'Wise',
-    description:
-      "",
+    description: '',
   },
 
   {
@@ -165,7 +164,7 @@ export const SpeakersInfoArray: Speaker[] = [
     title: 'Head of Business Development',
     organisation: 'ADDX',
     description:
-      "As Head of Business Development, Nigel is responsible for ADDX’s global market expansion strategy and execution. He manages B2B partnerships and marketing for wealth and asset managers, and oversees the company’s B2C client base growth. ",
+      'As Head of Business Development, Nigel is responsible for ADDX’s global market expansion strategy and execution. He manages B2B partnerships and marketing for wealth and asset managers, and oversees the company’s B2C client base growth. ',
   },
 
   {
@@ -242,7 +241,8 @@ export const SpeakersInfoArray: Speaker[] = [
     location: 'TBC',
     title: 'Assistant Vice President, Fintech & Ecosystems',
     organisation: 'OCBC',
-    description: 'Celine specialises in fintech strategy, partnerships, ecosystems, and digital transformation at OCBC Bank Singapore, and has more than 5 years of experience in fintech regulations, ecosystem enablement, and program management. Previously a scholar then fintech regulator at Bank Negara Malaysia (BNM), Celine played a pioneering role in the region’s fintech development landscape, particularly in areas that are experiencing rapid innovation such as digital banking, embedded financing and payments. An engineer by training (MEng and BA, University of Cambridge), Celine has amassed both engineering and financial service work experiences in Malaysia, Singapore, and the United Kingdom (London and Newcastle).',
+    description:
+      'Celine specialises in fintech strategy, partnerships, ecosystems, and digital transformation at OCBC Bank Singapore, and has more than 5 years of experience in fintech regulations, ecosystem enablement, and program management. Previously a scholar then fintech regulator at Bank Negara Malaysia (BNM), Celine played a pioneering role in the region’s fintech development landscape, particularly in areas that are experiencing rapid innovation such as digital banking, embedded financing and payments. An engineer by training (MEng and BA, University of Cambridge), Celine has amassed both engineering and financial service work experiences in Malaysia, Singapore, and the United Kingdom (London and Newcastle).',
   },
 
   {
@@ -253,7 +253,8 @@ export const SpeakersInfoArray: Speaker[] = [
     location: 'TBC',
     title: 'Fintech and Enablers Lead',
     organisation: 'Mastercard',
-    description: 'Li Li leads the Mastercard Global Fintech & Enablers program in Asia Pacific. She connects a network of innovators as she sources the globe for elite fintech, technology players, together with Mastercard and esteemed customers in Asia Pacific to co-create the future of commerce. She also provides guidance to customers to develop their own innovative, startup engagement strategies through her prowess on startup, fintech, investment and technology trends. Prior to this role, Li Li was a quantitative researcher in Standard Chartered and Nielsen looking into product innovation for over ten years. She continues to enjoy discovering the differentiated experiences fintech build to win their consumers. She graduated with a Bachelor of Science from the National University of Singapore, majoring in Statistics and minoring in Mathematics.',
+    description:
+      'Li Li leads the Mastercard Global Fintech & Enablers program in Asia Pacific. She connects a network of innovators as she sources the globe for elite fintech, technology players, together with Mastercard and esteemed customers in Asia Pacific to co-create the future of commerce. She also provides guidance to customers to develop their own innovative, startup engagement strategies through her prowess on startup, fintech, investment and technology trends. Prior to this role, Li Li was a quantitative researcher in Standard Chartered and Nielsen looking into product innovation for over ten years. She continues to enjoy discovering the differentiated experiences fintech build to win their consumers. She graduated with a Bachelor of Science from the National University of Singapore, majoring in Statistics and minoring in Mathematics.',
   },
 
   {
@@ -264,7 +265,8 @@ export const SpeakersInfoArray: Speaker[] = [
     location: 'TBC',
     title: 'Regional Director, Southeast Asia',
     organisation: 'Coinbase',
-    description: 'Hassan is the head of Southeast Asia at Coinbase. He was previously from SVP Strategy at Gopay/Gojek in Indonesia and CEO of Coins.ph in Philippines. He attained his MBA from Harvard Business School.',
+    description:
+      'Hassan is the head of Southeast Asia at Coinbase. He was previously from SVP Strategy at Gopay/Gojek in Indonesia and CEO of Coins.ph in Philippines. He attained his MBA from Harvard Business School.',
   },
 
   {
@@ -275,7 +277,8 @@ export const SpeakersInfoArray: Speaker[] = [
     location: 'Arcane Office (Shenton Way)',
     title: 'Associate',
     organisation: 'Arcane Group',
-    description: 'Glen is part of the investments team at Arcane Group, covering DeFi investments amongst others. He started his web3 journey back in DeFi summer 2020, farming on various defi protocols, trading liquid tokens, and doing venture investments as part of an angel syndicate. Before crypto, he was a management consultant at EY.',
+    description:
+      'Glen is part of the investments team at Arcane Group, covering DeFi investments amongst others. He started his web3 journey back in DeFi summer 2020, farming on various defi protocols, trading liquid tokens, and doing venture investments as part of an angel syndicate. Before crypto, he was a management consultant at EY.',
   },
 
   {
@@ -286,7 +289,8 @@ export const SpeakersInfoArray: Speaker[] = [
     location: 'Arcane Office (Shenton Way)',
     title: 'Business Development Representative',
     organisation: 'CertiK',
-    description: 'Shan is a BD representative at CertiK, a pioneer in blockchain security. In her current role, she focuses on driving business growth in APAC. She started her journey in crypto at Klatyn, leading project pipeline management for Klaytn’s grant funding program and drove global expansion as part of the BD team. Before going down the crypto rabbit hole, Shan started her career at Apple as part of the International Business Strategy team.',
+    description:
+      'Shan is a BD representative at CertiK, a pioneer in blockchain security. In her current role, she focuses on driving business growth in APAC. She started her journey in crypto at Klatyn, leading project pipeline management for Klaytn’s grant funding program and drove global expansion as part of the BD team. Before going down the crypto rabbit hole, Shan started her career at Apple as part of the International Business Strategy team.',
   },
 
   {
@@ -297,7 +301,8 @@ export const SpeakersInfoArray: Speaker[] = [
     location: 'Arcane Office (Shenton Way)',
     title: 'Investor',
     organisation: 'Hashed',
-    description: 'Edward (@cptn3mox on Twitter) is an Investor and Researcher at Hashed – the leading South Korean crypto fund with >150 portfolio companies. Edward spends his time speaking with strong founders building new projects and understanding different crypto landscapes within Southeast Asia. He enjoys writing and doing due diligence on a variety of crypto verticals.',
+    description:
+      'Edward (@cptn3mox on Twitter) is an Investor and Researcher at Hashed – the leading South Korean crypto fund with >150 portfolio companies. Edward spends his time speaking with strong founders building new projects and understanding different crypto landscapes within Southeast Asia. He enjoys writing and doing due diligence on a variety of crypto verticals.',
   },
 
   {
@@ -308,7 +313,8 @@ export const SpeakersInfoArray: Speaker[] = [
     location: 'Arcane Office (Shenton Way)',
     title: 'Investment Analyst',
     organisation: 'QCP Capital',
-    description: 'Stan Low is an Investment Analyst at QCP Capital, a full-suite crypto trading firm and global leader in the options market, as well as an active early-stage investor in crypto and blockchain ecosystems. At QCP Capital, Stan is responsible for sourcing and conducting due diligence for potential investment opportunities, along with staying on top of current and potential future narratives in the space.',
+    description:
+      'Stan Low is an Investment Analyst at QCP Capital, a full-suite crypto trading firm and global leader in the options market, as well as an active early-stage investor in crypto and blockchain ecosystems. At QCP Capital, Stan is responsible for sourcing and conducting due diligence for potential investment opportunities, along with staying on top of current and potential future narratives in the space.',
   },
 
   {
@@ -319,7 +325,8 @@ export const SpeakersInfoArray: Speaker[] = [
     location: 'Arcane Office (Shenton Way)',
     title: 'Account Lead',
     organisation: 'Tribe',
-    description: 'Tricia is leading Accounts Management at Tribe, a full suite talent and ecosystem growth platform. She works with L1s and tech corporates interested in growing their developer community to create value-adding engagement initiatives to boost their ecosystem.',
+    description:
+      'Tricia is leading Accounts Management at Tribe, a full suite talent and ecosystem growth platform. She works with L1s and tech corporates interested in growing their developer community to create value-adding engagement initiatives to boost their ecosystem.',
   },
 
   {
@@ -330,7 +337,8 @@ export const SpeakersInfoArray: Speaker[] = [
     location: 'Arcane Office (Shenton Way)',
     title: 'Data Engineer',
     organisation: 'Delphi',
-    description: 'Josh is a Data Engineer at Delphi Digital, working on various proprietary research projects with other analysts. Before entering crypto, Josh was working in data related roles such as trading analytics at GIC and data analytics at Bloomberg.',
+    description:
+      'Josh is a Data Engineer at Delphi Digital, working on various proprietary research projects with other analysts. Before entering crypto, Josh was working in data related roles such as trading analytics at GIC and data analytics at Bloomberg.',
   },
   {
     name: 'Yuyang Guo',
@@ -340,7 +348,8 @@ export const SpeakersInfoArray: Speaker[] = [
     location: 'TBC',
     title: 'Staff Software Engineer',
     organisation: 'Coinbase',
-    description: 'Yuyang is a Coinbase Staff Software Engineer who is passionate about scaling products and infrastructure internationally, as well as bringing Web3 innovations into solving real world problems.Prior to Coinbase, Yuyang worked at Dropbox leading engineering teams. Her impact spans from creating core products used by hundreds of millions of people, to building next generation petabyte-scale distributed metadata storage systems.',
+    description:
+      'Yuyang is a Coinbase Staff Software Engineer who is passionate about scaling products and infrastructure internationally, as well as bringing Web3 innovations into solving real world problems.Prior to Coinbase, Yuyang worked at Dropbox leading engineering teams. Her impact spans from creating core products used by hundreds of millions of people, to building next generation petabyte-scale distributed metadata storage systems.',
   },
   {
     name: 'Quan Nguyen',
@@ -350,7 +359,7 @@ export const SpeakersInfoArray: Speaker[] = [
     location: 'TBC',
     title: 'Senior Software Engineer',
     organisation: 'Coinbase',
-    description: "Quan Nguyen is a Senior Software Engineer building features for Coinbase's international expansion, and an advocate of Web3 and Blockchain technology.Prior to Coinbase, Quan led the Singapore AlgoDev team at Millennium Capital Management to build the firm's next generation low latency trading platform.",
+    description:
+      "Quan Nguyen is a Senior Software Engineer building features for Coinbase's international expansion, and an advocate of Web3 and Blockchain technology.Prior to Coinbase, Quan led the Singapore AlgoDev team at Millennium Capital Management to build the firm's next generation low latency trading platform.",
   },
-  
 ];
