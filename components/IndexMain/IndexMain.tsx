@@ -1,9 +1,12 @@
 import { Button, Img, ListItem, UnorderedList } from '@chakra-ui/react';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { importantDates } from '../../data/ImportantDates';
 import CountdownTimer from '../CountdownTimer/CountdownTimer';
 import LeaderBoard from '../LeaderBoard';
 import { Title } from './styles';
+import WaterEffect from '../../public/WaterEffect.png';
+import LinesEffect from '../../public/LinesEffect.png';
 
 type Props = {
   scrollToThemePage: () => void;
@@ -66,12 +69,13 @@ export default function IndexMain(props: Props) {
 
   return (
     <div className="lg:w-full relative">
-      <Img
-        src="WaterEffect.png"
-        className="h-screen w-full -z-10 absolute object-cover"
-        placeholder=""
+      <Image
+        src={WaterEffect}
+        objectFit="cover"
+        layout="fill"
+        className="h-screen w-full -z-10 absolute"
+        alt="background image"
       />
-
       <div className="lg:grid lg:grid-cols-3 flex h-screen">
         <div className="lg:col-span-2 flex flex-col items-center justify-center h-full space-y-6 w-full">
           <Title className="">NUS FINTECH MONTH 2023</Title>
@@ -93,11 +97,12 @@ export default function IndexMain(props: Props) {
       </div>
 
       <div className="lg:hidden flex">
-        <Img
-          src="LinesEffect.png"
+        <Image
+          src={LinesEffect}
           objectFit="cover"
-          className="h-screen -z-10 absolute object-cover"
-          placeholder=""
+          layout="fill"
+          className="h-screen w-full -z-10 absolute"
+          alt="background image 2"
         />
         <div className="w-screen h-screen px-8">
           <ImportantDatesSection />
