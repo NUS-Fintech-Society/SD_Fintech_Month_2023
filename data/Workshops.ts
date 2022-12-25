@@ -57,7 +57,7 @@ export const Workshops: Workshop[] = [
     venue: 'TBC',
     link: 'https://docs.google.com/forms/d/1JbxcWL7w1zZnyS8xDasPLAtSubv6pmNFle9CG862TXA/edit',
     position: 'Vice President of APAC Sales',
-    image: '/Workshops/FIONA.png',
+    image: '/Workshops/RIPPLE.jpeg',
     description:
       'Fiona Murray is the Head of APAC Sales for Ripple, a San Francisco headquartered company transforming the way enterprises move, manage, and tokenize value. Fiona has built her career in technology, across both sides of “bi-modal” IT strategies. She’s worked with the “guts” or backbone of large enterprises at Oracle and Finastra, and has been helping financial institutions innovate in payments across Europe and Asia. She holds a Master of Arts degree from the University of Oxford.',
   },
@@ -160,7 +160,7 @@ export const Workshops: Workshop[] = [
     organisation: 'BitEx & Merkle Science',
     speaker: 'Vayne Poh & Tom Luo',
     venue: 'Virtual',
-    link: '',
+    link: 'https://docs.google.com/forms/d/1Edsxec136y6FFkjd0adQDkkRr942a066ldSB4NbvEaY/edit',
     position: '',
     image: '/Workshops/BITMER.png',
     description:
@@ -176,7 +176,7 @@ export const Workshops: Workshop[] = [
     organisation: 'OCBC',
     speaker: 'Celine Wan',
     venue: 'TBC',
-    link: '',
+    link: 'https://docs.google.com/forms/d/15qimGYmvY_L0wWzoZkczldnkF3J5MBz5Khntp2pJvZU/edit',
     position: 'Assistant Vice President, Fintech & Ecosystems',
     image: '/Workshops/OCBC.png',
     description:
@@ -191,7 +191,7 @@ export const Workshops: Workshop[] = [
     organisation: 'Coin Gecko',
     speaker: 'Yap Yow Chun',
     venue: 'Virtual',
-    link: '',
+    link: 'https://docs.google.com/forms/d/1YNr0ph2pAWjPI1n05EeZSRlR0sFmZKjPyxoz7j2HZNs/edit',
     position: 'Software Engineer',
     image: '/Workshops/GECKO.png',
     description:
