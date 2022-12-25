@@ -196,7 +196,7 @@ export const SpeakersInfoArray: Speaker[] = [
     image: '/Speakers/PAMELA.png',
     location: 'TBC',
     title: 'Head of Sales, APAC',
-    organisation: 'Pyth',
+    organisation: 'Talos',
     description:
       'Pamela is Head of Sales, APAC at Talos and responsible for driving sales growth and managing sales operations in this region. Prior to joining Talos, Pamela was Head of Partnerships, APAC at LMAX Group where her focus was to lead business growth with institutional clients in the FX and digital assets space. Outside of work, she is passionate about women empowerment and has served on the committees of YWLC (Singapore) and WIFA ASIFMA (Hong Kong). Currently, she is volunteering with the women in blockchain committee under Blockchain Association of Singapore. She started her career with Credit Suisse as an analyst in the equities sales trading division.',
   },
