@@ -47,6 +47,21 @@ export const Workshops: Workshop[] = [
       'Daniel is a full-stack engineer. He develops and maintains all website-related projects, database, backend API server, monitoring and many others. He previously worked as a cloud architect at AWS.',
   },
   {
+    id: 30,
+    day: 'Tuesday',
+    date: '',
+    time: '7.30pm - 8.30pm',
+    name: 'Fintech Insights',
+    organisation: 'Ripple',
+    speaker: 'Fiona Murray',
+    venue: 'TBC',
+    link: 'https://docs.google.com/forms/d/1JbxcWL7w1zZnyS8xDasPLAtSubv6pmNFle9CG862TXA/edit',
+    position: 'Vice President of APAC Sales',
+    image: '/Workshops/FIONA.png',
+    description:
+      'Fiona Murray is the Head of APAC Sales for Ripple, a San Francisco headquartered company transforming the way enterprises move, manage, and tokenize value. Fiona has built her career in technology, across both sides of “bi-modal” IT strategies. She’s worked with the “guts” or backbone of large enterprises at Oracle and Finastra, and has been helping financial institutions innovate in payments across Europe and Asia. She holds a Master of Arts degree from the University of Oxford.',
+  },
+  {
     id: 7,
     day: 'Wednesday',
     date: 'Wednesday, 11 Jan',

@@ -139,6 +139,23 @@ export const WeekEvents: WeekEvent[][] = [
         },
       ],
     },
+    {
+      id: 30,
+      date: '10 Jan',
+      time: '7:30PM-8:30PM',
+      title: 'Fintech Insights',
+      label: 'Workshop',
+      venue: 'TBC',
+      speakerInfo: [
+        {
+          id: 0,
+          organisation: 'Ripple',
+          speaker: 'Fiona Murray',
+          position: 'Vice President of APAC Sales',
+          imageSrc: '/Speakers/FIONA.png',
+        },
+      ],
+    },
     
     {
       id: 7,

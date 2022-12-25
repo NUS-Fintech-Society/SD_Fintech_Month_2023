@@ -35,6 +35,17 @@ export const SpeakersInfoArray: Speaker[] = [
       'Gabor is responsible for defining the methodological roadmap of Lynx’s predictive analytics consulting and product development departments. He leads the internal data science team and supports the business development. Gabor has been the co-founder of several other AI start-ups in Healthcare, Finance, Crypto, Telecom and Space Industries, contributing with creative application of state-of-the-art data science models. He received his PhD in 2003, worked as an Associate Professor at Budapest Corvinus University, author of one book and many scientific papers.',
   },
   {
+    name: 'Fiona Murray',
+    date: '10 Jan 2023',
+    time: '7.30pm -8.30pm',
+    image: '/Speakers/FIONA.png',
+    location: 'TBC',
+    title: 'Vice President of APAC Sales',
+    organisation: 'Ripple',
+    description:
+      'Fiona Murray is the Head of APAC Sales for Ripple, a San Francisco headquartered company transforming the way enterprises move, manage, and tokenize value. Fiona has built her career in technology, across both sides of “bi-modal” IT strategies. She’s worked with the “guts” or backbone of large enterprises at Oracle and Finastra, and has been helping financial institutions innovate in payments across Europe and Asia. She holds a Master of Arts degree from the University of Oxford.',
+  },
+  {
     name: 'Nischint Sanghavi',
     date: '11 Jan 2023',
     time: '6pm - 6.45pm',
