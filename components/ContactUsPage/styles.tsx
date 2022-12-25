@@ -17,9 +17,9 @@ export const PageContainer = chakra(Flex, {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundImage: `url("/Lines.png")`,
-    backgroundPosition: 'center',
-    backgroundSize: '80%',
+    // backgroundImage: `url("/Lines.png")`,
+    // backgroundPosition: 'center',
+    // backgroundSize: '80%',
   },
 });
 

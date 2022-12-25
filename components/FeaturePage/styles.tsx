@@ -1,6 +1,6 @@
 import { Text, Box, chakra, Flex, Heading, Button } from '@chakra-ui/react';
 
-import BubbleBackground from '../../public/BubbleBackground.png';
+// import BubbleBackground from '../../public/BubbleBackground.png';
 
 export const MorePageContainer = chakra(Flex, {
   baseStyle: {
@@ -9,9 +9,9 @@ export const MorePageContainer = chakra(Flex, {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundImage: `url(${BubbleBackground.src})`,
-    backgroundPosition: 'center',
-    backgroundSize: '90%',
+    // backgroundImage: `url(${BubbleBackground.src})`,
+    // backgroundPosition: 'center',
+    // backgroundSize: '90%',
   },
 });
 
