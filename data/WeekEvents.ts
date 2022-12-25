@@ -158,7 +158,7 @@ export const WeekEvents: WeekEvent[][] = [
       ],
     },
     {
-      id: 15,
+      id: 29,
       date: '11 Jan',
       time: '7:00PM-8:00PM',
       title: 'Moledao Workshop',
@@ -288,7 +288,7 @@ export const WeekEvents: WeekEvent[][] = [
       label: 'Fintech Month Hackathon',
     },
     {
-      id: 18,
+      id: 28,
       date: '16 Jan',
       time: '6.30PM-7.30PM',
       title: 'Web3 101',
@@ -305,7 +305,7 @@ export const WeekEvents: WeekEvent[][] = [
       ],
     },
     {
-      id: 18,
+      id: 27,
       date: '16 Jan',
       time: '8PM-9PM',
       title: 'CoinGecko API Workshop',
