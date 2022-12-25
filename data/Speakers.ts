@@ -28,7 +28,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '13 Jan 2023',
     time: '5.30pm -7.30pm',
     image: '/Speakers/GABOR.png',
-    location: 'TBC',
+    location: 'Virtual',
     title: 'Co-founder & Chief Innovation Officer',
     organisation: 'Lynx Analytics',
     description:
@@ -59,7 +59,7 @@ export const SpeakersInfoArray: Speaker[] = [
   {
     name: 'Calvin Chu',
     date: '9 Jan 2023',
-    time: '7.30pm - 8.30pm',
+    time: '8.00pm - 9.00pm',
     image: '/Speakers/CALVINCHU.png',
     location: 'Virtual',
     title: 'Core BUIDLer',
@@ -124,7 +124,7 @@ export const SpeakersInfoArray: Speaker[] = [
   {
     name: 'Lee Yi Liang',
     date: '9 Jan 2023',
-    time: '6pm - 7pm',
+    time: '6.30pm - 7.30pm',
     image: '/Speakers/LEEYILIANG.png',
     location: 'TBC',
     title: 'Board Director & Regional Head of Compliance',
@@ -237,7 +237,7 @@ export const SpeakersInfoArray: Speaker[] = [
   {
     name: 'Celine Wan',
     date: '16 Jan 2023',
-    time: '6pm - 7pm',
+    time: '6.30pm - 7.30pm',
     image: '/Speakers/CELINE.jpeg',
     location: 'TBC',
     title: 'Assistant Vice President, Fintech & Ecosystems',
@@ -315,11 +315,11 @@ export const SpeakersInfoArray: Speaker[] = [
     name: 'Tricia Neo',
     date: '19 Jan 2023',
     time: '7.30pm',
-    image: '/Speakers/TRICIA.png',
+    image: '/Speakers/RACHELTRIBE.png',
     location: 'Arcane Office (Shenton Way)',
-    title: 'Account Lead',
+    title: 'Head of Accelerator',
     organisation: 'Tribe',
-    description: 'Tricia is leading Accounts Management at Tribe, a full suite talent and ecosystem growth platform. She works with L1s and tech corporates interested in growing their developer community to create value-adding engagement initiatives to boost their ecosystem.',
+    description: 'Rachel is the Head of Accelerator at Tribe, a global frontier tech ecosystem builder that brings together Fortune 500 companies, top blockchain companies, government agencies and startups. Focused on the accelerator arm, she identifies and works with founders of promising growth-stage startups to supercharge their go-to-market strategies through close collaborations with Tribe’s global network.',
   },
 
   {
@@ -352,5 +352,34 @@ export const SpeakersInfoArray: Speaker[] = [
     organisation: 'Coinbase',
     description: "Quan Nguyen is a Senior Software Engineer building features for Coinbase's international expansion, and an advocate of Web3 and Blockchain technology.Prior to Coinbase, Quan led the Singapore AlgoDev team at Millennium Capital Management to build the firm's next generation low latency trading platform.",
   },
-  
+  {
+    name: 'Yu Chern Ong',
+    date: '11 Jan 2023',
+    time: '7pm - 8pm',
+    image: '/Speakers/YUCHERN.jpeg',
+    location: 'TBC',
+    title: 'Business Development Manager',
+    organisation: 'Moledao',
+    description: "YC is the Business Development Manager of Moledao, where he manages partnerships, strategy, marketing, social media and community. His professional career started off as an NFT Analyst where he has conducted market research to keep up to date with the latest NFT trends, keeping an eye out for potential investment opportunities and managing a portfolio of crypto & NFTs. An experienced growth lead for early-stage NFT projects, specializing in community building and management. YC is also well-trained in strategic planning and execution of web3 marketing campaigns for NFT marketplace and partnered projects."
+  },
+  {
+    name: 'Yap Yow Chun',
+    date: '16 Jan 2023',
+    time: '8pm - 9pm',
+    image: '/Speakers/YOWCHUN.jpeg',
+    location: 'Virtual',
+    title: 'Software Engineer',
+    organisation: 'Coin Gecko',
+    description: "YC is the Business Development Manager of Moledao, where he manages partnerships, strategy, marketing, social media and community. His professional career started off as an NFT Analyst where he has conducted market research to keep up to date with the latest NFT trends, keeping an eye out for potential investment opportunities and managing a portfolio of crypto & NFTs. An experienced growth lead for early-stage NFT projects, specializing in community building and management. YC is also well-trained in strategic planning and execution of web3 marketing campaigns for NFT marketplace and partnered projects."
+  },
+  {
+    name: 'Charmyn Ho',
+    date: '11 Jan 2023',
+    time: '8pm - 8.20pm',
+    image: '/Speakers/CHARMYM.jpeg',
+    location: 'Virtual',
+    title: 'Head of Crypto Insights',
+    organisation: 'Bybit',
+    description: "Charmyn is the Head of Crypto Insights at Bybit. She is very interested in technologies for social good, and firmly believes in the potential of web3 to shape a better and more equitable future for our societies. She started gaming at a young age of 5 when her father first brought home a PlayStation. She enjoys games of all genres which has led to her avid interest in all things GameFi, and would love to find a true product market fit for web3 elements within the gaming industry."
+  },
 ];

@@ -90,7 +90,7 @@ export const WeekEvents: WeekEvent[][] = [
     {
       id: 3,
       date: '9 Jan',
-      time: '06:00PM-7:00PM',
+      time: '06:30PM-7:30PM',
       title:
         'Navigating the Payments Space in the Digital Age & Careers in Fintech Startups',
       venue: 'TBC',
@@ -108,7 +108,7 @@ export const WeekEvents: WeekEvent[][] = [
     {
       id: 4,
       date: '9 Jan',
-      time: '7:30PM - 8.30PM',
+      time: '8:00PM - 9.00PM',
       title: 'All Things Tokens & Launchpads',
       venue: 'Virtual',
       label: 'Workshop',
@@ -154,6 +154,40 @@ export const WeekEvents: WeekEvent[][] = [
           speaker: 'Nischint Sanghavi',
           position: 'Regional Crypto Lead, Asia Pacific',
           imageSrc: '/Speakers/NISCHINT.png',
+        },
+      ],
+    },
+    {
+      id: 15,
+      date: '11 Jan',
+      time: '7:00PM-8:00PM',
+      title: 'Moledao Workshop',
+      label: 'Workshop',
+      venue: 'Virtual',
+      speakerInfo: [
+        {
+          id: 0,
+          organisation: 'Moledao',
+          speaker: 'Yu Chern Ong',
+          position: 'Business Development Manager',
+          imageSrc: '/Speakers/YUCHERN.jpeg',
+        },
+      ],
+    },
+    {
+      id: 15,
+      date: '11 Jan',
+      time: '8:00PM-8:20PM',
+      title: 'Introduction to Blockchain',
+      label: 'Workshop',
+      venue: 'Virtual',
+      speakerInfo: [
+        {
+          id: 0,
+          organisation: 'Bybit',
+          speaker: 'Charmyn Ho',
+          position: 'Head of Crypto Insights',
+          imageSrc: '/Speakers/CHARMYM.jpeg',
         },
       ],
     },
@@ -211,7 +245,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '5:30PM-7:30PM',
       title: 'Introduction to Graph Machine Learning',
       label: 'Workshop',
-      venue: 'TBC',
+      venue: 'Virtual',
       speakerInfo: [
         {
           id: 0,
@@ -256,7 +290,7 @@ export const WeekEvents: WeekEvent[][] = [
     {
       id: 18,
       date: '16 Jan',
-      time: '6PM-7PM',
+      time: '6.30PM-7.30PM',
       title: 'Web3 101',
       label: 'Workshop',
       venue: 'TBC',
@@ -267,6 +301,23 @@ export const WeekEvents: WeekEvent[][] = [
           speaker: 'Celine Wan',
           position: 'Assistant Vice President, Fintech & Ecosystems',
           imageSrc: '/Speakers/CELINE.jpeg',
+        },
+      ],
+    },
+    {
+      id: 18,
+      date: '16 Jan',
+      time: '8PM-9PM',
+      title: 'CoinGecko API Workshop',
+      label: 'Workshop',
+      venue: 'Virtual',
+      speakerInfo: [
+        {
+          id: 0,
+          organisation: 'Coin Gecko',
+          speaker: 'Yap Yow Chun',
+          position: 'Software Engineer',
+          imageSrc: '/Speakers/YOWCHUN.jpeg',
         },
       ],
     },
@@ -412,9 +463,9 @@ export const WeekEvents: WeekEvent[][] = [
         {
           id: 4,
           organisation: 'Tribe',
-          speaker: 'Tricia Neo',
-          position: 'Account Lead',
-          imageSrc: '/Speakers/TRICIA.png',
+          speaker: 'Rachel Chng',
+          position: 'Head of Accelerator',
+          imageSrc: '/Speakers/RACHELTRIBE.png',
         },
         {
           id: 5,
