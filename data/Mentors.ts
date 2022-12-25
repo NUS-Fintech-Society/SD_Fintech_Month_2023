@@ -154,7 +154,21 @@ export const MentorsInfoArray: Mentor[] = [
     image: '/Mentors/KAY.jpeg',
     title: 'Investment Director',
     organisation: 'Bybit',
-    description:"Kay is a crypto investor in primary and secondary market, project reviewer in CEX, "
+    description:"Kay is a crypto investor in primary and secondary market, project reviewer in CEX. "
+  },
+  {
+    name: 'Jackie Tan',
+    image: '/Mentors/JACKIE.jpg',
+    title: 'Head of Product',
+    organisation: 'Tribe',
+    description:"Jackie is the Head of Product at AngelHack, where he oversees new product development. A serial entrepreneur, he is experienced in bring ideas to life and profitability. He believes that the best ideas do not need advanced websites - they just need scrappy tooling and scrappier founders. "
+  },
+  {
+    name: 'Luca Zorzino',
+    image: '/Mentors/LUCA.jpeg',
+    title: 'Head of Asia',
+    organisation: 'Illuminate Financial',
+    description:"Luca joined Illuminate in late 2015 after completing an MBA at INSEAD. Luca brings post-trade and enterprise technology experience to the team, having spent his early career at trading and risk management vendor Murex. Primarily responsible for client facing implementation services, he helped the redesign of the cross-asset post-trade functionality at numerous banks in South East Asia. At Illuminate, Luca in an observer to the board of portfolio companies AxeTrading, RegTek Solutions and TransFICC and he manages a strategic bank relationship. Luca is a CFA Charterholder, holds a Masters in Management from Imperial College Business School, and trained as a computer engineer at Imperial College London"
   },
 
 ];
