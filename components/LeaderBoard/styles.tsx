@@ -9,13 +9,13 @@ import {
 
 export const ModalButton = chakra(Button, {
   baseStyle: {
-    height: { base: '5rem', md: '6.5rem' },
+    height: '40px',
     width: { base: '5rem', md: '6.5rem' },
     zIndex: '999',
     bottom: '20px',
     right: '20px',
     position: 'fixed',
-    borderRadius: '50%',
+    // borderRadius: '50%',
     boxShadow: '1px 1px #888888, 1px -1px #888888, -1px 1px #888888',
     fontSize: { base: '2xs', md: 'xs' },
   },
