@@ -93,7 +93,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '06:30PM-7:30PM',
       title:
         'Navigating the Payments Space in the Digital Age & Careers in Fintech Startups',
-      venue: 'TBC',
+      venue: 'SFAH Sesame (Level 1)',
       label: 'Workshop',
       speakerInfo: [
         {
@@ -145,7 +145,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '7:30PM-8:30PM',
       title: 'Fintech Insights',
       label: 'Workshop',
-      venue: 'TBC',
+      venue: 'SFAH Basil (Level 2)',
       speakerInfo: [
         {
           id: 0,
@@ -163,7 +163,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '6:00PM-6:45PM',
       title: 'Digital Currencies 101',
       label: 'Workshop',
-      venue: 'TBC',
+      venue: 'SFAH Sesame (Level 1)',
       speakerInfo: [
         {
           id: 0,
@@ -226,7 +226,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '6:00PM-6:45PM',
       title: 'The Future of Commerce in Web3/Metaverse Era',
       label: 'Workshop',
-      venue: 'TBC',
+      venue: 'SFAH Sesame (Level 1)',
       speakerInfo: [
         {
           id: 0,
@@ -243,7 +243,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '7:30PM-8:15PM',
       title: 'Machine Learning Applications in Fintech',
       label: 'Workshop',
-      venue: 'TBC',
+      venue: 'SFAH Sesame (Level 1)',
       speakerInfo: [
         {
           id: 0,
@@ -279,7 +279,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '7:30PM-8:30PM',
       title: 'Gateway to Web3 and Security',
       label: 'Workshop',
-      venue: 'TBC',
+      venue: 'Virtual',
       speakerInfo: [
         {
           id: 0,
@@ -344,7 +344,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '6PM-7PM',
       title: 'Fintech Partnership - When Superheroes Meet',
       label: 'Workshop',
-      venue: 'TBC',
+      venue: 'SFAH Sesame (Level 1)',
       speakerInfo: [
         {
           id: 0,
@@ -361,7 +361,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '7.30PM-8.15PM',
       title: 'Day in the Life of a Research Analyst',
       label: 'Workshop',
-      venue: 'TBC',
+      venue: 'SFAH Sesame (Level 1)',
       speakerInfo: [
         {
           id: 0,
@@ -378,7 +378,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '6PM-7PM',
       title: 'Women and Careers in Crypto',
       label: 'Workshop',
-      venue: 'TBC',
+      venue: 'SFAH Basil (Level 1)',
       speakerInfo: [
         {
           id: 0,
@@ -395,7 +395,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '7:30PM-9:00PM',
       title: 'Why Enterprise Blockchain Implementation Fail',
       label: 'Workshop',
-      venue: 'TBC',
+      venue: 'Virtual',
       speakerInfo: [
         {
           id: 0,
@@ -420,7 +420,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '6:00PM - 7:00PM',
       title: 'Unleashing the Power of Web3 on your App',
       label: 'Workshop',
-      venue: 'TBC',
+      venue: 'SFAH Basil (Level 2)',
       speakerInfo: [
         {
           id: 0,
@@ -445,7 +445,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '7:30PM - 9PM',
       title: 'Breaking into Web3 and Analyst Work ',
       label: 'Fireside Chat',
-      venue: 'Arcane Office',
+      venue: 'Arcane Group Office',
       speakerInfo: [
         {
           id: 0,
