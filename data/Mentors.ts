@@ -184,8 +184,19 @@ export const MentorsInfoArray: Mentor[] = [
     organisation: 'Bybit',
     description:"4+ yrs working experience in Crypto industry, actively engaged in ICO projects, custody services, CEXs, DeFi projects etc."
   },
-  
-
-  
+  {
+    name: 'Chen Xiaotian',
+    image: '/Mentors/XIAOTIAN.jpg',
+    title: 'Ecosystem Advisor',
+    organisation: 'Mantle Network',
+    description:"Serial entrepreneur, investor and trader. Managed $100M+ crypto funds in defi.Early employee of Google, Zynga, Symantec."
+  },
+  {
+    name: 'Neil Han',
+    image: '/Mentors/NEIL.png',
+    title: 'Founder & CEO',
+    organisation: 'Reddio',
+    description:"Neil has 15 years experience of doing sales, presales, post sales, and building partner ecosystems. He is the founder at Reddio.com and was APAC GM at PingCAP and 3rd employee for Twilio APAC."
+  },
 
 ];
