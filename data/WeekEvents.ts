@@ -46,46 +46,46 @@ export const WeekEvents: WeekEvent[][] = [
       title: 'Opening Address (NUS Fintech Month)',
       label: 'Fintech Month',
     },
-    {
-      id: 1,
-      date: '6 Jan',
-      time: '11:00AM-12:00PM',
-      title:
-        'VC Landscape in Open source & API-First Companies (Panel Discussion)',
-      venue: 'TBC',
-      label: 'Panel Discussion',
-      speakerInfo: [
-        {
-          id: 0,
-          organisation: 'Defiance Capital',
-          speaker: 'Yeou Jie Goh',
-          position: 'Head of Portfolio Growth',
-          imageSrc: '/Speakers/YEOUJIEGOH.png',
-        },
-        {
-          id: 1,
-          organisation: 'SIG',
-          speaker: 'Akshay Bajaj',
-          position: 'Investor',
-          imageSrc: '/Speakers/AKSHAYBAJAJ.png',
-        },
-        {
-          id: 2,
-          organisation: 'Saison Capital',
-          speaker: 'Ziheng Li',
-          position: 'Investor',
-          imageSrc: '/Speakers/ZIHENGLI.png',
-        },
-        {
-          id: 3,
-          organisation: 'Blockchain Founders Fund',
-          speaker: 'Tobias Bauer',
-          position: 'Partner',
-          imageSrc: '/Speakers/TOBIAS.png',
+    // {
+    //   id: 1,
+    //   date: '6 Jan',
+    //   time: '11:00AM-12:00PM',
+    //   title:
+    //     'VC Landscape in Open source & API-First Companies (Panel Discussion)',
+    //   venue: 'TBC',
+    //   label: 'Panel Discussion',
+    //   speakerInfo: [
+    //     {
+    //       id: 0,
+    //       organisation: 'Defiance Capital',
+    //       speaker: 'Yeou Jie Goh',
+    //       position: 'Head of Portfolio Growth',
+    //       imageSrc: '/Speakers/YEOUJIEGOH.png',
+    //     },
+    //     {
+    //       id: 1,
+    //       organisation: 'SIG',
+    //       speaker: 'Akshay Bajaj',
+    //       position: 'Investor',
+    //       imageSrc: '/Speakers/AKSHAYBAJAJ.png',
+    //     },
+    //     {
+    //       id: 2,
+    //       organisation: 'Saison Capital',
+    //       speaker: 'Ziheng Li',
+    //       position: 'Investor',
+    //       imageSrc: '/Speakers/ZIHENGLI.png',
+    //     },
+    //     {
+    //       id: 3,
+    //       organisation: 'Blockchain Founders Fund',
+    //       speaker: 'Tobias Bauer',
+    //       position: 'Partner',
+    //       imageSrc: '/Speakers/TOBIAS.png',
           
-        },
-      ],
-    },
+    //     },
+    //   ],
+    // },
 
     {
       id: 3,
