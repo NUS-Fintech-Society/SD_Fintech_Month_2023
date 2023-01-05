@@ -3,13 +3,14 @@ import {
   Header,
   LeaderBoardModal,
   ModalButton,
-  ModalLogo,
+  QuizButton,
   Row,
   MemberDetail,
   BodyContent,
-  MedalImage,
   HeaderImage,
-  Unavailable,
+  QuizStatus,
+  ModalDetailLabel,
+  CustomModalFooter,
 } from './styles';
 import {
   Modal,
@@ -26,94 +27,109 @@ import {
   Flex,
   Text,
 } from '@chakra-ui/react';
-import { LeaderBoardData } from '../../data/LeaderBoard';
+import { QuizWinners, LuckyDrawWinners } from '../../data/LeaderBoard';
 import { LeaderBoardMember } from '../../types/LeaderboardMember';
+
+function getLeaderBoard() {
+  return (
+    <>
+      <LeaderBoardModal>
+        <ModalDetailLabel>Quiz Winners</ModalDetailLabel>
+        <Divider borderTop={'1px solid grey'} />
+        {QuizWinners.map((member) => getSingleMember(member))}
+        <ModalDetailLabel>Lucky Draw Winners</ModalDetailLabel>
+        <Divider borderTop={'1px solid grey'} />
+        {LuckyDrawWinners.map((member) => getSingleMember(member))}
+      </LeaderBoardModal>
+    </>
+  );
+}
+
+function getClosedState() {
+  return (
+    <>
+      <QuizStatus>
+        Quiz is closed. <br /> The next quiz will be released on 11 Jan 2023, 12
+        noon.
+      </QuizStatus>
+    </>
+  );
+}
+
+function getOpenedState() {
+  return (
+    <>
+      <QuizStatus>
+        <>Quiz open till 14 Jan 2023, 23:59</>
+        <QuizButton>Go to Quiz</QuizButton>
+      </QuizStatus>
+    </>
+  );
+}
 
 function getSingleMember(member: LeaderBoardMember) {
   return member.rank == 1 ? (
     <Row color="#CFB53B" fontWeight={'bold'}>
-      <MemberDetail width={'12%'} justifyContent={'flex-end'}>
-        <MedalImage src="/gold-medal.png" />
-      </MemberDetail>
-      <MemberDetail width={'13%'} justifyContent={'flex-start'}>
-        {member.rank}
-      </MemberDetail>
-      <MemberDetail>{member.username}</MemberDetail>
-      <MemberDetail>{member.accuracy}</MemberDetail>
-      <MemberDetail>{member.time.toFixed(2)}</MemberDetail>
+      <MemberDetail>{member.email}</MemberDetail>
     </Row>
   ) : member.rank == 2 ? (
     <Row color="grey" fontWeight={'bold'}>
-      <MemberDetail width={'12%'} justifyContent={'flex-end'}>
-        <MedalImage marginRight={'2.5%'} src="/silver-medal.png" />
-      </MemberDetail>
-      <MemberDetail width={'13%'} justifyContent={'flex-start'}>
-        {member.rank}
-      </MemberDetail>
-      <MemberDetail>{member.username}</MemberDetail>
-      <MemberDetail>{member.accuracy}</MemberDetail>
-      <MemberDetail>{member.time.toFixed(2)}</MemberDetail>
+      <MemberDetail>{member.email}</MemberDetail>
     </Row>
   ) : member.rank == 3 ? (
     <Row color="#CD7F32" fontWeight={'bold'}>
-      <MemberDetail width={'12%'} justifyContent={'flex-end'}>
-        <MedalImage src="/bronze-medal.png" />
-      </MemberDetail>
-      <MemberDetail width={'13%'} justifyContent={'flex-start'}>
-        {member.rank}
-      </MemberDetail>
-      <MemberDetail>{member.username}</MemberDetail>
-      <MemberDetail>{member.accuracy}</MemberDetail>
-      <MemberDetail>{member.time.toFixed(2)}</MemberDetail>
+      <MemberDetail>{member.email}</MemberDetail>
     </Row>
   ) : (
     <Row>
-      <MemberDetail>{member.rank}</MemberDetail>
-      <MemberDetail>{member.username}</MemberDetail>
-      <MemberDetail>{member.accuracy}</MemberDetail>
-      <MemberDetail>{member.time.toFixed(2)}</MemberDetail>
+      <MemberDetail>{member.email}</MemberDetail>
     </Row>
+  );
+}
+
+function getModalFooter() {
+  return (
+    <>
+      <Divider borderTop={'1px solid grey'} />
+      <CustomModalFooter>
+        Please wait for 1-2 days for us to get in touch if you are a winner
+      </CustomModalFooter>
+    </>
   );
 }
 
 export default function LeaderBoard() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const ready = false;
+  let results = false;
+  let quizOpen = false;
+  let quizClosed = true;
+
   return (
     <Box>
-      <ModalButton onClick={onOpen}>
-        <ModalLogo src="/award.png"></ModalLogo>
-      </ModalButton>
+      <ModalButton onClick={onOpen}>Weekly Quizzes</ModalButton>
       <Modal size={'4xl'} isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>
             <HeaderContent>
               <HeaderImage src="/award.png" />
-              Leaderboard
+              Weekly Quiz
             </HeaderContent>
             <ModalCloseButton />
           </ModalHeader>
-          <Divider />
+          <Divider borderTop={'1px solid grey'} />
           <BodyContent>
-            <LeaderBoardModal>
-              <Header>
-                <MemberDetail>Rank</MemberDetail>
-                <MemberDetail>Username</MemberDetail>
-                <MemberDetail>Accuracy</MemberDetail>
-                <MemberDetail>Time</MemberDetail>
-              </Header>
-              {ready ? (
-                LeaderBoardData.map((member) => getSingleMember(member))
-              ) : (
-                <Unavailable>Check Back For More Updates</Unavailable>
-              )}
-            </LeaderBoardModal>
+            {results ? (
+              getLeaderBoard()
+            ) : quizClosed ? (
+              getClosedState()
+            ) : quizOpen ? (
+              getOpenedState()
+            ) : (
+              <></>
+            )}
           </BodyContent>
-          <Divider />
-          <ModalFooter>
-            <Button colorScheme={'brand'}>Claim Prize</Button>
-          </ModalFooter>
+          {results ? getModalFooter() : <></>}
         </ModalContent>
       </Modal>
     </Box>
