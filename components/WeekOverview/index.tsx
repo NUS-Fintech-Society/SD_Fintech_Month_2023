@@ -11,6 +11,9 @@ import { WeekEvents, Weeks } from '../../data/WeekEvents';
 import { WeekEvent, Week, SpeakerInfo } from '../../types/WeekEvent';
 import { useState } from 'react';
 
+import Image from 'next/image';
+import Background from '../../public/Background/weekoverview-background.png';
+
 import {
   WeekOverviewContainer,
   HeadingContainer,
@@ -164,6 +167,13 @@ function DesktopWeekOverview() {
   const [WeekNumber, setWeekNumber] = useState(0);
   return (
     <WeekOverviewContainer>
+      <Image
+        src={Background}
+        objectFit="cover"
+        layout="fill"
+        className="h-screen w-full -z-10 absolute"
+        alt="background image"
+      />
       <HeadingContainer>WEEK OVERVIEW</HeadingContainer>
       <ButtonPanel>
         {Weeks.map((week) => (
@@ -185,6 +195,13 @@ function MobileWeekOverview() {
   const [weekNumber, setWeekNumber] = useState(0);
   return (
     <WeekOverviewContainer>
+      <Image
+        src={Background}
+        objectFit="cover"
+        layout="fill"
+        className="h-screen w-full -z-10 absolute"
+        alt="background image"
+      />
       <HeadingContainer>WEEK OVERVIEW</HeadingContainer>
       <ButtonPanel>
         {Weeks.map((week) => (

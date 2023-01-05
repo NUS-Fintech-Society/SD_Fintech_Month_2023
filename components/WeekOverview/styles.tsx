@@ -16,10 +16,10 @@ export const WeekOverviewContainer = chakra(Flex, {
     flexDirection: 'column',
     alignItems: 'center',
     py: { base: '15%', md: '5%' },
-    backgroundImage: `url("/Background/weekoverview-background.png")`,
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    bgRepeat: 'repeat',
+    // backgroundImage: `url("/Background/weekoverview-background.png")`,
+    // backgroundPosition: 'center',
+    // backgroundSize: 'cover',
+    // bgRepeat: 'repeat',
   },
 });
 
