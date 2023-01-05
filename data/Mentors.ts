@@ -170,5 +170,33 @@ export const MentorsInfoArray: Mentor[] = [
     organisation: 'Illuminate Financial',
     description:"Luca joined Illuminate in late 2015 after completing an MBA at INSEAD. Luca brings post-trade and enterprise technology experience to the team, having spent his early career at trading and risk management vendor Murex. Primarily responsible for client facing implementation services, he helped the redesign of the cross-asset post-trade functionality at numerous banks in South East Asia. At Illuminate, Luca in an observer to the board of portfolio companies AxeTrading, RegTek Solutions and TransFICC and he manages a strategic bank relationship. Luca is a CFA Charterholder, holds a Masters in Management from Imperial College Business School, and trained as a computer engineer at Imperial College London"
   },
+  {
+    name: 'Writom Guha Roy',
+    image: '/Mentors/WRITOM.png',
+    title: 'Senior Solutions Architect',
+    organisation: 'AWS',
+    description:"Writom is a senior solutions architect working with AWS, based in Singapore. He help web3 startups in Singapore to grow their businesses on AWS by guiding them on architectural best practices and AWS service adoption. He is an engineer by education and a former software developer, with close to 11 years of experience in the IT industry."
+  },
+  {
+    name: 'Emily Bao',
+    image: '/Mentors/EMILY.jpeg',
+    title: 'Crypto Strategist',
+    organisation: 'Bybit',
+    description:"4+ yrs working experience in Crypto industry, actively engaged in ICO projects, custody services, CEXs, DeFi projects etc."
+  },
+  {
+    name: 'Chen Xiaotian',
+    image: '/Mentors/XIAOTIAN.jpg',
+    title: 'Ecosystem Advisor',
+    organisation: 'Mantle Network',
+    description:"Serial entrepreneur, investor and trader. Managed $100M+ crypto funds in defi.Early employee of Google, Zynga, Symantec."
+  },
+  {
+    name: 'Neil Han',
+    image: '/Mentors/NEIL.png',
+    title: 'Founder & CEO',
+    organisation: 'Reddio',
+    description:"Neil has 15 years experience of doing sales, presales, post sales, and building partner ecosystems. He is the founder at Reddio.com and was APAC GM at PingCAP and 3rd employee for Twilio APAC."
+  },
 
 ];

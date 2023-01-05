@@ -6,7 +6,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '18 Jan 2023',
     time: '7.30 pm - 9pm',
     image: '/Speakers/JOHNNYKOK.png',
-    location: 'TBC',
+    location: 'Virtual',
     title: 'VP Commercial, APAC',
     organisation: 'SettleMint',
     description:
@@ -17,7 +17,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '12 Jan 2023',
     time: '6pm - 6.45pm',
     image: '/Speakers/HUANGDONGHAO.png',
-    location: 'TBC',
+    location: 'SFAH Sesame (Level 1)',
     title: 'Vice President, R&D',
     organisation: 'Mastercard',
     description:
@@ -28,18 +28,29 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '13 Jan 2023',
     time: '5.30pm -7.30pm',
     image: '/Speakers/GABOR.png',
-    location: 'TBC',
+    location: 'Virtual',
     title: 'Co-founder & Chief Innovation Officer',
     organisation: 'Lynx Analytics',
     description:
       'Gabor is responsible for defining the methodological roadmap of Lynx’s predictive analytics consulting and product development departments. He leads the internal data science team and supports the business development. Gabor has been the co-founder of several other AI start-ups in Healthcare, Finance, Crypto, Telecom and Space Industries, contributing with creative application of state-of-the-art data science models. He received his PhD in 2003, worked as an Associate Professor at Budapest Corvinus University, author of one book and many scientific papers.',
   },
   {
+    name: 'Fiona Murray',
+    date: '10 Jan 2023',
+    time: '7.30pm -8.30pm',
+    image: '/Speakers/FIONA.png',
+    location: 'SFAH Basil (Level 2)',
+    title: 'Vice President of APAC Sales',
+    organisation: 'Ripple',
+    description:
+      'Fiona Murray is the Head of APAC Sales for Ripple, a San Francisco headquartered company transforming the way enterprises move, manage, and tokenize value. Fiona has built her career in technology, across both sides of “bi-modal” IT strategies. She’s worked with the “guts” or backbone of large enterprises at Oracle and Finastra, and has been helping financial institutions innovate in payments across Europe and Asia. She holds a Master of Arts degree from the University of Oxford.',
+  },
+  {
     name: 'Nischint Sanghavi',
     date: '11 Jan 2023',
     time: '6pm - 6.45pm',
     image: '/Speakers/NISCHINT.png',
-    location: 'TBC',
+    location: 'SFAH Sesame (Level 1)',
     title: 'Regional Crypto Lead, Asia Pacific',
     organisation: 'Visa',
     description:
@@ -50,7 +61,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '12 Jan 2023',
     time: '7.30pm - 8.15pm',
     image: '/Speakers/KRISHNA.png',
-    location: 'TBC',
+    location: 'SFAH Sesame (Level 1)',
     title: 'Senior Data Scientist',
     organisation: 'Airwallex',
     description:
@@ -59,7 +70,7 @@ export const SpeakersInfoArray: Speaker[] = [
   {
     name: 'Calvin Chu',
     date: '9 Jan 2023',
-    time: '7.30pm - 8.30pm',
+    time: '8.00pm - 9.00pm',
     image: '/Speakers/CALVINCHU.png',
     location: 'Virtual',
     title: 'Core BUIDLer',
@@ -72,7 +83,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '6 Jan 2023',
     time: '1.30 pm - 2.30pm',
     image: '/Speakers/SHIVANI.png',
-    location: 'TBC',
+    location: 'COM2, LT19',
     title: 'Senior Partnerships Leader APAC',
     organisation: 'Thought Machine',
   },
@@ -81,7 +92,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '6 Jan 2023',
     time: '11am',
     image: '/Speakers/YEOUJIEGOH.png',
-    location: 'TBC',
+    location: 'COM2, LT19',
     title: 'Head of Portfolio Growth',
     organisation: 'Defiance Capital',
     description:
@@ -92,7 +103,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '6 Jan 2023',
     time: '11am',
     image: '/Speakers/AKSHAYBAJAJ.png',
-    location: 'TBC',
+    location: 'COM2, LT19',
     title: 'Investor',
     organisation: 'SIG',
     description:
@@ -103,7 +114,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '6 Jan 2023',
     time: '11am',
     image: '/Speakers/ZIHENGLI.png',
-    location: 'TBC',
+    location: 'COM2, LT19',
     title: 'Investor',
     organisation: 'Saison Capital',
     description:
@@ -115,7 +126,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '6 Jan 2023',
     time: '11am',
     image: '/Speakers/TOBIASBAUER.png',
-    location: 'TBC',
+    location: 'COM2, LT19',
     title: 'Partner',
     organisation: 'Blockchain Founders Fund',
     description:
@@ -125,9 +136,9 @@ export const SpeakersInfoArray: Speaker[] = [
   {
     name: 'Lee Yi Liang',
     date: '9 Jan 2023',
-    time: '6pm - 7pm',
+    time: '6.30pm - 7.30pm',
     image: '/Speakers/LEEYILIANG.png',
-    location: 'TBC',
+    location: 'SFAH Sesame (Level 1)',
     title: 'Board Director & Regional Head of Compliance',
     organisation: 'PayerMax',
     description:
@@ -138,29 +149,30 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '6 Jan 2023',
     time: '3pm - 4pm',
     image: '/Speakers/CYNTHIA.jpeg',
-    location: 'TBC',
+    location: 'COM2, LT19',
     title: 'CEO',
     organisation: 'Panda Bank',
     description: '',
   },
 
-  {
-    name: 'Vinay Palathinkal',
-    date: '6 Jan 2023',
-    time: '3pm - 4pm',
-    image: '/Speakers/VINAY.jpeg',
-    location: 'TBC',
-    title: 'Regional Head, Wise Platform',
-    organisation: 'Wise',
-    description: '',
-  },
+  // {
+  //   name: 'Vinay Palathinkal',
+  //   date: '6 Jan 2023',
+  //   time: '3pm - 4pm',
+  //   image: '/Speakers/VINAY.jpeg',
+  //   location: 'TBC',
+  //   title: 'Regional Head, Wise Platform',
+  //   organisation: 'Wise',
+  //   description:
+  //     "",
+  // },
 
   {
     name: 'Nigel Toe',
     date: '6 Jan 2023',
     time: '3pm - 4pm',
     image: '/Speakers/NIGEL.jfif',
-    location: 'TBC',
+    location: 'COM2, LT19',
     title: 'Head of Business Development',
     organisation: 'ADDX',
     description:
@@ -172,7 +184,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '17 Jan 2023',
     time: ' 7.30pm - 8.15pm',
     image: '/Speakers/LIMXINYI.png',
-    location: 'TBC',
+    location: 'SFAH Sesame (Level 1)',
     title: 'Research Analyst',
     organisation: 'Nansen',
     description:
@@ -194,7 +206,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '18 Jan 2023',
     time: '6pm - 7pm',
     image: '/Speakers/PAMELA.png',
-    location: 'TBC',
+    location: 'SFAH Basil (Level 2)',
     title: 'Head of Sales, APAC',
     organisation: 'Talos',
     description:
@@ -205,7 +217,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '18 Jan 2023',
     time: '7.30pm - 9pm',
     image: '/Speakers/ELTONTAY.png',
-    location: 'TBC',
+    location: 'Virtual',
     title: 'Blockchain Solutions Architect, APAC',
     organisation: 'SettleMint',
     description:
@@ -233,41 +245,39 @@ export const SpeakersInfoArray: Speaker[] = [
     description: '',
   },
 
-  {
-    name: 'Celine Wan',
-    date: '16 Jan 2023',
-    time: '6pm - 7pm',
-    image: '/Speakers/CELINE.jpeg',
-    location: 'TBC',
-    title: 'Assistant Vice President, Fintech & Ecosystems',
-    organisation: 'OCBC',
-    description:
-      'Celine specialises in fintech strategy, partnerships, ecosystems, and digital transformation at OCBC Bank Singapore, and has more than 5 years of experience in fintech regulations, ecosystem enablement, and program management. Previously a scholar then fintech regulator at Bank Negara Malaysia (BNM), Celine played a pioneering role in the region’s fintech development landscape, particularly in areas that are experiencing rapid innovation such as digital banking, embedded financing and payments. An engineer by training (MEng and BA, University of Cambridge), Celine has amassed both engineering and financial service work experiences in Malaysia, Singapore, and the United Kingdom (London and Newcastle).',
-  },
+  // {
+  //   name: 'Celine Wan',
+  //   date: '16 Jan 2023',
+  //   time: '6.30pm - 7.30pm',
+  //   image: '/Speakers/CELINE.jpeg',
+  //   location: 'TBC',
+  //   title: 'Assistant Vice President, Fintech & Ecosystems',
+  //   organisation: 'OCBC',
+  //   description: 'Celine specialises in fintech strategy, partnerships, ecosystems, and digital transformation at OCBC Bank Singapore, and has more than 5 years of experience in fintech regulations, ecosystem enablement, and program management. Previously a scholar then fintech regulator at Bank Negara Malaysia (BNM), Celine played a pioneering role in the region’s fintech development landscape, particularly in areas that are experiencing rapid innovation such as digital banking, embedded financing and payments. An engineer by training (MEng and BA, University of Cambridge), Celine has amassed both engineering and financial service work experiences in Malaysia, Singapore, and the United Kingdom (London and Newcastle).',
+  // },
 
   {
     name: 'Ling Li Li',
     date: '17 Jan 2023',
     time: '6pm - 7pm',
     image: '/Speakers/LILI.jpeg',
-    location: 'TBC',
+    location: 'SFAH Sesame (Level 1)',
     title: 'Fintech and Enablers Lead',
     organisation: 'Mastercard',
     description:
       'Li Li leads the Mastercard Global Fintech & Enablers program in Asia Pacific. She connects a network of innovators as she sources the globe for elite fintech, technology players, together with Mastercard and esteemed customers in Asia Pacific to co-create the future of commerce. She also provides guidance to customers to develop their own innovative, startup engagement strategies through her prowess on startup, fintech, investment and technology trends. Prior to this role, Li Li was a quantitative researcher in Standard Chartered and Nielsen looking into product innovation for over ten years. She continues to enjoy discovering the differentiated experiences fintech build to win their consumers. She graduated with a Bachelor of Science from the National University of Singapore, majoring in Statistics and minoring in Mathematics.',
   },
 
-  {
-    name: 'Hassan Ahmed',
-    date: '19 Jan 2023',
-    time: '6pm - 7pm',
-    image: '/Speakers/HASSAN.png',
-    location: 'TBC',
-    title: 'Regional Director, Southeast Asia',
-    organisation: 'Coinbase',
-    description:
-      'Hassan is the head of Southeast Asia at Coinbase. He was previously from SVP Strategy at Gopay/Gojek in Indonesia and CEO of Coins.ph in Philippines. He attained his MBA from Harvard Business School.',
-  },
+  // {
+  //   name: 'Hassan Ahmed',
+  //   date: '19 Jan 2023',
+  //   time: '6pm - 7pm',
+  //   image: '/Speakers/HASSAN.png',
+  //   location: 'TBC',
+  //   title: 'Regional Director, Southeast Asia',
+  //   organisation: 'Coinbase',
+  //   description: 'Hassan is the head of Southeast Asia at Coinbase. He was previously from SVP Strategy at Gopay/Gojek in Indonesia and CEO of Coins.ph in Philippines. He attained his MBA from Harvard Business School.',
+  // },
 
   {
     name: 'Glen Aw',
@@ -318,15 +328,15 @@ export const SpeakersInfoArray: Speaker[] = [
   },
 
   {
-    name: 'Tricia Neo',
+    name: 'Rachel Chng',
     date: '19 Jan 2023',
     time: '7.30pm',
-    image: '/Speakers/TRICIA.png',
+    image: '/Speakers/RACHELTRIBE.png',
     location: 'Arcane Office (Shenton Way)',
-    title: 'Account Lead',
+    title: 'Head of Accelerator',
     organisation: 'Tribe',
     description:
-      'Tricia is leading Accounts Management at Tribe, a full suite talent and ecosystem growth platform. She works with L1s and tech corporates interested in growing their developer community to create value-adding engagement initiatives to boost their ecosystem.',
+      'Rachel is the Head of Accelerator at Tribe, a global frontier tech ecosystem builder that brings together Fortune 500 companies, top blockchain companies, government agencies and startups. Focused on the accelerator arm, she identifies and works with founders of promising growth-stage startups to supercharge their go-to-market strategies through close collaborations with Tribe’s global network.',
   },
 
   {
@@ -341,11 +351,11 @@ export const SpeakersInfoArray: Speaker[] = [
       'Josh is a Data Engineer at Delphi Digital, working on various proprietary research projects with other analysts. Before entering crypto, Josh was working in data related roles such as trading analytics at GIC and data analytics at Bloomberg.',
   },
   {
-    name: 'Yuyang Guo',
+    name: 'Yuyan Guo',
     date: '19 Jan 2023',
     time: '6pm',
     image: '/Speakers/YUYANG.jpg',
-    location: 'TBC',
+    location: 'SFAH Basil (Level 2)',
     title: 'Staff Software Engineer',
     organisation: 'Coinbase',
     description:
@@ -356,10 +366,43 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '19 Jan 2023',
     time: '6pm',
     image: '/Speakers/QUAN.jpg',
-    location: 'TBC',
+    location: 'SFAH Basil (Level 2)',
     title: 'Senior Software Engineer',
     organisation: 'Coinbase',
     description:
       "Quan Nguyen is a Senior Software Engineer building features for Coinbase's international expansion, and an advocate of Web3 and Blockchain technology.Prior to Coinbase, Quan led the Singapore AlgoDev team at Millennium Capital Management to build the firm's next generation low latency trading platform.",
+  },
+
+  // {
+  //   name: 'Yu Chern Ong',
+  //   date: '11 Jan 2023',
+  //   time: '7pm - 8pm',
+  //   image: '/Speakers/YUCHERN.jpeg',
+  //   location: 'TBC',
+  //   title: 'Business Development Manager',
+  //   organisation: 'Moledao',
+  //   description: "YC is the Business Development Manager of Moledao, where he manages partnerships, strategy, marketing, social media and community. His professional career started off as an NFT Analyst where he has conducted market research to keep up to date with the latest NFT trends, keeping an eye out for potential investment opportunities and managing a portfolio of crypto & NFTs. An experienced growth lead for early-stage NFT projects, specializing in community building and management. YC is also well-trained in strategic planning and execution of web3 marketing campaigns for NFT marketplace and partnered projects."
+  // },
+  {
+    name: 'Yap Yow Chun',
+    date: '16 Jan 2023',
+    time: '8pm - 9pm',
+    image: '/Speakers/YOWCHUN.jpeg',
+    location: 'Virtual',
+    title: 'Software Engineer',
+    organisation: 'Coin Gecko',
+    description:
+      'YC is the Business Development Manager of Moledao, where he manages partnerships, strategy, marketing, social media and community. His professional career started off as an NFT Analyst where he has conducted market research to keep up to date with the latest NFT trends, keeping an eye out for potential investment opportunities and managing a portfolio of crypto & NFTs. An experienced growth lead for early-stage NFT projects, specializing in community building and management. YC is also well-trained in strategic planning and execution of web3 marketing campaigns for NFT marketplace and partnered projects.',
+  },
+  {
+    name: 'Charmyn Ho',
+    date: '11 Jan 2023',
+    time: '8pm - 8.20pm',
+    image: '/Speakers/CHARMYM.jpeg',
+    location: 'Virtual',
+    title: 'Head of Crypto Insights',
+    organisation: 'Bybit',
+    description:
+      'Charmyn is the Head of Crypto Insights at Bybit. She is very interested in technologies for social good, and firmly believes in the potential of web3 to shape a better and more equitable future for our societies. She started gaming at a young age of 5 when her father first brought home a PlayStation. She enjoys games of all genres which has led to her avid interest in all things GameFi, and would love to find a true product market fit for web3 elements within the gaming industry.',
   },
 ];
