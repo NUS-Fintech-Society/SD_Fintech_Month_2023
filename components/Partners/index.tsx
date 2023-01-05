@@ -1,6 +1,7 @@
-import { HStack, Image, useBreakpointValue } from '@chakra-ui/react';
+import { HStack, useBreakpointValue } from '@chakra-ui/react';
 import React from 'react';
-
+import Image from 'next/image';
+import SecondaryBackground from '../../public/SecondaryBackground.png';
 import { HeaderContainer, RowContainer, SponsorWrapper } from './styles';
 import { Organisation } from '../../types/Organisation';
 import {
@@ -53,14 +54,23 @@ export default function Sponsor() {
         <Image
           src={organisation.logoSrc}
           alt={organisation.name}
-          h={organisation.logoSize}
+          height={organisation.logoHeight}
+          width={organisation.logoWidth}
         />
       </a>
     );
   }
 
   return (
-    <SponsorWrapper>
+    <SponsorWrapper overflow="hidden">
+      <Image
+        src={SecondaryBackground}
+        objectFit="contain"
+        objectPosition="center"
+        layout="fill"
+        className="h-screen w-full -z-10 absolute"
+        alt="background image"
+      />
       <HeaderContainer>SPONSORS</HeaderContainer>
       <HeaderContainer>PLATINUM</HeaderContainer>
       {organisationSection(Platinum, rowSize || 1)}

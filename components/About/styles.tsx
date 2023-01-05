@@ -1,5 +1,5 @@
 import { Flex, Box, Heading, Image, chakra } from '@chakra-ui/react';
-import BubbleEffect2 from '../../public/BubbleEffect2.png';
+// import BubbleEffect2 from '../../public/BubbleEffect2.png';
 
 export const AboutContainer = chakra(Flex, {
   baseStyle: {
@@ -9,9 +9,9 @@ export const AboutContainer = chakra(Flex, {
     align: 'center',
     justifyContent: 'center',
     paddingTop: { base: '20%', md: '50px' },
-    backgroundImage: `url(${BubbleEffect2.src})`,
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
+    // backgroundImage: `url(${BubbleEffect2.src})`,
+    // backgroundPosition: 'center',
+    // backgroundSize: 'cover',
   },
 });
 
@@ -93,6 +93,7 @@ export const DescriptionBox = chakra(Box, {
     bgColor: 'rgba(255, 255, 255, 0.5)',
     backdropFilter: 'blur(3px)',
     color: '#001158',
+    textAlign: 'justify',
   },
 });
 
@@ -135,7 +136,7 @@ export const BottomImage = chakra(Image, {
   baseStyle: {
     position: 'relative',
     zIndex: '2',
-    left: { base: '-11rem', sm: '-14rem', md: '-22rem' },
+    left: { base: '-14rem', md: '-24rem' },
     top: { base: '4rem', sm: '6rem', md: '8rem' },
     borderRadius: '5px',
     height: { base: '7rem', sm: '9rem' },

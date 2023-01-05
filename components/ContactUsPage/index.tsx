@@ -1,5 +1,3 @@
-import { Text, Flex, Link, Box, theme } from '@chakra-ui/react';
-import { Input, Button, HStack, VStack } from '@chakra-ui/react';
 import React, { ChangeEvent, useState } from 'react';
 import {
   PageContainer,
@@ -15,6 +13,8 @@ import {
   SuccessText,
   FailedText,
 } from './styles';
+import Image from 'next/image';
+import Background from '../../public/Lines.png';
 
 export default function ContactUsPage() {
   const [fullName, setFullName] = useState<string>('');
@@ -73,6 +73,15 @@ export default function ContactUsPage() {
 
   return (
     <PageContainer>
+      <Image
+        src={Background}
+        objectFit="cover"
+        width="80%"
+        height="80%"
+        layout="fill"
+        className="h-screen w-full -z-10 absolute bg-repeat"
+        alt="background image"
+      />
       <ContentContainer>
         <ContactUsText fontWeight="bold" padding="1" pb="0">
           CONTACT US

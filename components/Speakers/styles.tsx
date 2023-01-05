@@ -1,30 +1,14 @@
-import {
-  Text,
-  Flex,
-  Link,
-  Box,
-  chakra,
-  Input,
-  Button,
-  HStack,
-  Image,
-  Modal,
-  ModalContent,
-  ModalOverlay,
-} from '@chakra-ui/react';
+import { Flex, chakra } from '@chakra-ui/react';
 
 export const Container = chakra(Flex, {
   baseStyle: {
-    width: '100vw',
+    width: '100%',
     height: '100%',
     pt: '10%',
     flexDirection: 'column',
     justifyContent: 'center',
     flexWrap: 'wrap',
     alignItems: 'center',
-    backgroundImage: `url("/Background/workshop-background.png")`,
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
   },
 });
 

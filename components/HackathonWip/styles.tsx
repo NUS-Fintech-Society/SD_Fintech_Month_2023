@@ -11,14 +11,14 @@ export const Title = chakra(Text, {
 
 export const WIPContainer = chakra(Flex, {
   baseStyle: {
-    width: '100vw',
+    width: '100%',
     height: 'calc(100vh - 60px)',
     justifyContent: 'center',
     alignItems: 'center',
-    bgImage: "url('/Background/workshop-background.png')",
     pl: '20px',
     pr: '20px',
-    bgSize: 'cover',
-    bgPosition: 'center',
+    // bgImage: "url('/Background/workshop-background.png')",
+    // bgSize: 'cover',
+    // bgPosition: 'center',
   },
 });

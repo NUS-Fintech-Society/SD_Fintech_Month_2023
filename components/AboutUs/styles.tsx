@@ -1,12 +1,4 @@
-import {
-  Box,
-  chakra,
-  HStack,
-  UnorderedList,
-  Text,
-  Center,
-} from '@chakra-ui/react';
-import SecondaryBackground from '../../public/SecondaryBackground.png';
+import { Box, chakra, Center } from '@chakra-ui/react';
 
 export const AboutUsContainer = chakra(Center, {
   baseStyle: {
@@ -14,9 +6,6 @@ export const AboutUsContainer = chakra(Center, {
     // Make this responsive to mobile design
     minHeight: 'calc(100vh - 160px)',
     justifyContent: 'center',
-    bgImage: `url(${SecondaryBackground.src})`,
-    bgSize: 'cover',
-    bgPosition: 'center',
     pb: '50px',
     pt: '50px',
   },

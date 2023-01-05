@@ -12,14 +12,14 @@ import {
 
 export const PageContainer = chakra(Flex, {
   baseStyle: {
-    width: '100vw',
+    width: '100%',
     height: 'calc(100vh - 160px)',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundImage: `url("/Lines.png")`,
-    backgroundPosition: 'center',
-    backgroundSize: '80%',
+    // backgroundImage: `url("/Lines.png")`,
+    // backgroundPosition: 'center',
+    // backgroundSize: '80%',
   },
 });
 

@@ -4,10 +4,11 @@ import SecondaryBackground from '../../public/SecondaryBackground.png';
 
 export const SponsorWrapper = chakra(Box, {
   baseStyle: {
-    width: '100vw',
+    width: '100%',
     minHeight: 'calc(100vh - 160px)',
     justifyContent: 'center',
-    bgImage: `url(${SecondaryBackground.src})`,
+    // `url("/Background/workshop-background.png")`,
+    bgImage: `url("/Background/workshop-background.png")`,
     bgSize: 'cover',
     bgPosition: 'center',
   },

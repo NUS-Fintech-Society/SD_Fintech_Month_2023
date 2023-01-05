@@ -1,9 +1,9 @@
 import { Text, Flex, Link, Box, chakra, Input, Button } from '@chakra-ui/react';
-import TimelineBackground from '../../public/TimelineBackground.png';
+// import TimelineBackground from '../../public/TimelineBackground.png';
 
 export const PageContainer = chakra(Flex, {
   baseStyle: {
-    width: '100vw',
+    width: '100%',
     height: 'calc(80vh - 100px)',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -39,6 +39,8 @@ export const RowContainer = chakra(Flex, {
     alignContent: 'center',
     alignItems: { base: 'left', lg: 'center' },
     px: { base: '0px', md: '25px' },
+    paddingBottom: '5.5%',
+    paddingTop: '4%',
   },
 });
 
