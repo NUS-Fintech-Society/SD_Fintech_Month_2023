@@ -43,18 +43,24 @@ export const Silver: Organisation[] = [
     logoSize: '90px',
     url: 'https://www.thoughtmachine.net/',
   },
-  // {
-  //   name: 'Visa',
-  //   logoSrc: '/Sponsor/visa-logo.png',
-  //   logoSize: '110px',
-  //   url: 'https://www.visa.com.sg/',
-  // },
-  // {
-  //   name: 'Paypal',
-  //   logoSrc: '/Sponsor/paypal_logo.png',
-  //   logoSize: '60px',
-  //   url: 'https://www.paypal.com',
-  // },
+  {
+    name: 'Visa',
+    logoSrc: '/Sponsor/visa-logo.png',
+    logoSize: '110px',
+    url: 'https://www.visa.com.sg/',
+  },
+  {
+    name: 'Paypal',
+    logoSrc: '/Sponsor/paypal_logo.png',
+    logoSize: '60px',
+    url: 'https://www.paypal.com',
+  },
+  {
+    name: 'Coin Gecko',
+    logoSrc: '/Sponsor/coingecko_logo.png',
+    logoSize: '60px',
+    url: 'https://www.coingecko.com/',
+  },
 ];
 
 export const Organisers: Organisation[] = [
@@ -84,6 +90,18 @@ export const Community: Organisation[] = [
     logoSrc: '/Sponsor/sfa_logo.png',
     logoSize: '60px',
     url: 'https://singaporefintech.org/',
+  },
+  {
+    name: 'Tribe',
+    logoSrc: '/Sponsor/tribe_logo.png',
+    logoSize: '60px',
+    url: 'https://tribex.co/',
+  },
+  {
+    name: 'Angelhack',
+    logoSrc: '/Sponsor/angelhack_logo.png',
+    logoSize: '60px',
+    url: 'https://angelhack.com/',
   },
 ];
 
