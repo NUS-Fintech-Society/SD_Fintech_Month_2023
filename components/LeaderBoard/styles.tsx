@@ -1,15 +1,23 @@
-import { Button, chakra, Image, Flex, ModalBody } from '@chakra-ui/react';
+import {
+  Button,
+  chakra,
+  Image,
+  Flex,
+  ModalBody,
+  ModalFooter,
+} from '@chakra-ui/react';
 
 export const ModalButton = chakra(Button, {
   baseStyle: {
-    height: '4rem',
-    width: '4rem',
+    height: '40px',
+    width: { base: '5rem', md: '6.5rem' },
     zIndex: '999',
     bottom: '20px',
     right: '20px',
     position: 'fixed',
-    borderRadius: '50%',
+    // borderRadius: '50%',
     boxShadow: '1px 1px #888888, 1px -1px #888888, -1px 1px #888888',
+    fontSize: { base: '2xs', md: 'xs' },
   },
 });
 
@@ -36,7 +44,8 @@ export const LeaderBoardModal = chakra(Flex, {
     w: '100%',
     backgroundColor: '#E6E6FA',
     borderRadius: '25px',
-    py: '2.5%',
+    paddingBottom: '2.5%',
+    marginBottom: '3%',
   },
 });
 
@@ -50,11 +59,21 @@ export const Header = chakra(Flex, {
   },
 });
 
+export const ModalDetailLabel = chakra(Flex, {
+  baseStyle: {
+    px: '2rem',
+    fontSize: 'lg',
+    fontWeight: 'bold',
+    py: '2%',
+  },
+});
+
 export const Row = chakra(Flex, {
   baseStyle: {
     w: '100%',
+    py: '1%',
     minH: '2.2rem',
-    justifyContent: 'space-evenly',
+    // justifyContent: 'space-evenly',
     alignContent: 'center',
     color: '#001158',
   },
@@ -64,7 +83,7 @@ export const MemberDetail = chakra(Flex, {
   baseStyle: {
     w: '25%',
     alignContent: 'center',
-    justifyContent: 'center',
+    px: '9%',
   },
 });
 
@@ -76,28 +95,37 @@ export const BodyContent = chakra(ModalBody, {
   },
 });
 
-export const MedalImage = chakra(Image, {
-  baseStyle: {
-    height: '80%',
-    width: '50%',
-    paddingRight: '10%',
-  },
-});
-
 export const HeaderContent = chakra(Flex, {
   baseStyle: {
     alignContent: 'center',
+    justifyContent: 'left',
+    px: { base: '1.54rem', md: '4rem' },
+  },
+});
+
+export const CustomModalFooter = chakra(ModalFooter, {
+  baseStyle: {
+    py: '2%',
     justifyContent: 'center',
   },
 });
 
-export const Unavailable = chakra(Flex, {
+export const QuizStatus = chakra(Flex, {
   baseStyle: {
     alignItems: 'center',
-    justifyContent: 'center',
-    padding: '10rem',
-    px: { base: '5rem', md: '10rem' },
+    padding: '2rem',
+    px: { base: '5rem', md: '2rem' },
     fontWeight: 'bold',
-    fontSize: { base: 'sm', md: 'xl' },
+    fontSize: { base: 'sm', md: 'md' },
+  },
+});
+
+export const QuizButton = chakra(Button, {
+  baseStyle: {
+    marginLeft: '5%',
+    px: { base: '6%', md: '2%' },
+    backgroundColor: '#001158',
+    color: 'white',
+    fontSize: { base: 'sm', md: 'md' },
   },
 });

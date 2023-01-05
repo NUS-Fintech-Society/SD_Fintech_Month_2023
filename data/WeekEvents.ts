@@ -46,54 +46,54 @@ export const WeekEvents: WeekEvent[][] = [
       title: 'Opening Address (NUS Fintech Month)',
       label: 'Fintech Month',
     },
-    {
-      id: 1,
-      date: '6 Jan',
-      time: '11:00AM-12:00PM',
-      title:
-        'VC Landscape in Open source & API-First Companies (Panel Discussion)',
-      venue: 'TBC',
-      label: 'Panel Discussion',
-      speakerInfo: [
-        {
-          id: 0,
-          organisation: 'Defiance Capital',
-          speaker: 'Yeou Jie Goh',
-          position: 'Head of Portfolio Growth',
-          imageSrc: '/Speakers/YEOUJIEGOH.png',
-        },
-        {
-          id: 1,
-          organisation: 'SIG',
-          speaker: 'Akshay Bajaj',
-          position: 'Investor',
-          imageSrc: '/Speakers/AKSHAYBAJAJ.png',
-        },
-        {
-          id: 2,
-          organisation: 'Saison Capital',
-          speaker: 'Ziheng Li',
-          position: 'Investor',
-          imageSrc: '/Speakers/ZIHENGLI.png',
-        },
-        {
-          id: 3,
-          organisation: 'Blockchain Founders Fund',
-          speaker: 'Tobias Bauer',
-          position: 'Partner',
-          imageSrc: '/Speakers/TOBIAS.png',
+    // {
+    //   id: 1,
+    //   date: '6 Jan',
+    //   time: '11:00AM-12:00PM',
+    //   title:
+    //     'VC Landscape in Open source & API-First Companies (Panel Discussion)',
+    //   venue: 'TBC',
+    //   label: 'Panel Discussion',
+    //   speakerInfo: [
+    //     {
+    //       id: 0,
+    //       organisation: 'Defiance Capital',
+    //       speaker: 'Yeou Jie Goh',
+    //       position: 'Head of Portfolio Growth',
+    //       imageSrc: '/Speakers/YEOUJIEGOH.png',
+    //     },
+    //     {
+    //       id: 1,
+    //       organisation: 'SIG',
+    //       speaker: 'Akshay Bajaj',
+    //       position: 'Investor',
+    //       imageSrc: '/Speakers/AKSHAYBAJAJ.png',
+    //     },
+    //     {
+    //       id: 2,
+    //       organisation: 'Saison Capital',
+    //       speaker: 'Ziheng Li',
+    //       position: 'Investor',
+    //       imageSrc: '/Speakers/ZIHENGLI.png',
+    //     },
+    //     {
+    //       id: 3,
+    //       organisation: 'Blockchain Founders Fund',
+    //       speaker: 'Tobias Bauer',
+    //       position: 'Partner',
+    //       imageSrc: '/Speakers/TOBIAS.png',
           
-        },
-      ],
-    },
+    //     },
+    //   ],
+    // },
 
     {
       id: 3,
       date: '9 Jan',
-      time: '06:00PM-7:00PM',
+      time: '06:30PM-7:30PM',
       title:
         'Navigating the Payments Space in the Digital Age & Careers in Fintech Startups',
-      venue: 'TBC',
+      venue: 'SFAH Sesame (Level 1)',
       label: 'Workshop',
       speakerInfo: [
         {
@@ -108,7 +108,7 @@ export const WeekEvents: WeekEvent[][] = [
     {
       id: 4,
       date: '9 Jan',
-      time: '7:30PM - 8.30PM',
+      time: '8:00PM - 9.00PM',
       title: 'All Things Tokens & Launchpads',
       venue: 'Virtual',
       label: 'Workshop',
@@ -139,6 +139,23 @@ export const WeekEvents: WeekEvent[][] = [
         },
       ],
     },
+    {
+      id: 30,
+      date: '10 Jan',
+      time: '7:30PM-8:30PM',
+      title: 'Fintech Insights',
+      label: 'Workshop',
+      venue: 'SFAH Basil (Level 2)',
+      speakerInfo: [
+        {
+          id: 0,
+          organisation: 'Ripple',
+          speaker: 'Fiona Murray',
+          position: 'Vice President of APAC Sales',
+          imageSrc: '/Speakers/FIONA.png',
+        },
+      ],
+    },
     
     {
       id: 7,
@@ -146,7 +163,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '6:00PM-6:45PM',
       title: 'Digital Currencies 101',
       label: 'Workshop',
-      venue: 'TBC',
+      venue: 'SFAH Sesame (Level 1)',
       speakerInfo: [
         {
           id: 0,
@@ -154,6 +171,40 @@ export const WeekEvents: WeekEvent[][] = [
           speaker: 'Nischint Sanghavi',
           position: 'Regional Crypto Lead, Asia Pacific',
           imageSrc: '/Speakers/NISCHINT.png',
+        },
+      ],
+    },
+    {
+      id: 29,
+      date: '11 Jan',
+      time: '7:00PM-8:00PM',
+      title: 'Moledao Workshop',
+      label: 'Workshop',
+      venue: 'Virtual',
+      speakerInfo: [
+        {
+          id: 0,
+          organisation: 'Moledao',
+          speaker: 'Yu Chern Ong',
+          position: 'Business Development Manager',
+          imageSrc: '/Speakers/YUCHERN.jpeg',
+        },
+      ],
+    },
+    {
+      id: 15,
+      date: '11 Jan',
+      time: '8:00PM-8:20PM',
+      title: 'Introduction to Blockchain',
+      label: 'Workshop',
+      venue: 'Virtual',
+      speakerInfo: [
+        {
+          id: 0,
+          organisation: 'Bybit',
+          speaker: 'Charmyn Ho',
+          position: 'Head of Crypto Insights',
+          imageSrc: '/Speakers/CHARMYM.jpeg',
         },
       ],
     },
@@ -175,7 +226,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '6:00PM-6:45PM',
       title: 'The Future of Commerce in Web3/Metaverse Era',
       label: 'Workshop',
-      venue: 'TBC',
+      venue: 'SFAH Sesame (Level 1)',
       speakerInfo: [
         {
           id: 0,
@@ -192,7 +243,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '7:30PM-8:15PM',
       title: 'Machine Learning Applications in Fintech',
       label: 'Workshop',
-      venue: 'TBC',
+      venue: 'SFAH Sesame (Level 1)',
       speakerInfo: [
         {
           id: 0,
@@ -211,7 +262,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '5:30PM-7:30PM',
       title: 'Introduction to Graph Machine Learning',
       label: 'Workshop',
-      venue: 'TBC',
+      venue: 'Virtual',
       speakerInfo: [
         {
           id: 0,
@@ -228,7 +279,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '7:30PM-8:30PM',
       title: 'Gateway to Web3 and Security',
       label: 'Workshop',
-      venue: 'TBC',
+      venue: 'Virtual',
       speakerInfo: [
         {
           id: 0,
@@ -254,9 +305,9 @@ export const WeekEvents: WeekEvent[][] = [
       label: 'Fintech Month Hackathon',
     },
     {
-      id: 18,
+      id: 28,
       date: '16 Jan',
-      time: '6PM-7PM',
+      time: '6.30PM-7.30PM',
       title: 'Web3 101',
       label: 'Workshop',
       venue: 'TBC',
@@ -271,12 +322,29 @@ export const WeekEvents: WeekEvent[][] = [
       ],
     },
     {
+      id: 27,
+      date: '16 Jan',
+      time: '8PM-9PM',
+      title: 'CoinGecko API Workshop',
+      label: 'Workshop',
+      venue: 'Virtual',
+      speakerInfo: [
+        {
+          id: 0,
+          organisation: 'Coin Gecko',
+          speaker: 'Yap Yow Chun',
+          position: 'Software Engineer',
+          imageSrc: '/Speakers/YOWCHUN.jpeg',
+        },
+      ],
+    },
+    {
       id: 19,
       date: '17 Jan',
       time: '6PM-7PM',
       title: 'Fintech Partnership - When Superheroes Meet',
       label: 'Workshop',
-      venue: 'TBC',
+      venue: 'SFAH Sesame (Level 1)',
       speakerInfo: [
         {
           id: 0,
@@ -293,7 +361,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '7.30PM-8.15PM',
       title: 'Day in the Life of a Research Analyst',
       label: 'Workshop',
-      venue: 'TBC',
+      venue: 'SFAH Sesame (Level 1)',
       speakerInfo: [
         {
           id: 0,
@@ -310,7 +378,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '6PM-7PM',
       title: 'Women and Careers in Crypto',
       label: 'Workshop',
-      venue: 'TBC',
+      venue: 'SFAH Basil (Level 1)',
       speakerInfo: [
         {
           id: 0,
@@ -327,7 +395,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '7:30PM-9:00PM',
       title: 'Why Enterprise Blockchain Implementation Fail',
       label: 'Workshop',
-      venue: 'TBC',
+      venue: 'Virtual',
       speakerInfo: [
         {
           id: 0,
@@ -352,7 +420,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '6:00PM - 7:00PM',
       title: 'Unleashing the Power of Web3 on your App',
       label: 'Workshop',
-      venue: 'TBC',
+      venue: 'SFAH Basil (Level 2)',
       speakerInfo: [
         {
           id: 0,
@@ -377,7 +445,7 @@ export const WeekEvents: WeekEvent[][] = [
       time: '7:30PM - 9PM',
       title: 'Breaking into Web3 and Analyst Work ',
       label: 'Fireside Chat',
-      venue: 'Arcane Office',
+      venue: 'Arcane Group Office',
       speakerInfo: [
         {
           id: 0,
@@ -412,9 +480,9 @@ export const WeekEvents: WeekEvent[][] = [
         {
           id: 4,
           organisation: 'Tribe',
-          speaker: 'Tricia Neo',
-          position: 'Account Lead',
-          imageSrc: '/Speakers/TRICIA.png',
+          speaker: 'Rachel Chng',
+          position: 'Head of Accelerator',
+          imageSrc: '/Speakers/RACHELTRIBE.png',
         },
         {
           id: 5,

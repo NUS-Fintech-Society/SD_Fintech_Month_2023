@@ -9,9 +9,6 @@ export const Container = chakra(Flex, {
     justifyContent: 'center',
     flexWrap: 'wrap',
     alignItems: 'center',
-    backgroundImage: `url("/Background/workshop-background.png")`,
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
   },
 });
 

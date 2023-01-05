@@ -15,6 +15,9 @@ import {
 import { IoIosArrowForward } from 'react-icons/io';
 import { useRouter } from 'next/router';
 
+import BubbleBackground from '../../public/BubbleBackground.png';
+import Image from 'next/image';
+
 const FeaturePage = () => {
   const router = useRouter();
 
@@ -39,6 +42,13 @@ const FeaturePage = () => {
 
   return (
     <MorePageContainer>
+      <Image
+        src={BubbleBackground}
+        objectFit="cover"
+        layout="fill"
+        className="h-screen w-full -z-10 absolute"
+        alt="background image"
+      />
       <HeadingContainer>
         <MorePageHeading colorScheme="brand">
           FTM 2023 in Numbers

@@ -1,6 +1,7 @@
 export type LeaderBoardMember = {
   rank: number;
   username: String;
-  accuracy: number;
-  time: number;
+  accuracy?: number;
+  time?: number;
+  email: string;
 };

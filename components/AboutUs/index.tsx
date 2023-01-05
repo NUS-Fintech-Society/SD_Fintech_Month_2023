@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from 'next/image';
+import SecondaryBackground from '../../public/SecondaryBackground.png';
 import { Stack, StackDivider, VStack } from '@chakra-ui/react';
 import { ImportantDate } from '../../types/Date';
 import { importantDates } from '../../data/ImportantDates';
@@ -15,6 +17,13 @@ export default function About() {
 
   return (
     <AboutUsContainer>
+      <Image
+        src={SecondaryBackground}
+        objectFit="cover"
+        layout="fill"
+        className="h-screen w-full -z-10 absolute"
+        alt="background image"
+      />
       <Wrapper>
         <VStack
           divider={<StackDivider borderColor="transparent " />}
