@@ -84,19 +84,19 @@ function generateDesktopWorkshop(event: WeekEvent) {
 function generateMobileWorkshop(event: WeekEvent) {
   return (
     <Event key={event.id}>
-      <Flex marginBottom={'-7%'}>
+      <Flex>
         <DateAndLocation>
           <DateAndTime>
             <BoldText>{event.date}</BoldText>
             <Time>{event.time}</Time>
           </DateAndTime>
-          <LocationTag>{event.venue}</LocationTag>
+          {event.venue ? <LocationTag>{event.venue}</LocationTag> : <></>}
         </DateAndLocation>
         <WorkshopBox>
           <EventTitle>{event.title}</EventTitle>
         </WorkshopBox>
       </Flex>
-      <Flex px={'5%'}>
+      {/* <Flex px={'5%'}>
         <WorkshopAccordion width={'100%'} allowMultiple>
           <AccordionItem>
             <ExpandWorkshopButton>
@@ -122,7 +122,7 @@ function generateMobileWorkshop(event: WeekEvent) {
             </AccordionPanel>
           </AccordionItem>
         </WorkshopAccordion>
-      </Flex>
+      </Flex> */}
     </Event>
   );
 }
