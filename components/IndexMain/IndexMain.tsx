@@ -17,7 +17,7 @@ function ImportantDatesSection() {
 
   const handleHackathonClick = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    window.open('https://forms.gle/woaewfoX4pW9nJMZA');
+    window.open('https://nus-ftm-ideation-hackathon.devpost.com/');
     //router.push('/fintechHackathon');
   };
 
@@ -47,6 +47,7 @@ function ImportantDatesSection() {
           colorScheme="brand"
           fontWeight="bold"
           fontSize={{ base: 'md', lg: 'lg' }}
+          zIndex={'1000'}
           onClick={handleHackathonClick}
         >
           Hackathon
@@ -55,6 +56,7 @@ function ImportantDatesSection() {
           colorScheme="brand"
           fontWeight="bold"
           fontSize={{ base: 'md', lg: 'lg' }}
+          zIndex={'1000'}
           onClick={handleWorkshipClick}
         >
           Workshops
