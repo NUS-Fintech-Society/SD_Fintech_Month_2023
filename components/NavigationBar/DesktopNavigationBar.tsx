@@ -107,7 +107,7 @@ export default function DesktopNavigationBar(props: Props) {
               </Button>
             </HStack>
             <HackathonButton colorScheme="brand" onClick={hackathon}>
-              Hackathon Signup
+              Hackathon
             </HackathonButton>
           </HStack>
         </HStackContainer>

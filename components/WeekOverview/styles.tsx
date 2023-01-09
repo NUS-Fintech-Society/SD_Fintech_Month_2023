@@ -94,7 +94,7 @@ export const Event = chakra(Flex, {
     justifyContent: 'space-apart',
     backgroundColor: 'white',
     minH: { base: '0', md: '12rem' },
-    py: '3%',
+    py: { base: '10%', md: '3%' },
     px: '2%',
     w: '100%',
     border: '1px solid',
