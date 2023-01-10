@@ -410,7 +410,7 @@ export const SpeakersInfoArray: Speaker[] = [
     date: '16 Jan 2023',
     time: '2.00pm - 3.00pm',
     image: '/Speakers/MIGUEL.jpeg',
-    location: 'Virtual',
+    location: 'Virtuale',
     title: 'Site Reliability Engineer',
     organisation: 'Thought Machine',
     description: "Miguel has been working in cloud systems for the past 6 years. He has specialised recently in the observation of complex distributed systems and automation of Operational toil."
