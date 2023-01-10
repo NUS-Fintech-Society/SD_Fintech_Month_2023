@@ -32,7 +32,9 @@ import { LeaderBoardMember } from '../../types/LeaderboardMember';
 
 const handleQuizButtonClick = (e: { preventDefault: () => void }) => {
   e.preventDefault();
-  window.open('https://nus-ftm-ideation-hackathon.devpost.com/');
+  window.open(
+    'https://docs.google.com/forms/d/e/1FAIpQLScVdjKPeiICHWZeYYHWjohVNZThQlcSfyItMJlVezXXTKaUaw/viewform?usp=share_link/',
+  );
 };
 
 function getLeaderBoard() {
@@ -65,7 +67,7 @@ function getOpenedState() {
   return (
     <>
       <QuizStatus>
-        <>Quiz open till 14 Jan 2023, 23:59</>
+        <>Quiz will open from 11 Jan, noon till 15 Jan, 23:59</>
         <QuizButton onClick={handleQuizButtonClick}>Go to Quiz</QuizButton>
       </QuizStatus>
     </>
