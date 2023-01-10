@@ -30,6 +30,13 @@ import {
 import { QuizWinners, LuckyDrawWinners } from '../../data/LeaderBoard';
 import { LeaderBoardMember } from '../../types/LeaderboardMember';
 
+const handleQuizButtonClick = (e: { preventDefault: () => void }) => {
+  e.preventDefault();
+  window.open(
+    'https://docs.google.com/forms/d/e/1FAIpQLScVdjKPeiICHWZeYYHWjohVNZThQlcSfyItMJlVezXXTKaUaw/viewform?usp=share_link/',
+  );
+};
+
 function getLeaderBoard() {
   return (
     <>
@@ -60,8 +67,8 @@ function getOpenedState() {
   return (
     <>
       <QuizStatus>
-        <>Quiz open till 14 Jan 2023, 23:59</>
-        <QuizButton>Go to Quiz</QuizButton>
+        <>Quiz will open from 11 Jan 2023, 12.00pm till 15 Jan 2023, 11.59pm</>
+        <QuizButton onClick={handleQuizButtonClick}>Go to Quiz</QuizButton>
       </QuizStatus>
     </>
   );
@@ -101,8 +108,8 @@ function getModalFooter() {
 export default function LeaderBoard() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   let results = false;
-  let quizOpen = false;
-  let quizClosed = true;
+  let quizOpen = true;
+  let quizClosed = false;
 
   return (
     <Box>
