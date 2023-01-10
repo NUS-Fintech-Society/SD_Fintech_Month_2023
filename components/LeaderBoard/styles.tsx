@@ -5,6 +5,7 @@ import {
   Flex,
   ModalBody,
   ModalFooter,
+  VStack,
 } from '@chakra-ui/react';
 
 export const ModalButton = chakra(Button, {
@@ -110,11 +111,9 @@ export const CustomModalFooter = chakra(ModalFooter, {
   },
 });
 
-export const QuizStatus = chakra(Flex, {
+export const QuizStatus = chakra(VStack, {
   baseStyle: {
     alignItems: 'center',
-    padding: '2rem',
-    px: { base: '5rem', md: '2rem' },
     fontWeight: 'bold',
     fontSize: { base: 'sm', md: 'md' },
   },
