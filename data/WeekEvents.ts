@@ -82,7 +82,7 @@ export const WeekEvents: WeekEvent[][] = [
     //       speaker: 'Tobias Bauer',
     //       position: 'Partner',
     //       imageSrc: '/Speakers/TOBIAS.png',
-          
+
     //     },
     //   ],
     // },
@@ -156,7 +156,7 @@ export const WeekEvents: WeekEvent[][] = [
         },
       ],
     },
-    
+
     {
       id: 7,
       date: '11 Jan',
@@ -305,6 +305,23 @@ export const WeekEvents: WeekEvent[][] = [
       label: 'Fintech Month Hackathon',
     },
     {
+      id: 34,
+      date: '16 Jan',
+      time: '2.00PM-3.00PM',
+      title: 'Crypto Wallet KYC - Building Trust',
+      label: 'Workshop',
+      venue: 'Virtual',
+      speakerInfo: [
+        {
+          id: 0,
+          organisation: 'Thought Machine',
+          speaker: 'Miguel Antunes',
+          position: 'Site Reliability Engineer',
+          imageSrc: '/Speakers/MIGUEL.jpeg',
+        },
+      ],
+    },
+    {
       id: 28,
       date: '16 Jan',
       time: '6.30PM-7.30PM',
@@ -413,7 +430,7 @@ export const WeekEvents: WeekEvent[][] = [
         },
       ],
     },
-    
+
     {
       id: 2,
       date: '19 Jan',
@@ -438,7 +455,7 @@ export const WeekEvents: WeekEvent[][] = [
         },
       ],
     },
-    
+
     {
       id: 3,
       date: '19 Jan',
@@ -493,7 +510,6 @@ export const WeekEvents: WeekEvent[][] = [
         },
       ],
     },
-
   ],
   [
     {
