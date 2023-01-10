@@ -66,8 +66,11 @@ function getClosedState() {
 function getOpenedState() {
   return (
     <>
-      <QuizStatus>
-        <>Quiz will open from 11 Jan 2023, 12.00pm till 15 Jan 2023, 11.59pm</>
+      <QuizStatus spacing={5}>
+        <div>
+          The weekly quiz will open on 11 Jan 2023, 12.00pm and close on 15 Jan
+          2023, 11.59pm
+        </div>
         <QuizButton onClick={handleQuizButtonClick}>Go to Quiz</QuizButton>
       </QuizStatus>
     </>
