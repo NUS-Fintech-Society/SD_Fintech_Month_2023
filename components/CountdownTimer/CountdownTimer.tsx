@@ -45,28 +45,28 @@ export const CountdownTimer = () => {
     <div className="flex items-center justify-center shadow-xl bg-[#ffffff80] rounded-[40px] px-8 py-2 lg:px-16 lg:py-4 backdrop-blur-sm">
       <TimerInner>
         <TimerSegment>
-          <TimerText>{days}</TimerText>
+          <TimerText>0</TimerText>
           <Label>Days</Label>
         </TimerSegment>
 
         <TimerDivider>:</TimerDivider>
 
         <TimerSegment>
-          <TimerText>{hours}</TimerText>
+          <TimerText>0</TimerText>
           <Label>Hours</Label>
         </TimerSegment>
 
         <TimerDivider>:</TimerDivider>
 
         <TimerSegment>
-          <TimerText>{minutes}</TimerText>
+          <TimerText>0</TimerText>
           <Label>Minutes</Label>
         </TimerSegment>
 
         <TimerDivider>:</TimerDivider>
 
         <TimerSegment>
-          <TimerText>{seconds}</TimerText>
+          <TimerText>00</TimerText>
           <Label>Seconds</Label>
         </TimerSegment>
       </TimerInner>

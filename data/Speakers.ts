@@ -125,7 +125,7 @@ export const SpeakersInfoArray: Speaker[] = [
     name: 'Tobias Bauer',
     date: '6 Jan 2023',
     time: '11am',
-    image: '/Speakers/TOBIAS.png',
+    image: '/Speakers/TOBIASBAUER.png',
     location: 'COM2, LT19',
     title: 'Partner',
     organisation: 'Blockchain Founders Fund',
@@ -166,7 +166,6 @@ export const SpeakersInfoArray: Speaker[] = [
   //   description:
   //     "",
   // },
-
 
   {
     name: 'Nigel Toe',
@@ -246,7 +245,6 @@ export const SpeakersInfoArray: Speaker[] = [
     description: '',
   },
 
-
   // {
   //   name: 'Celine Wan',
   //   date: '16 Jan 2023',
@@ -257,7 +255,6 @@ export const SpeakersInfoArray: Speaker[] = [
   //   organisation: 'OCBC',
   //   description: 'Celine specialises in fintech strategy, partnerships, ecosystems, and digital transformation at OCBC Bank Singapore, and has more than 5 years of experience in fintech regulations, ecosystem enablement, and program management. Previously a scholar then fintech regulator at Bank Negara Malaysia (BNM), Celine played a pioneering role in the region’s fintech development landscape, particularly in areas that are experiencing rapid innovation such as digital banking, embedded financing and payments. An engineer by training (MEng and BA, University of Cambridge), Celine has amassed both engineering and financial service work experiences in Malaysia, Singapore, and the United Kingdom (London and Newcastle).',
   // },
-
 
   {
     name: 'Ling Li Li',
@@ -271,7 +268,6 @@ export const SpeakersInfoArray: Speaker[] = [
       'Li Li leads the Mastercard Global Fintech & Enablers program in Asia Pacific. She connects a network of innovators as she sources the globe for elite fintech, technology players, together with Mastercard and esteemed customers in Asia Pacific to co-create the future of commerce. She also provides guidance to customers to develop their own innovative, startup engagement strategies through her prowess on startup, fintech, investment and technology trends. Prior to this role, Li Li was a quantitative researcher in Standard Chartered and Nielsen looking into product innovation for over ten years. She continues to enjoy discovering the differentiated experiences fintech build to win their consumers. She graduated with a Bachelor of Science from the National University of Singapore, majoring in Statistics and minoring in Mathematics.',
   },
 
-
   // {
   //   name: 'Hassan Ahmed',
   //   date: '19 Jan 2023',
@@ -282,7 +278,6 @@ export const SpeakersInfoArray: Speaker[] = [
   //   organisation: 'Coinbase',
   //   description: 'Hassan is the head of Southeast Asia at Coinbase. He was previously from SVP Strategy at Gopay/Gojek in Indonesia and CEO of Coins.ph in Philippines. He attained his MBA from Harvard Business School.',
   // },
-
 
   {
     name: 'Glen Aw',
@@ -340,7 +335,8 @@ export const SpeakersInfoArray: Speaker[] = [
     location: 'Arcane Office (Shenton Way)',
     title: 'Head of Accelerator',
     organisation: 'Tribe',
-    description: 'Rachel is the Head of Accelerator at Tribe, a global frontier tech ecosystem builder that brings together Fortune 500 companies, top blockchain companies, government agencies and startups. Focused on the accelerator arm, she identifies and works with founders of promising growth-stage startups to supercharge their go-to-market strategies through close collaborations with Tribe’s global network.',
+    description:
+      'Rachel is the Head of Accelerator at Tribe, a global frontier tech ecosystem builder that brings together Fortune 500 companies, top blockchain companies, government agencies and startups. Focused on the accelerator arm, she identifies and works with founders of promising growth-stage startups to supercharge their go-to-market strategies through close collaborations with Tribe’s global network.',
   },
 
   {
@@ -395,7 +391,8 @@ export const SpeakersInfoArray: Speaker[] = [
     location: 'Virtual',
     title: 'Software Engineer',
     organisation: 'Coin Gecko',
-    description: "YC is the Business Development Manager of Moledao, where he manages partnerships, strategy, marketing, social media and community. His professional career started off as an NFT Analyst where he has conducted market research to keep up to date with the latest NFT trends, keeping an eye out for potential investment opportunities and managing a portfolio of crypto & NFTs. An experienced growth lead for early-stage NFT projects, specializing in community building and management. YC is also well-trained in strategic planning and execution of web3 marketing campaigns for NFT marketplace and partnered projects."
+    description:
+      'YC is the Business Development Manager of Moledao, where he manages partnerships, strategy, marketing, social media and community. His professional career started off as an NFT Analyst where he has conducted market research to keep up to date with the latest NFT trends, keeping an eye out for potential investment opportunities and managing a portfolio of crypto & NFTs. An experienced growth lead for early-stage NFT projects, specializing in community building and management. YC is also well-trained in strategic planning and execution of web3 marketing campaigns for NFT marketplace and partnered projects.',
   },
   {
     name: 'Charmyn Ho',
@@ -405,7 +402,8 @@ export const SpeakersInfoArray: Speaker[] = [
     location: 'Virtual',
     title: 'Head of Crypto Insights',
     organisation: 'Bybit',
-    description: "Charmyn is the Head of Crypto Insights at Bybit. She is very interested in technologies for social good, and firmly believes in the potential of web3 to shape a better and more equitable future for our societies. She started gaming at a young age of 5 when her father first brought home a PlayStation. She enjoys games of all genres which has led to her avid interest in all things GameFi, and would love to find a true product market fit for web3 elements within the gaming industry."
+    description:
+      'Charmyn is the Head of Crypto Insights at Bybit. She is very interested in technologies for social good, and firmly believes in the potential of web3 to shape a better and more equitable future for our societies. She started gaming at a young age of 5 when her father first brought home a PlayStation. She enjoys games of all genres which has led to her avid interest in all things GameFi, and would love to find a true product market fit for web3 elements within the gaming industry.',
   },
   {
     name: 'Miguel Antunes',

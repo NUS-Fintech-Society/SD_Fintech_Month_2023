@@ -66,7 +66,8 @@ export const MainHeading = chakra(Box, {
 export const Centralised = chakra(Flex, {
   baseStyle: {
     justifyContent: 'center',
-    align: 'center',
+    alignSelf: 'center',
+    marginBottom: { base: '10%', md: '5%', lg: '4%' },
     width: '100%',
   },
 });

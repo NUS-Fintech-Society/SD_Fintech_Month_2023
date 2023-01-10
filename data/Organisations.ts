@@ -17,9 +17,9 @@ export const Platinum: Organisation[] = [
 
 export const Gold: Organisation[] = [
   {
-    name: 'Vegas Solution',
-    logoSrc: '/Sponsor/vegassolution.png',
-    logoSize: '40px',
+    name: 'Altonomy',
+    logoSrc: '/Sponsor/altonomy_logo.png',
+    logoSize: '60px',
     url: 'https://www.altonomy.com/#/',
   },
   {
@@ -46,7 +46,7 @@ export const Silver: Organisation[] = [
   {
     name: 'Visa',
     logoSrc: '/Sponsor/visa-logo.png',
-    logoSize: '110px',
+    logoSize: '60px',
     url: 'https://www.visa.com.sg/',
   },
   {
@@ -99,7 +99,7 @@ export const Community: Organisation[] = [
   },
   {
     name: 'Angelhack',
-    logoSrc: '/Sponsor/angelhack_logo.jpeg',
+    logoSrc: '/Sponsor/angelhack_logo.png',
     logoSize: '60px',
     url: 'https://angelhack.com/',
   },
