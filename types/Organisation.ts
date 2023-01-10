@@ -1,7 +1,6 @@
 export type Organisation = {
   name: string;
   logoSrc: string;
-  logoHeight: string;
-  logoWidth: string;
+  logoSize: string;
   url: string;
 };
