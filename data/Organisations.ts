@@ -17,8 +17,8 @@ export const Platinum: Organisation[] = [
 
 export const Gold: Organisation[] = [
   {
-    name: 'Altonomy',
-    logoSrc: '/Sponsor/altonomy_logo.png',
+    name: 'Vegas Solution',
+    logoSrc: '/Sponsor/vegassolution.png',
     logoSize: '60px',
     url: 'https://www.altonomy.com/#/',
   },
