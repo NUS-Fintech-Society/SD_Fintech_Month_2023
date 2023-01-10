@@ -377,16 +377,16 @@ export const SpeakersInfoArray: Speaker[] = [
       "Quan Nguyen is a Senior Software Engineer building features for Coinbase's international expansion, and an advocate of Web3 and Blockchain technology.Prior to Coinbase, Quan led the Singapore AlgoDev team at Millennium Capital Management to build the firm's next generation low latency trading platform.",
   },
 
-  // {
-  //   name: 'Yu Chern Ong',
-  //   date: '11 Jan 2023',
-  //   time: '7pm - 8pm',
-  //   image: '/Speakers/YUCHERN.jpeg',
-  //   location: 'TBC',
-  //   title: 'Business Development Manager',
-  //   organisation: 'Moledao',
-  //   description: "YC is the Business Development Manager of Moledao, where he manages partnerships, strategy, marketing, social media and community. His professional career started off as an NFT Analyst where he has conducted market research to keep up to date with the latest NFT trends, keeping an eye out for potential investment opportunities and managing a portfolio of crypto & NFTs. An experienced growth lead for early-stage NFT projects, specializing in community building and management. YC is also well-trained in strategic planning and execution of web3 marketing campaigns for NFT marketplace and partnered projects."
-  // },
+  {
+    name: 'Yu Chern Ong',
+    date: '11 Jan 2023',
+    time: '7pm - 8pm',
+    image: '/Speakers/YUCHERN.jpeg',
+    location: 'TBC',
+    title: 'Business Development Manager',
+    organisation: 'Moledao',
+    description: "YC is the Business Development Manager of Moledao, where he manages partnerships, strategy, marketing, social media and community. His professional career started off as an NFT Analyst where he has conducted market research to keep up to date with the latest NFT trends, keeping an eye out for potential investment opportunities and managing a portfolio of crypto & NFTs. An experienced growth lead for early-stage NFT projects, specializing in community building and management. YC is also well-trained in strategic planning and execution of web3 marketing campaigns for NFT marketplace and partnered projects."
+  },
   {
     name: 'Yap Yow Chun',
     date: '16 Jan 2023',

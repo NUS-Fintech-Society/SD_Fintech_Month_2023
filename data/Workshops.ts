@@ -166,11 +166,26 @@ export const Workshops: Workshop[] = [
     description:
       "Vayne first entered the financial markets as a retail forex trader in 2008 and found success where many floundered. Among his skills are the ability to develop trading strategies, charts reading, risk management, and market analysis. In recent years, blockchain technology and cryptocurrency's meteoric rise piqued his interest and drove him headfirst into this burgeoning industry.",
   },
-
   {
     id: 15,
     day: 'Monday',
     date: 'Monday, 16 Jan',
+    time: '2.00pm - 3.00pm',
+    name: ' Crypto Wallet KYC - Building Trust',
+    organisation: 'Thought Machine',
+    speaker: 'Miguel Antunes',
+    venue: 'Virtual',
+    link: 'https://forms.gle/GZxfqr4ejvj7ZsDt9',
+    position: 'Site Reliability Engineer',
+    image: '/Workshops/thought_machine_logo.png',
+    description:
+      "Miguel has been working in cloud systems for the past 6 years. He has specialised recently in the observation of complex distributed systems and automation of Operational toil.",
+  },
+
+  {
+    id: 15,
+    day: 'Monday',
+    date: '',
     time: '6.30pm - 7.30pm',
     name: 'Web3 101',
     organisation: 'OCBC',
