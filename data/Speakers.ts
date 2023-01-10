@@ -407,4 +407,14 @@ export const SpeakersInfoArray: Speaker[] = [
     organisation: 'Bybit',
     description: "Charmyn is the Head of Crypto Insights at Bybit. She is very interested in technologies for social good, and firmly believes in the potential of web3 to shape a better and more equitable future for our societies. She started gaming at a young age of 5 when her father first brought home a PlayStation. She enjoys games of all genres which has led to her avid interest in all things GameFi, and would love to find a true product market fit for web3 elements within the gaming industry."
   },
+  {
+    name: 'Miguel Antunes',
+    date: '16 Jan 2023',
+    time: '2.00pm - 3.00pm',
+    image: '/Speakers/MIGUEL.jpeg',
+    location: 'Virtual',
+    title: 'Site Reliability Engineer',
+    organisation: 'Thought Machine',
+    description: "Miguel has been working in cloud systems for the past 6 years. He has specialised recently in the observation of complex distributed systems and automation of Operational toil."
+  },
 ];

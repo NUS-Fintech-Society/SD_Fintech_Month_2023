@@ -305,6 +305,23 @@ export const WeekEvents: WeekEvent[][] = [
       label: 'Fintech Month Hackathon',
     },
     {
+      id: 34,
+      date: '16 Jan',
+      time: '2.00PM-3.00PM',
+      title: 'Crypto Wallet KYC - Building Trust',
+      label: 'Workshop',
+      venue: 'Virtual',
+      speakerInfo: [
+        {
+          id: 0,
+          organisation: 'Thought Machine',
+          speaker: 'Miguel Antunes',
+          position: 'Site Reliability Engineer',
+          imageSrc: '/Speakers/MIGUEL.jpeg',
+        },
+      ],
+    },
+    {
       id: 28,
       date: '16 Jan',
       time: '6.30PM-7.30PM',
