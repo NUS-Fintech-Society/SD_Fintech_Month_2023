@@ -114,8 +114,6 @@ export const CustomModalFooter = chakra(ModalFooter, {
 export const QuizStatus = chakra(VStack, {
   baseStyle: {
     alignItems: 'center',
-    //padding: '2rem',
-    //px: { base: '5rem', md: '2rem' },
     fontWeight: 'bold',
     fontSize: { base: 'sm', md: 'md' },
   },
