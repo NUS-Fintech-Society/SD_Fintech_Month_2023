@@ -166,11 +166,25 @@ export const Workshops: Workshop[] = [
     description:
       "Vayne first entered the financial markets as a retail forex trader in 2008 and found success where many floundered. Among his skills are the ability to develop trading strategies, charts reading, risk management, and market analysis. In recent years, blockchain technology and cryptocurrency's meteoric rise piqued his interest and drove him headfirst into this burgeoning industry.",
   },
-
   {
     id: 15,
     day: 'Monday',
     date: 'Monday, 16 Jan',
+    time: '2.00pm - 3.00pm',
+    name: ' Crypto Wallet KYC - Building Trust',
+    organisation: 'Thought Machine',
+    speaker: 'Miguel Antunes',
+    venue: 'Virtual',
+    link: 'https://forms.gle/GZxfqr4ejvj7ZsDt9',
+    position: 'Site Reliability Engineer',
+    image: '/Workshops/thought_machine_logo.png',
+    description:
+      'Miguel has been working in cloud systems for the past 6 years. He has specialised recently in the observation of complex distributed systems and automation of Operational toil.',
+  },
+  {
+    id: 15,
+    day: 'Monday',
+    date: '',
     time: '6.30pm - 7.30pm',
     name: 'Web3 101',
     organisation: 'OCBC',
@@ -180,7 +194,7 @@ export const Workshops: Workshop[] = [
     position: 'Assistant Vice President, Fintech & Ecosystems',
     image: '/Workshops/OCBC.png',
     description:
-      "Celine specialises in fintech strategy, partnerships, ecosystems, and digital transformation at OCBC Bank Singapore, and has more than 5 years of experience in fintech regulations, ecosystem enablement, and program management. Previously a scholar then fintech regulator at Bank Negara Malaysia (BNM), Celine played a pioneering role in the region’s fintech development landscape, particularly in areas that are experiencing rapid innovation such as digital banking, embedded financing and payments. An engineer by training (MEng and BA, University of Cambridge), Celine has amassed both engineering and financial service work experiences in Malaysia, Singapore, and the United Kingdom (London and Newcastle).",
+      'Celine specialises in fintech strategy, partnerships, ecosystems, and digital transformation at OCBC Bank Singapore, and has more than 5 years of experience in fintech regulations, ecosystem enablement, and program management. Previously a scholar then fintech regulator at Bank Negara Malaysia (BNM), Celine played a pioneering role in the region’s fintech development landscape, particularly in areas that are experiencing rapid innovation such as digital banking, embedded financing and payments. An engineer by training (MEng and BA, University of Cambridge), Celine has amassed both engineering and financial service work experiences in Malaysia, Singapore, and the United Kingdom (London and Newcastle).',
   },
   {
     id: 15,
@@ -194,10 +208,8 @@ export const Workshops: Workshop[] = [
     link: 'https://docs.google.com/forms/d/1YNr0ph2pAWjPI1n05EeZSRlR0sFmZKjPyxoz7j2HZNs/edit',
     position: 'Software Engineer',
     image: '/Workshops/GECKO.png',
-    description:
-      "",
+    description: '',
   },
-
   {
     id: 15,
     day: 'Tuesday',
@@ -213,8 +225,6 @@ export const Workshops: Workshop[] = [
     description:
       'Li Li leads the Mastercard Global Fintech & Enablers program in Asia Pacific. She connects a network of innovators as she sources the globe for elite fintech, technology players, together with Mastercard and esteemed customers in Asia Pacific to co-create the future of commerce. She also provides guidance to customers to develop their own innovative, startup engagement strategies through her prowess on startup, fintech, investment and technology trends. Prior to this role, Li Li was a quantitative researcher in Standard Chartered and Nielsen looking into product innovation for over ten years. She continues to enjoy discovering the differentiated experiences fintech build to win their consumers. She graduated with a Bachelor of Science from the National University of Singapore, majoring in Statistics and minoring in Mathematics.',
   },
-
-
   {
     id: 10,
     day: 'Tuesday',
@@ -248,7 +258,7 @@ export const Workshops: Workshop[] = [
   {
     id: 5,
     day: 'Wednesday',
-    date: 'Wednesday, 18 Jan',
+    date: '',
     time: '7.30pm - 9.00pm',
     name: 'Why Enterprise Blockchain Implementations Fail',
     organisation: 'SettleMint',
@@ -288,7 +298,6 @@ export const Workshops: Workshop[] = [
     link: 'https://docs.google.com/forms/d/13z1xvOoFDXnIiMmPcBLf0p0rGyH07kKgXS0xOX6owjk/edit',
     position: 'Various Positions',
     image: '/Workshops/ARCANE.jpeg',
-    description:
-      '',
+    description: '',
   },
 ];
