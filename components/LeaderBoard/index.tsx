@@ -33,7 +33,7 @@ import { LeaderBoardMember } from '../../types/LeaderboardMember';
 const handleQuizButtonClick = (e: { preventDefault: () => void }) => {
   e.preventDefault();
   window.open(
-    'https://docs.google.com/forms/d/e/1FAIpQLScVdjKPeiICHWZeYYHWjohVNZThQlcSfyItMJlVezXXTKaUaw/viewform?usp=share_link/',
+    'https://docs.google.com/forms/d/1GPjaTzR1I6ghau5CXhk7l2ZHPkLfZZWWJ3IVB0XoIYY/edit',
   );
 };
 
@@ -68,8 +68,12 @@ function getOpenedState() {
     <>
       <QuizStatus spacing={5}>
         <div>
-          The weekly quiz will open on 11 Jan 2023, 12.00pm and close on 15 Jan
+          Weekly Quiz 2 will open on 18 Jan 2023, 12.00pm and close on 22 Jan
           2023, 11.59pm
+        </div>
+        <div>
+          Winners of Weekly Quiz 1 will be contacted separately via email. Do
+          keep a look out for the email!
         </div>
         <QuizButton onClick={handleQuizButtonClick}>Go to Quiz</QuizButton>
       </QuizStatus>
@@ -115,8 +119,8 @@ function getModalFooter() {
 
 export default function LeaderBoard() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  let results = true;
-  let quizOpen = false;
+  let results = false;
+  let quizOpen = true;
   let quizClosed = false;
 
   return (
