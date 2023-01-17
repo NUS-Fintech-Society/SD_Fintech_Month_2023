@@ -110,8 +110,8 @@ function getModalFooter() {
 
 export default function LeaderBoard() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  let results = false;
-  let quizOpen = true;
+  let results = true;
+  let quizOpen = false;
   let quizClosed = false;
 
   return (
