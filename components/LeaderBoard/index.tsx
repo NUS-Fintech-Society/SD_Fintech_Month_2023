@@ -78,23 +78,28 @@ function getOpenedState() {
 }
 
 function getSingleMember(member: LeaderBoardMember) {
-  return member.rank == 1 ? (
-    <Row color="#CFB53B" fontWeight={'bold'}>
-      <MemberDetail>{member.email}</MemberDetail>
-    </Row>
-  ) : member.rank == 2 ? (
-    <Row color="grey" fontWeight={'bold'}>
-      <MemberDetail>{member.email}</MemberDetail>
-    </Row>
-  ) : member.rank == 3 ? (
-    <Row color="#CD7F32" fontWeight={'bold'}>
-      <MemberDetail>{member.email}</MemberDetail>
-    </Row>
-  ) : (
+  return (
     <Row>
-      <MemberDetail>{member.email}</MemberDetail>
+      <MemberDetail fontWeight={'bold'}>{member.email}</MemberDetail>
     </Row>
   );
+  // member.rank == 1 ? (
+  //   <Row color="#CFB53B" fontWeight={'bold'}>
+  //     <MemberDetail>{member.email}</MemberDetail>
+  //   </Row>
+  // ) : member.rank == 2 ? (
+  //   <Row color="grey" fontWeight={'bold'}>
+  //     <MemberDetail>{member.email}</MemberDetail>
+  //   </Row>
+  // ) : member.rank == 3 ? (
+  //   <Row color="#CD7F32" fontWeight={'bold'}>
+  //     <MemberDetail>{member.email}</MemberDetail>
+  //   </Row>
+  // ) : (
+  //   <Row>
+  //     <MemberDetail fontWeight={'bold'}>{member.email}</MemberDetail>
+  //   </Row>
+  // );
 }
 
 function getModalFooter() {
