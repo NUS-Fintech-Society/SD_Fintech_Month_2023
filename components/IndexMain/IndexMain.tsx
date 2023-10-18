@@ -28,7 +28,7 @@ function ImportantDatesSection() {
 
   return (
     <div className="flex flex-col items-center justify-center space-y-6 h-full">
-      <div className="flex flex-col p-6 rounded-2xl shadow-xl bg-[#ffffffB3] ">
+      <div className="flex flex-col p-6 rounded-2xl shadow-xl bg-[#ffffffB3]">
         <Title fontSize={{ base: '2xl' }}>IMPORTANT DATES</Title>
         <UnorderedList className="px-2">
           {importantDates.map((date) => {
@@ -47,7 +47,7 @@ function ImportantDatesSection() {
           colorScheme="brand"
           fontWeight="bold"
           fontSize={{ base: 'md', lg: 'lg' }}
-          zIndex={'1000'}
+          zIndex={'40'}
           onClick={handleHackathonClick}
         >
           Hackathon
@@ -56,7 +56,7 @@ function ImportantDatesSection() {
           colorScheme="brand"
           fontWeight="bold"
           fontSize={{ base: 'md', lg: 'lg' }}
-          zIndex={'1000'}
+          zIndex={'40'}
           onClick={handleWorkshipClick}
         >
           Workshops
