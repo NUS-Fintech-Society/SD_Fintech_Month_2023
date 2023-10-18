@@ -6,6 +6,7 @@ import { defaultColors, defaultFont } from '../themes/default';
 import Footer from '../components/Footer';
 import Head from 'next/head';
 import { accordionTheme } from '../styles/Accordion';
+import { Box } from '@chakra-ui/react';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const t = defaultColors.tertiary1;
@@ -38,7 +39,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <NavigationBar />
       <Component {...pageProps} />
-      <Footer />
+      <Box position="relative">
+        <Footer />
+      </Box>
     </ChakraProvider>
   );
 }
