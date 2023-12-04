@@ -13,7 +13,7 @@ export const ModalButton = chakra(Button, {
     height: '40px',
     width: { base: '5rem', md: '6.5rem' },
     zIndex: '999',
-    bottom: '20px',
+    bottom: '67px',
     right: '20px',
     position: 'fixed',
     // borderRadius: '50%',
