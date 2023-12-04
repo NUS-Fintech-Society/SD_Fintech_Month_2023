@@ -5,6 +5,7 @@ import {
   FaGlobe,
   FaInstagram,
   FaLinkedinIn,
+  FaYoutube,
 } from 'react-icons/fa';
 
 type Props = {
@@ -43,6 +44,13 @@ export default function SocialMediaIcons(props: Props) {
         rel="noreferrer"
       >
         <FaFacebookF />
+      </a>
+      <a
+        href="https://www.youtube.com/@nusfintechsociety"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <FaYoutube />
       </a>
     </HStack>
   );
