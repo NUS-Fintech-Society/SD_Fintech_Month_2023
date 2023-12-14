@@ -38,7 +38,7 @@ export default function DesktopNavigationBar(props: Props) {
             <NextLink href={Routes.HOME} passHref>
               <Link>
                 <Image
-                  src="/FintechSocietyLogo.png"
+                  src="/fintechsoc-logo.png"
                   w="150px"
                   minWidth="150px"
                   alt=""
@@ -49,6 +49,9 @@ export default function DesktopNavigationBar(props: Props) {
           </HStack>
           <HStack spacing="20">
             <HStack spacing="10">
+              <Button variant="link" colorScheme="black">
+                HOME
+              </Button>
               <Menu>
                 <MenuButton
                   as={Button}
@@ -56,7 +59,7 @@ export default function DesktopNavigationBar(props: Props) {
                   rightIcon={<ChevronDownIcon />}
                   variant="link"
                 >
-                  Programme
+                  PROGRAMMES
                 </MenuButton>
                 <MenuList>
                   <MenuItem onClick={navigate(Routes.WEEKOVERVIEW)}>
@@ -80,7 +83,7 @@ export default function DesktopNavigationBar(props: Props) {
                   rightIcon={<ChevronDownIcon />}
                   variant="link"
                 >
-                  About
+                  ABOUT US
                 </MenuButton>
                 <MenuList>
                   <MenuItem onClick={navigate(Routes.ABOUT_US)}>
@@ -96,8 +99,9 @@ export default function DesktopNavigationBar(props: Props) {
                 colorScheme="black"
                 onClick={navigate(Routes.PARTNERS)}
               >
-                Partners
+                SPONSORS
               </Button>
+              {/*
               <Button
                 variant="link"
                 colorScheme="black"
@@ -105,9 +109,10 @@ export default function DesktopNavigationBar(props: Props) {
               >
                 FAQ
               </Button>
+              */}
             </HStack>
             <HackathonButton colorScheme="brand" onClick={hackathon}>
-              Hackathon
+              HACKATHON
             </HackathonButton>
           </HStack>
         </HStackContainer>

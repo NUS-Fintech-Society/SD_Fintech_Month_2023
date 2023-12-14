@@ -12,7 +12,8 @@ export const NavBarContainer = chakra(Box, {
     position: 'fixed',
     width: '100%',
     height: '100px',
-    background: 'white',
+    background: '#0c1747',
+    color: 'white',
     zIndex: 50,
   },
 });
@@ -55,7 +56,10 @@ export const HackathonButton = chakra(Button, {
   baseStyle: {
     width: '200px',
     height: '40px',
-    borderRadius: '20px',
+    borderStyle: 'solid',
+    borderWidth: '1px',
+    borderRadius: '10px',
+    borderColor: '#67C3C6',
   },
 });
 
