@@ -80,7 +80,18 @@ export default function IndexMain(props: Props) {
       />
       <div className="lg:grid lg:grid-cols-3 flex h-screen">
         <div className="lg:col-span-2 flex flex-col items-center justify-center h-full space-y-6 w-full">
-          <Title className="">NUS FINTECH MONTH 2023</Title>
+          <Title className="">
+            <div style={{ marginRight: '10px', marginTop: '70px' }}>
+              2 <br />
+              0 <br />
+              2 <br />4
+            </div>
+            <div style={{ marginLeft: '10px' }}>
+              NUS <br />
+              FINTECH <br />
+              SUMMIT
+            </div>
+          </Title>
           <Button
             onClick={scrollToThemePage}
             colorScheme="brand"

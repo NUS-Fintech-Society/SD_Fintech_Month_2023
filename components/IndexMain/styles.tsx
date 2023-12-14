@@ -4,8 +4,12 @@ export const Title = chakra(Box, {
   baseStyle: {
     fontWeight: 'bold',
     fontSize: '5xl',
-    color: 'brand.primary',
-    textAlign: 'center',
+    color: 'white',
+    textShadow: '0px 2px 3px #67C3C6',
+    textAlign: 'left',
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
   },
 });
 
