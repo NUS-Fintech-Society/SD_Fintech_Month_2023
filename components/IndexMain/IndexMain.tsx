@@ -7,6 +7,7 @@ import LeaderBoard from '../LeaderBoard';
 import { Title } from './styles';
 import WaterEffect from '../../public/WaterEffect.png';
 import LinesEffect from '../../public/LinesEffect.png';
+import RegisterButton from '../RegisterButton';
 
 type Props = {
   scrollToThemePage: () => void;
@@ -103,6 +104,7 @@ export default function IndexMain(props: Props) {
             Fintech-as-a-Service
           </Button>
           <CountdownTimer />
+          <RegisterButton />
         </div>
         <div className="hidden lg:flex lg:col-span-1 lg:h-full">
           <ImportantDatesSection />
