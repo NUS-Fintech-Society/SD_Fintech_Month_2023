@@ -5,10 +5,11 @@ import { Text, Box, chakra, Flex, Heading, Button } from '@chakra-ui/react';
 export const MorePageContainer = chakra(Flex, {
   baseStyle: {
     width: '100%',
-    height: '100vh',
+    height: '150vh',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: '#172554',
     // backgroundImage: `url(${BubbleBackground.src})`,
     // backgroundPosition: 'center',
     // backgroundSize: '90%',

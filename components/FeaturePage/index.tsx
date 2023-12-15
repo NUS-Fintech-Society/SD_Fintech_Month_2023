@@ -1,4 +1,4 @@
-import { SimpleGrid } from '@chakra-ui/react';
+import { AspectRatio, Center, SimpleGrid } from '@chakra-ui/react';
 import {
   HeadingContainer,
   MorePageHeading,
@@ -50,12 +50,19 @@ const FeaturePage = () => {
         alt="background image"
       />
       <HeadingContainer>
-        <MorePageHeading colorScheme="brand">
-          FTM 2023 in Numbers
+        <MorePageHeading colorScheme="brand" className="text-white">
+          Event By The Numbers
         </MorePageHeading>
       </HeadingContainer>
-
       <FeatureContainer>
+        <AspectRatio maxW="600px" ratio={1} height="350px">
+          <iframe
+            className="px-28 py-12"
+            title="fintech month 2023"
+            src="https://www.youtube.com/embed/j9sN3RVYQi4?si=VFkpNoih_WByEpWM"
+            allowFullScreen
+          />
+        </AspectRatio>
         <SimpleGrid columns={[2, 2, 2, 3]} spacing={10}>
           {Feature('300', 'Hackers', true)}
           {Feature('$30,000', 'in Prizes', false)}
