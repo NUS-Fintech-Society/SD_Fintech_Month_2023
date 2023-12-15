@@ -15,7 +15,7 @@ export const Timer = chakra('div', {
     zIndex: 1,
     marginTop: { base: '60px', md: '0px' },
     padding: { base: '3rem', md: '5rem' },
-    height: { base: '80px', md: '200px' },
+    height: { base: '30px', md: '40px' },
     width: { base: '340px', md: '540px' },
   },
 });

@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { importantDates } from '../../data/ImportantDates';
 import CountdownTimer from '../CountdownTimer/CountdownTimer';
 import LeaderBoard from '../LeaderBoard';
-import { Title } from './styles';
+import { SubTitle, Title } from './styles';
 import WaterEffect from '../../public/WaterEffect.png';
 import LinesEffect from '../../public/LinesEffect.png';
 import RegisterButton from '../RegisterButton';
@@ -71,7 +71,8 @@ export default function IndexMain(props: Props) {
   const { scrollToThemePage } = props;
 
   return (
-    <div className="lg:w-full relative">
+    <div className="lg:w-full relative" style={{ backgroundColor: '#172554' }}>
+      {/*
       <Image
         src={WaterEffect}
         objectFit="cover"
@@ -79,7 +80,8 @@ export default function IndexMain(props: Props) {
         className="h-screen w-full -z-10 absolute"
         alt="background image"
       />
-      <div className="lg:grid lg:grid-cols-3 flex h-screen">
+      */}
+      <div className="lg:grid lg:grid-cols-3 flex p-20 h-fit ml-80">
         <div className="lg:col-span-2 flex flex-col items-center justify-center h-full space-y-6 w-full">
           <Title className="">
             <div style={{ marginRight: '10px', marginTop: '70px' }}>
@@ -93,24 +95,23 @@ export default function IndexMain(props: Props) {
               SUMMIT
             </div>
           </Title>
-          <Button
-            onClick={scrollToThemePage}
-            colorScheme="brand"
-            fontWeight="bold"
-            fontSize="2xl"
-            rounded="3xl"
-            p="6"
-          >
-            Fintech-as-a-Service
-          </Button>
+          <SubTitle>
+            <div className="text-3x1">THEME: Fintech-As-A-Service</div>
+            <div className="text-base">
+              07 JAN - 19 JAN 2024 @ NATIONAL UNIVERSITY OF SINGAPORE
+            </div>
+          </SubTitle>
           <CountdownTimer />
           <RegisterButton />
         </div>
+      </div>
+      {/*
         <div className="hidden lg:flex lg:col-span-1 lg:h-full">
           <ImportantDatesSection />
         </div>
+        
       </div>
-
+      
       <div className="lg:hidden flex">
         <Image
           src={LinesEffect}
@@ -125,6 +126,7 @@ export default function IndexMain(props: Props) {
       </div>
 
       <LeaderBoard />
+      */}
     </div>
   );
 }

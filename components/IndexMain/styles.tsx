@@ -13,6 +13,14 @@ export const Title = chakra(Box, {
   },
 });
 
+export const SubTitle = chakra(Box, {
+  baseStyle: {
+    fontSize: '3xl',
+    color: 'white',
+    marginLeft: '300px',
+  },
+});
+
 export const ThemeButton = chakra(Button, {
   baseStyle: {
     // width: '200px',
