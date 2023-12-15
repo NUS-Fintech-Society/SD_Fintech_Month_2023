@@ -47,9 +47,11 @@ export const FeatureCard = chakra(Box, {
     h: { base: '120px', sm: '160px' },
     p: '15px',
     color: 'white',
-    bgColor: 'rgba(84, 110, 243, 0.7)',
+    bgColor: 'white',
+    borderColor: '#67C3C6',
     borderRadius: 'xl',
     borderStyle: 'solid',
+    borderWidth: '2px',
     _hover: {
       bgColor: 'white',
       border: '1.5px solid rgba(0, 0, 0, 0.2)',
@@ -64,6 +66,7 @@ export const FeatureCard = chakra(Box, {
 export const FeatureHeading = chakra(Heading, {
   baseStyle: {
     fontSize: { base: '3xl', md: '4xl' },
+    color: '#67C3C6',
   },
 });
 
@@ -79,6 +82,7 @@ export const FeatureSubHeading = chakra(Text, {
   baseStyle: {
     fontSize: { base: 'xl', md: '2xl' },
     fontWeight: 'bold',
+    color: 'black',
   },
 });
 

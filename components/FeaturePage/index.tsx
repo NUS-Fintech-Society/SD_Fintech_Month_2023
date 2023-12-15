@@ -64,19 +64,21 @@ const FeaturePage = () => {
           />
         </AspectRatio>
         <SimpleGrid columns={[2, 2, 2, 3]} spacing={10}>
-          {Feature('300', 'Hackers', true)}
-          {Feature('$30,000', 'in Prizes', false)}
-          {Feature('128', 'Hours', true)}
-          {Feature('30', 'Mentors', true)}
+          {Feature('40', 'Mentors', true)}
           {Feature('30', 'Speakers', true)}
-          {Feature('8', 'Sponsors', true)}
+          {Feature('400', 'Hackers', true)}
+          {Feature('$30,000', 'in Prizes', false)}
+          {Feature('256', 'Hours', true)}
+          {Feature('32', 'Sponsors', true)}
         </SimpleGrid>
       </FeatureContainer>
+      {/*
       <FAQSection>
         <FAQButton colorScheme="brand" onClick={handleClick}>
           Frequently Asked Questions <IoIosArrowForward size={25} />
         </FAQButton>
       </FAQSection>
+      */}
     </MorePageContainer>
   );
 };
