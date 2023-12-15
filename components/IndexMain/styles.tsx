@@ -10,6 +10,7 @@ export const Title = chakra(Box, {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
+    marginBottom: '0px',
   },
 });
 
@@ -17,7 +18,6 @@ export const SubTitle = chakra(Box, {
   baseStyle: {
     fontSize: '3xl',
     color: 'white',
-    marginLeft: '300px',
   },
 });
 

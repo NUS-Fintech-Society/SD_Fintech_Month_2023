@@ -98,7 +98,7 @@ export default function IndexMain(props: Props) {
           <SubTitle>
             <div className="text-3x1">THEME: Fintech-As-A-Service</div>
             <div className="text-base">
-              07 JAN - 19 JAN 2024 @ NATIONAL UNIVERSITY OF SINGAPORE
+              07 JAN - 19 JAN 2024 @ NATIONAL UNIVERSITY OF SINGAPORE{' '}
             </div>
           </SubTitle>
           <CountdownTimer />
