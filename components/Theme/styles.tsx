@@ -9,9 +9,10 @@ export const ThemePageContainer = chakra(Flex, {
     justifyContent: 'center',
     alignItems: 'center',
     margin: 'auto',
-    backgroundImage: `url(${MosaicEffect.src})`,
+    // backgroundImage: `url(${MosaicEffect.src})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
+    backgroundColor: '#172554',
   },
 });
 
