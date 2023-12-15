@@ -47,6 +47,24 @@ function About() {
           />
         </div>
       </div>
+      <div className="text-center text-white px-64">
+        <div className="text-2xl font-bold">About Fintech Summit</div>
+        <div className="text-left mb-2">
+          NUS Fintech Month constitutes a series of workshops and panel
+          discussions designed to give university and polytechnic students an
+          insight into the world of Fintech. The workshops range from beginner
+          to advance levels, allowing everyone to participate regardless of
+          background.
+        </div>
+        <div className="text-left">
+          Additionally, there will be a hackathon where a real-world problem
+          will be tackled using Fintech, thus demonstrating the usefulness of
+          this technology in a real world context. We are anticipating rapid
+          sign ups, with more than 300 students participating, so be sure to
+          register early with your team of 2 - 5 to ensure your slot is
+          reserved!
+        </div>
+      </div>
     </div>
   );
 }
