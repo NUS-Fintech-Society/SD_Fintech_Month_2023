@@ -62,16 +62,28 @@ export default function DesktopNavigationBar(props: Props) {
                   PROGRAMMES
                 </MenuButton>
                 <MenuList>
-                  <MenuItem onClick={navigate(Routes.WEEKOVERVIEW)}>
+                  <MenuItem
+                    onClick={navigate(Routes.WEEKOVERVIEW)}
+                    style={{ color: '#0C1747' }}
+                  >
                     Week Overview
                   </MenuItem>
-                  <MenuItem onClick={navigate(Routes.MENTORS)}>
+                  <MenuItem
+                    onClick={navigate(Routes.MENTORS)}
+                    style={{ color: '#0C1747' }}
+                  >
                     Mentors
                   </MenuItem>
-                  <MenuItem onClick={navigate(Routes.SPEAKERS)}>
+                  <MenuItem
+                    onClick={navigate(Routes.SPEAKERS)}
+                    style={{ color: '#0C1747' }}
+                  >
                     Speakers
                   </MenuItem>
-                  <MenuItem onClick={navigate(Routes.WORKSHOPS)}>
+                  <MenuItem
+                    onClick={navigate(Routes.WORKSHOPS)}
+                    style={{ color: '#0C1747' }}
+                  >
                     Workshops
                   </MenuItem>
                 </MenuList>
@@ -86,10 +98,16 @@ export default function DesktopNavigationBar(props: Props) {
                   ABOUT US
                 </MenuButton>
                 <MenuList>
-                  <MenuItem onClick={navigate(Routes.ABOUT_US)}>
+                  <MenuItem
+                    onClick={navigate(Routes.ABOUT_US)}
+                    style={{ color: '#0C1747' }}
+                  >
                     About Us
                   </MenuItem>
-                  <MenuItem onClick={navigate(Routes.CONTACT_US)}>
+                  <MenuItem
+                    onClick={navigate(Routes.CONTACT_US)}
+                    style={{ color: '#0C1747' }}
+                  >
                     Contact Us
                   </MenuItem>
                 </MenuList>

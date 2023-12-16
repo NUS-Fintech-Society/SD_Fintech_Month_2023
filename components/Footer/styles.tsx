@@ -24,7 +24,8 @@ export const FooterLeftContainer = chakra(Box, {
 // export the style <span style={{marginLeft: "5px", marginRight: "5px"}}>|</span>
 export const VerticalLine = chakra(Box, {
   baseStyle: {
-    marginLeft: '10px',
-    marginRight: '10px',
+    marginLeft: '20px',
+    marginRight: '20px',
+    height: '25px',
   },
 });
