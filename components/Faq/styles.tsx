@@ -14,6 +14,8 @@ export const FaqWrapper = chakra(Box, {
     //bgImage: `url(${SecondaryBackground.src})`,
     bgSize: 'cover',
     bgPosition: 'center',
+    color: 'white',
+    backgroundColor: '#20345B',
   },
 });
 
@@ -53,6 +55,10 @@ export const StyledPanel = styled(Panel)`
   background-color: white !important;
   color: white !important;
   border-bottom: 0px !important;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
 
   .ant-collapse-header {
     font-weight: bold;
@@ -60,10 +66,32 @@ export const StyledPanel = styled(Panel)`
     color: ${defaultColors.primary1.hexCode} !important;
     background-color: white !important;
     margin: 0px !important;
+    padding-bottom: 8px;
+    position: relative;
+
+    /* Pseudo-element for the line separator */
+    &::after {
+      content: '';
+      display: ${(props) =>
+        props.isActive
+          ? 'block'
+          : 'none'}; /* Show/hide line based on active state */
+      position: absolute;
+      bottom: 0;
+      left: 15px;
+      right: 15px;
+      height: 2px;
+      background-color: #0c1747;
+    }
   }
 
   .ant-collapse-content {
     background-color: white !important;
     font-size: 16px;
+    padding-top: 8px;
+  }
+
+  .ant-collapse-content-active {
+    padding-top: 16px;
   }
 `;

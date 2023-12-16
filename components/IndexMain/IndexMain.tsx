@@ -71,7 +71,7 @@ export default function IndexMain(props: Props) {
   const { scrollToThemePage } = props;
 
   return (
-    <div className="lg:w-full relative" style={{ backgroundColor: '#172554' }}>
+    <div className="lg:w-full relative" style={{ backgroundColor: '#20345B' }}>
       {/*
       <Image
         src={WaterEffect}

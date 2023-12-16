@@ -11,7 +11,7 @@ function About() {
   return (
     <div
       className="lg:h-screen min-h-screen flex flex-col items-center justify-center relative"
-      style={{ backgroundColor: '#172554' }}
+      style={{ backgroundColor: '#20345B' }}
     >
       <div className="flex flex-col lg:flex-row items-center justify-center relative lg:mx-16">
         <div className="p-4 md:p-6 my-4 w-3/4 lg:w-1/2">

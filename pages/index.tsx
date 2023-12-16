@@ -6,6 +6,7 @@ import Theme from '../components/Theme';
 import { useRef } from 'react';
 import ContactUs from '../components/ContactUs';
 import FeaturePage from '../components/FeaturePage';
+import Faq from '../components/Faq';
 
 const Home: NextPage = () => {
   const themePageRef = useRef<null | HTMLDivElement>(null);
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
       <Theme />
       <div ref={themePageRef} />
       <FeaturePage />
+      <Faq />
       <ContactUs />
     </VStack>
   );

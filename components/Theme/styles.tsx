@@ -12,7 +12,7 @@ export const ThemePageContainer = chakra(Flex, {
     // backgroundImage: `url(${MosaicEffect.src})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
-    backgroundColor: '#172554',
+    backgroundColor: '#20345B',
   },
 });
 

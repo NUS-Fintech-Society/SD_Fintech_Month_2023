@@ -3,15 +3,14 @@ import { Faq, FaqCategory } from '../types/Faq';
 const ceremonyFaq: FaqCategory[] = [
   {
     question: 'How do we sign up?',
-    answer:
-      `Sign-up links will be made available for attendance purposes when registration opens. You may retrieve the links from our social media (Instagram, Telegram, LinkedIn) and our website.`,
+    answer: `Sign-up links will be made available for attendance purposes when registration opens. You may retrieve the links from our social media (Instagram, Telegram, LinkedIn) and our website.`,
   },
   {
     question: 'What can I expect for the opening ceremony?',
     answer:
       'There will be panel discussions held by various companies such as AWS, ByBit, Visa, Thought Machine, and many more! Look forward to some interesting activities and goodie bags too! Last but not least, the live announcement of this year’s Hackathon problem statement!',
   },
-]
+];
 
 const hackathonFaq: FaqCategory[] = [
   {
@@ -20,7 +19,8 @@ const hackathonFaq: FaqCategory[] = [
       'NUS FinTech Month Hackathon 2023 is open to students from tertiary education institutes across the globe!',
   },
   {
-    question: 'Is there anything to take note of if I am participating from overseas?',
+    question:
+      'Is there anything to take note of if I am participating from overseas?',
     answer:
       'All workshops and seminars are still open for your participation, just remember to sign up (using the respective forms) for any that you are interested in and we will get in touch with you! If you qualify as a <b>finalist</b>, you (and your team) will be required to be <b>present physically</b> for our Demo Day.',
   },
@@ -182,6 +182,8 @@ const demoDayFaq: FaqCategory[] = [
   },
 ];
 
+const othersFaq: FaqCategory[] = [];
+
 export const Faqs: Faq[] = [
   {
     categoryName: 'Opening Ceremony',
@@ -198,5 +200,13 @@ export const Faqs: Faq[] = [
   {
     categoryName: 'Demo Day',
     data: demoDayFaq,
+  },
+  {
+    categoryName: 'Others',
+    data: othersFaq,
+  },
+  {
+    categoryName: 'Question not found? Contact Us',
+    data: othersFaq,
   },
 ];

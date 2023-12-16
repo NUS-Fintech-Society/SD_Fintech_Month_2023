@@ -9,7 +9,7 @@ export const MorePageContainer = chakra(Flex, {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#172554',
+    backgroundColor: '#20345B',
     // backgroundImage: `url(${BubbleBackground.src})`,
     // backgroundPosition: 'center',
     // backgroundSize: '90%',
