@@ -1,5 +1,7 @@
 import { Text, Flex, Box, Heading, Image, chakra } from '@chakra-ui/react';
 import MosaicEffect from '../../public/MosaicEffect.png';
+import ThemeBg from '../../public/ThemeBg.png';
+import { url } from 'inspector';
 
 export const ThemePageContainer = chakra(Flex, {
   baseStyle: {
@@ -42,6 +44,9 @@ export const TextBox = chakra(Box, {
     px: { sm: '10px', md: '60px' },
     bgColor: 'rgba(255, 255, 255, 0.95)',
     textAlign: 'justify',
+    backgroundImage: `url(${ThemeBg.src})`,
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
   },
 });
 

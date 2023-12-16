@@ -6,6 +6,7 @@ import AboutImage3 from '../../public/AboutImage3.png';
 import AboutImage2 from '../../public/AboutImage2.png';
 import AboutNewImage1 from '../../public/AboutNewImage1.png';
 import AboutNewImage2 from '../../public/AboutNewImage2.png';
+import TimelineSummit from '../../public/TimelineSummit.png';
 
 function About() {
   return (
@@ -47,6 +48,15 @@ function About() {
           />
         </div>
       </div>
+      <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+        <Image
+          alt="Mountains"
+          src={TimelineSummit}
+          layout="fill"
+          objectFit="contain"
+        />
+      </div>
+
       <div className="text-center text-white px-64">
         <div className="text-2xl font-bold">About Fintech Summit</div>
         <div className="text-left mb-2">

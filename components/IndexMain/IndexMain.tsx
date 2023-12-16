@@ -7,6 +7,7 @@ import LeaderBoard from '../LeaderBoard';
 import { SubTitle, Title } from './styles';
 import WaterEffect from '../../public/WaterEffect.png';
 import LinesEffect from '../../public/LinesEffect.png';
+import GreetingSection from '../../public/GreetingSection.png';
 import RegisterButton from '../RegisterButton';
 
 type Props = {
@@ -72,15 +73,13 @@ export default function IndexMain(props: Props) {
 
   return (
     <div className="lg:w-full relative" style={{ backgroundColor: '#20345B' }}>
-      {/*
       <Image
-        src={WaterEffect}
+        src={GreetingSection}
         objectFit="cover"
         layout="fill"
-        className="h-screen w-full -z-10 absolute"
+        className="h-screen w-full absolute"
         alt="background image"
       />
-      */}
       <div className="lg:grid lg:grid-cols-3 flex p-20 h-fit ml-80">
         <div className="lg:col-span-2 flex flex-col items-center justify-center h-full space-y-6 w-full">
           <Title className="">

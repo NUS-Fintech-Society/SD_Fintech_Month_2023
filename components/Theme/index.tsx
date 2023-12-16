@@ -7,6 +7,8 @@ import {
   ThemeHeading,
   ThemePageContainer,
 } from './styles';
+import Image from 'next/image';
+import ThemeBg from '../../public/ThemeBg.png';
 
 const Theme = () => {
   return (
