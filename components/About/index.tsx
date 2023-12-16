@@ -57,7 +57,7 @@ function About() {
         />
       </div>
 
-      <div className="text-center text-white px-64">
+      <div className="text-center text-white px-64 my-8">
         <div className="text-2xl font-bold">About Fintech Summit</div>
         <div className="text-left mb-2">
           NUS Fintech Month constitutes a series of workshops and panel
