@@ -33,9 +33,6 @@ export default function FaqComponent() {
         _selected={{
           color: '#7DCACF',
           fontWeight: 'bold',
-          textDecorationLine: 'underline',
-          textDecorationThickness: '1.5px',
-          textUnderlineOffset: '3px',
         }}
       >
         {tab.categoryName}

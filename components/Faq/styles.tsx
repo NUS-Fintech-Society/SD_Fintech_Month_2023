@@ -48,6 +48,9 @@ export const StyledTab = chakra(Tab, {
   baseStyle: {
     fontSize: { base: '15px', md: '20px' },
     pr: { base: '20px', md: '50px' },
+    textDecorationLine: 'underline',
+    textDecorationThickness: '1.5px',
+    textUnderlineOffset: '3px',
   },
 });
 
