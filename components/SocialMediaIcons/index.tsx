@@ -32,27 +32,27 @@ export default function SocialMediaIcons(props: Props) {
         target="_blank"
         rel="noreferrer"
       >
-        <FaLinkedinIn color="white" />
+        <FaLinkedinIn />
       </a>
       <a
         href="https://www.instagram.com/nusfintech/"
         target="_blank"
         rel="noreferrer"
       >
-        <FaInstagram color="white" />
+        <FaInstagram />
       </a>
       <a
         href="https://www.facebook.com/NUSfintech/"
         target="_blank"
         rel="noreferrer"
       >
-        <FaFacebookF color="white" />
+        <FaFacebookF />
       </a>
       <a href="" target="_blank" rel="noreferrer">
         <FaTelegramPlane color="white" />
       </a>
       <a href="" target="_blank" rel="noreferrer">
-        <FaYoutube color="white" />
+        <FaYoutube />
       </a>
     </HStack>
   );

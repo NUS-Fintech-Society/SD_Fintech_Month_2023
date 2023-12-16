@@ -45,7 +45,7 @@ export default function DesktopNavigationBar(props: Props) {
                 />
               </Link>
             </NextLink>
-            {isSmallScreen ? <></> : <SocialMediaIcons />}
+            {isSmallScreen ? <></> : <SocialMediaIcons color="white" />}
           </HStack>
           <HStack spacing="20">
             <HStack spacing="10">

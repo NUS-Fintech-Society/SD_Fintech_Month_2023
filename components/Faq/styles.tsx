@@ -91,6 +91,7 @@ export const StyledPanel = styled(Panel)`
   .ant-collapse-content {
     background-color: white !important;
     font-size: 16px;
+    color: #20345b;
     padding-top: 8px;
   }
 
