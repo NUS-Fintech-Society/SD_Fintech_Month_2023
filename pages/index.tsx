@@ -27,7 +27,7 @@ const Home: NextPage = () => {
       <div ref={themePageRef} />
       <FeaturePage />
       <Faq />
-      {/*<ContactUs />*/}
+      <ContactUs />
     </VStack>
   );
 };
