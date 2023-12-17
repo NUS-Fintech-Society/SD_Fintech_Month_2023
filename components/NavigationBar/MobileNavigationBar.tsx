@@ -21,7 +21,7 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 
 type Props = {
   navigate: Function;
-  hackathon: Function;
+  hackathon: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 };
 
 export default function MobileNavigationBar(props: Props) {

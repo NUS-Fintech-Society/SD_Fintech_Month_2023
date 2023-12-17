@@ -34,7 +34,7 @@ export default function ContactUsPage() {
   function setEmailValue(e: ChangeEvent<HTMLInputElement>) {
     setEmail(e.target.value);
   }
-  function setInquiryValue(e: ChangeEvent<HTMLInputElement>) {
+  function setInquiryValue(e: ChangeEvent<HTMLTextAreaElement>) {
     setInquiry(e.target.value);
   }
 

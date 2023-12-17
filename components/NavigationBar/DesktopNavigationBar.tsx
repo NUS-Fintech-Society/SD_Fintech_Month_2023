@@ -23,7 +23,7 @@ import { Routes } from '../../constants/Routes.enum';
 
 type Props = {
   navigate: Function;
-  hackathon: Function;
+  hackathon: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 };
 
 export default function DesktopNavigationBar(props: Props) {

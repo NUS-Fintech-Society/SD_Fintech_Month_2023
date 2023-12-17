@@ -43,6 +43,7 @@ export default function FaqComponent() {
     const accordions = tab.data.map((qns, index) => {
       return (
         <StyledPanel
+          isActive={false}
           header={qns.question}
           key={index}
           style={{ borderRadius: '10px', overflow: 'hidden' }}
@@ -58,7 +59,11 @@ export default function FaqComponent() {
           bordered={false}
           expandIcon={({ isActive }) => (
             <Icon
-              component={isActive ? UpCircleOutlined : DownCircleOutlined}
+              component={
+                isActive
+                  ? (UpCircleOutlined as React.ForwardRefExoticComponent<any>)
+                  : (DownCircleOutlined as React.ForwardRefExoticComponent<any>)
+              }
               style={{ fontSize: '20px', lineHeight: '20px' }}
             />
           )}

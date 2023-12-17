@@ -15,13 +15,18 @@ export default function NavigationBar() {
     };
   }
 
-  const handleHackathonClick = () => {
-    window.open('https://forms.gle/woaewfoX4pW9nJMZA')
+  const handleHackathonClick = (
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+  ) => {
+    window.open('https://forms.gle/woaewfoX4pW9nJMZA');
   };
 
   return isDesktop ? (
-    <DesktopNavigationBar navigate={navigate} hackathon={handleHackathonClick} />
+    <DesktopNavigationBar
+      navigate={navigate}
+      hackathon={handleHackathonClick}
+    />
   ) : (
-    <MobileNavigationBar navigate={navigate} hackathon={handleHackathonClick}/>
+    <MobileNavigationBar navigate={navigate} hackathon={handleHackathonClick} />
   );
 }

@@ -54,7 +54,7 @@ export const StyledTab = chakra(Tab, {
   },
 });
 
-export const StyledPanel = styled(Panel)`
+export const StyledPanel = styled(Panel)<{ isActive: boolean }>`
   background-color: white !important;
   color: white !important;
   border-bottom: 0px !important;

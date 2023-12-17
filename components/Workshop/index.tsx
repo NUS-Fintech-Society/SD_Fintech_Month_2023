@@ -83,6 +83,7 @@ function getSingleMobileWorkshopDetails(workshop: Workshop) {
 function getSingleDesktopWorkshopComponent(workshop: Workshop) {
   return (
     <EventContainer>
+      {/* @ts-ignore */}
       <DateLabel colorScheme="brand">{workshop.date}</DateLabel>
       <Event>
         <Row justify="center">
@@ -106,6 +107,7 @@ function getSingleDesktopWorkshopComponent(workshop: Workshop) {
 function getSingleMobileWorkshopComponent(workshop: Workshop) {
   return (
     <EventContainer>
+      {/* @ts-ignore */}
       <DateLabel colorScheme="brand">{workshop.date}</DateLabel>
       <Event>
         <WorkshopTitle>{workshop.name}</WorkshopTitle>
