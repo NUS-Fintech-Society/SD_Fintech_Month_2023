@@ -18,7 +18,7 @@ export const CountdownTimer = () => {
   const [eventOpen, setEventOpen] = useState(false);
 
   useEffect(() => {
-    const target = new Date('6 Jan 2023 00:00:00');
+    const target = new Date('7 Jan 2024 00:00:00');
 
     const interval = setInterval(() => {
       const now = new Date();
@@ -42,35 +42,39 @@ export const CountdownTimer = () => {
   }, []);
 
   return (
-    <Timer>
-      <TimerInner>
-        <TimerSegment>
-          <TimerText>0</TimerText>
-          <Label>Days</Label>
-        </TimerSegment>
+    <>
+      {!eventOpen && (
+        <Timer>
+          <TimerInner>
+            <TimerSegment>
+              <TimerText>{days}</TimerText>
+              <Label>Days</Label>
+            </TimerSegment>
 
-        <TimerDivider>:</TimerDivider>
+            <TimerDivider>:</TimerDivider>
 
-        <TimerSegment>
-          <TimerText>0</TimerText>
-          <Label>Hours</Label>
-        </TimerSegment>
+            <TimerSegment>
+              <TimerText>{hours}</TimerText>
+              <Label>Hours</Label>
+            </TimerSegment>
 
-        <TimerDivider>:</TimerDivider>
+            <TimerDivider>:</TimerDivider>
 
-        <TimerSegment>
-          <TimerText>0</TimerText>
-          <Label>Minutes</Label>
-        </TimerSegment>
+            <TimerSegment>
+              <TimerText>{minutes}</TimerText>
+              <Label>Minutes</Label>
+            </TimerSegment>
 
-        <TimerDivider>:</TimerDivider>
+            <TimerDivider>:</TimerDivider>
 
-        <TimerSegment>
-          <TimerText>00</TimerText>
-          <Label>Seconds</Label>
-        </TimerSegment>
-      </TimerInner>
-    </Timer>
+            <TimerSegment>
+              <TimerText>{seconds}</TimerText>
+              <Label>Seconds</Label>
+            </TimerSegment>
+          </TimerInner>
+        </Timer>
+      )}
+    </>
   );
 };
 

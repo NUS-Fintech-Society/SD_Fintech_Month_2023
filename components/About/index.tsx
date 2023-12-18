@@ -16,21 +16,21 @@ function About() {
     >
       <div className="flex flex-col lg:flex-row items-center justify-center relative lg:mx-16">
         <div className="p-4 md:p-6 my-4 w-3/4 lg:w-1/2">
-          <div className="text-[#001158] text-right mb-4 text-white">
+          <p className="text-right mb-4 text-white">
             NUS Fintech Month constitutes a series of workshops and panel
             discussions designed to give university and polytechnic students an
             insight into the world of Fintech. The workshops range from beginner
             to advanced levels, allowing everyone to participate regardless of
             background.
-          </div>
-          <div className="text-[#001158] text-right text-white">
+          </p>
+          <p className="text-right text-white">
             Additionally, there will be a hackathon where a real-world problem
             will be tackled using Fintech, thus demonstrating the usefulness of
             this technology in a real-world context. We are anticipating rapid
             sign-ups, with more than 300 students participating, so be sure to
             register early with your team of 2 - 5 to ensure your slot is
             reserved!
-          </div>
+          </p>
         </div>
         <div className="lg:w-1/2 lg:flex lg:flex-row lg:items-center lg:justify-center">
           <Image

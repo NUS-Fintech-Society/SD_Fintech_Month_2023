@@ -20,7 +20,7 @@ const Home: NextPage = () => {
   };
 
   return (
-    <VStack spacing={0}>
+    <VStack spacing={8} backgroundColor="#20345b">
       <IndexMain scrollToThemePage={scrollToThemePage} />
       <About />
       <Theme />

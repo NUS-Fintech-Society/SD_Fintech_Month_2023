@@ -1,11 +1,18 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
-import { ChakraProvider, extendTheme } from '@chakra-ui/react';
+import {
+  ChakraProvider,
+  extendTheme,
+  useBreakpointValue,
+} from '@chakra-ui/react';
 import NavigationBar from '../components/NavigationBar';
 import { defaultColors, defaultFont } from '../themes/default';
 import Footer from '../components/Footer';
 import Head from 'next/head';
 import { accordionTheme } from '../styles/Accordion';
+import { DeviceProvider } from '../constants/context';
+import { useEffect } from 'react';
+import Layout from '../Layout';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const t = defaultColors.tertiary1;
@@ -36,9 +43,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="description" content="NUS Fintech Month 2023" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <NavigationBar />
-      <Component {...pageProps} />
-      <Footer />
+
+      <Layout>
+        <Component {...pageProps} />
+        <Footer />
+      </Layout>
     </ChakraProvider>
   );
 }

@@ -42,13 +42,13 @@ const FeaturePage = () => {
 
   return (
     <MorePageContainer>
-      <Image
+      {/* <Image
         src={BubbleBackground}
         objectFit="cover"
         layout="fill"
         className="h-screen w-full -z-10 absolute"
         alt="background image"
-      />
+      /> */}
       <HeadingContainer>
         <MorePageHeading colorScheme="brand" className="text-white">
           Event By The Numbers

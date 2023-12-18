@@ -3,14 +3,11 @@ import { Box, chakra, Button } from '@chakra-ui/react';
 export const Title = chakra(Box, {
   baseStyle: {
     fontWeight: 'bold',
-    fontSize: '5xl',
+    fontSize: '6xl',
     color: 'white',
-    textShadow: '0px 2px 3px #67C3C6',
+    textShadow: '0px 2px 6px #67C3C6',
     textAlign: 'left',
     display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: '0px',
   },
 });
 
