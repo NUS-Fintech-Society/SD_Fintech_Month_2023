@@ -1,4 +1,4 @@
-import { useBreakpointValue } from '@chakra-ui/react';
+import { calc, useBreakpointValue } from '@chakra-ui/react';
 import { ReactElement, createContext } from 'react';
 import NavigationBar from '../components/NavigationBar';
 import { DeviceProvider } from '../constants/context';
@@ -10,9 +10,11 @@ export default function Layout({ children }: { children: ReactElement[] }) {
     <DeviceProvider.Provider value={{ isDesktop: isDesktop ?? false }}>
       <NavigationBar />
       <main
-        className={`absolute w-screen ${
-          isDesktop ? 'mt-[100px]' : 'mt-[70px]'
-        }`}
+        style={{
+          position: 'relative',
+          width: '100vw',
+          marginTop: isDesktop ? '100px' : '70px',
+        }}
       >
         {children}
       </main>

@@ -10,13 +10,14 @@ import {
 
 const Theme = () => {
   return (
-    <ThemePageContainer>
-      <HeadingContainer>
+    <div className="flex flex-col items-center justify-center relative gap-4">
+      <div>
         <ThemeHeading colorScheme="brand" className="text-white">
           Theme
         </ThemeHeading>
-      </HeadingContainer>
-      <Centralised>
+      </div>
+
+      <div className="lg:w-1/2 sm:px-20">
         <TextBox>
           <MainHeading>
             Fintech-As-A-<span style={{ color: '#67C3C6' }}>Service</span>
@@ -29,8 +30,8 @@ const Theme = () => {
             applications, products, and services.
           </SubHeading>
         </TextBox>
-      </Centralised>
-    </ThemePageContainer>
+      </div>
+    </div>
   );
 };
 

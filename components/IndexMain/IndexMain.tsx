@@ -74,10 +74,10 @@ export default function IndexMain(props: Props) {
 
   return (
     <div
-      className={`h-[calc(100vh-${
-        isDesktop ? '100px' : '70px'
-      })] w-screen h-screen flex relative justify-center items-center`}
-      style={{ backgroundColor: '#20345B' }}
+      style={{
+        height: isDesktop ? 'calc(100vh - 100px)' : 'calc(100vh - 70px)',
+      }}
+      className="w-screen flex relative justify-center items-center"
     >
       <Image
         src={GreetingSection}
@@ -87,9 +87,7 @@ export default function IndexMain(props: Props) {
       />
 
       <div
-        className={`flex flex-col w-full h-full items-center justify-center space-y-12 ${
-          isDesktop ? 'mb-[100px]' : 'mb-[70px]'
-        } mx-8`}
+        className={`flex flex-col w-full h-full items-center justify-center space-y-12 mx-8`}
       >
         <div className="flex gap-12 leading-tight">
           <Title className="flex flex-col">

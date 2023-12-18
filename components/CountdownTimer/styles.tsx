@@ -48,7 +48,6 @@ export const TimerSegment = chakra('div', {
   baseStyle: {
     color: '#142778',
     display: 'flex',
-    gap: '3px',
     flexDirection: 'column',
     textAlign: 'center',
     fontWeight: 'medium',

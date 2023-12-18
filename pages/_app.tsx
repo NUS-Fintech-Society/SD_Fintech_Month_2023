@@ -5,13 +5,10 @@ import {
   extendTheme,
   useBreakpointValue,
 } from '@chakra-ui/react';
-import NavigationBar from '../components/NavigationBar';
 import { defaultColors, defaultFont } from '../themes/default';
 import Footer from '../components/Footer';
 import Head from 'next/head';
 import { accordionTheme } from '../styles/Accordion';
-import { DeviceProvider } from '../constants/context';
-import { useEffect } from 'react';
 import Layout from '../Layout';
 
 function MyApp({ Component, pageProps }: AppProps) {

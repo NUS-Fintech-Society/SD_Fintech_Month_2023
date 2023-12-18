@@ -76,7 +76,7 @@ export default function FaqComponent() {
   });
 
   return (
-    <FaqWrapper>
+    <FaqWrapper className="px-32">
       <Header>{title}</Header>
       <ContentWrapper>
         <Content>

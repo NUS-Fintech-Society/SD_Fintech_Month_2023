@@ -9,7 +9,7 @@ const { Panel } = Collapse;
 export const FaqWrapper = chakra(Box, {
   baseStyle: {
     width: '100%',
-    minHeight: { base: 'calc(100vh - 130px)', md: 'calc(100vh - 160px)' },
+    // minHeight: { base: 'calc(100vh - 130px)', md: 'calc(100vh - 160px)' },
     justifyContent: 'center',
     //bgImage: `url(${SecondaryBackground.src})`,
     bgSize: 'cover',

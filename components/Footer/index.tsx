@@ -6,7 +6,6 @@ import { Routes } from '../../constants/Routes.enum';
 import { Image, Link, Divider } from '@chakra-ui/react';
 
 export default function Footer() {
-  <span style={{ marginLeft: '5px', marginRight: '5px' }}>|</span>;
   return (
     <FooterContainer>
       <FooterLeftContainer>
@@ -17,8 +16,8 @@ export default function Footer() {
             borderWidth="1px"
             orientation="vertical"
           />
-        </VerticalLine>{' '}
-        © 2023 NUS FINTECH SOCIETY
+        </VerticalLine>
+        <p className="sm:text-xs text-md">© 2023 NUS FINTECH SOCIETY</p>
         <VerticalLine>
           <Divider
             borderColor="white"
@@ -26,7 +25,7 @@ export default function Footer() {
             orientation="vertical"
           />
         </VerticalLine>
-        ALL RIGHTS RESERVED
+        <p className="sm:text-xs text-md">ALL RIGHTS RESERVED</p>
       </FooterLeftContainer>
       <NextLink href={Routes.HOME} passHref>
         <Link>

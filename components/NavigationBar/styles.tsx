@@ -15,6 +15,7 @@ export const NavBarContainer = chakra(Box, {
     background: '#0c1747',
     color: 'white',
     zIndex: 50,
+    top: 0,
   },
 });
 
@@ -33,6 +34,7 @@ export const MobileNavBarContainer = chakra(Box, {
     height: '70px',
     background: 'white',
     zIndex: 10,
+    top: 0,
   },
 });
 
