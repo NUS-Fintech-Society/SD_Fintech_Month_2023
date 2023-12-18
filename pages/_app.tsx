@@ -10,6 +10,7 @@ import Footer from '../components/Footer';
 import Head from 'next/head';
 import { accordionTheme } from '../styles/Accordion';
 import Layout from '../Layout';
+import { Box } from '@chakra-ui/react';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const t = defaultColors.tertiary1;
@@ -40,7 +41,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="description" content="NUS Fintech Month 2023" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Layout>
         <Component {...pageProps} />
         <Footer />
