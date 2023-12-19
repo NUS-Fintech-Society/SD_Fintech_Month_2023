@@ -78,12 +78,12 @@ export default function DesktopNavigationBar(props: Props) {
                   >
                     Panel Discussions
                   </MenuItem>
-                  <MenuItem
+                  {/* <MenuItem
                     onClick={navigate(Routes.SPEAKERS)}
                     style={{ color: '#0C1747' }}
                   >
                     Speakers
-                  </MenuItem>
+                  </MenuItem> */}
                   <MenuItem
                     onClick={navigate(Routes.WORKSHOPS)}
                     style={{ color: '#0C1747' }}

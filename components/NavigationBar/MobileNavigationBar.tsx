@@ -57,7 +57,7 @@ export default function MobileNavigationBar(props: Props) {
               <MenuItem onClick={navigate(Routes.PANEL_DISCUSSIONS)}>
                 Panel Discussions
               </MenuItem>
-              <MenuItem onClick={navigate(Routes.SPEAKERS)}>Speakers</MenuItem>
+              {/* <MenuItem onClick={navigate(Routes.SPEAKERS)}>Speakers</MenuItem> */}
               <MenuItem onClick={navigate(Routes.WORKSHOPS)}>
                 Workshops
               </MenuItem>
