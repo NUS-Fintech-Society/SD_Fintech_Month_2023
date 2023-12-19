@@ -51,10 +51,12 @@ export default function MobileNavigationBar(props: Props) {
             <MenuList>
               <MenuItem onClick={navigate(Routes.HOME)}>Home</MenuItem>
               <MenuDivider />
-              <MenuItem onClick={navigate(Routes.WEEKOVERVIEW)}>
+              {/* <MenuItem onClick={navigate(Routes.WEEKOVERVIEW)}>
                 Week Overview
+              </MenuItem> */}
+              <MenuItem onClick={navigate(Routes.PANEL_DISCUSSIONS)}>
+                Panel Discussions
               </MenuItem>
-              <MenuItem onClick={navigate(Routes.MENTORS)}>Mentors</MenuItem>
               <MenuItem onClick={navigate(Routes.SPEAKERS)}>Speakers</MenuItem>
               <MenuItem onClick={navigate(Routes.WORKSHOPS)}>
                 Workshops
@@ -68,8 +70,8 @@ export default function MobileNavigationBar(props: Props) {
 
               <MenuDivider />
               <MenuItem onClick={navigate(Routes.PARTNERS)}>Partners</MenuItem>
-              {/* <MenuDivider /> */}
-              {/* <MenuItem onClick={navigate(Routes.FAQ)}>FAQ</MenuItem> */}
+              <MenuDivider />
+              <MenuItem onClick={navigate(Routes.FAQ)}>FAQ</MenuItem>
               <MenuDivider />
               <MobileHackathonButton onClick={hackathon}>
                 Hackathon Signup

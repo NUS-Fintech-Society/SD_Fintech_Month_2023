@@ -81,7 +81,7 @@ export default function FaqComponent() {
       <ContentWrapper>
         <Content>
           <Tabs variant="unstyled" size="lg">
-            <TabList>{headers}</TabList>
+            <TabList justifyContent="center">{headers}</TabList>
             <TabPanels>{content}</TabPanels>
           </Tabs>
         </Content>

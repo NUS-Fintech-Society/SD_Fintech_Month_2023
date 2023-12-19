@@ -66,17 +66,17 @@ export default function DesktopNavigationBar(props: Props) {
                   PROGRAMMES
                 </MenuButton>
                 <MenuList>
-                  <MenuItem
+                  {/* <MenuItem
                     onClick={navigate(Routes.WEEKOVERVIEW)}
                     style={{ color: '#0C1747' }}
                   >
                     Week Overview
-                  </MenuItem>
+                  </MenuItem> */}
                   <MenuItem
-                    onClick={navigate(Routes.MENTORS)}
+                    onClick={navigate(Routes.PANEL_DISCUSSIONS)}
                     style={{ color: '#0C1747' }}
                   >
-                    Mentors
+                    Panel Discussions
                   </MenuItem>
                   <MenuItem
                     onClick={navigate(Routes.SPEAKERS)}
@@ -124,7 +124,7 @@ export default function DesktopNavigationBar(props: Props) {
               >
                 SPONSORS
               </Button>
-              {/*
+
               <Button
                 variant="link"
                 colorScheme="black"
@@ -132,7 +132,6 @@ export default function DesktopNavigationBar(props: Props) {
               >
                 FAQ
               </Button>
-              */}
             </HStack>
             <HackathonButton colorScheme="brand" onClick={hackathon}>
               HACKATHON
