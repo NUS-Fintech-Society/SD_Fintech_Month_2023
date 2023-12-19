@@ -55,12 +55,11 @@ const FeaturePage = () => {
 
         <div className="mt-8">
           <SimpleGrid columns={[2, 2, 2, 3]} spacing={10}>
-            {Feature('40', 'Mentors', true)}
-            {Feature('30', 'Speakers', true)}
-            {Feature('400', 'Hackers', true)}
-            {Feature('$30,000', 'in Prizes', false)}
-            {Feature('256', 'Hours', true)}
-            {Feature('32', 'Sponsors', true)}
+            {Feature('8', 'Speakers', true)}
+            {/* {Feature('400', 'Hackers', true)} */}
+            {Feature('$40,000', 'in Prizes', false)}
+            {/* {Feature('256', 'Hours', true)} */}
+            {Feature('12', 'Sponsors', true)}
           </SimpleGrid>
         </div>
       </div>

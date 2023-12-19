@@ -1,4 +1,4 @@
-export type Organisation = {
+export type Organization = {
   name: string;
   logoSrc: string;
   logoHeight: string;
