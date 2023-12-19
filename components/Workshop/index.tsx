@@ -1,149 +1,197 @@
-import {
-  Row,
-  MobileBottom,
-  DetailContainer,
-  MobileTop,
-  RightContent,
-  WorkshopContainer,
-  WorkshopDetails,
-  HeadingContainer,
-  WorkshopHeading,
-  EventContainer,
-  Event,
-  DateLabel,
-  WorkshopTitle,
-  WorkshopSpeaker,
-  SpeakerImage,
-  SpeakerLabel,
-  WorkshopDescription,
-  RegisterButton,
-  CenterContent,
-  DetailLabel,
-} from './styles';
+import { Badge } from '@chakra-ui/react';
+import Image from 'next/image';
 import { Workshops } from '../../data/Workshops';
 import { Workshop } from '../../types/Workshop';
+import {
+  EventContainer,
+  HeadingContainer,
+  SpeakerImage,
+  SpeakerLabel,
+  WorkshopContainer,
+  WorkshopHeading,
+} from './styles';
+import { useContext } from 'react';
+import { DeviceProvider } from '../../constants/context';
 
-function getSingleDesktopWorkshopSpeaker(workshop: Workshop) {
-  return (
-    <WorkshopSpeaker>
-      <SpeakerLabel fontWeight={'bold'}>{workshop.organisation}</SpeakerLabel>
-      <SpeakerImage
-        src={workshop.image}
-        fallbackSrc="https://via.placeholder.com/150"
-      />
-      <SpeakerLabel fontWeight={'bold'}>{workshop.speaker}</SpeakerLabel>
-      <SpeakerLabel>{workshop.position}</SpeakerLabel>
-    </WorkshopSpeaker>
-  );
-}
+function SingleDesktopWorkshopComponent({ workshop }: { workshop: Workshop }) {
+  const { isDesktop } = useContext(DeviceProvider);
 
-function getSingleMobileWorkshopSpeaker(workshop: Workshop) {
   return (
-    <Row>
-      <SpeakerImage
-        src={workshop.image}
-        fallbackSrc="https://via.placeholder.com/150"
-      />
-      <WorkshopSpeaker>
-        {/* <Row justifyContent={'space-evenly'}>s */}
-        <SpeakerLabel fontWeight={'bold'}>{workshop.organisation}</SpeakerLabel>
-        <SpeakerLabel>{workshop.speaker}</SpeakerLabel>
-        {/* </Row> */}
-        <SpeakerLabel>{workshop.position}</SpeakerLabel>
-      </WorkshopSpeaker>
-    </Row>
-  );
-}
+    <EventContainer
+      className={workshop.organization.includes('(TBC)') ? 'grayscale' : ''}
+    >
+      <div className="bg-white w-full h-full rounded-lg p-6">
+        <div className="flex w-full justify-between items-center mb-6">
+          <div className="font-bold text-lg">
+            {workshop.name ?? 'Topic: TBC'}
+          </div>
+          <Badge
+            borderRadius="full"
+            px="2"
+            borderColor="red"
+            borderWidth="1px"
+            fontWeight={'bold'}
+            backgroundColor="white"
+            dropShadow="lg"
+          >
+            Workshop
+          </Badge>
+        </div>
 
-function getSingleDesktopWorkshopDetails(workshop: Workshop) {
-  return (
-    <WorkshopDetails>
-      <DetailLabel>Time:</DetailLabel>
-      {workshop.time}
-      <DetailLabel>Venue:</DetailLabel>
-      {workshop.venue}
-    </WorkshopDetails>
-  );
-}
-function getSingleMobileWorkshopDetails(workshop: Workshop) {
-  return (
-    <WorkshopDetails>
-      <DetailContainer>
-        <DetailLabel>Time:</DetailLabel>
-        {workshop.time}
-      </DetailContainer>
-      <DetailContainer>
-        <DetailLabel>Venue:</DetailLabel>
-        {workshop.venue}
-      </DetailContainer>
-    </WorkshopDetails>
-  );
-}
+        <div className="flex justify-between items-center">
+          <div className="flex w-full justify-between items-center">
+            <div className="flex flex-col w-[32%] h-30 px-4 justify-between items-center">
+              {workshop.logo && (
+                <a
+                  href={workshop.logo.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  {...(workshop.organization.includes('Tokka Labs') && {
+                    className:
+                      'bg-[#0C1747] rounded-lg shadow-lg px-4 py-2 w-fit h-full flex justify-center items-center',
+                  })}
+                >
+                  <Image
+                    src={workshop.logo.src}
+                    alt={workshop.organization}
+                    width={workshop.logo.width}
+                    height={workshop.logo.height}
+                  />
+                </a>
+              )}
+              <div className="font-bold text-center text-xs">
+                Organization: {workshop.organization}
+              </div>
+            </div>
 
-function getSingleDesktopWorkshopComponent(workshop: Workshop) {
-  return (
-    <EventContainer>
-      {/* @ts-ignore */}
-      <DateLabel colorScheme="brand">{workshop.date}</DateLabel>
-      <Event>
-        <Row justify="center">
-          {getSingleDesktopWorkshopSpeaker(workshop)}
-          <CenterContent>
-            <WorkshopTitle fontWeight={'bold'}>{workshop.name}</WorkshopTitle>
-            <WorkshopDescription>{workshop.description}</WorkshopDescription>
-          </CenterContent>
-          <RightContent>
-            {getSingleDesktopWorkshopDetails(workshop)}
-            <RegisterButton>
-              <a href={workshop.link}>Register</a>
-            </RegisterButton>
-          </RightContent>
-        </Row>
-      </Event>
-    </EventContainer>
-  );
-}
+            <div className="flex gap-4">
+              {workshop.speaker.length > 0 ? (
+                workshop.speaker.map((speaker, index) => (
+                  <div
+                    key={index}
+                    className="flex flex-col h-full justify-center items-center w-28"
+                  >
+                    <SpeakerImage
+                      src={workshop.image}
+                      fallbackSrc="https://via.placeholder.com/150"
+                    />
 
-function getSingleMobileWorkshopComponent(workshop: Workshop) {
-  return (
-    <EventContainer>
-      {/* @ts-ignore */}
-      <DateLabel colorScheme="brand">{workshop.date}</DateLabel>
-      <Event>
-        <WorkshopTitle>{workshop.name}</WorkshopTitle>
-        <MobileTop>
-          {getSingleMobileWorkshopSpeaker(workshop)}
-          {getSingleMobileWorkshopDetails(workshop)}
-        </MobileTop>
-        <MobileBottom>
-          <WorkshopDescription>{workshop.description}</WorkshopDescription>
-          <RegisterButton>
-            <a href={workshop.link}>Register</a>
-          </RegisterButton>
-        </MobileBottom>
-      </Event>
+                    <SpeakerLabel fontWeight={'bold'} className="text-center">
+                      {speaker.name}
+                    </SpeakerLabel>
+                    <SpeakerLabel className="text-center">
+                      {speaker.position}
+                    </SpeakerLabel>
+                  </div>
+                ))
+              ) : (
+                <div className="flex flex-col h-full justify-center items-center w-28">
+                  <SpeakerLabel fontWeight={'bold'} className="text-center">
+                    Speaker: TBC
+                  </SpeakerLabel>
+                </div>
+              )}
+            </div>
+
+            {isDesktop && (
+              <div>
+                <div className="flex">
+                  <p className="font-bold">Date:</p>
+                  <p className="font-normal ml-2">{workshop.date}</p>
+                </div>
+                <div className="flex">
+                  <p className="font-bold">Time:</p>
+                  <p className="font-normal ml-2">{workshop.time}</p>
+                </div>
+                <div className="flex">
+                  <p className="font-bold">Venue:</p>
+                  <p className="font-normal ml-2">{workshop.venue ?? 'TBD'}</p>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+        {!isDesktop && (
+          <div className="flex justify-between items-center mt-4">
+            <div className="flex flex-col gap-2">
+              <div className="flex">
+                <p className="font-bold">Date:</p>
+                <p className="font-normal ml-2">{workshop.date}</p>
+              </div>
+              <div className="flex">
+                <p className="font-bold">Time:</p>
+                <p className="font-normal ml-2">{workshop.time}</p>
+              </div>
+            </div>
+
+            <div className="flex">
+              <p className="font-bold">Venue:</p>
+              <p className="font-normal ml-2">{workshop.venue ?? 'TBD'}</p>
+            </div>
+          </div>
+        )}
+      </div>
     </EventContainer>
   );
 }
 
 function renderAllDesktopWorkshops() {
   return (
-    <WorkshopContainer>
+    <WorkshopContainer className="bg-[#20345b]">
       <HeadingContainer>
-        <WorkshopHeading>WORKSHOPS</WorkshopHeading>
+        <h1 className="text-white mb-20 text-4xl font-bold">
+          Workshops (10 - 12 Jan 2024)
+        </h1>
       </HeadingContainer>
-      {Workshops.map((workshop) => getSingleDesktopWorkshopComponent(workshop))}
+
+      <div className="flex flex-col w-full justify-center items-center gap-10">
+        {Object.entries(Workshops).map(([date, { link, workshops }], i) => {
+          return (
+            <div
+              key={i}
+              className="flex flex-col w-full justify-center items-center gap-6"
+            >
+              <h1 className="text-white text-3xl font-medium">
+                Day {i + 1} ({date})
+              </h1>
+              <button className="bg-[#67C3C6] relative rounded-lg h-10 w-[70%]">
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex h-full w-full justify-center items-center"
+                >
+                  Register
+                </a>
+              </button>
+              {workshops.map((workshop, j) => (
+                <SingleDesktopWorkshopComponent key={j} workshop={workshop} />
+              ))}
+            </div>
+          );
+        })}
+      </div>
     </WorkshopContainer>
   );
 }
 
 function renderAllMobileWorkshops() {
   return (
-    <WorkshopContainer>
+    <WorkshopContainer className="bg-[#20345b]">
       <HeadingContainer>
-        <WorkshopHeading>WORKSHOPS</WorkshopHeading>
+        <WorkshopHeading>Workshops</WorkshopHeading>
       </HeadingContainer>
-      {Workshops.map((workshop) => getSingleMobileWorkshopComponent(workshop))}
+      <div>
+        {Object.entries(Workshops).map(([date, { link, workshops }], i) => {
+          return (
+            <div key={i}>
+              {workshops.map((workshop, j) => (
+                <SingleDesktopWorkshopComponent key={j} workshop={workshop} />
+              ))}
+            </div>
+          );
+        })}
+      </div>
     </WorkshopContainer>
   );
 }

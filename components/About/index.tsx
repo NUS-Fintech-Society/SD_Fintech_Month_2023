@@ -11,12 +11,8 @@ import { useContext } from 'react';
 import { DeviceProvider } from '../../constants/context';
 
 function About() {
-  const { isDesktop } = useContext(DeviceProvider);
-
   return (
-    <div
-      className={` min-h-screen w-screen flex flex-col items-center justify-center relative`}
-    >
+    <div className="min-h-screen w-screen flex flex-col items-center justify-center relative">
       <div className="flex flex-col lg:flex-row items-center justify-center relative lg:mx-16">
         <div className="flex flex-col p-4 md:p-6 my-4 w-3/4 lg:w-1/2 lg:items-end justify-center">
           <p className="lg:text-right mb-4 text-white lg:w-3/4">
@@ -49,13 +45,7 @@ function About() {
         </div>
       </div>
       <div className="flex w-full h-full justify-center sm:px-20 sm:py-12 md:py-10 px-12 mt-12">
-        <Image
-          alt="Timeline"
-          src={TimelineSummit}
-          // layout="fill"
-          // objectFit="contain"
-          className="object-contain"
-        />
+        <Image alt="Timeline" src={TimelineSummit} className="object-contain" />
       </div>
 
       <div className="flex flex-col text-center text-white w-3/4 2xl:w-1/2 gap-2 2xl:px-20 xl:px-16 mt-14">

@@ -40,7 +40,7 @@ export const TextBox = chakra(Box, {
     alignItems: 'center',
     justifyContent: 'center',
     height: { sm: '24vh', md: '38vh', xl: '38vh' },
-    // width: '100%',
+    width: '100%',
     px: { sm: '10px', md: '60px' },
     bgColor: 'rgba(255, 255, 255, 0.95)',
     textAlign: 'justify',

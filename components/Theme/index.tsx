@@ -10,14 +10,14 @@ import {
 
 const Theme = () => {
   return (
-    <div className="flex flex-col items-center justify-center relative gap-4">
+    <div className="flex w-3/4 2xl:w-1/2 2xl:px-20 xl:px-16 mt-8 flex-col items-center justify-center relative gap-4">
       <div>
         <ThemeHeading colorScheme="brand" className="text-white">
           Theme
         </ThemeHeading>
       </div>
 
-      <div className="lg:w-4/5 sm:px-20 px-12">
+      <div className="w-full">
         <TextBox className="py-4">
           <MainHeading>
             Fintech-As-A-<span style={{ color: '#67C3C6' }}>Service</span>
