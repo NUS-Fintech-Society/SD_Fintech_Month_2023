@@ -96,14 +96,13 @@ export default function DesktopNavigationBar(props: Props) {
                 <MenuButton
                   as={Button}
                   colorScheme="black"
-                  // rightIcon={<ChevronDownIcon />}
+                  rightIcon={<ChevronDownIcon />}
                   variant="link"
-                  onClick={navigate(Routes.ABOUT_US)}
                 >
                   ABOUT US
                 </MenuButton>
 
-                {/* <MenuList>
+                <MenuList>
                   <MenuItem
                     onClick={navigate(Routes.ABOUT_US)}
                     style={{ color: '#0C1747' }}
@@ -116,7 +115,7 @@ export default function DesktopNavigationBar(props: Props) {
                   >
                     Contact Us
                   </MenuItem>
-                </MenuList> */}
+                </MenuList>
               </Menu>
               <Button
                 variant="link"
