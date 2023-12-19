@@ -14,10 +14,6 @@ function About() {
   const { isDesktop } = useContext(DeviceProvider);
 
   return (
-    // <div
-    //   className="lg:h-screen min-h-screen flex flex-col items-center justify-center relative"
-    //   style={{ backgroundColor: '#20345B' }}
-    // >
     <div
       className={` min-h-screen w-screen flex flex-col items-center justify-center relative`}
     >
@@ -39,7 +35,7 @@ function About() {
             reserved!
           </p>
         </div>
-        <div className="lg:w-1/2 flex lg:flex-row lg:items-center gap-4 sm:px-16 md:p-0">
+        <div className="lg:w-1/2 flex lg:flex-row lg:items-center gap-4 sm:px-16 md:p-0 px-12">
           <Image
             src={AboutNewImage1}
             alt="pic 1"
@@ -52,7 +48,7 @@ function About() {
           />
         </div>
       </div>
-      <div className="flex w-full h-full justify-center sm:px-20 sm:py-12 md:py-10">
+      <div className="flex w-full h-full justify-center sm:px-20 sm:py-12 md:py-10 px-12 mt-12">
         <Image
           alt="Timeline"
           src={TimelineSummit}
@@ -62,7 +58,7 @@ function About() {
         />
       </div>
 
-      <div className="flex flex-col text-center text-white w-3/4 2xl:w-1/2 gap-2 2xl:px-20 xl:px-16">
+      <div className="flex flex-col text-center text-white w-3/4 2xl:w-1/2 gap-2 2xl:px-20 xl:px-16 mt-14">
         <div className="text-3xl font-bold mb-2">About Fintech Summit</div>
         <div className="text-left">
           NUS Fintech Month constitutes a series of workshops and panel

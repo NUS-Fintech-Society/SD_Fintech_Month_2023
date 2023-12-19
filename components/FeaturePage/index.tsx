@@ -45,7 +45,7 @@ const FeaturePage = () => {
       </div>
 
       <div>
-        <AspectRatio maxW="600px" ratio={1} height="350px">
+        <AspectRatio ratio={1.78}>
           <iframe
             title="fintech month 2023"
             src="https://www.youtube.com/embed/j9sN3RVYQi4?si=VFkpNoih_WByEpWM"
@@ -54,12 +54,12 @@ const FeaturePage = () => {
         </AspectRatio>
 
         <div className="mt-8">
-          <SimpleGrid columns={[2, 2, 2, 3]} spacing={10}>
+          <SimpleGrid columns={2} spacing={10}>
+            {Feature('12', 'Sponsors', true)}
             {Feature('8', 'Speakers', true)}
             {/* {Feature('400', 'Hackers', true)} */}
             {Feature('$40,000', 'in Prizes', false)}
-            {/* {Feature('256', 'Hours', true)} */}
-            {Feature('12', 'Sponsors', true)}
+            {Feature('312', 'Hours', true)}
           </SimpleGrid>
         </div>
       </div>

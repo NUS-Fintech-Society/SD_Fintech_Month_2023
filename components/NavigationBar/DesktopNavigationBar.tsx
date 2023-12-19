@@ -49,7 +49,11 @@ export default function DesktopNavigationBar(props: Props) {
           </HStack>
           <HStack spacing="20">
             <HStack spacing="10">
-              <Button variant="link" colorScheme="black">
+              <Button
+                variant="link"
+                colorScheme="black"
+                onClick={navigate(Routes.HOME)}
+              >
                 HOME
               </Button>
               <Menu>

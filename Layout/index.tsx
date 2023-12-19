@@ -3,7 +3,11 @@ import { ReactElement, createContext } from 'react';
 import NavigationBar from '../components/NavigationBar';
 import { DeviceProvider } from '../constants/context';
 
-export default function Layout({ children }: { children: ReactElement[] }) {
+export default function Layout({
+  children,
+}: {
+  children: ReactElement[] | ReactElement;
+}) {
   const isDesktop = useBreakpointValue({ base: false, md: true });
 
   return (

@@ -66,8 +66,8 @@ export default function MobileNavigationBar(props: Props) {
               </MenuItem>
               <MenuDivider />
               <MenuItem onClick={navigate(Routes.PARTNERS)}>Partners</MenuItem>
-              <MenuDivider />
-              <MenuItem onClick={navigate(Routes.FAQ)}>FAQ</MenuItem>
+              {/* <MenuDivider /> */}
+              {/* <MenuItem onClick={navigate(Routes.FAQ)}>FAQ</MenuItem> */}
               <MenuDivider />
               <MobileHackathonButton onClick={hackathon}>
                 Hackathon Signup

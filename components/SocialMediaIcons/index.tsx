@@ -18,15 +18,6 @@ export default function SocialMediaIcons(props: Props) {
 
   return (
     <HStack spacing="10" color={iconColor}>
-      {/*
-      <a
-        href="https://fintechsociety.comp.nus.edu.sg"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <FaGlobe color = 'white'/>
-      </a>
-      */}
       <a
         href="https://www.linkedin.com/company/nus-fintech-society/"
         target="_blank"

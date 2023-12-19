@@ -17,8 +17,8 @@ const Theme = () => {
         </ThemeHeading>
       </div>
 
-      <div className="lg:w-4/5 sm:px-20">
-        <TextBox>
+      <div className="lg:w-4/5 sm:px-20 px-12">
+        <TextBox className="py-4">
           <MainHeading>
             Fintech-As-A-<span style={{ color: '#67C3C6' }}>Service</span>
           </MainHeading>
