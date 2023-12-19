@@ -1,7 +1,6 @@
 import { HStack, useBreakpointValue } from '@chakra-ui/react';
 import React from 'react';
 import Image from 'next/image';
-import SecondaryBackground from '../../public/SecondaryBackground.png';
 import { HeaderContainer, RowContainer, SponsorWrapper } from './styles';
 import { Organization } from '../../types/Organization';
 import { Gold, Organisers, Platinum, Silver } from '../../data/Organisations';

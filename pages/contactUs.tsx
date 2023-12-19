@@ -3,7 +3,7 @@ import ContactUsComponent from '../components/ContactUsPage';
 
 const ContactUs: NextPage = () => {
   return (
-    <div style={{ paddingTop: '100px' }}>
+    <div className="bg-[#20345b] py-16">
       <ContactUsComponent />
     </div>
   );

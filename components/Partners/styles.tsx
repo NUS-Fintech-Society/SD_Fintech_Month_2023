@@ -1,7 +1,5 @@
 import { Box, chakra, HStack } from '@chakra-ui/react';
 
-import SecondaryBackground from '../../public/SecondaryBackground.png';
-
 export const SponsorWrapper = chakra(Box, {
   baseStyle: {
     width: '100%',

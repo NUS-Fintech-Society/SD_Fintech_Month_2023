@@ -57,7 +57,7 @@ export default function Footer() {
             w="auto"
             minWidth="auto"
             height="62px"
-            alt=""
+            alt="NUS Fintech Society"
           />
         </Link>
       </NextLink>
