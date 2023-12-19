@@ -135,11 +135,11 @@ function SingleDesktopWorkshopComponent({ workshop }: { workshop: Workshop }) {
   );
 }
 
-function renderAllDesktopWorkshops() {
+export default function AllWorkshops() {
   return (
     <WorkshopContainer className="bg-[#20345b]">
       <HeadingContainer>
-        <h1 className="text-white mb-20 text-4xl font-bold">
+        <h1 className="text-white mb-10 text-4xl font-bold text-center">
           Workshops (10 - 12 Jan 2024)
         </h1>
       </HeadingContainer>
@@ -174,26 +174,3 @@ function renderAllDesktopWorkshops() {
     </WorkshopContainer>
   );
 }
-
-function renderAllMobileWorkshops() {
-  return (
-    <WorkshopContainer className="bg-[#20345b]">
-      <HeadingContainer>
-        <WorkshopHeading>Workshops</WorkshopHeading>
-      </HeadingContainer>
-      <div>
-        {Object.entries(Workshops).map(([date, { link, workshops }], i) => {
-          return (
-            <div key={i}>
-              {workshops.map((workshop, j) => (
-                <SingleDesktopWorkshopComponent key={j} workshop={workshop} />
-              ))}
-            </div>
-          );
-        })}
-      </div>
-    </WorkshopContainer>
-  );
-}
-
-export { renderAllDesktopWorkshops, renderAllMobileWorkshops };

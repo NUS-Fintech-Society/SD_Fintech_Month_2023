@@ -26,7 +26,6 @@ export const HeadingContainer = chakra(Flex, {
     h: '15%',
     align: 'center',
     justifyContent: 'center',
-    paddingTop: '5%',
   },
 });
 
