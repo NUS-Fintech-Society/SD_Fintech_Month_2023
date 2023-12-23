@@ -42,7 +42,11 @@ export default function SocialMediaIcons(props: Props) {
       <a href="" target="_blank" rel="noreferrer">
         <FaTelegramPlane color="white" />
       </a>
-      <a href="" target="_blank" rel="noreferrer">
+      <a
+        href="https://www.youtube.com/@nusfintechsociety"
+        target="_blank"
+        rel="noreferrer"
+      >
         <FaYoutube />
       </a>
     </HStack>

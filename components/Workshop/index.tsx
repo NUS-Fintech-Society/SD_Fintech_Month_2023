@@ -8,7 +8,6 @@ import {
   SpeakerImage,
   SpeakerLabel,
   WorkshopContainer,
-  WorkshopHeading,
 } from './styles';
 import { useContext } from 'react';
 import { DeviceProvider } from '../../constants/context';
@@ -69,7 +68,7 @@ function SingleDesktopWorkshopComponent({ workshop }: { workshop: Workshop }) {
                 workshop.speaker.map((speaker, index) => (
                   <div
                     key={index}
-                    className="flex flex-col h-full justify-center items-center w-28"
+                    className="flex flex-col justify-center items-center w-full h-full"
                   >
                     <SpeakerImage
                       src={workshop.image}
