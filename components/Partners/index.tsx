@@ -1,61 +1,59 @@
 import { HStack, useBreakpointValue } from '@chakra-ui/react';
 import React from 'react';
 import Image from 'next/image';
-import SecondaryBackground from '../../public/SecondaryBackground.png';
 import { HeaderContainer, RowContainer, SponsorWrapper } from './styles';
-import { Organisation } from '../../types/Organisation';
-import {
-  Community,
-  Gold,
-  Media,
-  Organisers,
-  Platinum,
-  Silver,
-} from '../../data/Organisations';
+import { Organization } from '../../types/Organization';
+import { Gold, Organisers, Platinum, Silver } from '../../data/Organisations';
 
 export default function Sponsor() {
-  const rowSize = useBreakpointValue({ base: 1, md: 2, lg: 4 });
+  const rowSize = useBreakpointValue({ base: 2, sm: 1, md: 2, lg: 2 });
 
-  function organisationSection(
-    organisations: Organisation[],
+  function organizationSection(
+    organizations: Organization[],
     rowLength: number,
   ) {
     const result = [];
-    organisations.sort((organisation1, organisation2) =>
-      organisation1.name.localeCompare(organisation2.name),
-    );
-    for (var i = 0; i < organisations.length; i = i + rowLength) {
-      result.push(organisations.slice(i, i + rowLength));
+
+    for (var i = 0; i < organizations.length; i = i + rowLength) {
+      result.push(organizations.slice(i, i + rowLength));
     }
 
-    return result.map((row, index) => organisationRow(row, index));
+    return (
+      <div className="flex flex-col gap-6">
+        {result.map((row, index) => organizationRow(row, index))}
+      </div>
+    );
   }
 
-  function organisationRow(organisations: Organisation[], index: number) {
-    const row = organisations.map((organisation) =>
-      organisationItem(organisation),
+  function organizationRow(organizations: Organization[], index: number) {
+    const row = organizations.map((organization) =>
+      organizationItem(organization),
     );
 
     return (
-      <RowContainer spacing="110" key={index}>
+      <RowContainer spacing="34" key={index}>
         {row}
       </RowContainer>
     );
   }
 
-  function organisationItem(organisation: Organisation) {
+  function organizationItem(organization: Organization) {
     return (
       <a
-        href={organisation.url}
+        href={organization.url}
         target="_blank"
         rel="noreferrer"
-        key={organisation.name}
+        key={organization.name}
+        className={`${
+          organization.name === 'Tokka Labs' ? 'bg-[#0C1747]' : 'bg-white'
+        } rounded-lg shadow-lg px-4 py-2 w-fit h-24 flex justify-center items-center`}
       >
         <Image
-          src={organisation.logoSrc}
-          alt={organisation.name}
-          height={organisation.logoHeight}
-          width={organisation.logoWidth}
+          className="scale-75"
+          src={organization.logoSrc}
+          alt={organization.name}
+          height={organization.logoHeight}
+          width={organization.logoWidth}
         />
       </a>
     );
@@ -63,32 +61,19 @@ export default function Sponsor() {
 
   return (
     <SponsorWrapper overflow="hidden">
-      <Image
-        src={SecondaryBackground}
-        objectFit="contain"
-        objectPosition="center"
-        layout="fill"
-        className="h-screen w-full -z-10 absolute"
-        alt="background image"
-      />
-      <HeaderContainer>SPONSORS</HeaderContainer>
-      <HeaderContainer>PLATINUM</HeaderContainer>
-      {organisationSection(Platinum, rowSize || 1)}
+      <HeaderContainer>Sponsors</HeaderContainer>
 
-      <HeaderContainer>GOLD</HeaderContainer>
-      {organisationSection(Gold, rowSize || 2)}
+      <HeaderContainer fontWeight="normal">Organized By</HeaderContainer>
+      {organizationSection(Organisers, rowSize || 2)}
 
-      <HeaderContainer>SILVER</HeaderContainer>
-      {organisationSection(Silver, rowSize || 4)}
+      <HeaderContainer fontWeight="normal">Platinum</HeaderContainer>
+      {organizationSection(Platinum, rowSize || 2)}
 
-      <HeaderContainer>COMMUNITY PARTNERS</HeaderContainer>
-      {organisationSection(Community, rowSize || 1)}
+      <HeaderContainer fontWeight="normal">Gold</HeaderContainer>
+      {organizationSection(Gold, rowSize || 2)}
 
-      <HeaderContainer>MEDIA PARTNERS</HeaderContainer>
-      {organisationSection(Media, rowSize || 2)}
-
-      <HeaderContainer>ORGANISERS</HeaderContainer>
-      {organisationSection(Organisers, rowSize || 3)}
+      <HeaderContainer fontWeight="normal">Silver</HeaderContainer>
+      {organizationSection(Silver, rowSize || 2)}
     </SponsorWrapper>
   );
 }

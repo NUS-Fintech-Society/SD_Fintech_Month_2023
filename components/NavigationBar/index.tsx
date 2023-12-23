@@ -1,12 +1,13 @@
 import { useBreakpointValue } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
-import React from 'react';
+import React, { useContext } from 'react';
 import { Routes } from '../../constants/Routes.enum';
 import DesktopNavigationBar from './DesktopNavigationBar';
 import MobileNavigationBar from './MobileNavigationBar';
+import { DeviceProvider } from '../../constants/context';
 
 export default function NavigationBar() {
-  const isDesktop = useBreakpointValue({ base: false, md: true });
+  const { isDesktop } = useContext(DeviceProvider);
   const router = useRouter();
 
   function navigate(path: Routes) {
@@ -15,13 +16,18 @@ export default function NavigationBar() {
     };
   }
 
-  const handleHackathonClick = () => {
-    window.open('https://forms.gle/woaewfoX4pW9nJMZA')
+  const handleHackathonClick = (
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+  ) => {
+    window.open('https://forms.gle/woaewfoX4pW9nJMZA');
   };
 
   return isDesktop ? (
-    <DesktopNavigationBar navigate={navigate} hackathon={handleHackathonClick} />
+    <DesktopNavigationBar
+      navigate={navigate}
+      hackathon={handleHackathonClick}
+    />
   ) : (
-    <MobileNavigationBar navigate={navigate} hackathon={handleHackathonClick}/>
+    <MobileNavigationBar navigate={navigate} hackathon={handleHackathonClick} />
   );
 }

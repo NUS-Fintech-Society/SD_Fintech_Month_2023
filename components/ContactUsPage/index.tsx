@@ -15,6 +15,7 @@ import {
 } from './styles';
 import Image from 'next/image';
 import Background from '../../public/Lines.png';
+import Link from 'next/link';
 
 export default function ContactUsPage() {
   const [fullName, setFullName] = useState<string>('');
@@ -34,7 +35,7 @@ export default function ContactUsPage() {
   function setEmailValue(e: ChangeEvent<HTMLInputElement>) {
     setEmail(e.target.value);
   }
-  function setInquiryValue(e: ChangeEvent<HTMLInputElement>) {
+  function setInquiryValue(e: ChangeEvent<HTMLTextAreaElement>) {
     setInquiry(e.target.value);
   }
 
@@ -73,7 +74,7 @@ export default function ContactUsPage() {
 
   return (
     <PageContainer>
-      <Image
+      {/* <Image
         src={Background}
         objectFit="cover"
         width="80%"
@@ -81,8 +82,8 @@ export default function ContactUsPage() {
         layout="fill"
         className="h-screen w-full -z-10 absolute bg-repeat"
         alt="background image"
-      />
-      <ContentContainer>
+      /> */}
+      {/* <ContentContainer>
         <ContactUsText fontWeight="bold" padding="1" pb="0">
           CONTACT US
         </ContactUsText>
@@ -118,7 +119,13 @@ export default function ContactUsPage() {
             {getSubmitStatus()}
           </TextAreaFlex>
         </InputAndButtonBox>
-      </ContentContainer>
+      </ContentContainer> */}
+      <div className="flex flex-col justify-center items-center text-lg text-white">
+        <p>For any enquiries, please contact us at</p>
+        <a href="mailto:nusfintech.ops@gmail.com" className="underline">
+          nusfintech.ops@gmail.com
+        </a>
+      </div>
     </PageContainer>
   );
 }

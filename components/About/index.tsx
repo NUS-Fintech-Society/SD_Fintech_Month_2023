@@ -4,45 +4,66 @@ import BubbleEffect2 from '../../public/BubbleEffect2.png';
 import AboutImage1 from '../../public/AboutImage1.png';
 import AboutImage3 from '../../public/AboutImage3.png';
 import AboutImage2 from '../../public/AboutImage2.png';
+import AboutNewImage1 from '../../public/AboutNewImage1.png';
+import AboutNewImage2 from '../../public/AboutNewImage2.png';
+import TimelineSummit from '../../public/TimelineSummit.png';
+import { useContext } from 'react';
+import { DeviceProvider } from '../../constants/context';
 
 function About() {
   return (
-    <div className="lg:h-screen min-h-screen flex flex-col items-center justify-center relative">
-      <Image
-        src={BubbleEffect2}
-        objectFit="cover"
-        layout="fill"
-        className="h-screen w-full -z-10 absolute"
-        alt="background image 3"
-      />
-      <div className="text-xl md:text-4xl text-[#001158] font-bold mb-6">
-        ABOUT FINTECH MONTH
-      </div>
-      <div className="flex flex-col lg:flex-row-reverse items-center justify-center relative lg:mx-16">
-        <div className="grid grid-cols-12 grid-rows-[12] w-2/3 lg:w-1/2">
-          <div className="col-start-3 col-span-6 z-10 row-span-2 row-start-1">
-            <Image src={AboutImage1} objectFit="cover" alt="pic 1" />
-          </div>
-          <div className="col-start-5 col-span-8 z-0 row-span-3 row-start-2">
-            <Image src={AboutImage3} objectFit="cover" alt="pic 3" />
-          </div>
-          <div className="col-start-2 col-span-6 z-10 row-span-2 row-start-4">
-            <Image src={AboutImage2} objectFit="cover" alt="pic 2" />
-          </div>
+    <div className="min-h-screen w-screen flex flex-col items-center justify-center relative">
+      <div className="flex flex-col lg:flex-row items-center justify-center relative lg:mx-16">
+        <div className="flex flex-col p-4 md:p-6 my-4 w-3/4 lg:w-1/2 lg:items-end justify-center">
+          <p className="lg:text-right mb-4 text-white lg:w-3/4">
+            NUS Fintech Month constitutes a series of workshops and panel
+            discussions designed to give university and polytechnic students an
+            insight into the world of Fintech. The workshops range from beginner
+            to advanced levels, allowing everyone to participate regardless of
+            background.
+          </p>
+          <p className="lg:text-right text-white lg:w-3/4">
+            Additionally, there will be a hackathon where a real-world problem
+            will be tackled using Fintech, thus demonstrating the usefulness of
+            this technology in a real-world context. We are anticipating rapid
+            sign-ups, with more than 300 students participating, so be sure to
+            register early with your team of 2 - 5 to ensure your slot is
+            reserved!
+          </p>
         </div>
-        <div className="flex shadow-xl rounded-3xl p-4 md:p-6  backdrop-blur-sm bg-[#ffffffcf] my-4 w-3/4 lg:w-1/2 ">
-          <div className="text-[#001158]">
-            NUS FinTech month is a series of workshops and panel discussions
-            designed to give university and polytechnic students an insight into
-            the world of Fintech. The theme for this year will revolve around
-            Fintech as a Service. There will be workshops ranging from beginner
-            levels to more advanced levels allowing everyone, no matter their
-            background, to participate in this. The workshops will be held in
-            person as well as broadcast online. The workshops will be held in
-            person and broadcasted online. A hackathon will also be held where
-            participants will be able to tackle current challenges faced in the
-            world of financial technology.
-          </div>
+        <div className="lg:w-1/2 flex lg:flex-row lg:items-center gap-4 sm:px-16 md:p-0 px-12">
+          <Image
+            src={AboutNewImage1}
+            alt="pic 1"
+            className="object-scale-down"
+          />
+          <Image
+            src={AboutNewImage2}
+            alt="pic 2"
+            className="object-scale-down"
+          />
+        </div>
+      </div>
+      <div className="flex w-full h-full justify-center sm:px-20 sm:py-12 md:py-10 px-12 mt-12">
+        <Image alt="Timeline" src={TimelineSummit} className="object-contain" />
+      </div>
+
+      <div className="flex flex-col text-center text-white w-3/4 2xl:w-1/2 gap-2 2xl:px-20 xl:px-16 mt-14">
+        <div className="text-3xl font-bold mb-2">About Fintech Summit</div>
+        <div className="text-left">
+          NUS Fintech Month constitutes a series of workshops and panel
+          discussions designed to give university and polytechnic students an
+          insight into the world of Fintech. The workshops range from beginner
+          to advance levels, allowing everyone to participate regardless of
+          background.
+        </div>
+        <div className="text-left">
+          Additionally, there will be a hackathon where a real-world problem
+          will be tackled using Fintech, thus demonstrating the usefulness of
+          this technology in a real world context. We are anticipating rapid
+          sign ups, with more than 300 students participating, so be sure to
+          register early with your team of 2 - 5 to ensure your slot is
+          reserved!
         </div>
       </div>
     </div>

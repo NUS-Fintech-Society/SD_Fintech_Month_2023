@@ -1,4 +1,4 @@
-import { Text, Flex, Link, Box, theme } from '@chakra-ui/react';
+import { Text, Flex, Link, Box, theme, Center } from '@chakra-ui/react';
 import { Input, Button, HStack } from '@chakra-ui/react';
 import React, { ChangeEvent, useState } from 'react';
 import {
@@ -15,6 +15,8 @@ import {
   SuccessText,
   FailedText,
 } from './styles';
+import Image from 'next/image';
+import Newsletter from '../../public/Newsletter.png';
 
 export default function ContactUs() {
   const [email, setEmail] = useState<string>('');
@@ -59,32 +61,40 @@ export default function ContactUs() {
   return (
     <PageContainer>
       <ContentContainer>
-        <RowContainer>
-          <Box>
-            <ContactUsText fontWeight="bold" padding="1" pb="0">
-              FOLLOW US
-            </ContactUsText>
+        <RowContainer className="mb-10">
+          <Box color="#0C1747">
+            <ContactUsText className="text-xl">GET OUR WEEKLY</ContactUsText>
+            <ContactUsText>NEWSLETTER</ContactUsText>
             <QueriesAndUpdatesText>
-              Event queries and potential partnerships
+              Get weekly updates on the NUS Fintech Society right in your
+              mailbox.
             </QueriesAndUpdatesText>
             <EmailLink>nusfintech.ops@gmail.com</EmailLink>
-          </Box>
-          <InputAndButtonBox>
-            <QueriesAndUpdatesText>
-              <b>To receive updates</b>
+            <QueriesAndUpdatesText fontWeight="bold">
+              Subscribe Now!
             </QueriesAndUpdatesText>
-            <HStack>
+          </Box>
+          <Image src={Newsletter} objectFit="contain" alt="background image" />
+        </RowContainer>
+        <RowContainer>
+          <InputAndButtonBox>
+            <HStack spacing={0}>
               <EmailInput
-                placeholder="Enter your email here..."
+                placeholder="Email Address"
                 onChange={setEmailValue}
                 value={email}
               />
               <ConnectButton onClick={submitEmail}>
-                <ConnectButtonText>Connect</ConnectButtonText>
+                <ConnectButtonText>CONNECT</ConnectButtonText>
               </ConnectButton>
             </HStack>
             {getSubmitStatus()}
           </InputAndButtonBox>
+        </RowContainer>
+        <RowContainer className="text-center">
+          <div className="mt-10 w-full" style={{ color: '#B7B7B7' }}>
+            <em>Your email is safe with us, we dont spam.</em>
+          </div>
         </RowContainer>
       </ContentContainer>
     </PageContainer>
