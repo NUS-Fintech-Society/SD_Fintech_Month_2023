@@ -323,7 +323,7 @@ export const Workshops: {
         organization: 'OCBC',
         venue: 'Physical',
         logo: {
-          src: '/Workshops/ocbc.png',
+          src: '/Workshops/OCBC.png',
           height: '312px',
           width: '1160px',
           url: 'https://www.ocbc.com/group/gateway.page',
