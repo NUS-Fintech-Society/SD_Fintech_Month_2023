@@ -1,40 +1,37 @@
-import { Organisation } from '../types/Organisation';
+import { Organization } from '../types/Organization';
 
-export const Platinum: Organisation[] = [
+export const Platinum: Organization[] = [
   {
-    name: 'AWS',
-    logoSrc: '/Sponsor/aws_logo.png',
-    logoHeight: '60px',
-    logoWidth: '228px',
-    url: 'https://aws.amazon.com/',
+    name: 'Ripple',
+    logoSrc: '/Sponsor/ripple-logo.png',
+    logoHeight: '100px',
+    logoWidth: '200px',
+    url: 'https://ripple.com/',
   },
   {
-    name: 'Panda Bank',
-    logoSrc: '/Sponsor/panda_bank_logo.png',
-    logoHeight: '120px',
-    logoWidth: '347px',
-    url: 'https://www.panda-bank.com/',
+    name: 'Tokka Labs',
+    logoSrc: '/Sponsor/tokka_labs_logo.png',
+    logoHeight: '40px',
+    logoWidth: '246px',
+    url: 'https://tokkalabs.com/',
+  },
+  {
+    name: 'aelf',
+    logoSrc: '/Sponsor/aelf_logo.png',
+    logoHeight: '80px',
+    logoWidth: '178px',
+    url: 'https://aelf.com/',
+  },
+  {
+    name: 'Northern Trust',
+    logoSrc: '/Sponsor/northern_trust_logo.png',
+    logoHeight: '80px',
+    logoWidth: '240px',
+    url: 'https://www.northerntrust.com/',
   },
 ];
 
-export const Gold: Organisation[] = [
-  {
-    name: 'Vega Solution',
-    logoSrc: '/Sponsor/vegasolution.png',
-    logoHeight: '55px',
-    logoWidth: '170px',
-    url: '',
-  },
-  {
-    name: 'Bybit',
-    logoSrc: '/Sponsor/bybit-logo-trans.png',
-    logoHeight: '50px',
-    logoWidth: '180px',
-    url: 'https://www.bybit.com/en-US/',
-  },
-];
-
-export const Silver: Organisation[] = [
+export const Gold: Organization[] = [
   {
     name: 'Thought Machine',
     logoSrc: '/Sponsor/thought_machine_logo.png',
@@ -43,29 +40,60 @@ export const Silver: Organisation[] = [
     url: 'https://www.thoughtmachine.net/',
   },
   {
-    name: 'Visa',
-    logoSrc: '/Sponsor/visa-logo.png',
-    logoHeight: '100px',
-    logoWidth: '177px',
-    url: 'https://www.visa.com.sg/',
-  },
-  {
-    name: 'Paypal',
-    logoSrc: '/Sponsor/paypal_logo.png',
-    logoHeight: '60px',
-    logoWidth: '236px',
-    url: 'https://www.paypal.com',
-  },
-  {
-    name: 'Coin Gecko',
-    logoSrc: '/Sponsor/coingecko_logo.png',
-    logoHeight: '60px',
-    logoWidth: '192px',
-    url: 'https://www.coingecko.com/',
+    name: 'E Financial Careers',
+    logoSrc: '/Sponsor/e_financial_careers_logo.png',
+    logoHeight: '80px',
+    logoWidth: '414px',
+    url: 'https://www.efinancialcareers.sg/',
   },
 ];
 
-export const Organisers: Organisation[] = [
+export const Silver: Organization[] = [
+  {
+    name: 'Flowdesk',
+    logoSrc: '/Sponsor/flowdesk_logo.png',
+    logoHeight: '40px',
+    logoWidth: '234px',
+    url: 'https://www.flowdesk.co/',
+  },
+  {
+    name: 'Coinbase',
+    logoSrc: '/Sponsor/coinbase_logo.png',
+    logoHeight: '80px',
+    logoWidth: '200px',
+    url: 'https://www.coinbase.com',
+  },
+  {
+    name: 'Alibaba Cloud',
+    logoSrc: '/Sponsor/alibaba_cloud_logo.png',
+    logoHeight: '100px',
+    logoWidth: '350px',
+    url: 'https://sg.alibabacloud.com/',
+  },
+  {
+    name: 'Endow Us',
+    logoSrc: '/Sponsor/endow_us_logo.png',
+    logoHeight: '100px',
+    logoWidth: '268px',
+    url: 'https://endowus.com/',
+  },
+  {
+    name: 'Hashkey Capital',
+    logoSrc: '/Sponsor/hashkey_logo.png',
+    logoHeight: '80px',
+    logoWidth: '242px',
+    url: 'https://hashkey.capital/',
+  },
+  {
+    name: 'Metacamp',
+    logoSrc: '/Sponsor/metacamp_logo.png',
+    logoHeight: '60px',
+    logoWidth: '414px',
+    url: 'https://www.metacamp.so/',
+  },
+];
+
+export const Organisers: Organization[] = [
   {
     name: 'NUS Fintech Society',
     logoSrc: '/FintechSocietyLogo.png',
@@ -79,53 +107,5 @@ export const Organisers: Organisation[] = [
     logoHeight: '90px',
     logoWidth: '311px',
     url: 'https://fintechlab.nus.edu.sg/',
-  },
-];
-
-export const Community: Organisation[] = [
-  {
-    name: 'Blockchain Founders Fund',
-    logoSrc: '/Sponsor/bff_logo.png',
-    logoHeight: '90px',
-    logoWidth: '171px',
-    url: 'https://blockchainff.com/',
-  },
-  {
-    name: 'Singapore Fintech Association',
-    logoSrc: '/Sponsor/sfa_logo.png',
-    logoHeight: '60px',
-    logoWidth: '236px',
-    url: 'https://singaporefintech.org/',
-  },
-  {
-    name: 'Tribe',
-    logoSrc: '/Sponsor/tribe_logo.png',
-    logoHeight: '60px',
-    logoWidth: '184px',
-    url: 'https://tribex.co/',
-  },
-  {
-    name: 'Angelhack',
-    logoSrc: '/Sponsor/angelhack_logo.jpeg',
-    logoHeight: '60px',
-    logoWidth: '158px',
-    url: 'https://angelhack.com/',
-  },
-];
-
-export const Media: Organisation[] = [
-  {
-    name: 'Chain Debrief',
-    logoSrc: '/Sponsor/chain_debrief_logo.png',
-    logoHeight: '80px',
-    logoWidth: '80px',
-    url: 'https://chaindebrief.com/',
-  },
-  {
-    name: 'Web3meets',
-    logoSrc: '/Sponsor/web3meets_logo.jpeg',
-    logoHeight: '80px',
-    logoWidth: '80px',
-    url: 'https://t.me/web3meets',
   },
 ];

@@ -3,9 +3,18 @@ import { Box, chakra, Button } from '@chakra-ui/react';
 export const Title = chakra(Box, {
   baseStyle: {
     fontWeight: 'bold',
-    fontSize: '5xl',
-    color: 'brand.primary',
-    textAlign: 'center',
+    fontSize: '6xl',
+    color: 'white',
+    textShadow: '0px 2px 6px #67C3C6',
+    textAlign: 'left',
+    display: 'flex',
+  },
+});
+
+export const SubTitle = chakra(Box, {
+  baseStyle: {
+    fontSize: '3xl',
+    color: 'white',
   },
 });
 

@@ -1,11 +1,5 @@
-import {
-  renderAllDesktopWorkshops,
-  renderAllMobileWorkshops,
-} from '../components/Workshop';
-import { useBreakpointValue } from '@chakra-ui/react';
+import AllWorkshops from '../components/Workshop';
 
 export default function Workshop() {
-  const isDesktop = useBreakpointValue({ base: false, md: true });
-
-  return isDesktop ? renderAllDesktopWorkshops() : renderAllMobileWorkshops();
+  return <AllWorkshops />;
 }

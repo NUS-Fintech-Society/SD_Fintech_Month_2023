@@ -3,7 +3,7 @@ import AboutUsComponent from '../components/AboutUs';
 
 const AboutUs: NextPage = () => {
   return (
-    <div style={{ paddingTop: '100px' }}>
+    <div className="bg-[#20345b]">
       <AboutUsComponent />
     </div>
   );

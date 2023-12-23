@@ -21,7 +21,7 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 
 type Props = {
   navigate: Function;
-  hackathon: Function;
+  hackathon: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 };
 
 export default function MobileNavigationBar(props: Props) {
@@ -51,19 +51,23 @@ export default function MobileNavigationBar(props: Props) {
             <MenuList>
               <MenuItem onClick={navigate(Routes.HOME)}>Home</MenuItem>
               <MenuDivider />
-              <MenuItem onClick={navigate(Routes.WEEKOVERVIEW)}>
+              {/* <MenuItem onClick={navigate(Routes.WEEKOVERVIEW)}>
                 Week Overview
+              </MenuItem> */}
+              <MenuItem onClick={navigate(Routes.PANEL_DISCUSSIONS)}>
+                Panel Discussions
               </MenuItem>
-              <MenuItem onClick={navigate(Routes.MENTORS)}>Mentors</MenuItem>
-              <MenuItem onClick={navigate(Routes.SPEAKERS)}>Speakers</MenuItem>
+              {/* <MenuItem onClick={navigate(Routes.SPEAKERS)}>Speakers</MenuItem> */}
               <MenuItem onClick={navigate(Routes.WORKSHOPS)}>
                 Workshops
               </MenuItem>
               <MenuDivider />
+
               <MenuItem onClick={navigate(Routes.ABOUT_US)}>About Us</MenuItem>
               <MenuItem onClick={navigate(Routes.CONTACT_US)}>
                 Contact Us
               </MenuItem>
+
               <MenuDivider />
               <MenuItem onClick={navigate(Routes.PARTNERS)}>Partners</MenuItem>
               <MenuDivider />

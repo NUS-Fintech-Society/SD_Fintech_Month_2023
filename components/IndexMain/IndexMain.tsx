@@ -1,12 +1,13 @@
-import { Button, Img, ListItem, UnorderedList } from '@chakra-ui/react';
+import { Button, ListItem, UnorderedList } from '@chakra-ui/react';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { useContext } from 'react';
+import { DeviceProvider } from '../../constants/context';
 import { importantDates } from '../../data/ImportantDates';
+import GreetingSection from '../../public/GreetingSection.png';
 import CountdownTimer from '../CountdownTimer/CountdownTimer';
-import LeaderBoard from '../LeaderBoard';
-import { Title } from './styles';
-import WaterEffect from '../../public/WaterEffect.png';
-import LinesEffect from '../../public/LinesEffect.png';
+import RegisterButton from '../RegisterButton';
+import { SubTitle, Title } from './styles';
 
 type Props = {
   scrollToThemePage: () => void;
@@ -69,49 +70,52 @@ function ImportantDatesSection() {
 export default function IndexMain(props: Props) {
   const { scrollToThemePage } = props;
 
+  const { isDesktop } = useContext(DeviceProvider);
+
   return (
-    <div className="lg:w-full relative">
+    <div
+      style={{
+        height: isDesktop ? 'calc(100vh - 100px)' : 'calc(100vh - 70px)',
+      }}
+      className="w-screen flex relative justify-center items-center"
+    >
       <Image
-        src={WaterEffect}
+        src={GreetingSection}
         objectFit="cover"
         layout="fill"
-        className="h-screen w-full -z-10 absolute"
         alt="background image"
       />
-      <div className="lg:grid lg:grid-cols-3 flex h-screen">
-        <div className="lg:col-span-2 flex flex-col items-center justify-center h-full space-y-6 w-full">
-          <Title className="">NUS FINTECH MONTH 2023</Title>
-          <Button
-            onClick={scrollToThemePage}
-            colorScheme="brand"
-            fontWeight="bold"
-            fontSize="2xl"
-            rounded="3xl"
-            p="6"
-          >
-            Fintech-as-a-Service
-          </Button>
-          <CountdownTimer />
-        </div>
-        <div className="hidden lg:flex lg:col-span-1 lg:h-full">
-          <ImportantDatesSection />
-        </div>
-      </div>
 
-      <div className="lg:hidden flex">
-        <Image
-          src={LinesEffect}
-          objectFit="cover"
-          layout="fill"
-          className="h-screen w-full -z-10 absolute"
-          alt="background image 2"
-        />
-        <div className="w-screen h-screen px-8">
-          <ImportantDatesSection />
-        </div>
-      </div>
+      <div
+        className={`flex flex-col w-full h-full items-center justify-center space-y-12 mx-8`}
+      >
+        <div className="flex gap-12 leading-tight">
+          <Title className="flex flex-col">
+            <h1>2</h1>
+            <h1>0</h1>
+            <h1>2</h1>
+            <h1>4</h1>
+          </Title>
+          <div className="flex flex-col gap-4">
+            <Title className="flex flex-col space-y-1">
+              <h1>NUS</h1>
+              <h1>FINTECH</h1>
+              <h1>SUMMIT</h1>
+            </Title>
 
-      <LeaderBoard />
+            <SubTitle>
+              <div className="text-3xl">THEME: Fintech-As-A-Service</div>
+
+              <div className="text-base">
+                07 JAN - 19 JAN 2024 @ NATIONAL UNIVERSITY OF SINGAPORE
+              </div>
+            </SubTitle>
+          </div>
+        </div>
+
+        <CountdownTimer />
+        <RegisterButton />
+      </div>
     </div>
   );
 }

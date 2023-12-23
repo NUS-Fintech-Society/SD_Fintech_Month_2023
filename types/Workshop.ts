@@ -1,16 +1,24 @@
 import internal from 'stream';
 
 export type Workshop = {
-  id: number;
+  id?: number;
   day: string;
   date: string;
   time: string;
-  name: string;
-  organisation: string;
-  speaker: string;
-  venue: string;
+  name: string | string[] | null;
+  organization: string;
+  logo?: {
+    src: string;
+    height: string;
+    width: string;
+    url: string;
+  };
+  speaker: {
+    name: string;
+    position: string;
+  }[];
+  venue?: string;
   link?: string;
-  position: string;
-  image: string;
-  description: string;
+  image?: string;
+  description?: string;
 };

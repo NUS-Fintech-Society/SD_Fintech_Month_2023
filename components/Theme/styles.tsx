@@ -1,5 +1,7 @@
 import { Text, Flex, Box, Heading, Image, chakra } from '@chakra-ui/react';
 import MosaicEffect from '../../public/MosaicEffect.png';
+import ThemeBg from '../../public/ThemeBg.png';
+import { url } from 'inspector';
 
 export const ThemePageContainer = chakra(Flex, {
   baseStyle: {
@@ -9,9 +11,10 @@ export const ThemePageContainer = chakra(Flex, {
     justifyContent: 'center',
     alignItems: 'center',
     margin: 'auto',
-    backgroundImage: `url(${MosaicEffect.src})`,
+    // backgroundImage: `url(${MosaicEffect.src})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
+    backgroundColor: '#20345B',
   },
 });
 
@@ -24,7 +27,7 @@ export const HeadingContainer = chakra(Flex, {
 
 export const ThemeHeading = chakra(Heading, {
   baseStyle: {
-    fontSize: { base: 'xl', md: '4xl' },
+    fontSize: { base: '4xl', md: '4xl' },
   },
 });
 
@@ -36,11 +39,14 @@ export const TextBox = chakra(Box, {
     borderRadius: '20',
     alignItems: 'center',
     justifyContent: 'center',
-    height: { base: '340px', sm: '340px', md: '36vh' },
-    width: { base: '300px', sm: '300px', md: '60%' },
+    height: { sm: '24vh', md: '38vh', xl: '38vh' },
+    width: '100%',
     px: { sm: '10px', md: '60px' },
     bgColor: 'rgba(255, 255, 255, 0.95)',
     textAlign: 'justify',
+    backgroundImage: `url(${ThemeBg.src})`,
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
   },
 });
 

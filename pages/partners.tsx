@@ -3,7 +3,7 @@ import PartnerComponent from '../components/Partners';
 
 const Partners: NextPage = () => {
   return (
-    <div style={{ paddingTop: '100px' }}>
+    <div className="bg-[#20345b] py-16">
       <PartnerComponent />
     </div>
   );

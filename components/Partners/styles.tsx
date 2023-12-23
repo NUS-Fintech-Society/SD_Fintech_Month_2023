@@ -1,16 +1,11 @@
 import { Box, chakra, HStack } from '@chakra-ui/react';
 
-import SecondaryBackground from '../../public/SecondaryBackground.png';
-
 export const SponsorWrapper = chakra(Box, {
   baseStyle: {
     width: '100%',
-    minHeight: 'calc(100vh - 160px)',
     justifyContent: 'center',
-    // `url("/Background/workshop-background.png")`,
-    bgImage: `url("/Background/workshop-background.png")`,
-    bgSize: 'cover',
-    bgPosition: 'center',
+    backgroundColor: '#20345b',
+    paddingX: '34px',
   },
 });
 
@@ -28,8 +23,8 @@ export const HeaderContainer = chakra(Box, {
     fontWeight: 'bold',
     fontSize: '30px',
     justifyContent: 'center',
-    paddingTop: '10px',
     paddingBottom: '70px',
+    color: 'white',
   },
   sizes: {
     lg: {

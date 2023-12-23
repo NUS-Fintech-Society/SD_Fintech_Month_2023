@@ -23,7 +23,7 @@ import { Routes } from '../../constants/Routes.enum';
 
 type Props = {
   navigate: Function;
-  hackathon: Function;
+  hackathon: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 };
 
 export default function DesktopNavigationBar(props: Props) {
@@ -38,17 +38,24 @@ export default function DesktopNavigationBar(props: Props) {
             <NextLink href={Routes.HOME} passHref>
               <Link>
                 <Image
-                  src="/FintechSocietyLogo.png"
+                  src="/fintechsoc-logo.png"
                   w="150px"
                   minWidth="150px"
                   alt=""
                 />
               </Link>
             </NextLink>
-            {isSmallScreen ? <></> : <SocialMediaIcons />}
+            {isSmallScreen ? <></> : <SocialMediaIcons color="white" />}
           </HStack>
           <HStack spacing="20">
             <HStack spacing="10">
+              <Button
+                variant="link"
+                colorScheme="black"
+                onClick={navigate(Routes.HOME)}
+              >
+                HOME
+              </Button>
               <Menu>
                 <MenuButton
                   as={Button}
@@ -56,19 +63,31 @@ export default function DesktopNavigationBar(props: Props) {
                   rightIcon={<ChevronDownIcon />}
                   variant="link"
                 >
-                  Programme
+                  PROGRAMMES
                 </MenuButton>
                 <MenuList>
-                  <MenuItem onClick={navigate(Routes.WEEKOVERVIEW)}>
+                  {/* <MenuItem
+                    onClick={navigate(Routes.WEEKOVERVIEW)}
+                    style={{ color: '#0C1747' }}
+                  >
                     Week Overview
+                  </MenuItem> */}
+                  <MenuItem
+                    onClick={navigate(Routes.PANEL_DISCUSSIONS)}
+                    style={{ color: '#0C1747' }}
+                  >
+                    Panel Discussions
                   </MenuItem>
-                  <MenuItem onClick={navigate(Routes.MENTORS)}>
-                    Mentors
-                  </MenuItem>
-                  <MenuItem onClick={navigate(Routes.SPEAKERS)}>
+                  {/* <MenuItem
+                    onClick={navigate(Routes.SPEAKERS)}
+                    style={{ color: '#0C1747' }}
+                  >
                     Speakers
-                  </MenuItem>
-                  <MenuItem onClick={navigate(Routes.WORKSHOPS)}>
+                  </MenuItem> */}
+                  <MenuItem
+                    onClick={navigate(Routes.WORKSHOPS)}
+                    style={{ color: '#0C1747' }}
+                  >
                     Workshops
                   </MenuItem>
                 </MenuList>
@@ -80,13 +99,20 @@ export default function DesktopNavigationBar(props: Props) {
                   rightIcon={<ChevronDownIcon />}
                   variant="link"
                 >
-                  About
+                  ABOUT US
                 </MenuButton>
+
                 <MenuList>
-                  <MenuItem onClick={navigate(Routes.ABOUT_US)}>
+                  <MenuItem
+                    onClick={navigate(Routes.ABOUT_US)}
+                    style={{ color: '#0C1747' }}
+                  >
                     About Us
                   </MenuItem>
-                  <MenuItem onClick={navigate(Routes.CONTACT_US)}>
+                  <MenuItem
+                    onClick={navigate(Routes.CONTACT_US)}
+                    style={{ color: '#0C1747' }}
+                  >
                     Contact Us
                   </MenuItem>
                 </MenuList>
@@ -96,8 +122,9 @@ export default function DesktopNavigationBar(props: Props) {
                 colorScheme="black"
                 onClick={navigate(Routes.PARTNERS)}
               >
-                Partners
+                SPONSORS
               </Button>
+
               <Button
                 variant="link"
                 colorScheme="black"
@@ -107,7 +134,7 @@ export default function DesktopNavigationBar(props: Props) {
               </Button>
             </HStack>
             <HackathonButton colorScheme="brand" onClick={hackathon}>
-              Hackathon
+              HACKATHON
             </HackathonButton>
           </HStack>
         </HStackContainer>

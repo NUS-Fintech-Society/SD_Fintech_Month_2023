@@ -17,9 +17,6 @@ export const WorkshopContainer = chakra(Flex, {
     alignItems: 'center',
     // justify : '',
     py: { base: '15%', md: '5%' },
-    backgroundImage: `url("/Background/workshop-background.png")`,
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
   },
 });
 
@@ -29,7 +26,6 @@ export const HeadingContainer = chakra(Flex, {
     h: '15%',
     align: 'center',
     justifyContent: 'center',
-    paddingTop: '5%',
   },
 });
 
@@ -113,11 +109,7 @@ export const MobileBottom = chakra(Flex, {
 //Left of Row
 export const WorkshopSpeaker = chakra(Flex, {
   baseStyle: {
-    h: '40%',
-    w: { base: '60%', md: '20%' },
-    px: '3%',
     flexDirection: 'column',
-    alignItems: 'center',
     justify: { base: 'space-evenly', md: 'none' },
   },
 });
@@ -126,7 +118,6 @@ export const SpeakerImage = chakra(Image, {
   baseStyle: {
     // borderRadius : 'full',
     w: { base: '100px', sm: '100px', md: '100px' },
-    py: { base: '2%' },
   },
 });
 
@@ -134,8 +125,8 @@ export const SpeakerLabel = chakra(Text, {
   baseStyle: {
     fontSize: 'sm',
     color: '#001158',
-    textAlign: 'center',
-    py: { base: '1%', md: '0%' },
+    // textAlign: 'center',
+    // py: { base: '1%', md: '0%' },
   },
 });
 
