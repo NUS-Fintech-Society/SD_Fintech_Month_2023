@@ -82,7 +82,9 @@ export default function FaqComponent() {
         <Content>
           <Tabs variant="unstyled" size="lg">
             <TabList justifyContent="center">{headers}</TabList>
-            <TabPanels>{content}</TabPanels>
+            <div style={{ overflow: 'auto', maxHeight: 450 }}>
+              <TabPanels>{content}</TabPanels>
+            </div>
           </Tabs>
         </Content>
       </ContentWrapper>

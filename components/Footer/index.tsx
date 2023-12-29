@@ -53,7 +53,7 @@ export default function Footer() {
       <NextLink href={Routes.HOME} passHref>
         <Link className="flex h-full justify-center items-center">
           <Image
-            src="/fintechsoc-logo.png"
+            src="/SummitLogo.png"
             w="auto"
             minWidth="auto"
             height="62px"

@@ -22,13 +22,15 @@ export default function About() {
         >
           <Title>About Us</Title>
 
-          <Image
-            src="/fintechsoc-logo.png"
-            w="auto"
-            minWidth="auto"
-            height="80px"
-            alt="NUS Fintech Society"
-          />
+          <a href="https://fintechsociety.comp.nus.edu.sg/">
+            <Image
+              src="/fintechsoc-logo.png"
+              w="auto"
+              minWidth="auto"
+              height="80px"
+              alt="NUS Fintech Society"
+            />
+          </a>
 
           <VStack
             divider={<StackDivider borderColor="transparent" />}

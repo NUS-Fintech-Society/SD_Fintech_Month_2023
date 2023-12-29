@@ -19,7 +19,9 @@ export default function NavigationBar() {
   const handleHackathonClick = (
     e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
   ) => {
-    window.open('https://t.me/+wdMEyqt3fsc4NGVl');
+    window.open(
+      'https://docs.google.com/forms/d/e/1FAIpQLScrGvQgY0tgpHwXndRT1oq3iZtZwQPzd5kuPedF4RlROPFCgA/viewform',
+    );
   };
 
   return isDesktop ? (

@@ -33,12 +33,7 @@ export default function MobileNavigationBar(props: Props) {
         <HStackContainer>
           <NextLink href={Routes.HOME} passHref>
             <Link>
-              <Image
-                src="/FintechSocietyLogo.png"
-                w="90px"
-                minWidth="90px"
-                alt=""
-              />
+              <Image src="/SummitLogo.png" w="90px" minWidth="90px" alt="" />
             </Link>
           </NextLink>
           <Menu>

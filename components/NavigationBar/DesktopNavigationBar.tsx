@@ -37,12 +37,7 @@ export default function DesktopNavigationBar(props: Props) {
           <HStack spacing="20">
             <NextLink href={Routes.HOME} passHref>
               <Link>
-                <Image
-                  src="/fintechsoc-logo.png"
-                  w="150px"
-                  minWidth="150px"
-                  alt=""
-                />
+                <Image src="/SummitLogo.png" w="75px" minWidth="75px" alt="" />
               </Link>
             </NextLink>
             {isSmallScreen ? <></> : <SocialMediaIcons color="white" />}
