@@ -11,6 +11,7 @@ const Profile = ({
     position: string;
     organization: string;
     linkedin?: string;
+    src?: string;
     role: 'moderator' | 'panelist';
   };
 }) => {
@@ -19,7 +20,7 @@ const Profile = ({
       <div className="w-[100px] h-[100px]  relative">
         <Image
           className="rounded-lg"
-          src={require('../public/profile.jpeg')}
+          src={profile.src ?? '/profile.jpeg'}
           width={100}
           height={100}
           alt={profile.name}
@@ -55,6 +56,7 @@ const Panel = ({
     organization: string;
     linkedin?: string;
     role: 'moderator' | 'panelist';
+    src?: string;
   }[];
 }) => {
   const { isDesktop } = useContext(DeviceProvider);
@@ -91,6 +93,7 @@ const PanelDiscussionPage: NextPage = () => {
             organization: 'Coinbase',
             linkedin: 'https://www.linkedin.com/in/hassanahmed3/',
             role: 'panelist',
+            src: '/Panelists/hassan_ahmed.jpg',
           },
           {
             name: 'Chia Tek Yew',
@@ -104,6 +107,9 @@ const PanelDiscussionPage: NextPage = () => {
             position: 'President and Chairperson of Governing Council',
             organization: 'RIMAS',
             role: 'panelist',
+            linkedin:
+              'https://www.linkedin.com/in/andeedma/?originalSubdomain=sg',
+            src: '/Panelists/andeed_ma.jpg',
           },
           {
             name: 'Rachel Lee',
@@ -111,6 +117,7 @@ const PanelDiscussionPage: NextPage = () => {
             organization: 'StackUp',
             linkedin: 'https://www.linkedin.com/in/rachel-kn-lee/',
             role: 'moderator',
+            src: '/Panelists/rachel_lee.jpg',
           },
         ]}
       />
@@ -118,17 +125,23 @@ const PanelDiscussionPage: NextPage = () => {
         title="Panel Discussion 2 (Demonstration Day) (TBC)"
         people={[
           {
-            name: 'Alvinder Singh',
+            name: 'Alvin Singh',
             position:
               'Deputy Director of Financial Technology and Innovation Group',
             organization: 'Monetary Authority of Singapore (MAS)',
             role: 'panelist',
+            linkedin:
+              'https://www.linkedin.com/in/alvin-singh-a787a041/?originalSubdomain=sg',
+            src: '/Panelists/alvin_singh.jpg',
           },
           {
-            name: 'Alvin Chia at Northern Trust',
+            name: 'Alvin Chia',
             position: 'SVP - Head of Digital Assets Innovation (APAC)',
             organization: 'Northern Trust',
             role: 'panelist',
+            linkedin:
+              'https://www.linkedin.com/in/alvinchiajiahao/?originalSubdomain=sg',
+            src: '/Panelists/alvin_chia.jpg',
           },
         ]}
       />
