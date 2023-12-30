@@ -1,4 +1,4 @@
-# NUS Fintech Month 2023 Website
+# NUS Fintech Summit 2023 Website
 
 ## Tech Stack
 

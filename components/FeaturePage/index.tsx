@@ -45,7 +45,7 @@ const FeaturePage = () => {
         <AspectRatio ratio={1.78}>
           <iframe
             title="fintech month 2023"
-            src="https://www.youtube.com/embed/j9sN3RVYQi4?si=VFkpNoih_WByEpWM"
+            src="https://www.youtube.com/embed/X4ePY5QZTYs?si=ayjROLZy6F0pdHBq"
             allowFullScreen
           />
         </AspectRatio>

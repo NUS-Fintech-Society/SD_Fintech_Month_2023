@@ -18,7 +18,7 @@ export const CountdownTimer = () => {
   const [eventOpen, setEventOpen] = useState(false);
 
   useEffect(() => {
-    const target = new Date('7 Jan 2024 00:00:00');
+    const target = new Date('19 Jan 2024 09:00:00');
 
     const interval = setInterval(() => {
       const now = new Date();

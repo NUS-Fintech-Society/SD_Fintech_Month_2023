@@ -39,7 +39,7 @@ export default function SocialMediaIcons(props: Props) {
       >
         <FaFacebookF />
       </a>
-      <a href="" target="_blank" rel="noreferrer">
+      <a href="https://t.me/+wdMEyqt3fsc4NGVl" target="_blank" rel="noreferrer">
         <FaTelegramPlane color="white" />
       </a>
       <a

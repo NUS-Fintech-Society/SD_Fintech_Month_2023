@@ -14,7 +14,7 @@ export const PageContainer = chakra(Flex, {
   baseStyle: {
     width: '100%',
     // height: 'calc(100vh - 328px)',
-    hei: '100%',
+    height: '100%',
     py: '290px',
     flexDirection: 'column',
     justifyContent: 'center',
