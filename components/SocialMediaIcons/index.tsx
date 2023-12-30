@@ -5,6 +5,7 @@ import {
   FaGlobe,
   FaInstagram,
   FaLinkedinIn,
+  FaTelegramPlane,
   FaYoutube,
 } from 'react-icons/fa';
 
@@ -17,13 +18,6 @@ export default function SocialMediaIcons(props: Props) {
 
   return (
     <HStack spacing="10" color={iconColor}>
-      <a
-        href="https://fintechsociety.comp.nus.edu.sg"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <FaGlobe />
-      </a>
       <a
         href="https://www.linkedin.com/company/nus-fintech-society/"
         target="_blank"
@@ -44,6 +38,9 @@ export default function SocialMediaIcons(props: Props) {
         rel="noreferrer"
       >
         <FaFacebookF />
+      </a>
+      <a href="https://t.me/+wdMEyqt3fsc4NGVl" target="_blank" rel="noreferrer">
+        <FaTelegramPlane color="white" />
       </a>
       <a
         href="https://www.youtube.com/@nusfintechsociety"

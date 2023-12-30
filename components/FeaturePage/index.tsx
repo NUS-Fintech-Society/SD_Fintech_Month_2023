@@ -1,4 +1,4 @@
-import { SimpleGrid } from '@chakra-ui/react';
+import { AspectRatio, Center, SimpleGrid } from '@chakra-ui/react';
 import {
   HeadingContainer,
   MorePageHeading,
@@ -12,19 +12,14 @@ import {
   FAQButton,
 } from './styles';
 
-import { IoIosArrowForward } from 'react-icons/io';
 import { useRouter } from 'next/router';
-
-import BubbleBackground from '../../public/BubbleBackground.png';
-import Image from 'next/image';
+import { useContext } from 'react';
+import { DeviceProvider } from '../../constants/context';
 
 const FeaturePage = () => {
   const router = useRouter();
 
-  const handleClick = (e: { preventDefault: () => void }) => {
-    e.preventDefault();
-    router.push('/faq');
-  };
+  const { isDesktop } = useContext(DeviceProvider);
 
   function Feature(title: String, description: String, showPlus: boolean) {
     return (
@@ -41,36 +36,31 @@ const FeaturePage = () => {
   }
 
   return (
-    <MorePageContainer>
-      <Image
-        src={BubbleBackground}
-        objectFit="cover"
-        layout="fill"
-        className="h-screen w-full -z-10 absolute"
-        alt="background image"
-      />
-      <HeadingContainer>
-        <MorePageHeading colorScheme="brand">
-          FTM 2023 in Numbers
-        </MorePageHeading>
-      </HeadingContainer>
+    <div className="flex flex-col justify-center items-center gap-4 w-3/4 2xl:w-1/2 2xl:px-20 xl:px-16">
+      <MorePageHeading colorScheme="brand" className="text-white">
+        Event By The Numbers
+      </MorePageHeading>
 
-      <FeatureContainer>
-        <SimpleGrid columns={[2, 2, 2, 3]} spacing={10}>
-          {Feature('300', 'Hackers', true)}
-          {Feature('$30,000', 'in Prizes', false)}
-          {Feature('128', 'Hours', true)}
-          {Feature('30', 'Mentors', true)}
-          {Feature('30', 'Speakers', true)}
-          {Feature('8', 'Sponsors', true)}
-        </SimpleGrid>
-      </FeatureContainer>
-      <FAQSection>
-        <FAQButton colorScheme="brand" onClick={handleClick}>
-          Frequently Asked Questions <IoIosArrowForward size={25} />
-        </FAQButton>
-      </FAQSection>
-    </MorePageContainer>
+      <div className="w-full">
+        <AspectRatio ratio={1.78}>
+          <iframe
+            title="fintech month 2023"
+            src="https://www.youtube.com/embed/X4ePY5QZTYs?si=ayjROLZy6F0pdHBq"
+            allowFullScreen
+          />
+        </AspectRatio>
+
+        <div className="mt-8">
+          <SimpleGrid columns={isDesktop ? 4 : 2} spacing={10}>
+            {Feature('12', 'Sponsors', true)}
+            {Feature('8', 'Speakers', true)}
+            {/* {Feature('400', 'Hackers', true)} */}
+            {Feature('$40,000', 'in Prizes', false)}
+            {Feature('312', 'Hours', true)}
+          </SimpleGrid>
+        </div>
+      </div>
+    </div>
   );
 };
 

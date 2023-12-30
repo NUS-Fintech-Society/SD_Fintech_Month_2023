@@ -3,11 +3,8 @@ import { Box, chakra, Center } from '@chakra-ui/react';
 export const AboutUsContainer = chakra(Center, {
   baseStyle: {
     width: '100%',
-    // Make this responsive to mobile design
-    minHeight: 'calc(100vh - 160px)',
     justifyContent: 'center',
-    pb: '50px',
-    pt: '50px',
+    py: '50px',
   },
 });
 
@@ -15,10 +12,12 @@ export const Wrapper = chakra(Box, {
   baseStyle: {
     bg: 'None',
     w: '80%',
-    p: '30px',
+    py: '30px',
+    px: '80px',
     borderRadius: '3xl',
     boxShadow: '2xl',
-    bgColor: 'rgba(255, 255, 255, 0.5)',
+    borderColor: 'white',
+    borderWidth: '1px',
   },
 });
 
@@ -28,7 +27,7 @@ export const Title = chakra(Box, {
     justifyContent: 'flex-start',
     fontWeight: 'bold',
     fontSize: '4xl',
-    color: 'black',
+    color: 'white',
   },
 });
 
@@ -40,7 +39,7 @@ export const Title2 = chakra(Box, {
     paddingBottom: '15px',
     fontWeight: 'bold',
     fontSize: '22px',
-    color: 'brand.primary',
+    color: 'white',
   },
 });
 
@@ -51,6 +50,7 @@ export const Description = chakra(Box, {
     paddingTop: '0px',
     paddingBottom: '15px',
     fontSize: '18px',
-    color: 'black',
+    color: 'white',
+    textAlign: 'center',
   },
 });
