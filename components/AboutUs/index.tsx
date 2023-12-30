@@ -22,7 +22,6 @@ export default function About() {
           spacing={3}
         >
           <Title>About Us</Title>
-
           <a
             href="https://fintechsociety.comp.nus.edu.sg/"
             target="_blank"
