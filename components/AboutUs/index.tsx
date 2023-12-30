@@ -9,12 +9,13 @@ import {
   Title2,
   Wrapper,
 } from './styles';
+import Link from 'next/link';
 
 export default function About() {
   const dates: ImportantDate[] = importantDates;
 
   return (
-    <AboutUsContainer>
+    <AboutUsContainer className="h-fit">
       <Wrapper>
         <VStack
           divider={<StackDivider borderColor="transparent " />}
@@ -22,13 +23,19 @@ export default function About() {
         >
           <Title>About Us</Title>
 
-          <Image
-            src="/fintechsoc-logo.png"
-            w="auto"
-            minWidth="auto"
-            height="80px"
-            alt="NUS Fintech Society"
-          />
+          <a
+            href="https://fintechsociety.comp.nus.edu.sg/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image
+              src="/fintechsoc-logo.png"
+              w="auto"
+              minWidth="auto"
+              height="80px"
+              alt="NUS Fintech Society"
+            />
+          </a>
 
           <VStack
             divider={<StackDivider borderColor="transparent" />}

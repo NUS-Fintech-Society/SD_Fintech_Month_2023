@@ -16,7 +16,7 @@ function About() {
       <div className="flex flex-col lg:flex-row items-center justify-center relative lg:mx-16">
         <div className="flex flex-col p-4 md:p-6 my-4 w-3/4 lg:w-1/2 lg:items-end justify-center">
           <p className="lg:text-right mb-4 text-white lg:w-3/4">
-            NUS Fintech Month constitutes a series of workshops and panel
+            NUS Fintech Summit constitutes a series of workshops and panel
             discussions designed to give university and polytechnic students an
             insight into the world of Fintech. The workshops range from beginner
             to advanced levels, allowing everyone to participate regardless of
@@ -51,7 +51,7 @@ function About() {
       <div className="flex flex-col text-center text-white w-3/4 2xl:w-1/2 gap-2 2xl:px-20 xl:px-16 mt-14">
         <div className="text-3xl font-bold mb-2">About Fintech Summit</div>
         <div className="text-left">
-          NUS Fintech Month constitutes a series of workshops and panel
+          NUS Fintech Summit constitutes a series of workshops and panel
           discussions designed to give university and polytechnic students an
           insight into the world of Fintech. The workshops range from beginner
           to advance levels, allowing everyone to participate regardless of

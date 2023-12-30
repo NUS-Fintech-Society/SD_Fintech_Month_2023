@@ -33,19 +33,22 @@ export default function MobileNavigationBar(props: Props) {
         <HStackContainer>
           <NextLink href={Routes.HOME} passHref>
             <Link>
-              <Image
-                src="/FintechSocietyLogo.png"
-                w="90px"
-                minWidth="90px"
-                alt=""
-              />
+              <div className="relative">
+                <Image
+                  src="/logo_bg.png"
+                  w="50px"
+                  alt="Fintech Summit 2024"
+                  className="rounded-full z-10 relative"
+                />
+                <div className="absolute -inset-1 rounded-full blur-sm bg-gradient-to-br from-[#faa307] via-[#f3ecdb] to-[#e6be84] "></div>
+              </div>
             </Link>
           </NextLink>
           <Menu>
             <MenuButton
               as={Button}
               colorScheme="black"
-              rightIcon={<HamburgerIcon boxSize="1.3em" />}
+              rightIcon={<HamburgerIcon boxSize="1.3em" color="white" />}
               variant="link"
             />
             <MenuList>

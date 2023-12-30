@@ -23,7 +23,7 @@ export default function HackathonAnnouncement() {
   return (
     <AnnoucementSection>
       <HeadingContainer>
-        <HackathonHeading>FINTECH MONTH HACKATHON</HackathonHeading>
+        <HackathonHeading>FINTECH SUMMIT HACKATHON</HackathonHeading>
       </HeadingContainer>
       <Wrapper>
         <Title>Announcements</Title>

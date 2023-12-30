@@ -107,7 +107,7 @@ export default function IndexMain(props: Props) {
               <div className="text-3xl">THEME: Fintech-As-A-Service</div>
 
               <div className="text-base">
-                07 JAN - 19 JAN 2024 @ NATIONAL UNIVERSITY OF SINGAPORE
+                20 DEC - 19 JAN 2024 @ NATIONAL UNIVERSITY OF SINGAPORE
               </div>
             </SubTitle>
           </div>
