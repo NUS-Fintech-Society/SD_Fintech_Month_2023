@@ -9,20 +9,24 @@ import {
   Title2,
   Wrapper,
 } from './styles';
+import Link from 'next/link';
 
 export default function About() {
   const dates: ImportantDate[] = importantDates;
 
   return (
-    <AboutUsContainer>
+    <AboutUsContainer className="h-fit">
       <Wrapper>
         <VStack
           divider={<StackDivider borderColor="transparent " />}
           spacing={3}
         >
           <Title>About Us</Title>
-
-          <a href="https://fintechsociety.comp.nus.edu.sg/">
+          <a
+            href="https://fintechsociety.comp.nus.edu.sg/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image
               src="/fintechsoc-logo.png"
               w="auto"

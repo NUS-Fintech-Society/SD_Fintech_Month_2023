@@ -37,7 +37,16 @@ export default function DesktopNavigationBar(props: Props) {
           <HStack spacing="20">
             <NextLink href={Routes.HOME} passHref>
               <Link>
-                <Image src="/SummitLogo.png" w="75px" minWidth="75px" alt="" />
+                <div className="relative">
+                  <Image
+                    src="/logo_bg.png"
+                    w="60px"
+                    alt="Fintech Summit 2024"
+                    className="rounded-full z-10 relative"
+                  />
+
+                  <div className="absolute -inset-1 rounded-full blur-md bg-gradient-to-br from-[#faa307] via-[#f3ecdb] to-[#e6be84] "></div>
+                </div>
               </Link>
             </NextLink>
             {isSmallScreen ? <></> : <SocialMediaIcons color="white" />}

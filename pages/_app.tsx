@@ -37,8 +37,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
       <Head>
-        <title>NUS Fintech Month 2023</title>
-        <meta name="description" content="NUS Fintech Month 2023" />
+        <title>NUS Fintech Summit 2024</title>
+        <meta name="description" content="NUS Fintech Summit 2024" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>

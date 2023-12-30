@@ -4,8 +4,7 @@ export const AboutUsContainer = chakra(Center, {
   baseStyle: {
     width: '100%',
     justifyContent: 'center',
-    pb: '50px',
-    pt: '50px',
+    py: '50px',
   },
 });
 
