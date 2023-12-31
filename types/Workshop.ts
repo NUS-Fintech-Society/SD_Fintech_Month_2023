@@ -16,7 +16,8 @@ export type Workshop = {
   speaker: {
     name: string;
     position: string;
-    src?: string;
+    linkedin?: string;
+    image?: string;
   }[];
   venue?: string;
   link?: string;
