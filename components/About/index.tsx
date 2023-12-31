@@ -9,6 +9,7 @@ import AboutNewImage2 from '../../public/AboutNewImage2.png';
 import TimelineSummit from '../../public/TimelineSummit.png';
 import { useContext } from 'react';
 import { DeviceProvider } from '../../constants/context';
+import Timeline from '../Timeline';
 
 function About() {
   return (
@@ -44,9 +45,7 @@ function About() {
           />
         </div>
       </div>
-      <div className="flex w-full h-full justify-center sm:px-20 sm:py-12 md:py-10 px-12 mt-12">
-        <Image alt="Timeline" src={TimelineSummit} className="object-contain" />
-      </div>
+      <Timeline />
 
       <div className="flex flex-col text-center text-white w-3/4 2xl:w-1/2 gap-2 2xl:px-20 xl:px-16 mt-14">
         <div className="text-3xl font-bold mb-2">About Fintech Summit</div>
