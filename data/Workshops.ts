@@ -23,6 +23,9 @@ export const Workshops: {
           {
             name: 'Jason Tigas',
             position: 'Developer Advocate',
+            linkedin:
+              'https://www.linkedin.com/in/jivey99/?originalSubdomain=ca',
+            image: '/Speakers/ripple_1.jpeg',
           },
         ],
       },
@@ -43,6 +46,8 @@ export const Workshops: {
           {
             name: 'Julia Chin',
             position: 'Principal Consultant',
+            linkedin: 'https://sg.linkedin.com/in/pekyee-julia-chin',
+            image: '/Speakers/jfourth_1.jpg',
           },
         ],
       },
@@ -63,6 +68,9 @@ export const Workshops: {
           {
             name: 'Sheng Shi',
             position: 'Business Development and Partnership Lead',
+            linkedin:
+              'https://sg.linkedin.com/in/sheng-shi-chiam-cfa-12907315a',
+            image: '/Speakers/endowus_1.png',
           },
         ],
       },
@@ -84,6 +92,8 @@ export const Workshops: {
           {
             name: 'Sharma Naman',
             position: 'Senior Data Scientist',
+            linkedin: 'https://sg.linkedin.com/in/naman-sharma',
+            image: '/Speakers/lseg_1.png',
           },
         ],
       },
@@ -104,12 +114,31 @@ export const Workshops: {
           {
             name: 'Jerry Yang Shao Ern',
             position: 'Workshop Executive',
+            linkedin: 'https://sg.linkedin.com/in/jerry-yang-ab993925b',
+            image: '/Speakers/nus_stats_1.png',
           },
           {
             name: 'Shayaan Sultan',
             position: 'Workshop Executive',
+            linkedin: 'https://sg.linkedin.com/in/shayaan-sultan',
+            image: '/Speakers/nus_stats_2.png',
           },
         ],
+      },
+      {
+        day: 'Wednesday',
+        date: 'Wednesday, 10 Jan',
+        time: '4pm - 4.45pm',
+        name: 'Forging the Future - Blockchain Education & Talent Empowerment',
+        venue: 'Virtual',
+        organization: 'Polkadot Blockchain Academy',
+        logo: {
+          src: '/Workshops/polkadot.jpeg',
+          height: '400px',
+          width: '800px',
+          url: 'https://polkadot.network/development/blockchain-academy/',
+        },
+        speaker: [],
       },
     ],
   },
@@ -133,8 +162,18 @@ export const Workshops: {
           url: 'https://hashkey.capital/',
         },
         speaker: [
-          { name: 'Li Liang', position: 'Head of OTC' },
-          { name: 'Ryan Chen', position: 'Partner' },
+          {
+            name: 'Li Liang',
+            position: 'Head of OTC',
+            linkedin: 'https://sg.linkedin.com/in/liang-li-6231bb223',
+            image: '/Speakers/hashkey_1.png',
+          },
+          {
+            name: 'Ryan Chen',
+            position: 'Partner',
+            linkedin: 'https://sg.linkedin.com/in/ryan-chen-313a20273',
+            image: '/Speakers/hashkey_2.jpg',
+          },
         ],
       },
       {
@@ -154,10 +193,14 @@ export const Workshops: {
           {
             name: 'Yuyang Guo',
             position: 'Staff Software Engineer',
+            linkedin: 'https://www.linkedin.com/in/yuyangguo',
+            image: '/Speakers/coinbase_1.png',
           },
           {
             name: 'Qi Wu',
             position: 'Software Engineer',
+            linkedin: 'https://www.linkedin.com/in/qi-wu-6182a63a',
+            image: '/Speakers/coinbase_2.png',
           },
         ],
       },
@@ -178,6 +221,8 @@ export const Workshops: {
           {
             name: 'Cliffton Lee',
             position: 'DAO Relations Lead',
+            linkedin: 'https://sg.linkedin.com/in/cliffton-lee-879562a4',
+            image: '/Speakers/arbitrum_1.jpg',
           },
         ],
       },
@@ -198,6 +243,8 @@ export const Workshops: {
           {
             name: 'Will Ye',
             position: 'Financial Industry Solution Architect Lead',
+            linkedin: 'https://sg.linkedin.com/in/lianxing-ye-a71704a1',
+            image: '/Speakers/alibaba_1.jpg',
           },
         ],
       },
@@ -218,6 +265,8 @@ export const Workshops: {
           {
             name: 'Robert Thomson',
             position: 'Investigation Specialist',
+            linkedin: 'https://au.linkedin.com/in/robert-thomson-a0a451145',
+            image: '/Speakers/binance_1.jpeg',
           },
         ],
       },
@@ -233,8 +282,15 @@ export const Workshops: {
           width: '246px',
           url: 'https://tokkalabs.com/',
         },
-        organization: 'Tokka Labs (TBC)',
-        speaker: [],
+        organization: 'Tokka Labs',
+        speaker: [
+          {
+            name: 'Cheng Qian',
+            position: 'Quant Trader',
+            linkedin: 'https://sg.linkedin.com/in/cheng-qian-747b5192',
+            image: '/Speakers/tokka_1.jfif',
+          },
+        ],
       },
     ],
   },
@@ -247,14 +303,25 @@ export const Workshops: {
         time: '10am - 10.45am',
         name: null,
         venue: 'Physical',
-        organization: 'aelf (TBC)',
+        organization: 'aelf',
         logo: {
           src: '/Sponsor/aelf_logo.png',
           height: '80px',
           width: '178px',
           url: 'https://aelf.com/',
         },
-        speaker: [],
+        speaker: [
+          {
+            name: 'Lu Yimeng',
+            position: 'Senior Back-end Developer',
+            image: '/Speakers/aelf_1.jpg',
+          },
+          {
+            name: 'Loong Yong En',
+            position: 'Senior Front-end Developer',
+            image: '/Speakers/aelf_2.jpg',
+          },
+        ],
       },
       {
         day: 'Friday',
@@ -273,6 +340,8 @@ export const Workshops: {
           {
             name: 'Alvin Chia',
             position: 'SVP, Head of Digital Assets Innovation, APAC',
+            linkedin: 'https://sg.linkedin.com/in/alvinchiajiahao',
+            image: '/Speakers/northern_trust_1.jpeg',
           },
         ],
       },
@@ -282,14 +351,21 @@ export const Workshops: {
         time: '1pm - 1.45pm',
         name: null,
         venue: 'Physical',
-        organization: 'Metacamp (TBC)',
+        organization: 'Metacamp',
         logo: {
           src: '/Sponsor/metacamp_logo.png',
           height: '60px',
           width: '414px',
           url: 'https://www.metacamp.so/',
         },
-        speaker: [],
+        speaker: [
+          {
+            name: 'Jonas Chen',
+            position: 'Co-founder',
+            linkedin: 'https://sg.linkedin.com/in/jonas-chen',
+            image: '/Speakers/metacamp_1.jpeg',
+          },
+        ],
       },
       {
         day: 'Friday',
@@ -308,10 +384,14 @@ export const Workshops: {
           {
             name: 'Luke Richardson',
             position: 'Engineering Manager',
+            linkedin: 'https://www.linkedin.com/in/lukeerichardson/',
+            image: '/Speakers/thought_machine_1.png',
           },
           {
             name: 'Anthony Halim',
             position: 'Site Reliability Engineer',
+            linkedin: 'https://sg.linkedin.com/in/anthony-halim',
+            image: '/Speakers/thought_machine_2.jpeg',
           },
         ],
       },
@@ -332,10 +412,15 @@ export const Workshops: {
           {
             name: 'Liu Bowen',
             position: 'Lead Blockchain Engineer',
+            linkedin:
+              'https://sg.linkedin.com/in/bowen-liu-torino?trk=public_post_feed-actor-name',
+            image: '/Speakers/ocbc_1.jpeg',
           },
           {
             name: 'Jorden Seet',
             position: 'Head of Blockchain',
+            linkedin: 'https://www.linkedin.com/in/jordenseet/',
+            image: '/Speakers/ocbc_2.jpg',
           },
         ],
       },
@@ -344,7 +429,7 @@ export const Workshops: {
         date: 'Friday, 12 Jan',
         time: '4pm - 4.45pm',
         name: null,
-        organization: 'Tencent (TBC)',
+        organization: 'Tencent',
         venue: 'Physical',
         logo: {
           src: '/Workshops/tencent.jpg',
@@ -352,7 +437,14 @@ export const Workshops: {
           width: '2162px',
           url: 'https://www.tencent.com/en-us',
         },
-        speaker: [],
+        speaker: [
+          {
+            name: 'Yao Ping',
+            position:
+              'Manager Business Development, Tencent Financial Technology (Tenpay Global)',
+            image: '/Speakers/tencent_1.jpeg',
+          },
+        ],
       },
     ],
   },

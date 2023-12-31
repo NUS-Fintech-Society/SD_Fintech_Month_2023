@@ -66,22 +66,26 @@ function SingleDesktopWorkshopComponent({ workshop }: { workshop: Workshop }) {
             <div className="flex gap-4">
               {workshop.speaker.length > 0 ? (
                 workshop.speaker.map((speaker, index) => (
-                  <div
+                  <a
                     key={index}
-                    className="flex flex-col justify-center items-center w-full h-full"
+                    href={speaker.linkedin}
+                    target="_blank"
+                    rel="noreferrer"
                   >
-                    <SpeakerImage
-                      src={workshop.image}
-                      fallbackSrc="https://via.placeholder.com/150"
-                    />
+                    <div className="flex flex-col justify-center items-center w-full h-full">
+                      <SpeakerImage
+                        src={speaker.image}
+                        fallbackSrc="https://via.placeholder.com/150"
+                      />
 
-                    <SpeakerLabel fontWeight={'bold'} className="text-center">
-                      {speaker.name}
-                    </SpeakerLabel>
-                    <SpeakerLabel className="text-center">
-                      {speaker.position}
-                    </SpeakerLabel>
-                  </div>
+                      <SpeakerLabel fontWeight={'bold'} className="text-center">
+                        {speaker.name}
+                      </SpeakerLabel>
+                      <SpeakerLabel className="text-center">
+                        {speaker.position}
+                      </SpeakerLabel>
+                    </div>
+                  </a>
                 ))
               ) : (
                 <div className="flex flex-col h-full justify-center items-center w-28">
